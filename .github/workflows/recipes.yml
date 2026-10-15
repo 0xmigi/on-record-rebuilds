@@ -44,7 +44,8 @@ jobs:
         run: |
           echo "stage=fetch" > status
           git clone -q "${{ matrix.repo }}" src
-          git -C src checkout -q "${{ matrix.commit }}"
+          # A commit that is no longer on any branch is still fetchable by its hash.
+          git -C src checkout -q "${{ matrix.commit }}" 2>/dev/null || { git -C src fetch -q origin "${{ matrix.commit }}" && git -C src checkout -q FETCH_HEAD; }
           git -C src log -1 --format='%H %s'
 
       - name: Plan
