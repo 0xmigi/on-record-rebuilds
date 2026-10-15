@@ -1,0 +1,10 @@
+[
+  {"name": "loofta-vrf", "program": "5yv9aXx1vjRoCH1Ubxi7RNQggv9NHXxZC7zwUKLG4jYi", "repo": "loofta/loofta-vrf", "commit": "ccf49f0", "lib": "loofta_vrf", "agave": "4.1.0", "tools": "v1.54", "runner": "macos-15"},
+  {"name": "veda-vault-d348580", "program": "FF1CvjpUwwbneBnpUogL1wTYt7pWvAchzdNiLB7vk7Au", "repo": "Veda-Labs/boring-vault-svm", "commit": "d348580d47b815837bee718278b8d52d48226f38", "lib": "boring_vault_svm", "agave": "2.1.20", "tools": "v1.43", "runner": "macos-15"},
+  {"name": "veda-queue-d348580", "program": "6fWXgihZqEdrZzsrPhZwxbYY2oSBbagXqZvSjrL3sVPY", "repo": "Veda-Labs/boring-vault-svm", "commit": "d348580d47b815837bee718278b8d52d48226f38", "lib": "boring_onchain_queue", "agave": "2.1.20", "tools": "v1.43", "runner": "macos-15"},
+  {"name": "veda-vault-09414a6", "program": "DoY4CNg52QesJRBa7gZPrmwX2KTs1Xx69V45i9x6m9ug", "repo": "Veda-Labs/boring-vault-svm", "commit": "09414a643603ad8a1654b16357df5a4412fc55ee", "lib": "boring_vault_svm", "agave": "2.1.20", "tools": "v1.43", "runner": "macos-15"},
+  {"name": "veda-queue-09414a6", "program": "6y2rVzitwknb94FxcJzQtxBWEkUbPdkEZ97tN9MvAGb6", "repo": "Veda-Labs/boring-vault-svm", "commit": "09414a643603ad8a1654b16357df5a4412fc55ee", "lib": "boring_onchain_queue", "agave": "2.1.20", "tools": "v1.43", "runner": "macos-15"},
+  {"name": "okx-boost", "program": "Boostp5MKfWuF9eoczs1eY9g885t7doG6GLXM9xQnRxj", "repo": "okxlabs/Boost-TokenDistributor-Solana", "commit": "203b1deadf20adef0d93d65a9b140b8c726000b3", "lib": "token_distributor", "agave": "2.1.20", "tools": "v1.43", "runner": "macos-15"},
+  {"name": "tick", "program": "5b8oDRPP6iGMP4hLeip9nr5Wtsfejuwy6aqkk3Msh9hP", "repo": "Sufon/TICK_Public", "commit": "d2f8b08f6ac3183b278ab14c7d5c340c1a3e6621", "lib": "tick_distributor", "agave": "3.1.10", "tools": "v1.52", "runner": "macos-15"},
+  {"name": "loofta-vrf (control: Linux)", "program": "5yv9aXx1vjRoCH1Ubxi7RNQggv9NHXxZC7zwUKLG4jYi", "repo": "loofta/loofta-vrf", "commit": "ccf49f0", "lib": "loofta_vrf", "agave": "4.1.0", "tools": "v1.54", "runner": "ubuntu-latest"}
+]

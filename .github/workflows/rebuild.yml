@@ -1,0 +1,82 @@
+# Rebuild Solana programs from their public source on the kind of machine they
+# were built on, and compare the result with the bytes deployed on mainnet.
+# No Docker: each job is a fresh GitHub-hosted machine (Linux, Apple-silicon
+# Mac, or Intel Mac) with the program's own Solana tool and compiler versions.
+name: rebuild
+
+on:
+  workflow_dispatch:
+    inputs:
+      batch:
+        description: "JSON list of programs under batches/"
+        default: batches/the7.json
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.m.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: m
+        run: echo "matrix=$(jq -c . "${{ inputs.batch }}")" >> "$GITHUB_OUTPUT"
+
+  build:
+    needs: plan
+    name: ${{ matrix.name }} · ${{ matrix.runner }}
+    runs-on: ${{ matrix.runner }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: tools
+
+      - name: Install Solana tools ${{ matrix.agave }}
+        run: |
+          case "$RUNNER_OS-$RUNNER_ARCH" in
+            macOS-ARM64) T=aarch64-apple-darwin ;;
+            macOS-X64)   T=x86_64-apple-darwin ;;
+            Linux-X64)   T=x86_64-unknown-linux-gnu ;;
+            *) echo "unsupported runner $RUNNER_OS-$RUNNER_ARCH"; exit 1 ;;
+          esac
+          curl -sSfL "https://github.com/anza-xyz/agave/releases/download/v${{ matrix.agave }}/solana-release-$T.tar.bz2" | tar -xj -C "$RUNNER_TEMP"
+          echo "$RUNNER_TEMP/solana-release/bin" >> "$GITHUB_PATH"
+          echo "machine: $RUNNER_OS $RUNNER_ARCH ($T)"
+
+      - name: Fetch source ${{ matrix.repo }}@${{ matrix.commit }}
+        run: |
+          git clone -q "https://github.com/${{ matrix.repo }}" src
+          git -C src checkout -q "${{ matrix.commit }}"
+          git -C src log -1 --format='%H %s'
+
+      - name: Build ${{ matrix.lib }} with platform-tools ${{ matrix.tools }}
+        working-directory: src
+        run: |
+          M=$(python3 ../tools/scripts/find-manifest.py "${{ matrix.lib }}")
+          echo "manifest: $M"
+          cargo-build-sbf --version
+          cd "$(dirname "$M")"
+          cargo-build-sbf --tools-version "${{ matrix.tools }}" -- --locked --manifest-path "$GITHUB_WORKSPACE/src/$M"
+
+      - name: Compare with mainnet
+        run: |
+          SO=$(find src -path "*/target/deploy/${{ matrix.lib }}.so" | head -1)
+          solana program dump -u https://api.mainnet-beta.solana.com "${{ matrix.program }}" onchain.so >/dev/null
+          BUILT=$(python3 tools/scripts/exe-hash.py "$SO")
+          CHAIN=$(python3 tools/scripts/exe-hash.py onchain.so)
+          if [ "$BUILT" = "$CHAIN" ]; then R="✅ match"; else R="❌ differs"; fi
+          echo "built:   $BUILT"
+          echo "mainnet: $CHAIN"
+          echo "| ${{ matrix.name }} | \`${{ matrix.program }}\` | ${{ matrix.runner }} | ${{ matrix.agave }} / ${{ matrix.tools }} | \`${BUILT:0:16}\` | \`${CHAIN:0:16}\` | $R |" >> "$GITHUB_STEP_SUMMARY"
+          cp "$SO" "built-${{ matrix.lib }}.so"
+          [ "$BUILT" = "$CHAIN" ]
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ${{ matrix.program }}-${{ matrix.runner }}
+          path: built-*.so
+          if-no-files-found: ignore
