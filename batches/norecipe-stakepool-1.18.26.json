@@ -1,0 +1,15 @@
+[
+ {
+  "program": "SP12tWFxD9oJsVWNavTTBZvMbA6gkAmxtVgxdqvyvhY",
+  "repo": "https://github.com/solana-labs/solana-program-library",
+  "commit": "b7dd8fee93815b486fce98d3d43d1d0934980226",
+  "runner": "ubuntu-latest",
+  "expect": "3a9383372a36d55816d6f47a5707ec8abc8c099dea9f9dd7636b96a9eeaf5169",
+  "args": [
+   "--library-name",
+   "spl_stake_pool",
+   "--base-image",
+   "solanafoundation/solana-verifiable-build:1.18.26"
+  ]
+ }
+]

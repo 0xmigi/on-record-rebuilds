@@ -110,4 +110,6 @@ jobs:
         if: always()
         with:
           name: result-${{ matrix.program }}-${{ matrix.runner }}
-          path: result.json
+          path: |
+            result.json
+            src/**/target/deploy/*.so
