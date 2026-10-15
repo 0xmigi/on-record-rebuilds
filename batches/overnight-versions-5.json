@@ -1,0 +1,142 @@
+[
+{
+"program": "ifxmwWVVZDmXN2DUVf7wtJYCXTRY4QsL5rzmNkXzxbj",
+"repo": "https://github.com/ifx-run/ifx",
+"commit": "522a2f9d8640c38d8f334207b6b3b509cd075a2c",
+"args": [
+"--mount-path",
+".",
+"--library-name",
+"ifx",
+"--",
+"--features",
+"mainnet",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.0.999"
+],
+"runner": "ubuntu-latest",
+"expect": "29cdd9bfe2a0e06126b6b21823370cc9275dc82416d6b23c153647980b7196e8",
+"clue": "linux",
+"how": "version 2.0"
+},
+{
+"program": "ifxmwWVVZDmXN2DUVf7wtJYCXTRY4QsL5rzmNkXzxbj",
+"repo": "https://github.com/ifx-run/ifx",
+"commit": "522a2f9d8640c38d8f334207b6b3b509cd075a2c",
+"args": [
+"--mount-path",
+".",
+"--library-name",
+"ifx",
+"--",
+"--features",
+"mainnet",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.999"
+],
+"runner": "ubuntu-latest",
+"expect": "29cdd9bfe2a0e06126b6b21823370cc9275dc82416d6b23c153647980b7196e8",
+"clue": "linux",
+"how": "version 2.1"
+},
+{
+"program": "ifxmwWVVZDmXN2DUVf7wtJYCXTRY4QsL5rzmNkXzxbj",
+"repo": "https://github.com/ifx-run/ifx",
+"commit": "522a2f9d8640c38d8f334207b6b3b509cd075a2c",
+"args": [
+"--mount-path",
+".",
+"--library-name",
+"ifx",
+"--",
+"--features",
+"mainnet",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.2.999"
+],
+"runner": "ubuntu-latest",
+"expect": "29cdd9bfe2a0e06126b6b21823370cc9275dc82416d6b23c153647980b7196e8",
+"clue": "linux",
+"how": "version 2.2"
+},
+{
+"program": "ifxmwWVVZDmXN2DUVf7wtJYCXTRY4QsL5rzmNkXzxbj",
+"repo": "https://github.com/ifx-run/ifx",
+"commit": "522a2f9d8640c38d8f334207b6b3b509cd075a2c",
+"args": [
+"--mount-path",
+".",
+"--library-name",
+"ifx",
+"--",
+"--features",
+"mainnet",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.3.999"
+],
+"runner": "ubuntu-latest",
+"expect": "29cdd9bfe2a0e06126b6b21823370cc9275dc82416d6b23c153647980b7196e8",
+"clue": "linux",
+"how": "version 2.3"
+},
+{
+"program": "ifxmwWVVZDmXN2DUVf7wtJYCXTRY4QsL5rzmNkXzxbj",
+"repo": "https://github.com/ifx-run/ifx",
+"commit": "522a2f9d8640c38d8f334207b6b3b509cd075a2c",
+"args": [
+"--mount-path",
+".",
+"--library-name",
+"ifx",
+"--",
+"--features",
+"mainnet",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.0.999"
+],
+"runner": "ubuntu-latest",
+"expect": "29cdd9bfe2a0e06126b6b21823370cc9275dc82416d6b23c153647980b7196e8",
+"clue": "linux",
+"how": "version 3.0"
+},
+{
+"program": "ifxmwWVVZDmXN2DUVf7wtJYCXTRY4QsL5rzmNkXzxbj",
+"repo": "https://github.com/ifx-run/ifx",
+"commit": "522a2f9d8640c38d8f334207b6b3b509cd075a2c",
+"args": [
+"--mount-path",
+".",
+"--library-name",
+"ifx",
+"--",
+"--features",
+"mainnet",
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.0.999"
+],
+"runner": "ubuntu-latest",
+"expect": "29cdd9bfe2a0e06126b6b21823370cc9275dc82416d6b23c153647980b7196e8",
+"clue": "linux",
+"how": "version 4.0"
+},
+{
+"program": "ifxmwWVVZDmXN2DUVf7wtJYCXTRY4QsL5rzmNkXzxbj",
+"repo": "https://github.com/ifx-run/ifx",
+"commit": "522a2f9d8640c38d8f334207b6b3b509cd075a2c",
+"args": [
+"--mount-path",
+".",
+"--library-name",
+"ifx",
+"--",
+"--features",
+"mainnet",
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.999"
+],
+"runner": "ubuntu-latest",
+"expect": "29cdd9bfe2a0e06126b6b21823370cc9275dc82416d6b23c153647980b7196e8",
+"clue": "linux",
+"how": "version 4.1"
+}
+]

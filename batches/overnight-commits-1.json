@@ -1,0 +1,2377 @@
+[
+{
+"program": "MarBmsSgKXdrN1egZf5sqe1TMai9K1rChYNDJgjq7aD",
+"repo": "https://github.com/marinade-finance/liquid-staking-program",
+"commit": "1bd5133d3198c0af05a0952d1ca8cd0d1e19fad6",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "db89efca1670f85397f978e9a02f6c2806a9adaa17ebb5783e7e99eddcb26be3",
+"how": "commit search"
+},
+{
+"program": "MarBmsSgKXdrN1egZf5sqe1TMai9K1rChYNDJgjq7aD",
+"repo": "https://github.com/marinade-finance/liquid-staking-program",
+"commit": "25a1ad11e5903e16dcbe764b57ef201cb6271cb7",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "db89efca1670f85397f978e9a02f6c2806a9adaa17ebb5783e7e99eddcb26be3",
+"how": "commit search"
+},
+{
+"program": "MarBmsSgKXdrN1egZf5sqe1TMai9K1rChYNDJgjq7aD",
+"repo": "https://github.com/marinade-finance/liquid-staking-program",
+"commit": "c39cd632744159851776722859717566bcf576ae",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "db89efca1670f85397f978e9a02f6c2806a9adaa17ebb5783e7e99eddcb26be3",
+"how": "commit search"
+},
+{
+"program": "MarBmsSgKXdrN1egZf5sqe1TMai9K1rChYNDJgjq7aD",
+"repo": "https://github.com/marinade-finance/liquid-staking-program",
+"commit": "1882cbf4b4a92f410f5fa8dcf85d75d33bc8613e",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "db89efca1670f85397f978e9a02f6c2806a9adaa17ebb5783e7e99eddcb26be3",
+"how": "commit search"
+},
+{
+"program": "MarBmsSgKXdrN1egZf5sqe1TMai9K1rChYNDJgjq7aD",
+"repo": "https://github.com/marinade-finance/liquid-staking-program",
+"commit": "c6cdf23ad1b59f99ae962c5177fe6a8f30131314",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "db89efca1670f85397f978e9a02f6c2806a9adaa17ebb5783e7e99eddcb26be3",
+"how": "commit search"
+},
+{
+"program": "MarBmsSgKXdrN1egZf5sqe1TMai9K1rChYNDJgjq7aD",
+"repo": "https://github.com/marinade-finance/liquid-staking-program",
+"commit": "4fb77b56937072244c2478607f1654146bcd3d81",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "db89efca1670f85397f978e9a02f6c2806a9adaa17ebb5783e7e99eddcb26be3",
+"how": "commit search"
+},
+{
+"program": "MarBmsSgKXdrN1egZf5sqe1TMai9K1rChYNDJgjq7aD",
+"repo": "https://github.com/marinade-finance/liquid-staking-program",
+"commit": "448dd2814aa59828bfb719421bab5693c237f4db",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "db89efca1670f85397f978e9a02f6c2806a9adaa17ebb5783e7e99eddcb26be3",
+"how": "commit search"
+},
+{
+"program": "EKS4C6xvV9A5DMWaWtVnFvi7ru78EhqRAoddEMpQ2BtT",
+"repo": "https://github.com/fomotsar-commits/tegridy-farms",
+"commit": "94eb006591c7e5cc99101d91f81b21d17207932b",
+"args": [
+"--mount-path",
+"solana/tegridy-amm",
+"--workspace-path",
+"."
+],
+"runner": "ubuntu-latest",
+"expect": "d61e2bbff031b8a61fb96414a403af85b6a4b1dbde11b48516fdb860bb2dc574",
+"how": "commit search"
+},
+{
+"program": "EKS4C6xvV9A5DMWaWtVnFvi7ru78EhqRAoddEMpQ2BtT",
+"repo": "https://github.com/fomotsar-commits/tegridy-farms",
+"commit": "9897926a82a00f99f27ea9178e66dc6046376783",
+"args": [
+"--mount-path",
+"solana/tegridy-amm",
+"--workspace-path",
+"."
+],
+"runner": "ubuntu-latest",
+"expect": "d61e2bbff031b8a61fb96414a403af85b6a4b1dbde11b48516fdb860bb2dc574",
+"how": "commit search"
+},
+{
+"program": "EKS4C6xvV9A5DMWaWtVnFvi7ru78EhqRAoddEMpQ2BtT",
+"repo": "https://github.com/fomotsar-commits/tegridy-farms",
+"commit": "daa77d3aba833e924d6e04770adeb01768ac298a",
+"args": [
+"--mount-path",
+"solana/tegridy-amm",
+"--workspace-path",
+"."
+],
+"runner": "ubuntu-latest",
+"expect": "d61e2bbff031b8a61fb96414a403af85b6a4b1dbde11b48516fdb860bb2dc574",
+"how": "commit search"
+},
+{
+"program": "EKS4C6xvV9A5DMWaWtVnFvi7ru78EhqRAoddEMpQ2BtT",
+"repo": "https://github.com/fomotsar-commits/tegridy-farms",
+"commit": "630584103156ba68f9250d81f78e6675a9b2009d",
+"args": [
+"--mount-path",
+"solana/tegridy-amm",
+"--workspace-path",
+"."
+],
+"runner": "ubuntu-latest",
+"expect": "d61e2bbff031b8a61fb96414a403af85b6a4b1dbde11b48516fdb860bb2dc574",
+"how": "commit search"
+},
+{
+"program": "EKS4C6xvV9A5DMWaWtVnFvi7ru78EhqRAoddEMpQ2BtT",
+"repo": "https://github.com/fomotsar-commits/tegridy-farms",
+"commit": "dd9e367db1093045d07813b496bb62ac4062d6d0",
+"args": [
+"--mount-path",
+"solana/tegridy-amm",
+"--workspace-path",
+"."
+],
+"runner": "ubuntu-latest",
+"expect": "d61e2bbff031b8a61fb96414a403af85b6a4b1dbde11b48516fdb860bb2dc574",
+"how": "commit search"
+},
+{
+"program": "EKS4C6xvV9A5DMWaWtVnFvi7ru78EhqRAoddEMpQ2BtT",
+"repo": "https://github.com/fomotsar-commits/tegridy-farms",
+"commit": "b500db572952e3bbc20425dee6b531b90135a0ac",
+"args": [
+"--mount-path",
+"solana/tegridy-amm",
+"--workspace-path",
+"."
+],
+"runner": "ubuntu-latest",
+"expect": "d61e2bbff031b8a61fb96414a403af85b6a4b1dbde11b48516fdb860bb2dc574",
+"how": "commit search"
+},
+{
+"program": "EKS4C6xvV9A5DMWaWtVnFvi7ru78EhqRAoddEMpQ2BtT",
+"repo": "https://github.com/fomotsar-commits/tegridy-farms",
+"commit": "f8d0a1743cefec987afee26f9a5734be8c5cc278",
+"args": [
+"--mount-path",
+"solana/tegridy-amm",
+"--workspace-path",
+"."
+],
+"runner": "ubuntu-latest",
+"expect": "d61e2bbff031b8a61fb96414a403af85b6a4b1dbde11b48516fdb860bb2dc574",
+"how": "commit search"
+},
+{
+"program": "2CdzdzR1hj6w1ZjXLgvk3o2Saq5sXd1ufQ3Toww4PPHQ",
+"repo": "https://github.com/Gliana-Labs/gliana-agent-mobile",
+"commit": "b9f1e3039b7b2b9ec314691f4e36ee46fa07ba17",
+"args": [
+"--mount-path",
+"program/arena",
+"--workspace-path",
+"."
+],
+"runner": "ubuntu-latest",
+"expect": "1a3e2032407d80089f4a1c789bf5739c22616f7f4a3b8fd856652ccefde05804",
+"how": "commit search"
+},
+{
+"program": "2CdzdzR1hj6w1ZjXLgvk3o2Saq5sXd1ufQ3Toww4PPHQ",
+"repo": "https://github.com/Gliana-Labs/gliana-agent-mobile",
+"commit": "98b670acd8c9dc4018dfe81f3289f31685f77d00",
+"args": [
+"--mount-path",
+"program/arena",
+"--workspace-path",
+"."
+],
+"runner": "ubuntu-latest",
+"expect": "1a3e2032407d80089f4a1c789bf5739c22616f7f4a3b8fd856652ccefde05804",
+"how": "commit search"
+},
+{
+"program": "2CdzdzR1hj6w1ZjXLgvk3o2Saq5sXd1ufQ3Toww4PPHQ",
+"repo": "https://github.com/Gliana-Labs/gliana-agent-mobile",
+"commit": "21b49a8d836a4506ef5e44b5708dcfd78061a5b6",
+"args": [
+"--mount-path",
+"program/arena",
+"--workspace-path",
+"."
+],
+"runner": "ubuntu-latest",
+"expect": "1a3e2032407d80089f4a1c789bf5739c22616f7f4a3b8fd856652ccefde05804",
+"how": "commit search"
+},
+{
+"program": "2CdzdzR1hj6w1ZjXLgvk3o2Saq5sXd1ufQ3Toww4PPHQ",
+"repo": "https://github.com/Gliana-Labs/gliana-agent-mobile",
+"commit": "7ede0233927de9eb7e1ba8dbe9ddd67704b65c76",
+"args": [
+"--mount-path",
+"program/arena",
+"--workspace-path",
+"."
+],
+"runner": "ubuntu-latest",
+"expect": "1a3e2032407d80089f4a1c789bf5739c22616f7f4a3b8fd856652ccefde05804",
+"how": "commit search"
+},
+{
+"program": "2CdzdzR1hj6w1ZjXLgvk3o2Saq5sXd1ufQ3Toww4PPHQ",
+"repo": "https://github.com/Gliana-Labs/gliana-agent-mobile",
+"commit": "974d57d6ff891609d30bd95be89ba50a917bbf13",
+"args": [
+"--mount-path",
+"program/arena",
+"--workspace-path",
+"."
+],
+"runner": "ubuntu-latest",
+"expect": "1a3e2032407d80089f4a1c789bf5739c22616f7f4a3b8fd856652ccefde05804",
+"how": "commit search"
+},
+{
+"program": "2CdzdzR1hj6w1ZjXLgvk3o2Saq5sXd1ufQ3Toww4PPHQ",
+"repo": "https://github.com/Gliana-Labs/gliana-agent-mobile",
+"commit": "a38a5a3d204cfd81bdbe6ddd21e8b01d8c4ca0fd",
+"args": [
+"--mount-path",
+"program/arena",
+"--workspace-path",
+"."
+],
+"runner": "ubuntu-latest",
+"expect": "1a3e2032407d80089f4a1c789bf5739c22616f7f4a3b8fd856652ccefde05804",
+"how": "commit search"
+},
+{
+"program": "2CdzdzR1hj6w1ZjXLgvk3o2Saq5sXd1ufQ3Toww4PPHQ",
+"repo": "https://github.com/Gliana-Labs/gliana-agent-mobile",
+"commit": "45951cb8a38d8ada23b65f7ecad385e341563ca7",
+"args": [
+"--mount-path",
+"program/arena",
+"--workspace-path",
+"."
+],
+"runner": "ubuntu-latest",
+"expect": "1a3e2032407d80089f4a1c789bf5739c22616f7f4a3b8fd856652ccefde05804",
+"how": "commit search"
+},
+{
+"program": "AdXNhsvVjPNVtVQERxakkC7kPfRhFLHNsYhJyEmY69aQ",
+"repo": "https://github.com/raydium-io/raydium-clmm",
+"commit": "03b44b7ff41014b3fc715d445ee05f08d3815a99",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "86bcd24b5bfb85da5c6a67b8f5a3f68d108ec9f0022438b91b148a30ca19d5a2",
+"how": "commit search"
+},
+{
+"program": "AdXNhsvVjPNVtVQERxakkC7kPfRhFLHNsYhJyEmY69aQ",
+"repo": "https://github.com/raydium-io/raydium-clmm",
+"commit": "695968c3e93d646a2ac3ca6066afd2681b3077ea",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "86bcd24b5bfb85da5c6a67b8f5a3f68d108ec9f0022438b91b148a30ca19d5a2",
+"how": "commit search"
+},
+{
+"program": "AdXNhsvVjPNVtVQERxakkC7kPfRhFLHNsYhJyEmY69aQ",
+"repo": "https://github.com/raydium-io/raydium-clmm",
+"commit": "bf7c2413ec685d2ce9d5422d44182b770cd37598",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "86bcd24b5bfb85da5c6a67b8f5a3f68d108ec9f0022438b91b148a30ca19d5a2",
+"how": "commit search"
+},
+{
+"program": "AdXNhsvVjPNVtVQERxakkC7kPfRhFLHNsYhJyEmY69aQ",
+"repo": "https://github.com/raydium-io/raydium-clmm",
+"commit": "f68fd4286821905b5d1f8a8762f0c51a7f33c578",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "86bcd24b5bfb85da5c6a67b8f5a3f68d108ec9f0022438b91b148a30ca19d5a2",
+"how": "commit search"
+},
+{
+"program": "AdXNhsvVjPNVtVQERxakkC7kPfRhFLHNsYhJyEmY69aQ",
+"repo": "https://github.com/raydium-io/raydium-clmm",
+"commit": "5d3e19dc7e55dae2e0ffa8edc1a915b9aae04b9b",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "86bcd24b5bfb85da5c6a67b8f5a3f68d108ec9f0022438b91b148a30ca19d5a2",
+"how": "commit search"
+},
+{
+"program": "AdXNhsvVjPNVtVQERxakkC7kPfRhFLHNsYhJyEmY69aQ",
+"repo": "https://github.com/raydium-io/raydium-clmm",
+"commit": "b4a362ef3bd298455fe13b7692257184d053764d",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "86bcd24b5bfb85da5c6a67b8f5a3f68d108ec9f0022438b91b148a30ca19d5a2",
+"how": "commit search"
+},
+{
+"program": "AdXNhsvVjPNVtVQERxakkC7kPfRhFLHNsYhJyEmY69aQ",
+"repo": "https://github.com/raydium-io/raydium-clmm",
+"commit": "fcad161ef2cb486f3f8baffee98eb39517eb9948",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "86bcd24b5bfb85da5c6a67b8f5a3f68d108ec9f0022438b91b148a30ca19d5a2",
+"how": "commit search"
+},
+{
+"program": "149WKoc5878Sx5EWjHGhPBL4vsoogY9og7ffkzdu39LM",
+"repo": "https://github.com/BasketLaunch/basket-public-docs",
+"commit": "ac54cb4dbd7be841d243de26ff4591cb3ebf820a",
+"args": [],
+"runner": "macos-15",
+"expect": "fda398e7d795dd51a07131428ef321bb2d423f254d5aaf3bab4a255d0eb87351",
+"how": "commit search"
+},
+{
+"program": "149WKoc5878Sx5EWjHGhPBL4vsoogY9og7ffkzdu39LM",
+"repo": "https://github.com/BasketLaunch/basket-public-docs",
+"commit": "7a9fc95f29604ef42fc38567c84ce04cd8e68546",
+"args": [],
+"runner": "macos-15",
+"expect": "fda398e7d795dd51a07131428ef321bb2d423f254d5aaf3bab4a255d0eb87351",
+"how": "commit search"
+},
+{
+"program": "149WKoc5878Sx5EWjHGhPBL4vsoogY9og7ffkzdu39LM",
+"repo": "https://github.com/BasketLaunch/basket-public-docs",
+"commit": "f2357424943b87f0f56f2297751a12e3f6ba4e1e",
+"args": [],
+"runner": "macos-15",
+"expect": "fda398e7d795dd51a07131428ef321bb2d423f254d5aaf3bab4a255d0eb87351",
+"how": "commit search"
+},
+{
+"program": "149WKoc5878Sx5EWjHGhPBL4vsoogY9og7ffkzdu39LM",
+"repo": "https://github.com/BasketLaunch/basket-public-docs",
+"commit": "85e6e6d6cd99d2d848a6f1cf6bce7d9f582b49d9",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "fda398e7d795dd51a07131428ef321bb2d423f254d5aaf3bab4a255d0eb87351",
+"how": "commit search"
+},
+{
+"program": "149WKoc5878Sx5EWjHGhPBL4vsoogY9og7ffkzdu39LM",
+"repo": "https://github.com/BasketLaunch/basket-public-docs",
+"commit": "85e6e6d6cd99d2d848a6f1cf6bce7d9f582b49d9",
+"args": [],
+"runner": "macos-15",
+"expect": "fda398e7d795dd51a07131428ef321bb2d423f254d5aaf3bab4a255d0eb87351",
+"how": "commit search"
+},
+{
+"program": "149WKoc5878Sx5EWjHGhPBL4vsoogY9og7ffkzdu39LM",
+"repo": "https://github.com/BasketLaunch/basket-public-docs",
+"commit": "510e84a0ca7c497042f430a6d39a902a85fe9390",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "fda398e7d795dd51a07131428ef321bb2d423f254d5aaf3bab4a255d0eb87351",
+"how": "commit search"
+},
+{
+"program": "149WKoc5878Sx5EWjHGhPBL4vsoogY9og7ffkzdu39LM",
+"repo": "https://github.com/BasketLaunch/basket-public-docs",
+"commit": "510e84a0ca7c497042f430a6d39a902a85fe9390",
+"args": [],
+"runner": "macos-15",
+"expect": "fda398e7d795dd51a07131428ef321bb2d423f254d5aaf3bab4a255d0eb87351",
+"how": "commit search"
+},
+{
+"program": "149WKoc5878Sx5EWjHGhPBL4vsoogY9og7ffkzdu39LM",
+"repo": "https://github.com/BasketLaunch/basket-public-docs",
+"commit": "79752d034995d5c315a8d79c13d872da2ab94915",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "fda398e7d795dd51a07131428ef321bb2d423f254d5aaf3bab4a255d0eb87351",
+"how": "commit search"
+},
+{
+"program": "149WKoc5878Sx5EWjHGhPBL4vsoogY9og7ffkzdu39LM",
+"repo": "https://github.com/BasketLaunch/basket-public-docs",
+"commit": "79752d034995d5c315a8d79c13d872da2ab94915",
+"args": [],
+"runner": "macos-15",
+"expect": "fda398e7d795dd51a07131428ef321bb2d423f254d5aaf3bab4a255d0eb87351",
+"how": "commit search"
+},
+{
+"program": "149WKoc5878Sx5EWjHGhPBL4vsoogY9og7ffkzdu39LM",
+"repo": "https://github.com/BasketLaunch/basket-public-docs",
+"commit": "d6afe12310d17d9d82277f6a188b8a5ac63aedff",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "fda398e7d795dd51a07131428ef321bb2d423f254d5aaf3bab4a255d0eb87351",
+"how": "commit search"
+},
+{
+"program": "149WKoc5878Sx5EWjHGhPBL4vsoogY9og7ffkzdu39LM",
+"repo": "https://github.com/BasketLaunch/basket-public-docs",
+"commit": "d6afe12310d17d9d82277f6a188b8a5ac63aedff",
+"args": [],
+"runner": "macos-15",
+"expect": "fda398e7d795dd51a07131428ef321bb2d423f254d5aaf3bab4a255d0eb87351",
+"how": "commit search"
+},
+{
+"program": "149WKoc5878Sx5EWjHGhPBL4vsoogY9og7ffkzdu39LM",
+"repo": "https://github.com/BasketLaunch/basket-public-docs",
+"commit": "99cfa6327242cce1b10454609eac0cd13e5671b5",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "fda398e7d795dd51a07131428ef321bb2d423f254d5aaf3bab4a255d0eb87351",
+"how": "commit search"
+},
+{
+"program": "149WKoc5878Sx5EWjHGhPBL4vsoogY9og7ffkzdu39LM",
+"repo": "https://github.com/BasketLaunch/basket-public-docs",
+"commit": "99cfa6327242cce1b10454609eac0cd13e5671b5",
+"args": [],
+"runner": "macos-15",
+"expect": "fda398e7d795dd51a07131428ef321bb2d423f254d5aaf3bab4a255d0eb87351",
+"how": "commit search"
+},
+{
+"program": "149WKoc5878Sx5EWjHGhPBL4vsoogY9og7ffkzdu39LM",
+"repo": "https://github.com/BasketLaunch/basket-public-docs",
+"commit": "7be98f874936a66781cf972f3a77165828902475",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "fda398e7d795dd51a07131428ef321bb2d423f254d5aaf3bab4a255d0eb87351",
+"how": "commit search"
+},
+{
+"program": "149WKoc5878Sx5EWjHGhPBL4vsoogY9og7ffkzdu39LM",
+"repo": "https://github.com/BasketLaunch/basket-public-docs",
+"commit": "7be98f874936a66781cf972f3a77165828902475",
+"args": [],
+"runner": "macos-15",
+"expect": "fda398e7d795dd51a07131428ef321bb2d423f254d5aaf3bab4a255d0eb87351",
+"how": "commit search"
+},
+{
+"program": "149WKoc5878Sx5EWjHGhPBL4vsoogY9og7ffkzdu39LM",
+"repo": "https://github.com/BasketLaunch/basket-public-docs",
+"commit": "c15617c401671e3fa8656b2a8702a0a9ba16ee66",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "fda398e7d795dd51a07131428ef321bb2d423f254d5aaf3bab4a255d0eb87351",
+"how": "commit search"
+},
+{
+"program": "149WKoc5878Sx5EWjHGhPBL4vsoogY9og7ffkzdu39LM",
+"repo": "https://github.com/BasketLaunch/basket-public-docs",
+"commit": "c15617c401671e3fa8656b2a8702a0a9ba16ee66",
+"args": [],
+"runner": "macos-15",
+"expect": "fda398e7d795dd51a07131428ef321bb2d423f254d5aaf3bab4a255d0eb87351",
+"how": "commit search"
+},
+{
+"program": "Archer8kgiavM61GyusMzaaS2ft5sALtNsD1HxkUPMhy",
+"repo": "https://github.com/ballista-tech/archer-sdk",
+"commit": "fb17626f14b82441fa2cb0090902dae1e10db54f",
+"args": [],
+"runner": "macos-15",
+"expect": "8fe1f82bed3d8ca730f4f786421da2f31297fc3b36148333008233bd457eb99f",
+"how": "commit search"
+},
+{
+"program": "Archer8kgiavM61GyusMzaaS2ft5sALtNsD1HxkUPMhy",
+"repo": "https://github.com/ballista-tech/archer-sdk",
+"commit": "31b18cdb5e404c6e52acab5b30f36e757758b2be",
+"args": [],
+"runner": "macos-15",
+"expect": "8fe1f82bed3d8ca730f4f786421da2f31297fc3b36148333008233bd457eb99f",
+"how": "commit search"
+},
+{
+"program": "Archer8kgiavM61GyusMzaaS2ft5sALtNsD1HxkUPMhy",
+"repo": "https://github.com/ballista-tech/archer-sdk",
+"commit": "bfbb06448761929530e31b42498d6b9edf07d290",
+"args": [],
+"runner": "macos-15",
+"expect": "8fe1f82bed3d8ca730f4f786421da2f31297fc3b36148333008233bd457eb99f",
+"how": "commit search"
+},
+{
+"program": "Archer8kgiavM61GyusMzaaS2ft5sALtNsD1HxkUPMhy",
+"repo": "https://github.com/ballista-tech/archer-sdk",
+"commit": "e6c79dcc7dd5257dde8a6a0d6735bc5cbcb9fe98",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "8fe1f82bed3d8ca730f4f786421da2f31297fc3b36148333008233bd457eb99f",
+"how": "commit search"
+},
+{
+"program": "Archer8kgiavM61GyusMzaaS2ft5sALtNsD1HxkUPMhy",
+"repo": "https://github.com/ballista-tech/archer-sdk",
+"commit": "e6c79dcc7dd5257dde8a6a0d6735bc5cbcb9fe98",
+"args": [],
+"runner": "macos-15",
+"expect": "8fe1f82bed3d8ca730f4f786421da2f31297fc3b36148333008233bd457eb99f",
+"how": "commit search"
+},
+{
+"program": "Archer8kgiavM61GyusMzaaS2ft5sALtNsD1HxkUPMhy",
+"repo": "https://github.com/ballista-tech/archer-sdk",
+"commit": "0452560a997b6919aa4ea2e6d5606971271b2499",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "8fe1f82bed3d8ca730f4f786421da2f31297fc3b36148333008233bd457eb99f",
+"how": "commit search"
+},
+{
+"program": "Archer8kgiavM61GyusMzaaS2ft5sALtNsD1HxkUPMhy",
+"repo": "https://github.com/ballista-tech/archer-sdk",
+"commit": "0452560a997b6919aa4ea2e6d5606971271b2499",
+"args": [],
+"runner": "macos-15",
+"expect": "8fe1f82bed3d8ca730f4f786421da2f31297fc3b36148333008233bd457eb99f",
+"how": "commit search"
+},
+{
+"program": "Archer8kgiavM61GyusMzaaS2ft5sALtNsD1HxkUPMhy",
+"repo": "https://github.com/ballista-tech/archer-sdk",
+"commit": "fa6128d1f2a6adc8518b043d855b3f04b3f36c31",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "8fe1f82bed3d8ca730f4f786421da2f31297fc3b36148333008233bd457eb99f",
+"how": "commit search"
+},
+{
+"program": "Archer8kgiavM61GyusMzaaS2ft5sALtNsD1HxkUPMhy",
+"repo": "https://github.com/ballista-tech/archer-sdk",
+"commit": "fa6128d1f2a6adc8518b043d855b3f04b3f36c31",
+"args": [],
+"runner": "macos-15",
+"expect": "8fe1f82bed3d8ca730f4f786421da2f31297fc3b36148333008233bd457eb99f",
+"how": "commit search"
+},
+{
+"program": "Archer8kgiavM61GyusMzaaS2ft5sALtNsD1HxkUPMhy",
+"repo": "https://github.com/ballista-tech/archer-sdk",
+"commit": "0d6a5557b4e5de5b4d74c4c31407096552cdd601",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "8fe1f82bed3d8ca730f4f786421da2f31297fc3b36148333008233bd457eb99f",
+"how": "commit search"
+},
+{
+"program": "Archer8kgiavM61GyusMzaaS2ft5sALtNsD1HxkUPMhy",
+"repo": "https://github.com/ballista-tech/archer-sdk",
+"commit": "0d6a5557b4e5de5b4d74c4c31407096552cdd601",
+"args": [],
+"runner": "macos-15",
+"expect": "8fe1f82bed3d8ca730f4f786421da2f31297fc3b36148333008233bd457eb99f",
+"how": "commit search"
+},
+{
+"program": "Archer8kgiavM61GyusMzaaS2ft5sALtNsD1HxkUPMhy",
+"repo": "https://github.com/ballista-tech/archer-sdk",
+"commit": "37d8ca9354405e500b0ac9c20520e12975f71892",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "8fe1f82bed3d8ca730f4f786421da2f31297fc3b36148333008233bd457eb99f",
+"how": "commit search"
+},
+{
+"program": "Archer8kgiavM61GyusMzaaS2ft5sALtNsD1HxkUPMhy",
+"repo": "https://github.com/ballista-tech/archer-sdk",
+"commit": "37d8ca9354405e500b0ac9c20520e12975f71892",
+"args": [],
+"runner": "macos-15",
+"expect": "8fe1f82bed3d8ca730f4f786421da2f31297fc3b36148333008233bd457eb99f",
+"how": "commit search"
+},
+{
+"program": "Archer8kgiavM61GyusMzaaS2ft5sALtNsD1HxkUPMhy",
+"repo": "https://github.com/ballista-tech/archer-sdk",
+"commit": "9da22c2e52ddf2962b1b91235e728937b5a4d89a",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "8fe1f82bed3d8ca730f4f786421da2f31297fc3b36148333008233bd457eb99f",
+"how": "commit search"
+},
+{
+"program": "Archer8kgiavM61GyusMzaaS2ft5sALtNsD1HxkUPMhy",
+"repo": "https://github.com/ballista-tech/archer-sdk",
+"commit": "9da22c2e52ddf2962b1b91235e728937b5a4d89a",
+"args": [],
+"runner": "macos-15",
+"expect": "8fe1f82bed3d8ca730f4f786421da2f31297fc3b36148333008233bd457eb99f",
+"how": "commit search"
+},
+{
+"program": "Archer8kgiavM61GyusMzaaS2ft5sALtNsD1HxkUPMhy",
+"repo": "https://github.com/ballista-tech/archer-sdk",
+"commit": "3286710669b4cb729cf3e09deb04cbe3d0b5dd9c",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "8fe1f82bed3d8ca730f4f786421da2f31297fc3b36148333008233bd457eb99f",
+"how": "commit search"
+},
+{
+"program": "Archer8kgiavM61GyusMzaaS2ft5sALtNsD1HxkUPMhy",
+"repo": "https://github.com/ballista-tech/archer-sdk",
+"commit": "3286710669b4cb729cf3e09deb04cbe3d0b5dd9c",
+"args": [],
+"runner": "macos-15",
+"expect": "8fe1f82bed3d8ca730f4f786421da2f31297fc3b36148333008233bd457eb99f",
+"how": "commit search"
+},
+{
+"program": "srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX",
+"repo": "https://github.com/openbook-dex/program",
+"commit": "b7af74a7300227ba5375b8fe2ee24f8f098cbc46",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "6e5a2e550025191fc77de71cd390e55e5621858a3a082f9da3e18c6e8eba8e49",
+"how": "commit search"
+},
+{
+"program": "srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX",
+"repo": "https://github.com/openbook-dex/program",
+"commit": "b310f525b14ac1c86be1bb7a9b8e9acf994d44df",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "6e5a2e550025191fc77de71cd390e55e5621858a3a082f9da3e18c6e8eba8e49",
+"how": "commit search"
+},
+{
+"program": "srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX",
+"repo": "https://github.com/openbook-dex/program",
+"commit": "0bf6fa21f84030e1209cdb96bac3af2174407db3",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "6e5a2e550025191fc77de71cd390e55e5621858a3a082f9da3e18c6e8eba8e49",
+"how": "commit search"
+},
+{
+"program": "srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX",
+"repo": "https://github.com/openbook-dex/program",
+"commit": "89d2593b365379377c34dff085a2d3ef7ea779fe",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "6e5a2e550025191fc77de71cd390e55e5621858a3a082f9da3e18c6e8eba8e49",
+"how": "commit search"
+},
+{
+"program": "srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX",
+"repo": "https://github.com/openbook-dex/program",
+"commit": "b6a5cf11c87b3ae4021cde5e2c0ff83d64814902",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "6e5a2e550025191fc77de71cd390e55e5621858a3a082f9da3e18c6e8eba8e49",
+"how": "commit search"
+},
+{
+"program": "srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX",
+"repo": "https://github.com/openbook-dex/program",
+"commit": "71914752922df0db9d4136780eca1e2fe9f6b0a9",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "6e5a2e550025191fc77de71cd390e55e5621858a3a082f9da3e18c6e8eba8e49",
+"how": "commit search"
+},
+{
+"program": "srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX",
+"repo": "https://github.com/openbook-dex/program",
+"commit": "f2ffb5eee7cf2d9265c639b63d6e28962a791670",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "6e5a2e550025191fc77de71cd390e55e5621858a3a082f9da3e18c6e8eba8e49",
+"how": "commit search"
+},
+{
+"program": "opnb2LAfJYbRMAHHvqjCwQxanZn7ReEHp1k81EohpZb",
+"repo": "https://github.com/openbook-dex/openbook-v2",
+"commit": "95c92f53d70514368102c175930635deb745c566",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "44a1bb9b185c77288955fbe1193a38eaaa7624564deec9459f828064704e44fa",
+"how": "commit search"
+},
+{
+"program": "opnb2LAfJYbRMAHHvqjCwQxanZn7ReEHp1k81EohpZb",
+"repo": "https://github.com/openbook-dex/openbook-v2",
+"commit": "1a83df52f7528ed86e68a496097deef640e1e9c2",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "44a1bb9b185c77288955fbe1193a38eaaa7624564deec9459f828064704e44fa",
+"how": "commit search"
+},
+{
+"program": "opnb2LAfJYbRMAHHvqjCwQxanZn7ReEHp1k81EohpZb",
+"repo": "https://github.com/openbook-dex/openbook-v2",
+"commit": "89386c18cbf7f1600b3a77f7619a2388c56a51eb",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "44a1bb9b185c77288955fbe1193a38eaaa7624564deec9459f828064704e44fa",
+"how": "commit search"
+},
+{
+"program": "opnb2LAfJYbRMAHHvqjCwQxanZn7ReEHp1k81EohpZb",
+"repo": "https://github.com/openbook-dex/openbook-v2",
+"commit": "dff5972686edfeec284914b5213f6de2bc23084f",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "44a1bb9b185c77288955fbe1193a38eaaa7624564deec9459f828064704e44fa",
+"how": "commit search"
+},
+{
+"program": "opnb2LAfJYbRMAHHvqjCwQxanZn7ReEHp1k81EohpZb",
+"repo": "https://github.com/openbook-dex/openbook-v2",
+"commit": "d72bf5a9c63d3e158e388e47381121168dc91bb3",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "44a1bb9b185c77288955fbe1193a38eaaa7624564deec9459f828064704e44fa",
+"how": "commit search"
+},
+{
+"program": "opnb2LAfJYbRMAHHvqjCwQxanZn7ReEHp1k81EohpZb",
+"repo": "https://github.com/openbook-dex/openbook-v2",
+"commit": "fd1bfba307479e1587d453e5a8b03a2743339ea6",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "44a1bb9b185c77288955fbe1193a38eaaa7624564deec9459f828064704e44fa",
+"how": "commit search"
+},
+{
+"program": "opnb2LAfJYbRMAHHvqjCwQxanZn7ReEHp1k81EohpZb",
+"repo": "https://github.com/openbook-dex/openbook-v2",
+"commit": "48e8a22c4d7fbc305e53284135e17dd605f4d53d",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "44a1bb9b185c77288955fbe1193a38eaaa7624564deec9459f828064704e44fa",
+"how": "commit search"
+},
+{
+"program": "DXfnvwwxMFfxndn4ktTwTNMmHYp5TbhHTG98wULUaX6m",
+"repo": "https://github.com/BGJ666/dope-boys-front",
+"commit": "e3854d56e1f4eb1881f6d9928999683bdd525658",
+"args": [],
+"runner": "macos-15",
+"expect": "2ad74a44af7f7bef254a6d8dcc1f6fee6b463de6911feca83752e8b34e7719a5",
+"how": "commit search"
+},
+{
+"program": "DXfnvwwxMFfxndn4ktTwTNMmHYp5TbhHTG98wULUaX6m",
+"repo": "https://github.com/BGJ666/dope-boys-front",
+"commit": "cc29937515e87184c15f469d20273e9c702003a9",
+"args": [],
+"runner": "macos-15",
+"expect": "2ad74a44af7f7bef254a6d8dcc1f6fee6b463de6911feca83752e8b34e7719a5",
+"how": "commit search"
+},
+{
+"program": "DXfnvwwxMFfxndn4ktTwTNMmHYp5TbhHTG98wULUaX6m",
+"repo": "https://github.com/BGJ666/dope-boys-front",
+"commit": "7ba8d778fc251f9a7e92978f8f26234189ae21e7",
+"args": [],
+"runner": "macos-15",
+"expect": "2ad74a44af7f7bef254a6d8dcc1f6fee6b463de6911feca83752e8b34e7719a5",
+"how": "commit search"
+},
+{
+"program": "DXfnvwwxMFfxndn4ktTwTNMmHYp5TbhHTG98wULUaX6m",
+"repo": "https://github.com/BGJ666/dope-boys-front",
+"commit": "dda0ef39215586c74ce74820b66bb4df2ac27d53",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "2ad74a44af7f7bef254a6d8dcc1f6fee6b463de6911feca83752e8b34e7719a5",
+"how": "commit search"
+},
+{
+"program": "DXfnvwwxMFfxndn4ktTwTNMmHYp5TbhHTG98wULUaX6m",
+"repo": "https://github.com/BGJ666/dope-boys-front",
+"commit": "dda0ef39215586c74ce74820b66bb4df2ac27d53",
+"args": [],
+"runner": "macos-15",
+"expect": "2ad74a44af7f7bef254a6d8dcc1f6fee6b463de6911feca83752e8b34e7719a5",
+"how": "commit search"
+},
+{
+"program": "DXfnvwwxMFfxndn4ktTwTNMmHYp5TbhHTG98wULUaX6m",
+"repo": "https://github.com/BGJ666/dope-boys-front",
+"commit": "b987a5854cd3860f60c018c451ede98a60bd6d2d",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "2ad74a44af7f7bef254a6d8dcc1f6fee6b463de6911feca83752e8b34e7719a5",
+"how": "commit search"
+},
+{
+"program": "DXfnvwwxMFfxndn4ktTwTNMmHYp5TbhHTG98wULUaX6m",
+"repo": "https://github.com/BGJ666/dope-boys-front",
+"commit": "b987a5854cd3860f60c018c451ede98a60bd6d2d",
+"args": [],
+"runner": "macos-15",
+"expect": "2ad74a44af7f7bef254a6d8dcc1f6fee6b463de6911feca83752e8b34e7719a5",
+"how": "commit search"
+},
+{
+"program": "DXfnvwwxMFfxndn4ktTwTNMmHYp5TbhHTG98wULUaX6m",
+"repo": "https://github.com/BGJ666/dope-boys-front",
+"commit": "9467eb7811fd9dff4afd0add466a83ac7bf26f41",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "2ad74a44af7f7bef254a6d8dcc1f6fee6b463de6911feca83752e8b34e7719a5",
+"how": "commit search"
+},
+{
+"program": "DXfnvwwxMFfxndn4ktTwTNMmHYp5TbhHTG98wULUaX6m",
+"repo": "https://github.com/BGJ666/dope-boys-front",
+"commit": "9467eb7811fd9dff4afd0add466a83ac7bf26f41",
+"args": [],
+"runner": "macos-15",
+"expect": "2ad74a44af7f7bef254a6d8dcc1f6fee6b463de6911feca83752e8b34e7719a5",
+"how": "commit search"
+},
+{
+"program": "DXfnvwwxMFfxndn4ktTwTNMmHYp5TbhHTG98wULUaX6m",
+"repo": "https://github.com/BGJ666/dope-boys-front",
+"commit": "c046e542fd0f254703f7834414237680fd72a0e3",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "2ad74a44af7f7bef254a6d8dcc1f6fee6b463de6911feca83752e8b34e7719a5",
+"how": "commit search"
+},
+{
+"program": "DXfnvwwxMFfxndn4ktTwTNMmHYp5TbhHTG98wULUaX6m",
+"repo": "https://github.com/BGJ666/dope-boys-front",
+"commit": "c046e542fd0f254703f7834414237680fd72a0e3",
+"args": [],
+"runner": "macos-15",
+"expect": "2ad74a44af7f7bef254a6d8dcc1f6fee6b463de6911feca83752e8b34e7719a5",
+"how": "commit search"
+},
+{
+"program": "DXfnvwwxMFfxndn4ktTwTNMmHYp5TbhHTG98wULUaX6m",
+"repo": "https://github.com/BGJ666/dope-boys-front",
+"commit": "bf8e2650e7b09c0e4270ab6abb927923239389d1",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "2ad74a44af7f7bef254a6d8dcc1f6fee6b463de6911feca83752e8b34e7719a5",
+"how": "commit search"
+},
+{
+"program": "DXfnvwwxMFfxndn4ktTwTNMmHYp5TbhHTG98wULUaX6m",
+"repo": "https://github.com/BGJ666/dope-boys-front",
+"commit": "bf8e2650e7b09c0e4270ab6abb927923239389d1",
+"args": [],
+"runner": "macos-15",
+"expect": "2ad74a44af7f7bef254a6d8dcc1f6fee6b463de6911feca83752e8b34e7719a5",
+"how": "commit search"
+},
+{
+"program": "DXfnvwwxMFfxndn4ktTwTNMmHYp5TbhHTG98wULUaX6m",
+"repo": "https://github.com/BGJ666/dope-boys-front",
+"commit": "2d78c867b8b3dda2f6de4133c5e66dc936af658c",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "2ad74a44af7f7bef254a6d8dcc1f6fee6b463de6911feca83752e8b34e7719a5",
+"how": "commit search"
+},
+{
+"program": "DXfnvwwxMFfxndn4ktTwTNMmHYp5TbhHTG98wULUaX6m",
+"repo": "https://github.com/BGJ666/dope-boys-front",
+"commit": "2d78c867b8b3dda2f6de4133c5e66dc936af658c",
+"args": [],
+"runner": "macos-15",
+"expect": "2ad74a44af7f7bef254a6d8dcc1f6fee6b463de6911feca83752e8b34e7719a5",
+"how": "commit search"
+},
+{
+"program": "DXfnvwwxMFfxndn4ktTwTNMmHYp5TbhHTG98wULUaX6m",
+"repo": "https://github.com/BGJ666/dope-boys-front",
+"commit": "2880c620bf4c67bdcc8290c1a8f009fa881e73b7",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "2ad74a44af7f7bef254a6d8dcc1f6fee6b463de6911feca83752e8b34e7719a5",
+"how": "commit search"
+},
+{
+"program": "DXfnvwwxMFfxndn4ktTwTNMmHYp5TbhHTG98wULUaX6m",
+"repo": "https://github.com/BGJ666/dope-boys-front",
+"commit": "2880c620bf4c67bdcc8290c1a8f009fa881e73b7",
+"args": [],
+"runner": "macos-15",
+"expect": "2ad74a44af7f7bef254a6d8dcc1f6fee6b463de6911feca83752e8b34e7719a5",
+"how": "commit search"
+},
+{
+"program": "SMRTzfY6DfH5ik3TKiyLFfXexV8uSG3d2UksSCYdunG",
+"repo": "https://github.com/squads-protocol/smart-account-program",
+"commit": "ecfa1349d501b7e87a59261db0f51c79bfebc6a4",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "1cacfe2080faabf33a02ea285b6f8c8182358d3c6e40e3e7375ad0d7baa58cd4",
+"how": "commit search"
+},
+{
+"program": "SMRTzfY6DfH5ik3TKiyLFfXexV8uSG3d2UksSCYdunG",
+"repo": "https://github.com/squads-protocol/smart-account-program",
+"commit": "0e3ad41fcb291632fa2acca85299aa6f3d1e575b",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "1cacfe2080faabf33a02ea285b6f8c8182358d3c6e40e3e7375ad0d7baa58cd4",
+"how": "commit search"
+},
+{
+"program": "SMRTzfY6DfH5ik3TKiyLFfXexV8uSG3d2UksSCYdunG",
+"repo": "https://github.com/squads-protocol/smart-account-program",
+"commit": "6650c4275d944b1737d0d38ca16ebc316a11b44b",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "1cacfe2080faabf33a02ea285b6f8c8182358d3c6e40e3e7375ad0d7baa58cd4",
+"how": "commit search"
+},
+{
+"program": "SMRTzfY6DfH5ik3TKiyLFfXexV8uSG3d2UksSCYdunG",
+"repo": "https://github.com/squads-protocol/smart-account-program",
+"commit": "099388dde1933bd09bd3c0af8bfb362f1d6b367b",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "1cacfe2080faabf33a02ea285b6f8c8182358d3c6e40e3e7375ad0d7baa58cd4",
+"how": "commit search"
+},
+{
+"program": "SMRTzfY6DfH5ik3TKiyLFfXexV8uSG3d2UksSCYdunG",
+"repo": "https://github.com/squads-protocol/smart-account-program",
+"commit": "f5ef4373c3369323c3f2f220afe94299e72b2cc1",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "1cacfe2080faabf33a02ea285b6f8c8182358d3c6e40e3e7375ad0d7baa58cd4",
+"how": "commit search"
+},
+{
+"program": "SMRTzfY6DfH5ik3TKiyLFfXexV8uSG3d2UksSCYdunG",
+"repo": "https://github.com/squads-protocol/smart-account-program",
+"commit": "193d4194b3aa5defc6695b6cc85ed51eb94379cc",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "1cacfe2080faabf33a02ea285b6f8c8182358d3c6e40e3e7375ad0d7baa58cd4",
+"how": "commit search"
+},
+{
+"program": "SMRTzfY6DfH5ik3TKiyLFfXexV8uSG3d2UksSCYdunG",
+"repo": "https://github.com/squads-protocol/smart-account-program",
+"commit": "69deafb27ac382490783d195b767dd2544686934",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "1cacfe2080faabf33a02ea285b6f8c8182358d3c6e40e3e7375ad0d7baa58cd4",
+"how": "commit search"
+},
+{
+"program": "we1cGnTxTkDP9Sk49dw1d3T7ik7V2NfnY4qDGCDHXfC",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "e8dfee650975eae68eeffcaedc8d014cceb775d0",
+"args": [
+"--mount-path",
+"programs/welcome-pack",
+"--workspace-path",
+"."
+],
+"runner": "ubuntu-latest",
+"expect": "9fb16325f6db0299ff9c7e3ca3e8d2d5bf8f5e02808f38b84bb526fd9936cb8a",
+"how": "commit search"
+},
+{
+"program": "we1cGnTxTkDP9Sk49dw1d3T7ik7V2NfnY4qDGCDHXfC",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "a3203b261993a6bbfa3eeabb3af010334c705fa4",
+"args": [
+"--mount-path",
+"programs/welcome-pack",
+"--workspace-path",
+"."
+],
+"runner": "ubuntu-latest",
+"expect": "9fb16325f6db0299ff9c7e3ca3e8d2d5bf8f5e02808f38b84bb526fd9936cb8a",
+"how": "commit search"
+},
+{
+"program": "we1cGnTxTkDP9Sk49dw1d3T7ik7V2NfnY4qDGCDHXfC",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "c8ef518b4df8af9334808dcf092333be10a868c2",
+"args": [
+"--mount-path",
+"programs/welcome-pack",
+"--workspace-path",
+"."
+],
+"runner": "ubuntu-latest",
+"expect": "9fb16325f6db0299ff9c7e3ca3e8d2d5bf8f5e02808f38b84bb526fd9936cb8a",
+"how": "commit search"
+},
+{
+"program": "we1cGnTxTkDP9Sk49dw1d3T7ik7V2NfnY4qDGCDHXfC",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "311346f666f0851005cb3e064b6e8a655a2a7e0d",
+"args": [
+"--mount-path",
+"programs/welcome-pack",
+"--workspace-path",
+"."
+],
+"runner": "ubuntu-latest",
+"expect": "9fb16325f6db0299ff9c7e3ca3e8d2d5bf8f5e02808f38b84bb526fd9936cb8a",
+"how": "commit search"
+},
+{
+"program": "we1cGnTxTkDP9Sk49dw1d3T7ik7V2NfnY4qDGCDHXfC",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "d44e81e3c63b54aa89c19d638c2687b254808079",
+"args": [
+"--mount-path",
+"programs/welcome-pack",
+"--workspace-path",
+"."
+],
+"runner": "ubuntu-latest",
+"expect": "9fb16325f6db0299ff9c7e3ca3e8d2d5bf8f5e02808f38b84bb526fd9936cb8a",
+"how": "commit search"
+},
+{
+"program": "we1cGnTxTkDP9Sk49dw1d3T7ik7V2NfnY4qDGCDHXfC",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "86f00e7ed5f71ad2f32c6f54e9615880b9914c6e",
+"args": [
+"--mount-path",
+"programs/welcome-pack",
+"--workspace-path",
+"."
+],
+"runner": "ubuntu-latest",
+"expect": "9fb16325f6db0299ff9c7e3ca3e8d2d5bf8f5e02808f38b84bb526fd9936cb8a",
+"how": "commit search"
+},
+{
+"program": "we1cGnTxTkDP9Sk49dw1d3T7ik7V2NfnY4qDGCDHXfC",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "6d482cc76d6fc12ac4ae3edfd814cdd2cefad226",
+"args": [
+"--mount-path",
+"programs/welcome-pack",
+"--workspace-path",
+"."
+],
+"runner": "ubuntu-latest",
+"expect": "9fb16325f6db0299ff9c7e3ca3e8d2d5bf8f5e02808f38b84bb526fd9936cb8a",
+"how": "commit search"
+},
+{
+"program": "HYrwoRKRdPDpuwTHAv3BzbdGXtTVrMe6vzBFefX8RiH4",
+"repo": "https://github.com/agnt-gg/gitstarter",
+"commit": "4e776cc9b64e39861753449c5c3ac38ab9506ee0",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "4b420a7857def4b3b836defcf1b7657c3db7ec7e0946c16e5fd25cc71fbd6148",
+"how": "commit search"
+},
+{
+"program": "HYrwoRKRdPDpuwTHAv3BzbdGXtTVrMe6vzBFefX8RiH4",
+"repo": "https://github.com/agnt-gg/gitstarter",
+"commit": "d84442eccdf90c096b3b26c7ffa1eb9231e15f31",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "4b420a7857def4b3b836defcf1b7657c3db7ec7e0946c16e5fd25cc71fbd6148",
+"how": "commit search"
+},
+{
+"program": "HYrwoRKRdPDpuwTHAv3BzbdGXtTVrMe6vzBFefX8RiH4",
+"repo": "https://github.com/agnt-gg/gitstarter",
+"commit": "1d08a420f1739606f9dbb0ea5bb988a9f37c3bbe",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "4b420a7857def4b3b836defcf1b7657c3db7ec7e0946c16e5fd25cc71fbd6148",
+"how": "commit search"
+},
+{
+"program": "HYrwoRKRdPDpuwTHAv3BzbdGXtTVrMe6vzBFefX8RiH4",
+"repo": "https://github.com/agnt-gg/gitstarter",
+"commit": "12d6e8c2d3191c2cdcda2a659a8b6c48a19c63ff",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "4b420a7857def4b3b836defcf1b7657c3db7ec7e0946c16e5fd25cc71fbd6148",
+"how": "commit search"
+},
+{
+"program": "HYrwoRKRdPDpuwTHAv3BzbdGXtTVrMe6vzBFefX8RiH4",
+"repo": "https://github.com/agnt-gg/gitstarter",
+"commit": "b4e63ea1f7761460fd74d2c0eeef7ddd6652ef37",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "4b420a7857def4b3b836defcf1b7657c3db7ec7e0946c16e5fd25cc71fbd6148",
+"how": "commit search"
+},
+{
+"program": "HYrwoRKRdPDpuwTHAv3BzbdGXtTVrMe6vzBFefX8RiH4",
+"repo": "https://github.com/agnt-gg/gitstarter",
+"commit": "4cca10aee520ae696640127394f2b016c0520fff",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "4b420a7857def4b3b836defcf1b7657c3db7ec7e0946c16e5fd25cc71fbd6148",
+"how": "commit search"
+},
+{
+"program": "HYrwoRKRdPDpuwTHAv3BzbdGXtTVrMe6vzBFefX8RiH4",
+"repo": "https://github.com/agnt-gg/gitstarter",
+"commit": "d58a5f995904c7cdfecd9b9b8a7deabf815cd3e8",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "4b420a7857def4b3b836defcf1b7657c3db7ec7e0946c16e5fd25cc71fbd6148",
+"how": "commit search"
+},
+{
+"program": "STAKEkKzbdeKkqzKpLkNQD3SUuLgshDKCD7U8duxAbB",
+"repo": "https://github.com/mithraiclabs/spl-token-staking",
+"commit": "5943779b53d97a0ce53190d962742a87382457ca",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "5518636f6817a82cec5ea55056a3e65e022b2be748d701aa579dde1dd5fa83ac",
+"how": "commit search"
+},
+{
+"program": "STAKEkKzbdeKkqzKpLkNQD3SUuLgshDKCD7U8duxAbB",
+"repo": "https://github.com/mithraiclabs/spl-token-staking",
+"commit": "14a8e3d608baf47d0bea4b77da1a3d371bd55341",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "5518636f6817a82cec5ea55056a3e65e022b2be748d701aa579dde1dd5fa83ac",
+"how": "commit search"
+},
+{
+"program": "STAKEkKzbdeKkqzKpLkNQD3SUuLgshDKCD7U8duxAbB",
+"repo": "https://github.com/mithraiclabs/spl-token-staking",
+"commit": "6790d73b9596d212d7c960d8abd90df1dec3fe6d",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "5518636f6817a82cec5ea55056a3e65e022b2be748d701aa579dde1dd5fa83ac",
+"how": "commit search"
+},
+{
+"program": "STAKEkKzbdeKkqzKpLkNQD3SUuLgshDKCD7U8duxAbB",
+"repo": "https://github.com/mithraiclabs/spl-token-staking",
+"commit": "ee2d2f41108f852ebb8a92f79460347397a3e923",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "5518636f6817a82cec5ea55056a3e65e022b2be748d701aa579dde1dd5fa83ac",
+"how": "commit search"
+},
+{
+"program": "STAKEkKzbdeKkqzKpLkNQD3SUuLgshDKCD7U8duxAbB",
+"repo": "https://github.com/mithraiclabs/spl-token-staking",
+"commit": "2339a2eaa447b5a243bbf425a7277cacdc0513c3",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "5518636f6817a82cec5ea55056a3e65e022b2be748d701aa579dde1dd5fa83ac",
+"how": "commit search"
+},
+{
+"program": "STAKEkKzbdeKkqzKpLkNQD3SUuLgshDKCD7U8duxAbB",
+"repo": "https://github.com/mithraiclabs/spl-token-staking",
+"commit": "baa18fe7f39c40202474673b34e65c7fca441ce5",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "5518636f6817a82cec5ea55056a3e65e022b2be748d701aa579dde1dd5fa83ac",
+"how": "commit search"
+},
+{
+"program": "STAKEkKzbdeKkqzKpLkNQD3SUuLgshDKCD7U8duxAbB",
+"repo": "https://github.com/mithraiclabs/spl-token-staking",
+"commit": "3f1e1ad778faf7a38cbff5dbca3d9f5fe1493e7f",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "5518636f6817a82cec5ea55056a3e65e022b2be748d701aa579dde1dd5fa83ac",
+"how": "commit search"
+},
+{
+"program": "5k2eTkiGWdTB5TnbMrwnZdz2eRLSreTmra6z38CmLXBZ",
+"repo": "https://github.com/solana-foundation/subscriptions",
+"commit": "0bc4500761ad16fcaf7963caad1f4e150606fb68",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "fe15f4cb60c307b5fb8f758a2074ab8dd9d0ce0827039e56507022d28f32d5cb",
+"how": "commit search"
+},
+{
+"program": "5k2eTkiGWdTB5TnbMrwnZdz2eRLSreTmra6z38CmLXBZ",
+"repo": "https://github.com/solana-foundation/subscriptions",
+"commit": "e937688e644553c2d765bf4f0098318aa60a5be4",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "fe15f4cb60c307b5fb8f758a2074ab8dd9d0ce0827039e56507022d28f32d5cb",
+"how": "commit search"
+},
+{
+"program": "5k2eTkiGWdTB5TnbMrwnZdz2eRLSreTmra6z38CmLXBZ",
+"repo": "https://github.com/solana-foundation/subscriptions",
+"commit": "02c5827afa2547cf3ac8daf8d08178f4308ea092",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "fe15f4cb60c307b5fb8f758a2074ab8dd9d0ce0827039e56507022d28f32d5cb",
+"how": "commit search"
+},
+{
+"program": "5k2eTkiGWdTB5TnbMrwnZdz2eRLSreTmra6z38CmLXBZ",
+"repo": "https://github.com/solana-foundation/subscriptions",
+"commit": "4e4bb0492e2937f270775ce0110c7b46c479faa4",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "fe15f4cb60c307b5fb8f758a2074ab8dd9d0ce0827039e56507022d28f32d5cb",
+"how": "commit search"
+},
+{
+"program": "5k2eTkiGWdTB5TnbMrwnZdz2eRLSreTmra6z38CmLXBZ",
+"repo": "https://github.com/solana-foundation/subscriptions",
+"commit": "64dc085b888f10765519cad812eb770e02f229f5",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "fe15f4cb60c307b5fb8f758a2074ab8dd9d0ce0827039e56507022d28f32d5cb",
+"how": "commit search"
+},
+{
+"program": "5k2eTkiGWdTB5TnbMrwnZdz2eRLSreTmra6z38CmLXBZ",
+"repo": "https://github.com/solana-foundation/subscriptions",
+"commit": "d1d732f08350846c85524ff100ec11d569a40698",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "fe15f4cb60c307b5fb8f758a2074ab8dd9d0ce0827039e56507022d28f32d5cb",
+"how": "commit search"
+},
+{
+"program": "5k2eTkiGWdTB5TnbMrwnZdz2eRLSreTmra6z38CmLXBZ",
+"repo": "https://github.com/solana-foundation/subscriptions",
+"commit": "1054d835a564797299dc50e590ad93d2cd005b8f",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "fe15f4cb60c307b5fb8f758a2074ab8dd9d0ce0827039e56507022d28f32d5cb",
+"how": "commit search"
+},
+{
+"program": "2sp1s4pgj18JpuPfqPsRx1DWVctTnMjAPt5bp9cx4h2q",
+"repo": "https://github.com/starke-labs/vaults",
+"commit": "09947c83950d0c05d9a93df7f10428b55f198c4c",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "6ace00ed23a4553e50a26a5cb4572146a160103acc979d5332ac29e8e5451cf8",
+"how": "commit search"
+},
+{
+"program": "2sp1s4pgj18JpuPfqPsRx1DWVctTnMjAPt5bp9cx4h2q",
+"repo": "https://github.com/starke-labs/vaults",
+"commit": "6c5b03d932d1386b38c1bfd79ba04c59b84d87fa",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "6ace00ed23a4553e50a26a5cb4572146a160103acc979d5332ac29e8e5451cf8",
+"how": "commit search"
+},
+{
+"program": "2sp1s4pgj18JpuPfqPsRx1DWVctTnMjAPt5bp9cx4h2q",
+"repo": "https://github.com/starke-labs/vaults",
+"commit": "817588db3ff841217038d1a27a3275b92653d0c2",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "6ace00ed23a4553e50a26a5cb4572146a160103acc979d5332ac29e8e5451cf8",
+"how": "commit search"
+},
+{
+"program": "2sp1s4pgj18JpuPfqPsRx1DWVctTnMjAPt5bp9cx4h2q",
+"repo": "https://github.com/starke-labs/vaults",
+"commit": "a5a83f67cf983f594414af6b9335cbdee0fea910",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "6ace00ed23a4553e50a26a5cb4572146a160103acc979d5332ac29e8e5451cf8",
+"how": "commit search"
+},
+{
+"program": "2sp1s4pgj18JpuPfqPsRx1DWVctTnMjAPt5bp9cx4h2q",
+"repo": "https://github.com/starke-labs/vaults",
+"commit": "a0427887deeb9d7e159f75d4feb9d328d9071989",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "6ace00ed23a4553e50a26a5cb4572146a160103acc979d5332ac29e8e5451cf8",
+"how": "commit search"
+},
+{
+"program": "2sp1s4pgj18JpuPfqPsRx1DWVctTnMjAPt5bp9cx4h2q",
+"repo": "https://github.com/starke-labs/vaults",
+"commit": "3a1aa412a72d43010958cd81fca47db58c230b71",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "6ace00ed23a4553e50a26a5cb4572146a160103acc979d5332ac29e8e5451cf8",
+"how": "commit search"
+},
+{
+"program": "2sp1s4pgj18JpuPfqPsRx1DWVctTnMjAPt5bp9cx4h2q",
+"repo": "https://github.com/starke-labs/vaults",
+"commit": "6f039b9f3452859c8646d82c262360a251be49aa",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "6ace00ed23a4553e50a26a5cb4572146a160103acc979d5332ac29e8e5451cf8",
+"how": "commit search"
+},
+{
+"program": "phNX2ZY31wq9NCXMfY9ptouoqB3Mor8oe3QE96V6QKn",
+"repo": "https://github.com/Ellipsis-Labs/phoenix-v1",
+"commit": "5a34f7f901fd9e04057198d4fc7b7286f78b53f2",
+"args": [],
+"runner": "macos-15",
+"expect": "66b494dd4cfe1ebbe07acf85e851795cb870d4db7c17fb1677177c99e38a5747",
+"how": "commit search"
+},
+{
+"program": "phNX2ZY31wq9NCXMfY9ptouoqB3Mor8oe3QE96V6QKn",
+"repo": "https://github.com/Ellipsis-Labs/phoenix-v1",
+"commit": "5a34f7f901fd9e04057198d4fc7b7286f78b53f2",
+"args": [],
+"runner": "macos-15-intel",
+"expect": "66b494dd4cfe1ebbe07acf85e851795cb870d4db7c17fb1677177c99e38a5747",
+"how": "commit search"
+},
+{
+"program": "phNX2ZY31wq9NCXMfY9ptouoqB3Mor8oe3QE96V6QKn",
+"repo": "https://github.com/Ellipsis-Labs/phoenix-v1",
+"commit": "1820ad9208c0546be1e93b3adb534c46598e02cb",
+"args": [],
+"runner": "macos-15",
+"expect": "66b494dd4cfe1ebbe07acf85e851795cb870d4db7c17fb1677177c99e38a5747",
+"how": "commit search"
+},
+{
+"program": "phNX2ZY31wq9NCXMfY9ptouoqB3Mor8oe3QE96V6QKn",
+"repo": "https://github.com/Ellipsis-Labs/phoenix-v1",
+"commit": "1820ad9208c0546be1e93b3adb534c46598e02cb",
+"args": [],
+"runner": "macos-15-intel",
+"expect": "66b494dd4cfe1ebbe07acf85e851795cb870d4db7c17fb1677177c99e38a5747",
+"how": "commit search"
+},
+{
+"program": "phNX2ZY31wq9NCXMfY9ptouoqB3Mor8oe3QE96V6QKn",
+"repo": "https://github.com/Ellipsis-Labs/phoenix-v1",
+"commit": "dac82fef2b8862be04fa6710386f3e7485a31a48",
+"args": [],
+"runner": "macos-15",
+"expect": "66b494dd4cfe1ebbe07acf85e851795cb870d4db7c17fb1677177c99e38a5747",
+"how": "commit search"
+},
+{
+"program": "phNX2ZY31wq9NCXMfY9ptouoqB3Mor8oe3QE96V6QKn",
+"repo": "https://github.com/Ellipsis-Labs/phoenix-v1",
+"commit": "dac82fef2b8862be04fa6710386f3e7485a31a48",
+"args": [],
+"runner": "macos-15-intel",
+"expect": "66b494dd4cfe1ebbe07acf85e851795cb870d4db7c17fb1677177c99e38a5747",
+"how": "commit search"
+},
+{
+"program": "phNX2ZY31wq9NCXMfY9ptouoqB3Mor8oe3QE96V6QKn",
+"repo": "https://github.com/Ellipsis-Labs/phoenix-v1",
+"commit": "620f8fdef9973a12caefd3e683c35c66b9e0c939",
+"args": [],
+"runner": "macos-15",
+"expect": "66b494dd4cfe1ebbe07acf85e851795cb870d4db7c17fb1677177c99e38a5747",
+"how": "commit search"
+},
+{
+"program": "phNX2ZY31wq9NCXMfY9ptouoqB3Mor8oe3QE96V6QKn",
+"repo": "https://github.com/Ellipsis-Labs/phoenix-v1",
+"commit": "620f8fdef9973a12caefd3e683c35c66b9e0c939",
+"args": [],
+"runner": "macos-15-intel",
+"expect": "66b494dd4cfe1ebbe07acf85e851795cb870d4db7c17fb1677177c99e38a5747",
+"how": "commit search"
+},
+{
+"program": "phNX2ZY31wq9NCXMfY9ptouoqB3Mor8oe3QE96V6QKn",
+"repo": "https://github.com/Ellipsis-Labs/phoenix-v1",
+"commit": "c16694d4f5f8ebd650799ada4853fde1637d4909",
+"args": [],
+"runner": "macos-15",
+"expect": "66b494dd4cfe1ebbe07acf85e851795cb870d4db7c17fb1677177c99e38a5747",
+"how": "commit search"
+},
+{
+"program": "phNX2ZY31wq9NCXMfY9ptouoqB3Mor8oe3QE96V6QKn",
+"repo": "https://github.com/Ellipsis-Labs/phoenix-v1",
+"commit": "c16694d4f5f8ebd650799ada4853fde1637d4909",
+"args": [],
+"runner": "macos-15-intel",
+"expect": "66b494dd4cfe1ebbe07acf85e851795cb870d4db7c17fb1677177c99e38a5747",
+"how": "commit search"
+},
+{
+"program": "phNX2ZY31wq9NCXMfY9ptouoqB3Mor8oe3QE96V6QKn",
+"repo": "https://github.com/Ellipsis-Labs/phoenix-v1",
+"commit": "4a8489887396a04bdc9de82c2fa05da52b9271e3",
+"args": [],
+"runner": "macos-15",
+"expect": "66b494dd4cfe1ebbe07acf85e851795cb870d4db7c17fb1677177c99e38a5747",
+"how": "commit search"
+},
+{
+"program": "phNX2ZY31wq9NCXMfY9ptouoqB3Mor8oe3QE96V6QKn",
+"repo": "https://github.com/Ellipsis-Labs/phoenix-v1",
+"commit": "4a8489887396a04bdc9de82c2fa05da52b9271e3",
+"args": [],
+"runner": "macos-15-intel",
+"expect": "66b494dd4cfe1ebbe07acf85e851795cb870d4db7c17fb1677177c99e38a5747",
+"how": "commit search"
+},
+{
+"program": "phNX2ZY31wq9NCXMfY9ptouoqB3Mor8oe3QE96V6QKn",
+"repo": "https://github.com/Ellipsis-Labs/phoenix-v1",
+"commit": "0610731ae6e901bd1eed384f07c7bdae4048c26c",
+"args": [],
+"runner": "macos-15",
+"expect": "66b494dd4cfe1ebbe07acf85e851795cb870d4db7c17fb1677177c99e38a5747",
+"how": "commit search"
+},
+{
+"program": "phNX2ZY31wq9NCXMfY9ptouoqB3Mor8oe3QE96V6QKn",
+"repo": "https://github.com/Ellipsis-Labs/phoenix-v1",
+"commit": "0610731ae6e901bd1eed384f07c7bdae4048c26c",
+"args": [],
+"runner": "macos-15-intel",
+"expect": "66b494dd4cfe1ebbe07acf85e851795cb870d4db7c17fb1677177c99e38a5747",
+"how": "commit search"
+},
+{
+"program": "phNX2ZY31wq9NCXMfY9ptouoqB3Mor8oe3QE96V6QKn",
+"repo": "https://github.com/Ellipsis-Labs/phoenix-v1",
+"commit": "3d09bc831e3d5711b295fcbe5619cd90d45cbcd9",
+"args": [],
+"runner": "macos-15",
+"expect": "66b494dd4cfe1ebbe07acf85e851795cb870d4db7c17fb1677177c99e38a5747",
+"how": "commit search"
+},
+{
+"program": "phNX2ZY31wq9NCXMfY9ptouoqB3Mor8oe3QE96V6QKn",
+"repo": "https://github.com/Ellipsis-Labs/phoenix-v1",
+"commit": "3d09bc831e3d5711b295fcbe5619cd90d45cbcd9",
+"args": [],
+"runner": "macos-15-intel",
+"expect": "66b494dd4cfe1ebbe07acf85e851795cb870d4db7c17fb1677177c99e38a5747",
+"how": "commit search"
+},
+{
+"program": "phNX2ZY31wq9NCXMfY9ptouoqB3Mor8oe3QE96V6QKn",
+"repo": "https://github.com/Ellipsis-Labs/phoenix-v1",
+"commit": "1bdb4f35ba76397f152da0575b22c9e215e66e33",
+"args": [],
+"runner": "macos-15",
+"expect": "66b494dd4cfe1ebbe07acf85e851795cb870d4db7c17fb1677177c99e38a5747",
+"how": "commit search"
+},
+{
+"program": "phNX2ZY31wq9NCXMfY9ptouoqB3Mor8oe3QE96V6QKn",
+"repo": "https://github.com/Ellipsis-Labs/phoenix-v1",
+"commit": "1bdb4f35ba76397f152da0575b22c9e215e66e33",
+"args": [],
+"runner": "macos-15-intel",
+"expect": "66b494dd4cfe1ebbe07acf85e851795cb870d4db7c17fb1677177c99e38a5747",
+"how": "commit search"
+},
+{
+"program": "phNX2ZY31wq9NCXMfY9ptouoqB3Mor8oe3QE96V6QKn",
+"repo": "https://github.com/Ellipsis-Labs/phoenix-v1",
+"commit": "ee9cc0333fbab6ee20861e51201951b3e9c38dc9",
+"args": [],
+"runner": "macos-15",
+"expect": "66b494dd4cfe1ebbe07acf85e851795cb870d4db7c17fb1677177c99e38a5747",
+"how": "commit search"
+},
+{
+"program": "phNX2ZY31wq9NCXMfY9ptouoqB3Mor8oe3QE96V6QKn",
+"repo": "https://github.com/Ellipsis-Labs/phoenix-v1",
+"commit": "ee9cc0333fbab6ee20861e51201951b3e9c38dc9",
+"args": [],
+"runner": "macos-15-intel",
+"expect": "66b494dd4cfe1ebbe07acf85e851795cb870d4db7c17fb1677177c99e38a5747",
+"how": "commit search"
+},
+{
+"program": "wMNFSTkir3HgyZTsB7uqu3i7FA73grFCptPXgrZjksL",
+"repo": "https://github.com/Bonasa-Tech/manifest",
+"commit": "5960fa1b3356bcb4222da3d7781055d83d02169d",
+"args": [],
+"runner": "macos-15",
+"expect": "2841e6f89d49db50c80780684395536d50f227d8a661ce97b0b3e036d496cc3e",
+"how": "commit search"
+},
+{
+"program": "wMNFSTkir3HgyZTsB7uqu3i7FA73grFCptPXgrZjksL",
+"repo": "https://github.com/Bonasa-Tech/manifest",
+"commit": "553590006f5d7c8e3d9caabbd501866be01c54b8",
+"args": [],
+"runner": "macos-15",
+"expect": "2841e6f89d49db50c80780684395536d50f227d8a661ce97b0b3e036d496cc3e",
+"how": "commit search"
+},
+{
+"program": "wMNFSTkir3HgyZTsB7uqu3i7FA73grFCptPXgrZjksL",
+"repo": "https://github.com/Bonasa-Tech/manifest",
+"commit": "5b2ca7848e1f2e2d83fb80d0aa290d70363adec5",
+"args": [],
+"runner": "macos-15",
+"expect": "2841e6f89d49db50c80780684395536d50f227d8a661ce97b0b3e036d496cc3e",
+"how": "commit search"
+},
+{
+"program": "wMNFSTkir3HgyZTsB7uqu3i7FA73grFCptPXgrZjksL",
+"repo": "https://github.com/Bonasa-Tech/manifest",
+"commit": "a145525c0396c523b5d39ce9b60aeda4b2c22af9",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "2841e6f89d49db50c80780684395536d50f227d8a661ce97b0b3e036d496cc3e",
+"how": "commit search"
+},
+{
+"program": "wMNFSTkir3HgyZTsB7uqu3i7FA73grFCptPXgrZjksL",
+"repo": "https://github.com/Bonasa-Tech/manifest",
+"commit": "a145525c0396c523b5d39ce9b60aeda4b2c22af9",
+"args": [],
+"runner": "macos-15",
+"expect": "2841e6f89d49db50c80780684395536d50f227d8a661ce97b0b3e036d496cc3e",
+"how": "commit search"
+},
+{
+"program": "wMNFSTkir3HgyZTsB7uqu3i7FA73grFCptPXgrZjksL",
+"repo": "https://github.com/Bonasa-Tech/manifest",
+"commit": "5718d3eed80fa7472a826f346c0668644ff32138",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "2841e6f89d49db50c80780684395536d50f227d8a661ce97b0b3e036d496cc3e",
+"how": "commit search"
+},
+{
+"program": "wMNFSTkir3HgyZTsB7uqu3i7FA73grFCptPXgrZjksL",
+"repo": "https://github.com/Bonasa-Tech/manifest",
+"commit": "5718d3eed80fa7472a826f346c0668644ff32138",
+"args": [],
+"runner": "macos-15",
+"expect": "2841e6f89d49db50c80780684395536d50f227d8a661ce97b0b3e036d496cc3e",
+"how": "commit search"
+},
+{
+"program": "wMNFSTkir3HgyZTsB7uqu3i7FA73grFCptPXgrZjksL",
+"repo": "https://github.com/Bonasa-Tech/manifest",
+"commit": "060fff47b60cf3f35eb7a851dbfe247f715205fc",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "2841e6f89d49db50c80780684395536d50f227d8a661ce97b0b3e036d496cc3e",
+"how": "commit search"
+},
+{
+"program": "wMNFSTkir3HgyZTsB7uqu3i7FA73grFCptPXgrZjksL",
+"repo": "https://github.com/Bonasa-Tech/manifest",
+"commit": "060fff47b60cf3f35eb7a851dbfe247f715205fc",
+"args": [],
+"runner": "macos-15",
+"expect": "2841e6f89d49db50c80780684395536d50f227d8a661ce97b0b3e036d496cc3e",
+"how": "commit search"
+},
+{
+"program": "wMNFSTkir3HgyZTsB7uqu3i7FA73grFCptPXgrZjksL",
+"repo": "https://github.com/Bonasa-Tech/manifest",
+"commit": "e8d152b69b07dc96f9b4bf9bb99a61153c880a70",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "2841e6f89d49db50c80780684395536d50f227d8a661ce97b0b3e036d496cc3e",
+"how": "commit search"
+},
+{
+"program": "wMNFSTkir3HgyZTsB7uqu3i7FA73grFCptPXgrZjksL",
+"repo": "https://github.com/Bonasa-Tech/manifest",
+"commit": "e8d152b69b07dc96f9b4bf9bb99a61153c880a70",
+"args": [],
+"runner": "macos-15",
+"expect": "2841e6f89d49db50c80780684395536d50f227d8a661ce97b0b3e036d496cc3e",
+"how": "commit search"
+},
+{
+"program": "wMNFSTkir3HgyZTsB7uqu3i7FA73grFCptPXgrZjksL",
+"repo": "https://github.com/Bonasa-Tech/manifest",
+"commit": "d1ea507507096f7989ce46c25deb75d1fa273a26",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "2841e6f89d49db50c80780684395536d50f227d8a661ce97b0b3e036d496cc3e",
+"how": "commit search"
+},
+{
+"program": "wMNFSTkir3HgyZTsB7uqu3i7FA73grFCptPXgrZjksL",
+"repo": "https://github.com/Bonasa-Tech/manifest",
+"commit": "d1ea507507096f7989ce46c25deb75d1fa273a26",
+"args": [],
+"runner": "macos-15",
+"expect": "2841e6f89d49db50c80780684395536d50f227d8a661ce97b0b3e036d496cc3e",
+"how": "commit search"
+},
+{
+"program": "wMNFSTkir3HgyZTsB7uqu3i7FA73grFCptPXgrZjksL",
+"repo": "https://github.com/Bonasa-Tech/manifest",
+"commit": "e86e640ea1b69c461e30a07bf8b86ab657bb696a",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "2841e6f89d49db50c80780684395536d50f227d8a661ce97b0b3e036d496cc3e",
+"how": "commit search"
+},
+{
+"program": "wMNFSTkir3HgyZTsB7uqu3i7FA73grFCptPXgrZjksL",
+"repo": "https://github.com/Bonasa-Tech/manifest",
+"commit": "e86e640ea1b69c461e30a07bf8b86ab657bb696a",
+"args": [],
+"runner": "macos-15",
+"expect": "2841e6f89d49db50c80780684395536d50f227d8a661ce97b0b3e036d496cc3e",
+"how": "commit search"
+},
+{
+"program": "wMNFSTkir3HgyZTsB7uqu3i7FA73grFCptPXgrZjksL",
+"repo": "https://github.com/Bonasa-Tech/manifest",
+"commit": "f1875a0f8e6deb2519d05740b83454b55094718e",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "2841e6f89d49db50c80780684395536d50f227d8a661ce97b0b3e036d496cc3e",
+"how": "commit search"
+},
+{
+"program": "wMNFSTkir3HgyZTsB7uqu3i7FA73grFCptPXgrZjksL",
+"repo": "https://github.com/Bonasa-Tech/manifest",
+"commit": "f1875a0f8e6deb2519d05740b83454b55094718e",
+"args": [],
+"runner": "macos-15",
+"expect": "2841e6f89d49db50c80780684395536d50f227d8a661ce97b0b3e036d496cc3e",
+"how": "commit search"
+},
+{
+"program": "rKtiPTD7WuCdEEQ2JXWgAmZHHL9iZLc3niCXwtS7wSH",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "666f7939c246a1dd93f5954f1ade460bba4aa9a7",
+"args": [],
+"runner": "macos-15",
+"expect": "b3fcedfab149f1d3c1261e260556e767196c20ab015d2484335af51fd4332969",
+"how": "commit search"
+},
+{
+"program": "rKtiPTD7WuCdEEQ2JXWgAmZHHL9iZLc3niCXwtS7wSH",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "3db57a1b59205a7f616c304fcd4ec4418b9de379",
+"args": [],
+"runner": "macos-15",
+"expect": "b3fcedfab149f1d3c1261e260556e767196c20ab015d2484335af51fd4332969",
+"how": "commit search"
+},
+{
+"program": "rKtiPTD7WuCdEEQ2JXWgAmZHHL9iZLc3niCXwtS7wSH",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "424e49a5ec2a6a97dc05128f483b61486eec9615",
+"args": [],
+"runner": "macos-15",
+"expect": "b3fcedfab149f1d3c1261e260556e767196c20ab015d2484335af51fd4332969",
+"how": "commit search"
+},
+{
+"program": "rKtiPTD7WuCdEEQ2JXWgAmZHHL9iZLc3niCXwtS7wSH",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "1fca4c633daa9d04ea711b163b337d3f05da578a",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "b3fcedfab149f1d3c1261e260556e767196c20ab015d2484335af51fd4332969",
+"how": "commit search"
+},
+{
+"program": "rKtiPTD7WuCdEEQ2JXWgAmZHHL9iZLc3niCXwtS7wSH",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "1fca4c633daa9d04ea711b163b337d3f05da578a",
+"args": [],
+"runner": "macos-15",
+"expect": "b3fcedfab149f1d3c1261e260556e767196c20ab015d2484335af51fd4332969",
+"how": "commit search"
+},
+{
+"program": "rKtiPTD7WuCdEEQ2JXWgAmZHHL9iZLc3niCXwtS7wSH",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "f54312626540ec1bd4795e17023c7d92bb955272",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "b3fcedfab149f1d3c1261e260556e767196c20ab015d2484335af51fd4332969",
+"how": "commit search"
+},
+{
+"program": "rKtiPTD7WuCdEEQ2JXWgAmZHHL9iZLc3niCXwtS7wSH",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "f54312626540ec1bd4795e17023c7d92bb955272",
+"args": [],
+"runner": "macos-15",
+"expect": "b3fcedfab149f1d3c1261e260556e767196c20ab015d2484335af51fd4332969",
+"how": "commit search"
+},
+{
+"program": "rKtiPTD7WuCdEEQ2JXWgAmZHHL9iZLc3niCXwtS7wSH",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "0517ba4aff28cd0bc809c2fb1be153ea7d2ea72a",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "b3fcedfab149f1d3c1261e260556e767196c20ab015d2484335af51fd4332969",
+"how": "commit search"
+},
+{
+"program": "rKtiPTD7WuCdEEQ2JXWgAmZHHL9iZLc3niCXwtS7wSH",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "0517ba4aff28cd0bc809c2fb1be153ea7d2ea72a",
+"args": [],
+"runner": "macos-15",
+"expect": "b3fcedfab149f1d3c1261e260556e767196c20ab015d2484335af51fd4332969",
+"how": "commit search"
+},
+{
+"program": "rKtiPTD7WuCdEEQ2JXWgAmZHHL9iZLc3niCXwtS7wSH",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "2a676d52e7019a981ada7db43d862b642ba3c804",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "b3fcedfab149f1d3c1261e260556e767196c20ab015d2484335af51fd4332969",
+"how": "commit search"
+},
+{
+"program": "rKtiPTD7WuCdEEQ2JXWgAmZHHL9iZLc3niCXwtS7wSH",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "2a676d52e7019a981ada7db43d862b642ba3c804",
+"args": [],
+"runner": "macos-15",
+"expect": "b3fcedfab149f1d3c1261e260556e767196c20ab015d2484335af51fd4332969",
+"how": "commit search"
+},
+{
+"program": "rKtiPTD7WuCdEEQ2JXWgAmZHHL9iZLc3niCXwtS7wSH",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "9057427b097da09cdc560cb1b93c6b6c17576ba9",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "b3fcedfab149f1d3c1261e260556e767196c20ab015d2484335af51fd4332969",
+"how": "commit search"
+},
+{
+"program": "rKtiPTD7WuCdEEQ2JXWgAmZHHL9iZLc3niCXwtS7wSH",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "9057427b097da09cdc560cb1b93c6b6c17576ba9",
+"args": [],
+"runner": "macos-15",
+"expect": "b3fcedfab149f1d3c1261e260556e767196c20ab015d2484335af51fd4332969",
+"how": "commit search"
+},
+{
+"program": "rKtiPTD7WuCdEEQ2JXWgAmZHHL9iZLc3niCXwtS7wSH",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "f2f1bf4cbee0c1e703a1a53fe7e0109ada32df4b",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "b3fcedfab149f1d3c1261e260556e767196c20ab015d2484335af51fd4332969",
+"how": "commit search"
+},
+{
+"program": "rKtiPTD7WuCdEEQ2JXWgAmZHHL9iZLc3niCXwtS7wSH",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "f2f1bf4cbee0c1e703a1a53fe7e0109ada32df4b",
+"args": [],
+"runner": "macos-15",
+"expect": "b3fcedfab149f1d3c1261e260556e767196c20ab015d2484335af51fd4332969",
+"how": "commit search"
+},
+{
+"program": "rKtiPTD7WuCdEEQ2JXWgAmZHHL9iZLc3niCXwtS7wSH",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "95ccb5ed3139d5ea3de5660d13fed77b3a302ffc",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "b3fcedfab149f1d3c1261e260556e767196c20ab015d2484335af51fd4332969",
+"how": "commit search"
+},
+{
+"program": "rKtiPTD7WuCdEEQ2JXWgAmZHHL9iZLc3niCXwtS7wSH",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "95ccb5ed3139d5ea3de5660d13fed77b3a302ffc",
+"args": [],
+"runner": "macos-15",
+"expect": "b3fcedfab149f1d3c1261e260556e767196c20ab015d2484335af51fd4332969",
+"how": "commit search"
+},
+{
+"program": "BhPX57KrPjLUfragt83v8rMwvkiEUT5pzwfNZLqVJgip",
+"repo": "https://github.com/raydium-io/raydium-cp-swap",
+"commit": "78f254e1023751e706df7dc15c453fc3e046697c",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "e62ce50ffaf954203a73f9bb5aee7e3bbe378145e44d6735831243e09e3f84e4",
+"how": "commit search"
+},
+{
+"program": "BhPX57KrPjLUfragt83v8rMwvkiEUT5pzwfNZLqVJgip",
+"repo": "https://github.com/raydium-io/raydium-cp-swap",
+"commit": "609780f165d234a0aa9699cac90178a3fa36fd43",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "e62ce50ffaf954203a73f9bb5aee7e3bbe378145e44d6735831243e09e3f84e4",
+"how": "commit search"
+},
+{
+"program": "BhPX57KrPjLUfragt83v8rMwvkiEUT5pzwfNZLqVJgip",
+"repo": "https://github.com/raydium-io/raydium-cp-swap",
+"commit": "367e65953b1b03b6110af7fd5a0dc3dbc32f6d53",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "e62ce50ffaf954203a73f9bb5aee7e3bbe378145e44d6735831243e09e3f84e4",
+"how": "commit search"
+},
+{
+"program": "BhPX57KrPjLUfragt83v8rMwvkiEUT5pzwfNZLqVJgip",
+"repo": "https://github.com/raydium-io/raydium-cp-swap",
+"commit": "ec3b20ddf74d4f3c69f6ac475fde85755a57b0e6",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "e62ce50ffaf954203a73f9bb5aee7e3bbe378145e44d6735831243e09e3f84e4",
+"how": "commit search"
+},
+{
+"program": "BhPX57KrPjLUfragt83v8rMwvkiEUT5pzwfNZLqVJgip",
+"repo": "https://github.com/raydium-io/raydium-cp-swap",
+"commit": "b0b2a08ff69f3d8e999efa07e7a14b9d9f0ff02b",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "e62ce50ffaf954203a73f9bb5aee7e3bbe378145e44d6735831243e09e3f84e4",
+"how": "commit search"
+},
+{
+"program": "BhPX57KrPjLUfragt83v8rMwvkiEUT5pzwfNZLqVJgip",
+"repo": "https://github.com/raydium-io/raydium-cp-swap",
+"commit": "0011e63ab98c3bce705560652dfd33b21a1ba228",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "e62ce50ffaf954203a73f9bb5aee7e3bbe378145e44d6735831243e09e3f84e4",
+"how": "commit search"
+},
+{
+"program": "BhPX57KrPjLUfragt83v8rMwvkiEUT5pzwfNZLqVJgip",
+"repo": "https://github.com/raydium-io/raydium-cp-swap",
+"commit": "1b196da2d680c51ff729fe6d4c8568dd5ea2a41e",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "e62ce50ffaf954203a73f9bb5aee7e3bbe378145e44d6735831243e09e3f84e4",
+"how": "commit search"
+},
+{
+"program": "HSb5uXJCHD7cBR5XGV1esRNwTQkpF49cg8gKjA468ek8",
+"repo": "https://github.com/raydium-io/raydium-amm",
+"commit": "78c6a81dee65ad93cb7e5d37acc94e66a869684f",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "296fe700b42814b9e92f7358f3bafe69715661ee8fcf4b47fbd8f1ff254e26be",
+"how": "commit search"
+},
+{
+"program": "HSb5uXJCHD7cBR5XGV1esRNwTQkpF49cg8gKjA468ek8",
+"repo": "https://github.com/raydium-io/raydium-amm",
+"commit": "2748852a7981c2b6909e07e10b1325669fbb9195",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "296fe700b42814b9e92f7358f3bafe69715661ee8fcf4b47fbd8f1ff254e26be",
+"how": "commit search"
+},
+{
+"program": "HSb5uXJCHD7cBR5XGV1esRNwTQkpF49cg8gKjA468ek8",
+"repo": "https://github.com/raydium-io/raydium-amm",
+"commit": "2cda26883a44e536c6e48eed319e1206afde7a75",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "296fe700b42814b9e92f7358f3bafe69715661ee8fcf4b47fbd8f1ff254e26be",
+"how": "commit search"
+},
+{
+"program": "HSb5uXJCHD7cBR5XGV1esRNwTQkpF49cg8gKjA468ek8",
+"repo": "https://github.com/raydium-io/raydium-amm",
+"commit": "d10a8e9fab9f7a3d87b4ae3891e3e4c24b75c041",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "296fe700b42814b9e92f7358f3bafe69715661ee8fcf4b47fbd8f1ff254e26be",
+"how": "commit search"
+},
+{
+"program": "HSb5uXJCHD7cBR5XGV1esRNwTQkpF49cg8gKjA468ek8",
+"repo": "https://github.com/raydium-io/raydium-amm",
+"commit": "a0fa15cdd91673271fbb46f339c3b908c101ff8f",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "296fe700b42814b9e92f7358f3bafe69715661ee8fcf4b47fbd8f1ff254e26be",
+"how": "commit search"
+},
+{
+"program": "HSb5uXJCHD7cBR5XGV1esRNwTQkpF49cg8gKjA468ek8",
+"repo": "https://github.com/raydium-io/raydium-amm",
+"commit": "b1d59c0e57c4f639683c3256f4b0b481efa51866",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "296fe700b42814b9e92f7358f3bafe69715661ee8fcf4b47fbd8f1ff254e26be",
+"how": "commit search"
+},
+{
+"program": "HSb5uXJCHD7cBR5XGV1esRNwTQkpF49cg8gKjA468ek8",
+"repo": "https://github.com/raydium-io/raydium-amm",
+"commit": "b9d9babfdbe48852eb97ad847c6fd68c5b013a0b",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "296fe700b42814b9e92f7358f3bafe69715661ee8fcf4b47fbd8f1ff254e26be",
+"how": "commit search"
+},
+{
+"program": "FfHZmEAZm9RyygvPN9rY4kZkQbrEXj5W1Tih3cGegU1",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "2b3b1f23a5f5f64a7e389a5a6e927fb0f023d308",
+"args": [],
+"runner": "macos-15",
+"expect": "1f2e421ee9601e7b91b0fa28becb9f486bfea9fdc2984083a606741a7197b722",
+"how": "commit search"
+},
+{
+"program": "FfHZmEAZm9RyygvPN9rY4kZkQbrEXj5W1Tih3cGegU1",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "7a176deba0f0b97e9f52dd0c8fa8030dfcac7e95",
+"args": [],
+"runner": "macos-15",
+"expect": "1f2e421ee9601e7b91b0fa28becb9f486bfea9fdc2984083a606741a7197b722",
+"how": "commit search"
+},
+{
+"program": "FfHZmEAZm9RyygvPN9rY4kZkQbrEXj5W1Tih3cGegU1",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "be0f9feb5503d246f3d71d7d641cc325c8ec2e08",
+"args": [],
+"runner": "macos-15",
+"expect": "1f2e421ee9601e7b91b0fa28becb9f486bfea9fdc2984083a606741a7197b722",
+"how": "commit search"
+},
+{
+"program": "2m3jVcaHWoSPe4dJNPHZXp588Bhh4fh4mFpfgcqbQNz9",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "2b3b1f23a5f5f64a7e389a5a6e927fb0f023d308",
+"args": [],
+"runner": "macos-15",
+"expect": "8b88b1898356429740ab7f501e097deef8e2e039d1a7b514e4873a3c3b2349dc",
+"how": "commit search"
+},
+{
+"program": "2m3jVcaHWoSPe4dJNPHZXp588Bhh4fh4mFpfgcqbQNz9",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "7a176deba0f0b97e9f52dd0c8fa8030dfcac7e95",
+"args": [],
+"runner": "macos-15",
+"expect": "8b88b1898356429740ab7f501e097deef8e2e039d1a7b514e4873a3c3b2349dc",
+"how": "commit search"
+},
+{
+"program": "2m3jVcaHWoSPe4dJNPHZXp588Bhh4fh4mFpfgcqbQNz9",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "be0f9feb5503d246f3d71d7d641cc325c8ec2e08",
+"args": [],
+"runner": "macos-15",
+"expect": "8b88b1898356429740ab7f501e097deef8e2e039d1a7b514e4873a3c3b2349dc",
+"how": "commit search"
+},
+{
+"program": "4PGcu4SonW3t8jo6V4uzzmTthFg8spDJdC8ANYZNwhog",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "2b3b1f23a5f5f64a7e389a5a6e927fb0f023d308",
+"args": [],
+"runner": "macos-15",
+"expect": "0809d64eae99411ac4314a228ef296f8458199ceb34e82b0f6c013c3eb730e74",
+"how": "commit search"
+},
+{
+"program": "4PGcu4SonW3t8jo6V4uzzmTthFg8spDJdC8ANYZNwhog",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "7a176deba0f0b97e9f52dd0c8fa8030dfcac7e95",
+"args": [],
+"runner": "macos-15",
+"expect": "0809d64eae99411ac4314a228ef296f8458199ceb34e82b0f6c013c3eb730e74",
+"how": "commit search"
+},
+{
+"program": "4PGcu4SonW3t8jo6V4uzzmTthFg8spDJdC8ANYZNwhog",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "be0f9feb5503d246f3d71d7d641cc325c8ec2e08",
+"args": [],
+"runner": "macos-15",
+"expect": "0809d64eae99411ac4314a228ef296f8458199ceb34e82b0f6c013c3eb730e74",
+"how": "commit search"
+},
+{
+"program": "bZbg2i9RhaQg2mEwYDRdrtacQZWKuiioRUmTzmNpu4D",
+"repo": "https://github.com/blockworks-foundation/autobahn",
+"commit": "78167c7bd4c284a0ecbef0032e89df562714ad7b",
+"args": [],
+"runner": "macos-15",
+"expect": "4b8982155c675a2a131ce7512d3fbf852edac68d25d87d86ec63df921ef30fa1",
+"how": "commit search"
+},
+{
+"program": "bZbg2i9RhaQg2mEwYDRdrtacQZWKuiioRUmTzmNpu4D",
+"repo": "https://github.com/blockworks-foundation/autobahn",
+"commit": "78167c7bd4c284a0ecbef0032e89df562714ad7b",
+"args": [],
+"runner": "macos-15-intel",
+"expect": "4b8982155c675a2a131ce7512d3fbf852edac68d25d87d86ec63df921ef30fa1",
+"how": "commit search"
+},
+{
+"program": "bZbg2i9RhaQg2mEwYDRdrtacQZWKuiioRUmTzmNpu4D",
+"repo": "https://github.com/blockworks-foundation/autobahn",
+"commit": "05f6125440790762ed96d0ddca353efeb00900ec",
+"args": [],
+"runner": "macos-15",
+"expect": "4b8982155c675a2a131ce7512d3fbf852edac68d25d87d86ec63df921ef30fa1",
+"how": "commit search"
+},
+{
+"program": "bZbg2i9RhaQg2mEwYDRdrtacQZWKuiioRUmTzmNpu4D",
+"repo": "https://github.com/blockworks-foundation/autobahn",
+"commit": "05f6125440790762ed96d0ddca353efeb00900ec",
+"args": [],
+"runner": "macos-15-intel",
+"expect": "4b8982155c675a2a131ce7512d3fbf852edac68d25d87d86ec63df921ef30fa1",
+"how": "commit search"
+},
+{
+"program": "bZbg2i9RhaQg2mEwYDRdrtacQZWKuiioRUmTzmNpu4D",
+"repo": "https://github.com/blockworks-foundation/autobahn",
+"commit": "6608fc804a724016af2e7e40c20824d377bfa02a",
+"args": [],
+"runner": "macos-15",
+"expect": "4b8982155c675a2a131ce7512d3fbf852edac68d25d87d86ec63df921ef30fa1",
+"how": "commit search"
+},
+{
+"program": "bZbg2i9RhaQg2mEwYDRdrtacQZWKuiioRUmTzmNpu4D",
+"repo": "https://github.com/blockworks-foundation/autobahn",
+"commit": "6608fc804a724016af2e7e40c20824d377bfa02a",
+"args": [],
+"runner": "macos-15-intel",
+"expect": "4b8982155c675a2a131ce7512d3fbf852edac68d25d87d86ec63df921ef30fa1",
+"how": "commit search"
+},
+{
+"program": "bZbg2i9RhaQg2mEwYDRdrtacQZWKuiioRUmTzmNpu4D",
+"repo": "https://github.com/blockworks-foundation/autobahn",
+"commit": "ddee5464cbf344938bb530b4c1af4633b312a1a1",
+"args": [],
+"runner": "macos-15",
+"expect": "4b8982155c675a2a131ce7512d3fbf852edac68d25d87d86ec63df921ef30fa1",
+"how": "commit search"
+},
+{
+"program": "bZbg2i9RhaQg2mEwYDRdrtacQZWKuiioRUmTzmNpu4D",
+"repo": "https://github.com/blockworks-foundation/autobahn",
+"commit": "ddee5464cbf344938bb530b4c1af4633b312a1a1",
+"args": [],
+"runner": "macos-15-intel",
+"expect": "4b8982155c675a2a131ce7512d3fbf852edac68d25d87d86ec63df921ef30fa1",
+"how": "commit search"
+},
+{
+"program": "bZbg2i9RhaQg2mEwYDRdrtacQZWKuiioRUmTzmNpu4D",
+"repo": "https://github.com/blockworks-foundation/autobahn",
+"commit": "44c791a27426def0a4895a4a69c71196f7ecc8c8",
+"args": [],
+"runner": "macos-15",
+"expect": "4b8982155c675a2a131ce7512d3fbf852edac68d25d87d86ec63df921ef30fa1",
+"how": "commit search"
+},
+{
+"program": "bZbg2i9RhaQg2mEwYDRdrtacQZWKuiioRUmTzmNpu4D",
+"repo": "https://github.com/blockworks-foundation/autobahn",
+"commit": "44c791a27426def0a4895a4a69c71196f7ecc8c8",
+"args": [],
+"runner": "macos-15-intel",
+"expect": "4b8982155c675a2a131ce7512d3fbf852edac68d25d87d86ec63df921ef30fa1",
+"how": "commit search"
+},
+{
+"program": "bZbg2i9RhaQg2mEwYDRdrtacQZWKuiioRUmTzmNpu4D",
+"repo": "https://github.com/blockworks-foundation/autobahn",
+"commit": "465a60160030356383a9465a3d17ddded23ead0b",
+"args": [],
+"runner": "macos-15",
+"expect": "4b8982155c675a2a131ce7512d3fbf852edac68d25d87d86ec63df921ef30fa1",
+"how": "commit search"
+},
+{
+"program": "bZbg2i9RhaQg2mEwYDRdrtacQZWKuiioRUmTzmNpu4D",
+"repo": "https://github.com/blockworks-foundation/autobahn",
+"commit": "465a60160030356383a9465a3d17ddded23ead0b",
+"args": [],
+"runner": "macos-15-intel",
+"expect": "4b8982155c675a2a131ce7512d3fbf852edac68d25d87d86ec63df921ef30fa1",
+"how": "commit search"
+},
+{
+"program": "bZbg2i9RhaQg2mEwYDRdrtacQZWKuiioRUmTzmNpu4D",
+"repo": "https://github.com/blockworks-foundation/autobahn",
+"commit": "fa5a08973f8dd10c78e9b0ff73a44814e3a8bc44",
+"args": [],
+"runner": "macos-15",
+"expect": "4b8982155c675a2a131ce7512d3fbf852edac68d25d87d86ec63df921ef30fa1",
+"how": "commit search"
+},
+{
+"program": "bZbg2i9RhaQg2mEwYDRdrtacQZWKuiioRUmTzmNpu4D",
+"repo": "https://github.com/blockworks-foundation/autobahn",
+"commit": "fa5a08973f8dd10c78e9b0ff73a44814e3a8bc44",
+"args": [],
+"runner": "macos-15-intel",
+"expect": "4b8982155c675a2a131ce7512d3fbf852edac68d25d87d86ec63df921ef30fa1",
+"how": "commit search"
+},
+{
+"program": "bZbg2i9RhaQg2mEwYDRdrtacQZWKuiioRUmTzmNpu4D",
+"repo": "https://github.com/blockworks-foundation/autobahn",
+"commit": "279aaf271f07b536dd7a203fc35c6b2662f834f2",
+"args": [],
+"runner": "macos-15",
+"expect": "4b8982155c675a2a131ce7512d3fbf852edac68d25d87d86ec63df921ef30fa1",
+"how": "commit search"
+},
+{
+"program": "bZbg2i9RhaQg2mEwYDRdrtacQZWKuiioRUmTzmNpu4D",
+"repo": "https://github.com/blockworks-foundation/autobahn",
+"commit": "279aaf271f07b536dd7a203fc35c6b2662f834f2",
+"args": [],
+"runner": "macos-15-intel",
+"expect": "4b8982155c675a2a131ce7512d3fbf852edac68d25d87d86ec63df921ef30fa1",
+"how": "commit search"
+},
+{
+"program": "bZbg2i9RhaQg2mEwYDRdrtacQZWKuiioRUmTzmNpu4D",
+"repo": "https://github.com/blockworks-foundation/autobahn",
+"commit": "2a409c73277f7e60ad85c8b05656fd7418e86c82",
+"args": [],
+"runner": "macos-15",
+"expect": "4b8982155c675a2a131ce7512d3fbf852edac68d25d87d86ec63df921ef30fa1",
+"how": "commit search"
+},
+{
+"program": "bZbg2i9RhaQg2mEwYDRdrtacQZWKuiioRUmTzmNpu4D",
+"repo": "https://github.com/blockworks-foundation/autobahn",
+"commit": "2a409c73277f7e60ad85c8b05656fd7418e86c82",
+"args": [],
+"runner": "macos-15-intel",
+"expect": "4b8982155c675a2a131ce7512d3fbf852edac68d25d87d86ec63df921ef30fa1",
+"how": "commit search"
+},
+{
+"program": "bZbg2i9RhaQg2mEwYDRdrtacQZWKuiioRUmTzmNpu4D",
+"repo": "https://github.com/blockworks-foundation/autobahn",
+"commit": "65a7a822bc000db288e5b11ed4eb2a644ce8080f",
+"args": [],
+"runner": "macos-15",
+"expect": "4b8982155c675a2a131ce7512d3fbf852edac68d25d87d86ec63df921ef30fa1",
+"how": "commit search"
+},
+{
+"program": "bZbg2i9RhaQg2mEwYDRdrtacQZWKuiioRUmTzmNpu4D",
+"repo": "https://github.com/blockworks-foundation/autobahn",
+"commit": "65a7a822bc000db288e5b11ed4eb2a644ce8080f",
+"args": [],
+"runner": "macos-15-intel",
+"expect": "4b8982155c675a2a131ce7512d3fbf852edac68d25d87d86ec63df921ef30fa1",
+"how": "commit search"
+},
+{
+"program": "2hYprFVnvKGQ74RyQznPhwRAVHZ78NP2dJQ6i8vVPofW",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "f2deda256d506c9d0bdc45022b5601aed392b0b0",
+"args": [],
+"runner": "macos-15",
+"expect": "46a3d5f5075b6270d89ec851f46f3bd55760d4474c54f6c24c9b7facd58a25d3",
+"how": "commit search"
+},
+{
+"program": "2hYprFVnvKGQ74RyQznPhwRAVHZ78NP2dJQ6i8vVPofW",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "ed870fe930175cc520e1f46cbf3c080761c5452c",
+"args": [],
+"runner": "macos-15",
+"expect": "46a3d5f5075b6270d89ec851f46f3bd55760d4474c54f6c24c9b7facd58a25d3",
+"how": "commit search"
+},
+{
+"program": "2hYprFVnvKGQ74RyQznPhwRAVHZ78NP2dJQ6i8vVPofW",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "e54cc4ac35d51149832871750963a6b5d947e15d",
+"args": [],
+"runner": "macos-15",
+"expect": "46a3d5f5075b6270d89ec851f46f3bd55760d4474c54f6c24c9b7facd58a25d3",
+"how": "commit search"
+},
+{
+"program": "2hYprFVnvKGQ74RyQznPhwRAVHZ78NP2dJQ6i8vVPofW",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "83cbd5d489f22c34d7c4a1a4743cc0a08314d0f6",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "46a3d5f5075b6270d89ec851f46f3bd55760d4474c54f6c24c9b7facd58a25d3",
+"how": "commit search"
+},
+{
+"program": "2hYprFVnvKGQ74RyQznPhwRAVHZ78NP2dJQ6i8vVPofW",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "83cbd5d489f22c34d7c4a1a4743cc0a08314d0f6",
+"args": [],
+"runner": "macos-15",
+"expect": "46a3d5f5075b6270d89ec851f46f3bd55760d4474c54f6c24c9b7facd58a25d3",
+"how": "commit search"
+},
+{
+"program": "2hYprFVnvKGQ74RyQznPhwRAVHZ78NP2dJQ6i8vVPofW",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "2b3b1f23a5f5f64a7e389a5a6e927fb0f023d308",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "46a3d5f5075b6270d89ec851f46f3bd55760d4474c54f6c24c9b7facd58a25d3",
+"how": "commit search"
+},
+{
+"program": "2hYprFVnvKGQ74RyQznPhwRAVHZ78NP2dJQ6i8vVPofW",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "2b3b1f23a5f5f64a7e389a5a6e927fb0f023d308",
+"args": [],
+"runner": "macos-15",
+"expect": "46a3d5f5075b6270d89ec851f46f3bd55760d4474c54f6c24c9b7facd58a25d3",
+"how": "commit search"
+},
+{
+"program": "2hYprFVnvKGQ74RyQznPhwRAVHZ78NP2dJQ6i8vVPofW",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "7a176deba0f0b97e9f52dd0c8fa8030dfcac7e95",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "46a3d5f5075b6270d89ec851f46f3bd55760d4474c54f6c24c9b7facd58a25d3",
+"how": "commit search"
+},
+{
+"program": "2hYprFVnvKGQ74RyQznPhwRAVHZ78NP2dJQ6i8vVPofW",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "7a176deba0f0b97e9f52dd0c8fa8030dfcac7e95",
+"args": [],
+"runner": "macos-15",
+"expect": "46a3d5f5075b6270d89ec851f46f3bd55760d4474c54f6c24c9b7facd58a25d3",
+"how": "commit search"
+},
+{
+"program": "2hYprFVnvKGQ74RyQznPhwRAVHZ78NP2dJQ6i8vVPofW",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "be0f9feb5503d246f3d71d7d641cc325c8ec2e08",
+"args": [],
+"runner": "ubuntu-latest",
+"expect": "46a3d5f5075b6270d89ec851f46f3bd55760d4474c54f6c24c9b7facd58a25d3",
+"how": "commit search"
+},
+{
+"program": "2hYprFVnvKGQ74RyQznPhwRAVHZ78NP2dJQ6i8vVPofW",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "be0f9feb5503d246f3d71d7d641cc325c8ec2e08",
+"args": [],
+"runner": "macos-15",
+"expect": "46a3d5f5075b6270d89ec851f46f3bd55760d4474c54f6c24c9b7facd58a25d3",
+"how": "commit search"
+},
+{
+"program": "FRxxeTHBMsdHpJ9oiHHSMpGFCJ2yNuxQcyQYkCJawTYh",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "2b3b1f23a5f5f64a7e389a5a6e927fb0f023d308",
+"args": [],
+"runner": "macos-15",
+"expect": "560c8ed71863527926c78f8105786bd608fe15adeeb27d3600239afd6724e479",
+"how": "commit search"
+},
+{
+"program": "FRxxeTHBMsdHpJ9oiHHSMpGFCJ2yNuxQcyQYkCJawTYh",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "7a176deba0f0b97e9f52dd0c8fa8030dfcac7e95",
+"args": [],
+"runner": "macos-15",
+"expect": "560c8ed71863527926c78f8105786bd608fe15adeeb27d3600239afd6724e479",
+"how": "commit search"
+},
+{
+"program": "FRxxeTHBMsdHpJ9oiHHSMpGFCJ2yNuxQcyQYkCJawTYh",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "be0f9feb5503d246f3d71d7d641cc325c8ec2e08",
+"args": [],
+"runner": "macos-15",
+"expect": "560c8ed71863527926c78f8105786bd608fe15adeeb27d3600239afd6724e479",
+"how": "commit search"
+},
+{
+"program": "tdcam4m5U74pEZQrsQ7fVAav4AUXXc6z8fkhvExfRVN",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "d5f9a167e99ee6797c31e0b91359d7993cb06305",
+"args": [
+"--mount-path",
+"programs/tuktuk-dca",
+"--workspace-path",
+"."
+],
+"runner": "ubuntu-latest",
+"expect": "ca87588ce39303196c86155793c62f5443e02ec80c27335ae40fefd038b96ee6",
+"how": "commit search"
+},
+{
+"program": "tdcam4m5U74pEZQrsQ7fVAav4AUXXc6z8fkhvExfRVN",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "41dce909e5dee97f02ae9f94c81612cbb79250cc",
+"args": [
+"--mount-path",
+"programs/tuktuk-dca",
+"--workspace-path",
+"."
+],
+"runner": "ubuntu-latest",
+"expect": "ca87588ce39303196c86155793c62f5443e02ec80c27335ae40fefd038b96ee6",
+"how": "commit search"
+},
+{
+"program": "tdcam4m5U74pEZQrsQ7fVAav4AUXXc6z8fkhvExfRVN",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "02e0531a8aab694beb31659040c9643e6c3750f0",
+"args": [
+"--mount-path",
+"programs/tuktuk-dca",
+"--workspace-path",
+"."
+],
+"runner": "ubuntu-latest",
+"expect": "ca87588ce39303196c86155793c62f5443e02ec80c27335ae40fefd038b96ee6",
+"how": "commit search"
+},
+{
+"program": "tdcam4m5U74pEZQrsQ7fVAav4AUXXc6z8fkhvExfRVN",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "4bafa5ac5fcd1b2ae1b15dd1d1abafbba156f69a",
+"args": [
+"--mount-path",
+"programs/tuktuk-dca",
+"--workspace-path",
+"."
+],
+"runner": "ubuntu-latest",
+"expect": "ca87588ce39303196c86155793c62f5443e02ec80c27335ae40fefd038b96ee6",
+"how": "commit search"
+}
+]
