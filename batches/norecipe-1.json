@@ -1,0 +1,2672 @@
+[
+ {
+  "program": "MarBmsSgKXdrN1egZf5sqe1TMai9K1rChYNDJgjq7aD",
+  "repo": "https://github.com/marinade-finance/liquid-staking-program",
+  "commit": "3e7c0904945a9fd6ddda6eddf10e19ab5b717a81",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "db89efca1670f85397f978e9a02f6c2806a9adaa17ebb5783e7e99eddcb26be3",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-07-16T14:33:16.000Z"
+ },
+ {
+  "program": "MarBmsSgKXdrN1egZf5sqe1TMai9K1rChYNDJgjq7aD",
+  "repo": "https://github.com/marinade-finance/liquid-staking-program",
+  "commit": "26147376b75d8c971963da458623e646f2795e15",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "db89efca1670f85397f978e9a02f6c2806a9adaa17ebb5783e7e99eddcb26be3",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-07-16T14:33:16.000Z"
+ },
+ {
+  "program": "MarBmsSgKXdrN1egZf5sqe1TMai9K1rChYNDJgjq7aD",
+  "repo": "https://github.com/marinade-finance/liquid-staking-program",
+  "commit": "dc43b02c5f779beddfcc490af31f5f5c1556855e",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "db89efca1670f85397f978e9a02f6c2806a9adaa17ebb5783e7e99eddcb26be3",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-07-16T14:33:16.000Z"
+ },
+ {
+  "program": "EKS4C6xvV9A5DMWaWtVnFvi7ru78EhqRAoddEMpQ2BtT",
+  "repo": "https://github.com/fomotsar-commits/tegridy-farms",
+  "commit": "6887e12ac5b932fbcddfa8c607bcf7a9c1f6e8fa",
+  "args": [
+   "--mount-path",
+   "solana/tegridy-amm",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "d61e2bbff031b8a61fb96414a403af85b6a4b1dbde11b48516fdb860bb2dc574",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-29T15:52:11.000Z"
+ },
+ {
+  "program": "EKS4C6xvV9A5DMWaWtVnFvi7ru78EhqRAoddEMpQ2BtT",
+  "repo": "https://github.com/fomotsar-commits/tegridy-farms",
+  "commit": "91ac8a58514d5f6ab882f54906b0d636ffeda703",
+  "args": [
+   "--mount-path",
+   "solana/tegridy-amm",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "d61e2bbff031b8a61fb96414a403af85b6a4b1dbde11b48516fdb860bb2dc574",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-29T15:52:11.000Z"
+ },
+ {
+  "program": "EKS4C6xvV9A5DMWaWtVnFvi7ru78EhqRAoddEMpQ2BtT",
+  "repo": "https://github.com/fomotsar-commits/tegridy-farms",
+  "commit": "737f4583a748b096ab671a6b088974a8d03aa041",
+  "args": [
+   "--mount-path",
+   "solana/tegridy-amm",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "d61e2bbff031b8a61fb96414a403af85b6a4b1dbde11b48516fdb860bb2dc574",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-29T15:52:11.000Z"
+ },
+ {
+  "program": "2CdzdzR1hj6w1ZjXLgvk3o2Saq5sXd1ufQ3Toww4PPHQ",
+  "repo": "https://github.com/Gliana-Labs/gliana-agent-mobile",
+  "commit": "46031320fe64c17dd035749c022b5b3d2ced7dfe",
+  "args": [
+   "--mount-path",
+   "program/arena",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "1a3e2032407d80089f4a1c789bf5739c22616f7f4a3b8fd856652ccefde05804",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-02T20:10:43.000Z"
+ },
+ {
+  "program": "2CdzdzR1hj6w1ZjXLgvk3o2Saq5sXd1ufQ3Toww4PPHQ",
+  "repo": "https://github.com/Gliana-Labs/gliana-agent-mobile",
+  "commit": "ee11c8bdc6f0f1f4e3026ecbbd574464d9000aa4",
+  "args": [
+   "--mount-path",
+   "program/arena",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "1a3e2032407d80089f4a1c789bf5739c22616f7f4a3b8fd856652ccefde05804",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-02T20:10:43.000Z"
+ },
+ {
+  "program": "2CdzdzR1hj6w1ZjXLgvk3o2Saq5sXd1ufQ3Toww4PPHQ",
+  "repo": "https://github.com/Gliana-Labs/gliana-agent-mobile",
+  "commit": "ce3c31c41ce3f6dc07b17281a0e5283452d8cadf",
+  "args": [
+   "--mount-path",
+   "program/arena",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "1a3e2032407d80089f4a1c789bf5739c22616f7f4a3b8fd856652ccefde05804",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-02T20:10:43.000Z"
+ },
+ {
+  "program": "AdXNhsvVjPNVtVQERxakkC7kPfRhFLHNsYhJyEmY69aQ",
+  "repo": "https://github.com/raydium-io/raydium-clmm",
+  "commit": "51fdba2cf614d66a2ece9c077f1e7bf86a2875f1",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "86bcd24b5bfb85da5c6a67b8f5a3f68d108ec9f0022438b91b148a30ca19d5a2",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-06T06:46:09.000Z"
+ },
+ {
+  "program": "AdXNhsvVjPNVtVQERxakkC7kPfRhFLHNsYhJyEmY69aQ",
+  "repo": "https://github.com/raydium-io/raydium-clmm",
+  "commit": "705555fbf72f576bfd2b3bd3971713e3c04e6d21",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "86bcd24b5bfb85da5c6a67b8f5a3f68d108ec9f0022438b91b148a30ca19d5a2",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-06T06:46:09.000Z"
+ },
+ {
+  "program": "AdXNhsvVjPNVtVQERxakkC7kPfRhFLHNsYhJyEmY69aQ",
+  "repo": "https://github.com/raydium-io/raydium-clmm",
+  "commit": "01b7f6af22427cf11d5189320dac7fed2e61ea9f",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "86bcd24b5bfb85da5c6a67b8f5a3f68d108ec9f0022438b91b148a30ca19d5a2",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-06T06:46:09.000Z"
+ },
+ {
+  "program": "DiSLRwcSFvtwvMWSs7ubBMvYRaYNYupa76ZSuYLe6D7j",
+  "repo": "https://github.com/jup-ag/distributor",
+  "commit": "8eca929a36bf52f7a5f7b98b8e1a344f427fa82d",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "9fcac9223e353088e5c9e0ae674404f7206c29ac6ac1fde966fdd3abdd6f4913",
+  "how": "last commit before deploy",
+  "deployedAt": "2024-08-12T07:09:40.000Z"
+ },
+ {
+  "program": "DiSLRwcSFvtwvMWSs7ubBMvYRaYNYupa76ZSuYLe6D7j",
+  "repo": "https://github.com/jup-ag/distributor",
+  "commit": "799e6ded05cd781bdb45e6ecf9f7501e02b298f8",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "9fcac9223e353088e5c9e0ae674404f7206c29ac6ac1fde966fdd3abdd6f4913",
+  "how": "last commit before deploy",
+  "deployedAt": "2024-08-12T07:09:40.000Z"
+ },
+ {
+  "program": "DiSLRwcSFvtwvMWSs7ubBMvYRaYNYupa76ZSuYLe6D7j",
+  "repo": "https://github.com/jup-ag/distributor",
+  "commit": "9e33f912fd7be965a79a44467a7609ad6340dff5",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "9fcac9223e353088e5c9e0ae674404f7206c29ac6ac1fde966fdd3abdd6f4913",
+  "how": "last commit before deploy",
+  "deployedAt": "2024-08-12T07:09:40.000Z"
+ },
+ {
+  "program": "149WKoc5878Sx5EWjHGhPBL4vsoogY9og7ffkzdu39LM",
+  "repo": "https://github.com/BasketLaunch/basket-public-docs",
+  "commit": "ac54cb4dbd7be841d243de26ff4591cb3ebf820a",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "fda398e7d795dd51a07131428ef321bb2d423f254d5aaf3bab4a255d0eb87351",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-15T22:21:12.000Z"
+ },
+ {
+  "program": "149WKoc5878Sx5EWjHGhPBL4vsoogY9og7ffkzdu39LM",
+  "repo": "https://github.com/BasketLaunch/basket-public-docs",
+  "commit": "7a9fc95f29604ef42fc38567c84ce04cd8e68546",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "fda398e7d795dd51a07131428ef321bb2d423f254d5aaf3bab4a255d0eb87351",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-15T22:21:12.000Z"
+ },
+ {
+  "program": "149WKoc5878Sx5EWjHGhPBL4vsoogY9og7ffkzdu39LM",
+  "repo": "https://github.com/BasketLaunch/basket-public-docs",
+  "commit": "f2357424943b87f0f56f2297751a12e3f6ba4e1e",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "fda398e7d795dd51a07131428ef321bb2d423f254d5aaf3bab4a255d0eb87351",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-15T22:21:12.000Z"
+ },
+ {
+  "program": "Archer8kgiavM61GyusMzaaS2ft5sALtNsD1HxkUPMhy",
+  "repo": "https://github.com/ballista-tech/archer-sdk",
+  "commit": "fb17626f14b82441fa2cb0090902dae1e10db54f",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "8fe1f82bed3d8ca730f4f786421da2f31297fc3b36148333008233bd457eb99f",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-14T13:04:33.000Z"
+ },
+ {
+  "program": "Archer8kgiavM61GyusMzaaS2ft5sALtNsD1HxkUPMhy",
+  "repo": "https://github.com/ballista-tech/archer-sdk",
+  "commit": "31b18cdb5e404c6e52acab5b30f36e757758b2be",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "8fe1f82bed3d8ca730f4f786421da2f31297fc3b36148333008233bd457eb99f",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-14T13:04:33.000Z"
+ },
+ {
+  "program": "Archer8kgiavM61GyusMzaaS2ft5sALtNsD1HxkUPMhy",
+  "repo": "https://github.com/ballista-tech/archer-sdk",
+  "commit": "bfbb06448761929530e31b42498d6b9edf07d290",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "8fe1f82bed3d8ca730f4f786421da2f31297fc3b36148333008233bd457eb99f",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-14T13:04:33.000Z"
+ },
+ {
+  "program": "srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX",
+  "repo": "https://github.com/openbook-dex/program",
+  "commit": "546e5fe0f366ce7414424eaf5a481a917b8b5210",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "6e5a2e550025191fc77de71cd390e55e5621858a3a082f9da3e18c6e8eba8e49",
+  "how": "security.txt",
+  "deployedAt": "2022-12-20T15:19:08.000Z"
+ },
+ {
+  "program": "srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX",
+  "repo": "https://github.com/openbook-dex/program",
+  "commit": "541fd3bbb7fc1246b686ddb0ac51b4d016bf9eda",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "6e5a2e550025191fc77de71cd390e55e5621858a3a082f9da3e18c6e8eba8e49",
+  "how": "last commit before deploy",
+  "deployedAt": "2022-12-20T15:19:08.000Z"
+ },
+ {
+  "program": "srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX",
+  "repo": "https://github.com/openbook-dex/program",
+  "commit": "53514ca8e645c227ce26847078459cc1841733d3",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "6e5a2e550025191fc77de71cd390e55e5621858a3a082f9da3e18c6e8eba8e49",
+  "how": "last commit before deploy",
+  "deployedAt": "2022-12-20T15:19:08.000Z"
+ },
+ {
+  "program": "opnb2LAfJYbRMAHHvqjCwQxanZn7ReEHp1k81EohpZb",
+  "repo": "https://github.com/openbook-dex/openbook-v2",
+  "commit": "796a470033bc556c1d1a1f76709394fc50c63bf7",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "44a1bb9b185c77288955fbe1193a38eaaa7624564deec9459f828064704e44fa",
+  "how": "last commit before deploy",
+  "deployedAt": "2024-02-27T22:02:06.000Z"
+ },
+ {
+  "program": "opnb2LAfJYbRMAHHvqjCwQxanZn7ReEHp1k81EohpZb",
+  "repo": "https://github.com/openbook-dex/openbook-v2",
+  "commit": "4a1a1a66f65c93706d11904049b0a5db9ad2b1e2",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "44a1bb9b185c77288955fbe1193a38eaaa7624564deec9459f828064704e44fa",
+  "how": "last commit before deploy",
+  "deployedAt": "2024-02-27T22:02:06.000Z"
+ },
+ {
+  "program": "opnb2LAfJYbRMAHHvqjCwQxanZn7ReEHp1k81EohpZb",
+  "repo": "https://github.com/openbook-dex/openbook-v2",
+  "commit": "5e7e0bc630fd339fc98568632c712324c79bb3f8",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "44a1bb9b185c77288955fbe1193a38eaaa7624564deec9459f828064704e44fa",
+  "how": "last commit before deploy",
+  "deployedAt": "2024-02-27T22:02:06.000Z"
+ },
+ {
+  "program": "DXfnvwwxMFfxndn4ktTwTNMmHYp5TbhHTG98wULUaX6m",
+  "repo": "https://github.com/BGJ666/dope-boys-front",
+  "commit": "e3854d56e1f4eb1881f6d9928999683bdd525658",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "2ad74a44af7f7bef254a6d8dcc1f6fee6b463de6911feca83752e8b34e7719a5",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-13T07:12:26.000Z"
+ },
+ {
+  "program": "DXfnvwwxMFfxndn4ktTwTNMmHYp5TbhHTG98wULUaX6m",
+  "repo": "https://github.com/BGJ666/dope-boys-front",
+  "commit": "cc29937515e87184c15f469d20273e9c702003a9",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "2ad74a44af7f7bef254a6d8dcc1f6fee6b463de6911feca83752e8b34e7719a5",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-13T07:12:26.000Z"
+ },
+ {
+  "program": "DXfnvwwxMFfxndn4ktTwTNMmHYp5TbhHTG98wULUaX6m",
+  "repo": "https://github.com/BGJ666/dope-boys-front",
+  "commit": "7ba8d778fc251f9a7e92978f8f26234189ae21e7",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "2ad74a44af7f7bef254a6d8dcc1f6fee6b463de6911feca83752e8b34e7719a5",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-13T07:12:26.000Z"
+ },
+ {
+  "program": "SMRTzfY6DfH5ik3TKiyLFfXexV8uSG3d2UksSCYdunG",
+  "repo": "https://github.com/squads-protocol/smart-account-program",
+  "commit": "80bf1f7ad28fd1176c364879776982730b8e9c80",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "1cacfe2080faabf33a02ea285b6f8c8182358d3c6e40e3e7375ad0d7baa58cd4",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-31T20:47:26.000Z"
+ },
+ {
+  "program": "SMRTzfY6DfH5ik3TKiyLFfXexV8uSG3d2UksSCYdunG",
+  "repo": "https://github.com/squads-protocol/smart-account-program",
+  "commit": "6e2ac47c1197cb6287f83ea0f7349df83cf5a00d",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "1cacfe2080faabf33a02ea285b6f8c8182358d3c6e40e3e7375ad0d7baa58cd4",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-31T20:47:26.000Z"
+ },
+ {
+  "program": "SMRTzfY6DfH5ik3TKiyLFfXexV8uSG3d2UksSCYdunG",
+  "repo": "https://github.com/squads-protocol/smart-account-program",
+  "commit": "93329b160a65cbbb9d83f225b16184a73116f9d3",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "1cacfe2080faabf33a02ea285b6f8c8182358d3c6e40e3e7375ad0d7baa58cd4",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-31T20:47:26.000Z"
+ },
+ {
+  "program": "we1cGnTxTkDP9Sk49dw1d3T7ik7V2NfnY4qDGCDHXfC",
+  "repo": "https://github.com/helium/helium-program-library",
+  "commit": "4c3405fe12996408276958b9cecbe19c23d63f63",
+  "args": [
+   "--mount-path",
+   "programs/welcome-pack",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "9fb16325f6db0299ff9c7e3ca3e8d2d5bf8f5e02808f38b84bb526fd9936cb8a",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-11T11:49:52.000Z"
+ },
+ {
+  "program": "we1cGnTxTkDP9Sk49dw1d3T7ik7V2NfnY4qDGCDHXfC",
+  "repo": "https://github.com/helium/helium-program-library",
+  "commit": "89b752c9e2267878fc7030a1f9238e413f73cdf7",
+  "args": [
+   "--mount-path",
+   "programs/welcome-pack",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "9fb16325f6db0299ff9c7e3ca3e8d2d5bf8f5e02808f38b84bb526fd9936cb8a",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-11T11:49:52.000Z"
+ },
+ {
+  "program": "we1cGnTxTkDP9Sk49dw1d3T7ik7V2NfnY4qDGCDHXfC",
+  "repo": "https://github.com/helium/helium-program-library",
+  "commit": "806f2112a7008afb4a8ce785550dc084ea96e352",
+  "args": [
+   "--mount-path",
+   "programs/welcome-pack",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "9fb16325f6db0299ff9c7e3ca3e8d2d5bf8f5e02808f38b84bb526fd9936cb8a",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-11T11:49:52.000Z"
+ },
+ {
+  "program": "HYrwoRKRdPDpuwTHAv3BzbdGXtTVrMe6vzBFefX8RiH4",
+  "repo": "https://github.com/agnt-gg/gitstarter",
+  "commit": "7faf32ca6603b46916d270baf7a7075fe6ab82bb",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "4b420a7857def4b3b836defcf1b7657c3db7ec7e0946c16e5fd25cc71fbd6148",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-15T02:29:22.000Z"
+ },
+ {
+  "program": "HYrwoRKRdPDpuwTHAv3BzbdGXtTVrMe6vzBFefX8RiH4",
+  "repo": "https://github.com/agnt-gg/gitstarter",
+  "commit": "f5391193765273940c05b91670e0eeea92da5523",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "4b420a7857def4b3b836defcf1b7657c3db7ec7e0946c16e5fd25cc71fbd6148",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-15T02:29:22.000Z"
+ },
+ {
+  "program": "HYrwoRKRdPDpuwTHAv3BzbdGXtTVrMe6vzBFefX8RiH4",
+  "repo": "https://github.com/agnt-gg/gitstarter",
+  "commit": "01671a915e173bee3e9b6eb347efc4435f796da7",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "4b420a7857def4b3b836defcf1b7657c3db7ec7e0946c16e5fd25cc71fbd6148",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-15T02:29:22.000Z"
+ },
+ {
+  "program": "STAKEkKzbdeKkqzKpLkNQD3SUuLgshDKCD7U8duxAbB",
+  "repo": "https://github.com/mithraiclabs/spl-token-staking",
+  "commit": "f86382d587a7b5baeae48e6215dac89e70d4767e",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "5518636f6817a82cec5ea55056a3e65e022b2be748d701aa579dde1dd5fa83ac",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-13T03:01:49.000Z"
+ },
+ {
+  "program": "STAKEkKzbdeKkqzKpLkNQD3SUuLgshDKCD7U8duxAbB",
+  "repo": "https://github.com/mithraiclabs/spl-token-staking",
+  "commit": "bd68717a8a59e3e6d0427ce81ddc585431c63a07",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "5518636f6817a82cec5ea55056a3e65e022b2be748d701aa579dde1dd5fa83ac",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-13T03:01:49.000Z"
+ },
+ {
+  "program": "STAKEkKzbdeKkqzKpLkNQD3SUuLgshDKCD7U8duxAbB",
+  "repo": "https://github.com/mithraiclabs/spl-token-staking",
+  "commit": "d431c9cf0a693b925bc209c2ad1775b2aaa3c452",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "5518636f6817a82cec5ea55056a3e65e022b2be748d701aa579dde1dd5fa83ac",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-13T03:01:49.000Z"
+ },
+ {
+  "program": "5k2eTkiGWdTB5TnbMrwnZdz2eRLSreTmra6z38CmLXBZ",
+  "repo": "https://github.com/solana-foundation/subscriptions",
+  "commit": "d6b3a5dc7ab18c4168441af733c81ab0a599d414",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "fe15f4cb60c307b5fb8f758a2074ab8dd9d0ce0827039e56507022d28f32d5cb",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-07-16T18:58:43.000Z"
+ },
+ {
+  "program": "5k2eTkiGWdTB5TnbMrwnZdz2eRLSreTmra6z38CmLXBZ",
+  "repo": "https://github.com/solana-foundation/subscriptions",
+  "commit": "d27254afbaa2ae11036e088dc3e9463e8e1d5d3d",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "fe15f4cb60c307b5fb8f758a2074ab8dd9d0ce0827039e56507022d28f32d5cb",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-07-16T18:58:43.000Z"
+ },
+ {
+  "program": "5k2eTkiGWdTB5TnbMrwnZdz2eRLSreTmra6z38CmLXBZ",
+  "repo": "https://github.com/solana-foundation/subscriptions",
+  "commit": "55a3efd1a7cce84974378cc085890be304312a56",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "fe15f4cb60c307b5fb8f758a2074ab8dd9d0ce0827039e56507022d28f32d5cb",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-07-16T18:58:43.000Z"
+ },
+ {
+  "program": "2sp1s4pgj18JpuPfqPsRx1DWVctTnMjAPt5bp9cx4h2q",
+  "repo": "https://github.com/starke-labs/vaults",
+  "commit": "06558eb702dd652bc6ab2157856b7d093d4c4e7b",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "6ace00ed23a4553e50a26a5cb4572146a160103acc979d5332ac29e8e5451cf8",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-07-17T23:58:45.000Z"
+ },
+ {
+  "program": "2sp1s4pgj18JpuPfqPsRx1DWVctTnMjAPt5bp9cx4h2q",
+  "repo": "https://github.com/starke-labs/vaults",
+  "commit": "d1286ce17f4f4e2150c56a9de0ffe8098c66ee1d",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "6ace00ed23a4553e50a26a5cb4572146a160103acc979d5332ac29e8e5451cf8",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-07-17T23:58:45.000Z"
+ },
+ {
+  "program": "2sp1s4pgj18JpuPfqPsRx1DWVctTnMjAPt5bp9cx4h2q",
+  "repo": "https://github.com/starke-labs/vaults",
+  "commit": "e1ae34afaa9fd956010c08e11335967088eed730",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "6ace00ed23a4553e50a26a5cb4572146a160103acc979d5332ac29e8e5451cf8",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-07-17T23:58:45.000Z"
+ },
+ {
+  "program": "phNX2ZY31wq9NCXMfY9ptouoqB3Mor8oe3QE96V6QKn",
+  "repo": "https://github.com/Ellipsis-Labs/phoenix-v1",
+  "commit": "5a34f7f901fd9e04057198d4fc7b7286f78b53f2",
+  "args": [],
+  "runner": "macos-15",
+  "expect": "66b494dd4cfe1ebbe07acf85e851795cb870d4db7c17fb1677177c99e38a5747",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-07-28T18:10:52.000Z"
+ },
+ {
+  "program": "phNX2ZY31wq9NCXMfY9ptouoqB3Mor8oe3QE96V6QKn",
+  "repo": "https://github.com/Ellipsis-Labs/phoenix-v1",
+  "commit": "1820ad9208c0546be1e93b3adb534c46598e02cb",
+  "args": [],
+  "runner": "macos-15",
+  "expect": "66b494dd4cfe1ebbe07acf85e851795cb870d4db7c17fb1677177c99e38a5747",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-07-28T18:10:52.000Z"
+ },
+ {
+  "program": "phNX2ZY31wq9NCXMfY9ptouoqB3Mor8oe3QE96V6QKn",
+  "repo": "https://github.com/Ellipsis-Labs/phoenix-v1",
+  "commit": "dac82fef2b8862be04fa6710386f3e7485a31a48",
+  "args": [],
+  "runner": "macos-15",
+  "expect": "66b494dd4cfe1ebbe07acf85e851795cb870d4db7c17fb1677177c99e38a5747",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-07-28T18:10:52.000Z"
+ },
+ {
+  "program": "wMNFSTkir3HgyZTsB7uqu3i7FA73grFCptPXgrZjksL",
+  "repo": "https://github.com/Bonasa-Tech/manifest",
+  "commit": "5960fa1b3356bcb4222da3d7781055d83d02169d",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "2841e6f89d49db50c80780684395536d50f227d8a661ce97b0b3e036d496cc3e",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-13T15:28:54.000Z"
+ },
+ {
+  "program": "wMNFSTkir3HgyZTsB7uqu3i7FA73grFCptPXgrZjksL",
+  "repo": "https://github.com/Bonasa-Tech/manifest",
+  "commit": "553590006f5d7c8e3d9caabbd501866be01c54b8",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "2841e6f89d49db50c80780684395536d50f227d8a661ce97b0b3e036d496cc3e",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-13T15:28:54.000Z"
+ },
+ {
+  "program": "wMNFSTkir3HgyZTsB7uqu3i7FA73grFCptPXgrZjksL",
+  "repo": "https://github.com/Bonasa-Tech/manifest",
+  "commit": "5b2ca7848e1f2e2d83fb80d0aa290d70363adec5",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "2841e6f89d49db50c80780684395536d50f227d8a661ce97b0b3e036d496cc3e",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-13T15:28:54.000Z"
+ },
+ {
+  "program": "rKtiPTD7WuCdEEQ2JXWgAmZHHL9iZLc3niCXwtS7wSH",
+  "repo": "https://github.com/rakurai-io/rakurai_programs",
+  "commit": "666f7939c246a1dd93f5954f1ade460bba4aa9a7",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "b3fcedfab149f1d3c1261e260556e767196c20ab015d2484335af51fd4332969",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-01T15:42:31.000Z"
+ },
+ {
+  "program": "rKtiPTD7WuCdEEQ2JXWgAmZHHL9iZLc3niCXwtS7wSH",
+  "repo": "https://github.com/rakurai-io/rakurai_programs",
+  "commit": "3db57a1b59205a7f616c304fcd4ec4418b9de379",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "b3fcedfab149f1d3c1261e260556e767196c20ab015d2484335af51fd4332969",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-01T15:42:31.000Z"
+ },
+ {
+  "program": "rKtiPTD7WuCdEEQ2JXWgAmZHHL9iZLc3niCXwtS7wSH",
+  "repo": "https://github.com/rakurai-io/rakurai_programs",
+  "commit": "424e49a5ec2a6a97dc05128f483b61486eec9615",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "b3fcedfab149f1d3c1261e260556e767196c20ab015d2484335af51fd4332969",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-01T15:42:31.000Z"
+ },
+ {
+  "program": "UMnFStVeG1ecZFc2gc5K3vFy3sMpotq8C91mXBQDGwh",
+  "repo": "https://github.com/CKS-Systems/manifest",
+  "commit": "3a40ffeed71b0c3bd4f87f170f464afacfb77cee",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "24a027aabc8a9f67b26fab69b7639cc177f7ee884d6e1b9bc430a3972bfeb619",
+  "how": "last commit before deploy",
+  "deployedAt": "2025-11-12T02:37:43.000Z"
+ },
+ {
+  "program": "UMnFStVeG1ecZFc2gc5K3vFy3sMpotq8C91mXBQDGwh",
+  "repo": "https://github.com/CKS-Systems/manifest",
+  "commit": "c60afc299e60c34abfe82fe4f58a5198ebf18c55",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "24a027aabc8a9f67b26fab69b7639cc177f7ee884d6e1b9bc430a3972bfeb619",
+  "how": "last commit before deploy",
+  "deployedAt": "2025-11-12T02:37:43.000Z"
+ },
+ {
+  "program": "UMnFStVeG1ecZFc2gc5K3vFy3sMpotq8C91mXBQDGwh",
+  "repo": "https://github.com/CKS-Systems/manifest",
+  "commit": "3385dae22be99f26b6f2d01c146479c33037352e",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "24a027aabc8a9f67b26fab69b7639cc177f7ee884d6e1b9bc430a3972bfeb619",
+  "how": "last commit before deploy",
+  "deployedAt": "2025-11-12T02:37:43.000Z"
+ },
+ {
+  "program": "BhPX57KrPjLUfragt83v8rMwvkiEUT5pzwfNZLqVJgip",
+  "repo": "https://github.com/raydium-io/raydium-cp-swap",
+  "commit": "b3187ae53a1b95a201f855a59024a12ca8f5b51a",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "e62ce50ffaf954203a73f9bb5aee7e3bbe378145e44d6735831243e09e3f84e4",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-08T05:39:53.000Z"
+ },
+ {
+  "program": "BhPX57KrPjLUfragt83v8rMwvkiEUT5pzwfNZLqVJgip",
+  "repo": "https://github.com/raydium-io/raydium-cp-swap",
+  "commit": "59fb845a9e5bb569c8b2f3415f13b0c0ebcc6b92",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "e62ce50ffaf954203a73f9bb5aee7e3bbe378145e44d6735831243e09e3f84e4",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-08T05:39:53.000Z"
+ },
+ {
+  "program": "BhPX57KrPjLUfragt83v8rMwvkiEUT5pzwfNZLqVJgip",
+  "repo": "https://github.com/raydium-io/raydium-cp-swap",
+  "commit": "244e1241f3c8d90eb93f176dfbc35f2605ec5a5c",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "e62ce50ffaf954203a73f9bb5aee7e3bbe378145e44d6735831243e09e3f84e4",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-08T05:39:53.000Z"
+ },
+ {
+  "program": "HSb5uXJCHD7cBR5XGV1esRNwTQkpF49cg8gKjA468ek8",
+  "repo": "https://github.com/raydium-io/raydium-amm",
+  "commit": "27f461dd439086c774055f771b253fb0fbc52008",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "296fe700b42814b9e92f7358f3bafe69715661ee8fcf4b47fbd8f1ff254e26be",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-06T06:49:12.000Z"
+ },
+ {
+  "program": "HSb5uXJCHD7cBR5XGV1esRNwTQkpF49cg8gKjA468ek8",
+  "repo": "https://github.com/raydium-io/raydium-amm",
+  "commit": "c613c87c41edbe21112c9b8341774a70009c6d7b",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "296fe700b42814b9e92f7358f3bafe69715661ee8fcf4b47fbd8f1ff254e26be",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-06T06:49:12.000Z"
+ },
+ {
+  "program": "HSb5uXJCHD7cBR5XGV1esRNwTQkpF49cg8gKjA468ek8",
+  "repo": "https://github.com/raydium-io/raydium-amm",
+  "commit": "3b087ade40da365b2dd1df5e8baf77a3b97245d4",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "296fe700b42814b9e92f7358f3bafe69715661ee8fcf4b47fbd8f1ff254e26be",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-06T06:49:12.000Z"
+ },
+ {
+  "program": "FfHZmEAZm9RyygvPN9rY4kZkQbrEXj5W1Tih3cGegU1",
+  "repo": "https://github.com/BordrlessDex/bordrless-programs",
+  "commit": "2b3b1f23a5f5f64a7e389a5a6e927fb0f023d308",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "1f2e421ee9601e7b91b0fa28becb9f486bfea9fdc2984083a606741a7197b722",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-08T02:36:40.000Z"
+ },
+ {
+  "program": "FfHZmEAZm9RyygvPN9rY4kZkQbrEXj5W1Tih3cGegU1",
+  "repo": "https://github.com/BordrlessDex/bordrless-programs",
+  "commit": "7a176deba0f0b97e9f52dd0c8fa8030dfcac7e95",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "1f2e421ee9601e7b91b0fa28becb9f486bfea9fdc2984083a606741a7197b722",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-08T02:36:40.000Z"
+ },
+ {
+  "program": "FfHZmEAZm9RyygvPN9rY4kZkQbrEXj5W1Tih3cGegU1",
+  "repo": "https://github.com/BordrlessDex/bordrless-programs",
+  "commit": "be0f9feb5503d246f3d71d7d641cc325c8ec2e08",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "1f2e421ee9601e7b91b0fa28becb9f486bfea9fdc2984083a606741a7197b722",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-08T02:36:40.000Z"
+ },
+ {
+  "program": "2m3jVcaHWoSPe4dJNPHZXp588Bhh4fh4mFpfgcqbQNz9",
+  "repo": "https://github.com/BordrlessDex/bordrless-programs",
+  "commit": "2b3b1f23a5f5f64a7e389a5a6e927fb0f023d308",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "8b88b1898356429740ab7f501e097deef8e2e039d1a7b514e4873a3c3b2349dc",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-08T02:36:35.000Z"
+ },
+ {
+  "program": "2m3jVcaHWoSPe4dJNPHZXp588Bhh4fh4mFpfgcqbQNz9",
+  "repo": "https://github.com/BordrlessDex/bordrless-programs",
+  "commit": "7a176deba0f0b97e9f52dd0c8fa8030dfcac7e95",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "8b88b1898356429740ab7f501e097deef8e2e039d1a7b514e4873a3c3b2349dc",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-08T02:36:35.000Z"
+ },
+ {
+  "program": "2m3jVcaHWoSPe4dJNPHZXp588Bhh4fh4mFpfgcqbQNz9",
+  "repo": "https://github.com/BordrlessDex/bordrless-programs",
+  "commit": "be0f9feb5503d246f3d71d7d641cc325c8ec2e08",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "8b88b1898356429740ab7f501e097deef8e2e039d1a7b514e4873a3c3b2349dc",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-08T02:36:35.000Z"
+ },
+ {
+  "program": "4PGcu4SonW3t8jo6V4uzzmTthFg8spDJdC8ANYZNwhog",
+  "repo": "https://github.com/BordrlessDex/bordrless-programs",
+  "commit": "2b3b1f23a5f5f64a7e389a5a6e927fb0f023d308",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "0809d64eae99411ac4314a228ef296f8458199ceb34e82b0f6c013c3eb730e74",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-08T02:36:00.000Z"
+ },
+ {
+  "program": "4PGcu4SonW3t8jo6V4uzzmTthFg8spDJdC8ANYZNwhog",
+  "repo": "https://github.com/BordrlessDex/bordrless-programs",
+  "commit": "7a176deba0f0b97e9f52dd0c8fa8030dfcac7e95",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "0809d64eae99411ac4314a228ef296f8458199ceb34e82b0f6c013c3eb730e74",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-08T02:36:00.000Z"
+ },
+ {
+  "program": "4PGcu4SonW3t8jo6V4uzzmTthFg8spDJdC8ANYZNwhog",
+  "repo": "https://github.com/BordrlessDex/bordrless-programs",
+  "commit": "be0f9feb5503d246f3d71d7d641cc325c8ec2e08",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "0809d64eae99411ac4314a228ef296f8458199ceb34e82b0f6c013c3eb730e74",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-08T02:36:00.000Z"
+ },
+ {
+  "program": "bZbg2i9RhaQg2mEwYDRdrtacQZWKuiioRUmTzmNpu4D",
+  "repo": "https://github.com/blockworks-foundation/autobahn",
+  "commit": "78167c7bd4c284a0ecbef0032e89df562714ad7b",
+  "args": [],
+  "runner": "macos-15",
+  "expect": "4b8982155c675a2a131ce7512d3fbf852edac68d25d87d86ec63df921ef30fa1",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-13T02:30:11.000Z"
+ },
+ {
+  "program": "bZbg2i9RhaQg2mEwYDRdrtacQZWKuiioRUmTzmNpu4D",
+  "repo": "https://github.com/blockworks-foundation/autobahn",
+  "commit": "05f6125440790762ed96d0ddca353efeb00900ec",
+  "args": [],
+  "runner": "macos-15",
+  "expect": "4b8982155c675a2a131ce7512d3fbf852edac68d25d87d86ec63df921ef30fa1",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-13T02:30:11.000Z"
+ },
+ {
+  "program": "bZbg2i9RhaQg2mEwYDRdrtacQZWKuiioRUmTzmNpu4D",
+  "repo": "https://github.com/blockworks-foundation/autobahn",
+  "commit": "6608fc804a724016af2e7e40c20824d377bfa02a",
+  "args": [],
+  "runner": "macos-15",
+  "expect": "4b8982155c675a2a131ce7512d3fbf852edac68d25d87d86ec63df921ef30fa1",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-13T02:30:11.000Z"
+ },
+ {
+  "program": "F9kr1i9u1Sh8LhNej2BetRunVTuDkWbWV1jBUMArbBot",
+  "repo": "https://github.com/shadowarb/arb",
+  "commit": "eeb60a48370853c1e9564f7eac20707f5e9045e0",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "570711c818fdd6b73733755e677f604b27e58b7c640ebd989d7c965303ef869c",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-07-12T10:16:02.000Z"
+ },
+ {
+  "program": "2hYprFVnvKGQ74RyQznPhwRAVHZ78NP2dJQ6i8vVPofW",
+  "repo": "https://github.com/BordrlessDex/bordrless-programs",
+  "commit": "f2deda256d506c9d0bdc45022b5601aed392b0b0",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "46a3d5f5075b6270d89ec851f46f3bd55760d4474c54f6c24c9b7facd58a25d3",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-08T06:33:43.000Z"
+ },
+ {
+  "program": "2hYprFVnvKGQ74RyQznPhwRAVHZ78NP2dJQ6i8vVPofW",
+  "repo": "https://github.com/BordrlessDex/bordrless-programs",
+  "commit": "ed870fe930175cc520e1f46cbf3c080761c5452c",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "46a3d5f5075b6270d89ec851f46f3bd55760d4474c54f6c24c9b7facd58a25d3",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-08T06:33:43.000Z"
+ },
+ {
+  "program": "2hYprFVnvKGQ74RyQznPhwRAVHZ78NP2dJQ6i8vVPofW",
+  "repo": "https://github.com/BordrlessDex/bordrless-programs",
+  "commit": "e54cc4ac35d51149832871750963a6b5d947e15d",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "46a3d5f5075b6270d89ec851f46f3bd55760d4474c54f6c24c9b7facd58a25d3",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-08T06:33:43.000Z"
+ },
+ {
+  "program": "FRxxeTHBMsdHpJ9oiHHSMpGFCJ2yNuxQcyQYkCJawTYh",
+  "repo": "https://github.com/BordrlessDex/bordrless-programs",
+  "commit": "2b3b1f23a5f5f64a7e389a5a6e927fb0f023d308",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "560c8ed71863527926c78f8105786bd608fe15adeeb27d3600239afd6724e479",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-08T02:35:48.000Z"
+ },
+ {
+  "program": "FRxxeTHBMsdHpJ9oiHHSMpGFCJ2yNuxQcyQYkCJawTYh",
+  "repo": "https://github.com/BordrlessDex/bordrless-programs",
+  "commit": "7a176deba0f0b97e9f52dd0c8fa8030dfcac7e95",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "560c8ed71863527926c78f8105786bd608fe15adeeb27d3600239afd6724e479",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-08T02:35:48.000Z"
+ },
+ {
+  "program": "FRxxeTHBMsdHpJ9oiHHSMpGFCJ2yNuxQcyQYkCJawTYh",
+  "repo": "https://github.com/BordrlessDex/bordrless-programs",
+  "commit": "be0f9feb5503d246f3d71d7d641cc325c8ec2e08",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "560c8ed71863527926c78f8105786bd608fe15adeeb27d3600239afd6724e479",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-08T02:35:48.000Z"
+ },
+ {
+  "program": "tdcam4m5U74pEZQrsQ7fVAav4AUXXc6z8fkhvExfRVN",
+  "repo": "https://github.com/helium/helium-program-library",
+  "commit": "51bf7e7239ff50e92c43df5b57cea13f3ea1ec4d",
+  "args": [
+   "--mount-path",
+   "programs/tuktuk-dca",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "ca87588ce39303196c86155793c62f5443e02ec80c27335ae40fefd038b96ee6",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-13T18:32:16.000Z"
+ },
+ {
+  "program": "tdcam4m5U74pEZQrsQ7fVAav4AUXXc6z8fkhvExfRVN",
+  "repo": "https://github.com/helium/helium-program-library",
+  "commit": "5130be3537db5c7d75b366eb6b52bbbfd728e297",
+  "args": [
+   "--mount-path",
+   "programs/tuktuk-dca",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "ca87588ce39303196c86155793c62f5443e02ec80c27335ae40fefd038b96ee6",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-13T18:32:16.000Z"
+ },
+ {
+  "program": "tdcam4m5U74pEZQrsQ7fVAav4AUXXc6z8fkhvExfRVN",
+  "repo": "https://github.com/helium/helium-program-library",
+  "commit": "650638ab6cccb39943593c39b94ab7c343222484",
+  "args": [
+   "--mount-path",
+   "programs/tuktuk-dca",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "ca87588ce39303196c86155793c62f5443e02ec80c27335ae40fefd038b96ee6",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-13T18:32:16.000Z"
+ },
+ {
+  "program": "6RqZ2jo91veL5WdfTxTGqwoeAxR4KU747Sq6a5rv9r2G",
+  "repo": "https://github.com/solana-labs/solana-program-library",
+  "commit": "3a9902e119a9509f7c7bebd20451ad86d200a7ce",
+  "args": [
+   "--mount-path",
+   "account-compression",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "3db405abe73b6375f916507d9772c5e267bff2ecc887e6598a9b8d11d8dce205",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-04T17:28:17.000Z"
+ },
+ {
+  "program": "6RqZ2jo91veL5WdfTxTGqwoeAxR4KU747Sq6a5rv9r2G",
+  "repo": "https://github.com/solana-labs/solana-program-library",
+  "commit": "3bb86e33abfae165cf996769081c6d8cde435a7e",
+  "args": [
+   "--mount-path",
+   "account-compression",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "3db405abe73b6375f916507d9772c5e267bff2ecc887e6598a9b8d11d8dce205",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-04T17:28:17.000Z"
+ },
+ {
+  "program": "6RqZ2jo91veL5WdfTxTGqwoeAxR4KU747Sq6a5rv9r2G",
+  "repo": "https://github.com/solana-labs/solana-program-library",
+  "commit": "28350e3227aa666acb7f8115786c1a0d44e1bb2f",
+  "args": [
+   "--mount-path",
+   "account-compression",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "3db405abe73b6375f916507d9772c5e267bff2ecc887e6598a9b8d11d8dce205",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-04T17:28:17.000Z"
+ },
+ {
+  "program": "HudTiquNJ689HTGbYoa84AL1RjpEUB29RXG5GZnue4dc",
+  "repo": "https://github.com/BordrlessDex/bordrless-programs",
+  "commit": "f2deda256d506c9d0bdc45022b5601aed392b0b0",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "350d5ae652a3108e5be3543a4260bc372078e26fd71bc0a11cd7519c70a71d69",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-08T06:33:36.000Z"
+ },
+ {
+  "program": "HudTiquNJ689HTGbYoa84AL1RjpEUB29RXG5GZnue4dc",
+  "repo": "https://github.com/BordrlessDex/bordrless-programs",
+  "commit": "ed870fe930175cc520e1f46cbf3c080761c5452c",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "350d5ae652a3108e5be3543a4260bc372078e26fd71bc0a11cd7519c70a71d69",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-08T06:33:36.000Z"
+ },
+ {
+  "program": "HudTiquNJ689HTGbYoa84AL1RjpEUB29RXG5GZnue4dc",
+  "repo": "https://github.com/BordrlessDex/bordrless-programs",
+  "commit": "e54cc4ac35d51149832871750963a6b5d947e15d",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "350d5ae652a3108e5be3543a4260bc372078e26fd71bc0a11cd7519c70a71d69",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-08T06:33:36.000Z"
+ },
+ {
+  "program": "2viWvGRQaQuTiLDVWqm6R1EtXNTQXP8pkhs44a8JYXqh",
+  "repo": "https://github.com/jito-foundation/jito-programs",
+  "commit": "ce1dfb6b3f6c423bf206ec1f24df911d292aa409",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "2d0532ec7eb626132ed85fb3fa663c0ed4981ba33bfa42318133c752e4ae1da7",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-07-16T06:58:32.000Z"
+ },
+ {
+  "program": "2viWvGRQaQuTiLDVWqm6R1EtXNTQXP8pkhs44a8JYXqh",
+  "repo": "https://github.com/jito-foundation/jito-programs",
+  "commit": "90d0d44454be38774e2a1f4f070a5a7b7e7435d6",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "2d0532ec7eb626132ed85fb3fa663c0ed4981ba33bfa42318133c752e4ae1da7",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-07-16T06:58:32.000Z"
+ },
+ {
+  "program": "2viWvGRQaQuTiLDVWqm6R1EtXNTQXP8pkhs44a8JYXqh",
+  "repo": "https://github.com/jito-foundation/jito-programs",
+  "commit": "31d51dccc32787eb4ba6a500695ccbf319cf900a",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "2d0532ec7eb626132ed85fb3fa663c0ed4981ba33bfa42318133c752e4ae1da7",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-07-16T06:58:32.000Z"
+ },
+ {
+  "program": "RouterBmuRBkPUbgEDMtdvTZ75GBdSREZR5uGUxxxpb",
+  "repo": "https://github.com/jito-foundation/jito-tip-router",
+  "commit": "64eab627a405b5f3df65b59064aa5afeba871d82",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "927aaf5a430ddd7d5f77a0b8c6645917695d2abb5833a4faa6ae2e04165cacd9",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-07-29T18:40:46.000Z"
+ },
+ {
+  "program": "RouterBmuRBkPUbgEDMtdvTZ75GBdSREZR5uGUxxxpb",
+  "repo": "https://github.com/jito-foundation/jito-tip-router",
+  "commit": "64815555da3552c0aaeb38611c35f30d4d0553e4",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "927aaf5a430ddd7d5f77a0b8c6645917695d2abb5833a4faa6ae2e04165cacd9",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-07-29T18:40:46.000Z"
+ },
+ {
+  "program": "RouterBmuRBkPUbgEDMtdvTZ75GBdSREZR5uGUxxxpb",
+  "repo": "https://github.com/jito-foundation/jito-tip-router",
+  "commit": "d073dd2884c6a482031ebd40ca6c7a1373d4ef1b",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "927aaf5a430ddd7d5f77a0b8c6645917695d2abb5833a4faa6ae2e04165cacd9",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-07-29T18:40:46.000Z"
+ },
+ {
+  "program": "treaf4wWBBty3fHdyBpo35Mz84M8k3heKXmjmi9vFt5",
+  "repo": "https://github.com/helium/helium-program-library",
+  "commit": "6803d91e1e3b0e5410754cb5b3637ba52ea060a8",
+  "args": [
+   "--mount-path",
+   "programs/treasury-management",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "ea106d145e8b7e7acea683a9342c3c37c478f0bee85d871352f39bc573adfd11",
+  "how": "last commit before deploy",
+  "deployedAt": "2025-05-14T01:35:42.000Z"
+ },
+ {
+  "program": "treaf4wWBBty3fHdyBpo35Mz84M8k3heKXmjmi9vFt5",
+  "repo": "https://github.com/helium/helium-program-library",
+  "commit": "d08680bf74cafbb29912b9586fb84ab7b64b9a35",
+  "args": [
+   "--mount-path",
+   "programs/treasury-management",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "ea106d145e8b7e7acea683a9342c3c37c478f0bee85d871352f39bc573adfd11",
+  "how": "last commit before deploy",
+  "deployedAt": "2025-05-14T01:35:42.000Z"
+ },
+ {
+  "program": "treaf4wWBBty3fHdyBpo35Mz84M8k3heKXmjmi9vFt5",
+  "repo": "https://github.com/helium/helium-program-library",
+  "commit": "2cb1a76fb0b7b506f0331d9f67e7e197a3aae2a3",
+  "args": [
+   "--mount-path",
+   "programs/treasury-management",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "ea106d145e8b7e7acea683a9342c3c37c478f0bee85d871352f39bc573adfd11",
+  "how": "last commit before deploy",
+  "deployedAt": "2025-05-14T01:35:42.000Z"
+ },
+ {
+  "program": "4MangoMjqJ2firMokCjjGgoK8d4MXcrgL7XJaL3w6fVg",
+  "repo": "https://github.com/blockworks-foundation/mango-v4",
+  "commit": "ee671d24bb4f9386adc2d146f5180d4760838222",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "71b464be3bdb5619d01c21b1f5df3ca0d6653e9071eaf7fd6a5d4772aad9aebf",
+  "how": "last commit before deploy",
+  "deployedAt": "2025-03-29T19:13:44.000Z"
+ },
+ {
+  "program": "4MangoMjqJ2firMokCjjGgoK8d4MXcrgL7XJaL3w6fVg",
+  "repo": "https://github.com/blockworks-foundation/mango-v4",
+  "commit": "795a99b681801e2dc653a664fcdbe427642ed27d",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "71b464be3bdb5619d01c21b1f5df3ca0d6653e9071eaf7fd6a5d4772aad9aebf",
+  "how": "last commit before deploy",
+  "deployedAt": "2025-03-29T19:13:44.000Z"
+ },
+ {
+  "program": "4MangoMjqJ2firMokCjjGgoK8d4MXcrgL7XJaL3w6fVg",
+  "repo": "https://github.com/blockworks-foundation/mango-v4",
+  "commit": "d9d726cb5803af073ff8186f3e5fe71ff92b201a",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "71b464be3bdb5619d01c21b1f5df3ca0d6653e9071eaf7fd6a5d4772aad9aebf",
+  "how": "last commit before deploy",
+  "deployedAt": "2025-03-29T19:13:44.000Z"
+ },
+ {
+  "program": "SP12tWFxD9oJsVWNavTTBZvMbA6gkAmxtVgxdqvyvhY",
+  "repo": "https://github.com/solana-labs/solana-program-library",
+  "commit": "b7dd8fee93815b486fce98d3d43d1d0934980226",
+  "args": [
+   "--mount-path",
+   "stake-pool/program",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "3a9383372a36d55816d6f47a5707ec8abc8c099dea9f9dd7636b96a9eeaf5169",
+  "how": "security.txt",
+  "deployedAt": "2025-10-07T03:05:26.000Z"
+ },
+ {
+  "program": "SP12tWFxD9oJsVWNavTTBZvMbA6gkAmxtVgxdqvyvhY",
+  "repo": "https://github.com/solana-labs/solana-program-library",
+  "commit": "8a829763a7ab97989589b0002b7ac184071d2e33",
+  "args": [
+   "--mount-path",
+   "stake-pool/program",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "3a9383372a36d55816d6f47a5707ec8abc8c099dea9f9dd7636b96a9eeaf5169",
+  "how": "last commit before deploy",
+  "deployedAt": "2025-10-07T03:05:26.000Z"
+ },
+ {
+  "program": "SP12tWFxD9oJsVWNavTTBZvMbA6gkAmxtVgxdqvyvhY",
+  "repo": "https://github.com/solana-labs/solana-program-library",
+  "commit": "7759a3289df33c17af6780fcb2fd9b1e2df1c97a",
+  "args": [
+   "--mount-path",
+   "stake-pool/program",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "3a9383372a36d55816d6f47a5707ec8abc8c099dea9f9dd7636b96a9eeaf5169",
+  "how": "last commit before deploy",
+  "deployedAt": "2025-10-07T03:05:26.000Z"
+ },
+ {
+  "program": "SP12tWFxD9oJsVWNavTTBZvMbA6gkAmxtVgxdqvyvhY",
+  "repo": "https://github.com/solana-labs/solana-program-library",
+  "commit": "90651c0544363e4bcaa75ab35adaaf56b86dd132",
+  "args": [
+   "--mount-path",
+   "stake-pool/program",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "3a9383372a36d55816d6f47a5707ec8abc8c099dea9f9dd7636b96a9eeaf5169",
+  "how": "last commit before deploy",
+  "deployedAt": "2025-10-07T03:05:26.000Z"
+ },
+ {
+  "program": "SPMBzsVUuoHA4Jm6KunbsotaahvVikZs1JyTW6iJvbn",
+  "repo": "https://github.com/solana-labs/solana-program-library",
+  "commit": "b7dd8fee93815b486fce98d3d43d1d0934980226",
+  "args": [
+   "--mount-path",
+   "stake-pool/program",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "3a9383372a36d55816d6f47a5707ec8abc8c099dea9f9dd7636b96a9eeaf5169",
+  "how": "security.txt",
+  "deployedAt": "2025-10-07T03:05:34.000Z"
+ },
+ {
+  "program": "SPMBzsVUuoHA4Jm6KunbsotaahvVikZs1JyTW6iJvbn",
+  "repo": "https://github.com/solana-labs/solana-program-library",
+  "commit": "8a829763a7ab97989589b0002b7ac184071d2e33",
+  "args": [
+   "--mount-path",
+   "stake-pool/program",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "3a9383372a36d55816d6f47a5707ec8abc8c099dea9f9dd7636b96a9eeaf5169",
+  "how": "last commit before deploy",
+  "deployedAt": "2025-10-07T03:05:34.000Z"
+ },
+ {
+  "program": "SPMBzsVUuoHA4Jm6KunbsotaahvVikZs1JyTW6iJvbn",
+  "repo": "https://github.com/solana-labs/solana-program-library",
+  "commit": "7759a3289df33c17af6780fcb2fd9b1e2df1c97a",
+  "args": [
+   "--mount-path",
+   "stake-pool/program",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "3a9383372a36d55816d6f47a5707ec8abc8c099dea9f9dd7636b96a9eeaf5169",
+  "how": "last commit before deploy",
+  "deployedAt": "2025-10-07T03:05:34.000Z"
+ },
+ {
+  "program": "SPMBzsVUuoHA4Jm6KunbsotaahvVikZs1JyTW6iJvbn",
+  "repo": "https://github.com/solana-labs/solana-program-library",
+  "commit": "90651c0544363e4bcaa75ab35adaaf56b86dd132",
+  "args": [
+   "--mount-path",
+   "stake-pool/program",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "3a9383372a36d55816d6f47a5707ec8abc8c099dea9f9dd7636b96a9eeaf5169",
+  "how": "last commit before deploy",
+  "deployedAt": "2025-10-07T03:05:34.000Z"
+ },
+ {
+  "program": "Ha73pCsinTUeMF3KTz3avFHdrgW9tA3wYY3w2SsWko8x",
+  "repo": "https://github.com/jito-foundation/distributor",
+  "commit": "2cf79f63973a79e6354871dc9355a63aa1d15139",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "5becae5dc645981961b03a5b03363f11ebcfd971d507bb774fb1355678046239",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-29T21:22:42.000Z"
+ },
+ {
+  "program": "Ha73pCsinTUeMF3KTz3avFHdrgW9tA3wYY3w2SsWko8x",
+  "repo": "https://github.com/jito-foundation/distributor",
+  "commit": "97e134a5f3b3da28130648d93da34100726e6dc9",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "5becae5dc645981961b03a5b03363f11ebcfd971d507bb774fb1355678046239",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-29T21:22:42.000Z"
+ },
+ {
+  "program": "Ha73pCsinTUeMF3KTz3avFHdrgW9tA3wYY3w2SsWko8x",
+  "repo": "https://github.com/jito-foundation/distributor",
+  "commit": "af232fe034e806494bedfc6a1f339b4e1c86a4e6",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "5becae5dc645981961b03a5b03363f11ebcfd971d507bb774fb1355678046239",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-29T21:22:42.000Z"
+ },
+ {
+  "program": "stag8sTKds2h4KzjUw3zKTsxbqvT4XKHdaR9X9E6Rct",
+  "repo": "https://github.com/mrgnlabs/marginfi-v2",
+  "commit": "aeafee702d1b807f717db75f87996a67e1977c04",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "6f0ae5227ea6f17574b494d2cf7e2cd52e7e79858b0b140b28d956f3575c0f74",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-15T16:00:02.000Z"
+ },
+ {
+  "program": "stag8sTKds2h4KzjUw3zKTsxbqvT4XKHdaR9X9E6Rct",
+  "repo": "https://github.com/mrgnlabs/marginfi-v2",
+  "commit": "ef8aa333f15479917758938993c556332094358e",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "6f0ae5227ea6f17574b494d2cf7e2cd52e7e79858b0b140b28d956f3575c0f74",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-15T16:00:02.000Z"
+ },
+ {
+  "program": "stag8sTKds2h4KzjUw3zKTsxbqvT4XKHdaR9X9E6Rct",
+  "repo": "https://github.com/mrgnlabs/marginfi-v2",
+  "commit": "c5d440f62365de503c89cf6ec39fb6673494cc7c",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "6f0ae5227ea6f17574b494d2cf7e2cd52e7e79858b0b140b28d956f3575c0f74",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-15T16:00:02.000Z"
+ },
+ {
+  "program": "topqqzQZroCyRrgyM5zVq6xkFDVnfF13iixSjajydgU",
+  "repo": "https://github.com/helium/helium-program-library",
+  "commit": "5130be3537db5c7d75b366eb6b52bbbfd728e297",
+  "args": [
+   "--mount-path",
+   "programs/dc-auto-top",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "d9742204f7309265bfa2d49807b6fbd368c8520787d87546408ac699731327e0",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-13T18:31:56.000Z"
+ },
+ {
+  "program": "topqqzQZroCyRrgyM5zVq6xkFDVnfF13iixSjajydgU",
+  "repo": "https://github.com/helium/helium-program-library",
+  "commit": "48cce8c96597df43177997851372abfc2e061188",
+  "args": [
+   "--mount-path",
+   "programs/dc-auto-top",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "d9742204f7309265bfa2d49807b6fbd368c8520787d87546408ac699731327e0",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-13T18:31:56.000Z"
+ },
+ {
+  "program": "topqqzQZroCyRrgyM5zVq6xkFDVnfF13iixSjajydgU",
+  "repo": "https://github.com/helium/helium-program-library",
+  "commit": "41dce909e5dee97f02ae9f94c81612cbb79250cc",
+  "args": [
+   "--mount-path",
+   "programs/dc-auto-top",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "d9742204f7309265bfa2d49807b6fbd368c8520787d87546408ac699731327e0",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-13T18:31:56.000Z"
+ },
+ {
+  "program": "mfanLprNnaiP4RX9Zz1BMcDosYHCqnG24H1fMEbi9Gn",
+  "repo": "https://github.com/helium/helium-program-library",
+  "commit": "5130be3537db5c7d75b366eb6b52bbbfd728e297",
+  "args": [
+   "--mount-path",
+   "programs/mini-fanout",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "d6b0debc2d8237cb2e15974c24115c7afa27ff7e67dce438b5f23e930c16cead",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-13T18:32:07.000Z"
+ },
+ {
+  "program": "mfanLprNnaiP4RX9Zz1BMcDosYHCqnG24H1fMEbi9Gn",
+  "repo": "https://github.com/helium/helium-program-library",
+  "commit": "0d3f9e4af7781abfab49d328e599633d0dd3c348",
+  "args": [
+   "--mount-path",
+   "programs/mini-fanout",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "d6b0debc2d8237cb2e15974c24115c7afa27ff7e67dce438b5f23e930c16cead",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-13T18:32:07.000Z"
+ },
+ {
+  "program": "mfanLprNnaiP4RX9Zz1BMcDosYHCqnG24H1fMEbi9Gn",
+  "repo": "https://github.com/helium/helium-program-library",
+  "commit": "7d0fec10a7a979d220f0062dec202ce6372d7071",
+  "args": [
+   "--mount-path",
+   "programs/mini-fanout",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "d6b0debc2d8237cb2e15974c24115c7afa27ff7e67dce438b5f23e930c16cead",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-13T18:32:07.000Z"
+ },
+ {
+  "program": "rorcfdX4h9m9swCKgcypaHJ8NGYVANBpmV9EHn3cYrF",
+  "repo": "https://github.com/helium/helium-program-library",
+  "commit": "6c904d5df2455d2697165ea596ebaa9faefdbd3b",
+  "args": [
+   "--mount-path",
+   "programs/rewards-oracle",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "07322a50af71f89b71ae165c2a700eda357488a3f09dd14b72bf0a12df9d7b85",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-14T21:10:49.000Z"
+ },
+ {
+  "program": "rorcfdX4h9m9swCKgcypaHJ8NGYVANBpmV9EHn3cYrF",
+  "repo": "https://github.com/helium/helium-program-library",
+  "commit": "a3203b261993a6bbfa3eeabb3af010334c705fa4",
+  "args": [
+   "--mount-path",
+   "programs/rewards-oracle",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "07322a50af71f89b71ae165c2a700eda357488a3f09dd14b72bf0a12df9d7b85",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-14T21:10:49.000Z"
+ },
+ {
+  "program": "rorcfdX4h9m9swCKgcypaHJ8NGYVANBpmV9EHn3cYrF",
+  "repo": "https://github.com/helium/helium-program-library",
+  "commit": "c6e759e421db942e69d6ad357c65d735e0ca2bae",
+  "args": [
+   "--mount-path",
+   "programs/rewards-oracle",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "07322a50af71f89b71ae165c2a700eda357488a3f09dd14b72bf0a12df9d7b85",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-14T21:10:49.000Z"
+ },
+ {
+  "program": "CQrnd9EcS7jSUTs2HCHL31kFhGWGuAqzdcQfAo1tn6Ft",
+  "repo": "https://github.com/regolith-labs/entropy",
+  "commit": "f26ae03cccab6188effb0a170b8123cf4bb54c94",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "cec705ead66d07c72f79c753efec4890a6745d386516c90154e8409f07c49d84",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-03T14:02:32.000Z"
+ },
+ {
+  "program": "CQrnd9EcS7jSUTs2HCHL31kFhGWGuAqzdcQfAo1tn6Ft",
+  "repo": "https://github.com/regolith-labs/entropy",
+  "commit": "98939a039f770c6ee540c582336432f1a010ddbc",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "cec705ead66d07c72f79c753efec4890a6745d386516c90154e8409f07c49d84",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-03T14:02:32.000Z"
+ },
+ {
+  "program": "CQrnd9EcS7jSUTs2HCHL31kFhGWGuAqzdcQfAo1tn6Ft",
+  "repo": "https://github.com/regolith-labs/entropy",
+  "commit": "6bf22e677be604057dfb9a823b2271f2cf309e6a",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "cec705ead66d07c72f79c753efec4890a6745d386516c90154e8409f07c49d84",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-03T14:02:32.000Z"
+ },
+ {
+  "program": "FuSiontgYvCc2N2Cinvo5gxSuxt2UfGxKMcbzkB67kud",
+  "repo": "https://github.com/Fusion-Core-Finance/fusion-core",
+  "commit": "05d3ba4d71ac6dc05fd93b61f1ace4682f875f0a",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "7eef5d486105b43af41c7eb7285940680e9fc8b038e603bc3788ec239a803156",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-22T04:18:09.000Z"
+ },
+ {
+  "program": "FuSiontgYvCc2N2Cinvo5gxSuxt2UfGxKMcbzkB67kud",
+  "repo": "https://github.com/Fusion-Core-Finance/fusion-core",
+  "commit": "24885c9951ea7b3f2396f11634906ed9b6a673aa",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "7eef5d486105b43af41c7eb7285940680e9fc8b038e603bc3788ec239a803156",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-22T04:18:09.000Z"
+ },
+ {
+  "program": "FuSiontgYvCc2N2Cinvo5gxSuxt2UfGxKMcbzkB67kud",
+  "repo": "https://github.com/Fusion-Core-Finance/fusion-core",
+  "commit": "260427a3966452e1b89cd1151a63891575837236",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "7eef5d486105b43af41c7eb7285940680e9fc8b038e603bc3788ec239a803156",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-22T04:18:09.000Z"
+ },
+ {
+  "program": "AXTASKCKEqy5Uk29aFttY6QBWV349HCXPkAjTn7Nsr3q",
+  "repo": "https://github.com/xetenet/xete-programs",
+  "commit": "153138a034dcc6b866e0ddcf0cfb46642eec5db9",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "fbaf0261534d62ab347291d6435a908541689d7875068d1bf7505320c594c59f",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-07-31T03:22:30.000Z"
+ },
+ {
+  "program": "AXTASKCKEqy5Uk29aFttY6QBWV349HCXPkAjTn7Nsr3q",
+  "repo": "https://github.com/xetenet/xete-programs",
+  "commit": "2bedeb6e364d45b65ef04f970f219a86d0aea524",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "fbaf0261534d62ab347291d6435a908541689d7875068d1bf7505320c594c59f",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-07-31T03:22:30.000Z"
+ },
+ {
+  "program": "AXTASKCKEqy5Uk29aFttY6QBWV349HCXPkAjTn7Nsr3q",
+  "repo": "https://github.com/xetenet/xete-programs",
+  "commit": "2fcccd33ddf0b311465f73c47ff6c26f995cc410",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "fbaf0261534d62ab347291d6435a908541689d7875068d1bf7505320c594c59f",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-07-31T03:22:30.000Z"
+ },
+ {
+  "program": "FcTL7Mnq1RcstcYUk39ph2DzdVPNFyWh1EnrqCocXhhh",
+  "repo": "https://github.com/rakurai-io/rakurai_programs",
+  "commit": "666f7939c246a1dd93f5954f1ade460bba4aa9a7",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "841231ef06b4a6b607af15ebd01ccf5896ca02159cfb35ab60a20ada0678336d",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-15T11:44:07.000Z"
+ },
+ {
+  "program": "FcTL7Mnq1RcstcYUk39ph2DzdVPNFyWh1EnrqCocXhhh",
+  "repo": "https://github.com/rakurai-io/rakurai_programs",
+  "commit": "3db57a1b59205a7f616c304fcd4ec4418b9de379",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "841231ef06b4a6b607af15ebd01ccf5896ca02159cfb35ab60a20ada0678336d",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-15T11:44:07.000Z"
+ },
+ {
+  "program": "FcTL7Mnq1RcstcYUk39ph2DzdVPNFyWh1EnrqCocXhhh",
+  "repo": "https://github.com/rakurai-io/rakurai_programs",
+  "commit": "424e49a5ec2a6a97dc05128f483b61486eec9615",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "841231ef06b4a6b607af15ebd01ccf5896ca02159cfb35ab60a20ada0678336d",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-15T11:44:07.000Z"
+ },
+ {
+  "program": "fanqeMu3fw8R4LwKNbahPtYXJsyLL6NXyfe2BqzhfB6",
+  "repo": "https://github.com/helium/helium-program-library",
+  "commit": "d1f5d0e9229606e8bd41555d16e558f67937adcd",
+  "args": [
+   "--mount-path",
+   "programs/fanout",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "9686536c7bcd815700697889931e8e8906ee9085b46755e65789401838d210ea",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-03T20:37:13.000Z"
+ },
+ {
+  "program": "fanqeMu3fw8R4LwKNbahPtYXJsyLL6NXyfe2BqzhfB6",
+  "repo": "https://github.com/helium/helium-program-library",
+  "commit": "5dbcf9859d1cb60daad853655f731d1faa30d0c7",
+  "args": [
+   "--mount-path",
+   "programs/fanout",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "9686536c7bcd815700697889931e8e8906ee9085b46755e65789401838d210ea",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-03T20:37:13.000Z"
+ },
+ {
+  "program": "fanqeMu3fw8R4LwKNbahPtYXJsyLL6NXyfe2BqzhfB6",
+  "repo": "https://github.com/helium/helium-program-library",
+  "commit": "a3203b261993a6bbfa3eeabb3af010334c705fa4",
+  "args": [
+   "--mount-path",
+   "programs/fanout",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "9686536c7bcd815700697889931e8e8906ee9085b46755e65789401838d210ea",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-03T20:37:13.000Z"
+ },
+ {
+  "program": "G2cSz28ftEpnBTPTQtB4rU8Ns5jRNtFYNSWp9AMfned6",
+  "repo": "https://github.com/paycrest/contracts-solana",
+  "commit": "039d07da0f2e8168fc668b6261691624db0d1ae0",
+  "args": [],
+  "runner": "macos-15",
+  "expect": "69c5139d51befffe0ec52cf2a5e3d7c0927693359fe0116e0ebb7c868ffb83bc",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-09T11:41:42.000Z"
+ },
+ {
+  "program": "G2cSz28ftEpnBTPTQtB4rU8Ns5jRNtFYNSWp9AMfned6",
+  "repo": "https://github.com/paycrest/contracts-solana",
+  "commit": "18efb45a7df6d91354babd5fa86da19a95c9631d",
+  "args": [],
+  "runner": "macos-15",
+  "expect": "69c5139d51befffe0ec52cf2a5e3d7c0927693359fe0116e0ebb7c868ffb83bc",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-09T11:41:42.000Z"
+ },
+ {
+  "program": "yeetaecvxpd7DFzZAYTEYracRt1WYJ7DfMVjEeEt2Cp",
+  "repo": "https://github.com/YeetLaunch/yeet-amm-sdk",
+  "commit": "1b3d0c31b936905c526488984a895994cb0e5b29",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "1283eb0870488c6540b99e8b3e4e76837ee60c99a9254a8a38ba47e7f82324cf",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-15T16:20:46.000Z"
+ },
+ {
+  "program": "yeetaecvxpd7DFzZAYTEYracRt1WYJ7DfMVjEeEt2Cp",
+  "repo": "https://github.com/YeetLaunch/yeet-amm-sdk",
+  "commit": "b23eb3557dd390eda31723ca6c92ba967745bac8",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "1283eb0870488c6540b99e8b3e4e76837ee60c99a9254a8a38ba47e7f82324cf",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-15T16:20:46.000Z"
+ },
+ {
+  "program": "yeetaecvxpd7DFzZAYTEYracRt1WYJ7DfMVjEeEt2Cp",
+  "repo": "https://github.com/YeetLaunch/yeet-amm-sdk",
+  "commit": "df830ffa9e0e5c411eb07ddfe118229118f3486f",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "1283eb0870488c6540b99e8b3e4e76837ee60c99a9254a8a38ba47e7f82324cf",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-15T16:20:46.000Z"
+ },
+ {
+  "program": "GEN8HSyQehdKpUA6XVABbPWbhpaUua2fF59GP7tQxCTM",
+  "repo": "https://github.com/c8ntinuum/contracts-sol",
+  "commit": "0eaebaf00e2a206ee19e79680a7af68ed68a1fbb",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "92935c435003916f3bf2d8ba5f5d8460745bbfa881d5316e0efbd2e883c083aa",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-12T20:06:41.000Z"
+ },
+ {
+  "program": "GEN8HSyQehdKpUA6XVABbPWbhpaUua2fF59GP7tQxCTM",
+  "repo": "https://github.com/c8ntinuum/contracts-sol",
+  "commit": "5e18fef74adc6b3efa1cc78635ab9628317739f4",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "92935c435003916f3bf2d8ba5f5d8460745bbfa881d5316e0efbd2e883c083aa",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-12T20:06:41.000Z"
+ },
+ {
+  "program": "GEN8HSyQehdKpUA6XVABbPWbhpaUua2fF59GP7tQxCTM",
+  "repo": "https://github.com/c8ntinuum/contracts-sol",
+  "commit": "f00524dd2f3364ace9662463349c3c31b79f36c3",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "92935c435003916f3bf2d8ba5f5d8460745bbfa881d5316e0efbd2e883c083aa",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-12T20:06:41.000Z"
+ },
+ {
+  "program": "HH32bTawjvDQgJvLxD2D4kdJ1BUfaRXU7tDmzXC1HBr7",
+  "repo": "https://github.com/SmithiiDev/mixoor",
+  "commit": "ba45b351fe48c7e7c77b1fc7b9241dc03a84fe69",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "a10ca1d749f0ce6efe77ce31fcadde3ed2ec8528ef3d1741a6376f6d404d59c1",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-31T04:32:44.000Z"
+ },
+ {
+  "program": "distAitdwx9mDm3SaPMtGZRjpXMPUenLhmPwoySV3Hp",
+  "repo": "https://github.com/drift-labs/dfx-distributor",
+  "commit": "c7fc3de44f2a447f9e7ccad99b7d6a46933d47e9",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "81c55a2e0815dd07dacb702805056580c22e762209e2d68f4e2f8bfb51e58142",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-29T01:43:16.000Z"
+ },
+ {
+  "program": "distAitdwx9mDm3SaPMtGZRjpXMPUenLhmPwoySV3Hp",
+  "repo": "https://github.com/drift-labs/dfx-distributor",
+  "commit": "c4084610178a8043431c4abafcb3ce19c6ebd903",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "81c55a2e0815dd07dacb702805056580c22e762209e2d68f4e2f8bfb51e58142",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-29T01:43:16.000Z"
+ },
+ {
+  "program": "distAitdwx9mDm3SaPMtGZRjpXMPUenLhmPwoySV3Hp",
+  "repo": "https://github.com/drift-labs/dfx-distributor",
+  "commit": "52f2aecbb63626f4010d94c9364c59e3c9e10601",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "81c55a2e0815dd07dacb702805056580c22e762209e2d68f4e2f8bfb51e58142",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-29T01:43:16.000Z"
+ },
+ {
+  "program": "4tYFZPbUiKf9HDuMP9WiJ4Q8rvAumC7DZaafbQGHiKiZ",
+  "repo": "https://github.com/jito-foundation/distributor",
+  "commit": "2cf79f63973a79e6354871dc9355a63aa1d15139",
+  "args": [],
+  "runner": "macos-15",
+  "expect": "f2365c6262e6d84be5e50265d072c399799ff83700d92b79c4d1e207968de915",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-07-24T21:11:26.000Z"
+ },
+ {
+  "program": "4tYFZPbUiKf9HDuMP9WiJ4Q8rvAumC7DZaafbQGHiKiZ",
+  "repo": "https://github.com/jito-foundation/distributor",
+  "commit": "97e134a5f3b3da28130648d93da34100726e6dc9",
+  "args": [],
+  "runner": "macos-15",
+  "expect": "f2365c6262e6d84be5e50265d072c399799ff83700d92b79c4d1e207968de915",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-07-24T21:11:26.000Z"
+ },
+ {
+  "program": "4tYFZPbUiKf9HDuMP9WiJ4Q8rvAumC7DZaafbQGHiKiZ",
+  "repo": "https://github.com/jito-foundation/distributor",
+  "commit": "af232fe034e806494bedfc6a1f339b4e1c86a4e6",
+  "args": [],
+  "runner": "macos-15",
+  "expect": "f2365c6262e6d84be5e50265d072c399799ff83700d92b79c4d1e207968de915",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-07-24T21:11:26.000Z"
+ },
+ {
+  "program": "Vrf1RNUjXmQGjmQrQLvJHs9SNkvDJEsRVFPkfSQUwGz",
+  "repo": "https://github.com/magicblock-labs/solana-vrf",
+  "commit": "52b103c5d55d72e07456a445044b3c006cb87c1a",
+  "args": [],
+  "runner": "macos-15",
+  "expect": "106e4c1fc778c14945c65d6dee02e0d653112285d3b644418cb4931d1a88cf37",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-19T09:17:33.000Z"
+ },
+ {
+  "program": "Vrf1RNUjXmQGjmQrQLvJHs9SNkvDJEsRVFPkfSQUwGz",
+  "repo": "https://github.com/magicblock-labs/solana-vrf",
+  "commit": "fecd04ca27213069e3ebb4a2435acbddf6fa193e",
+  "args": [],
+  "runner": "macos-15",
+  "expect": "106e4c1fc778c14945c65d6dee02e0d653112285d3b644418cb4931d1a88cf37",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-19T09:17:33.000Z"
+ },
+ {
+  "program": "Vrf1RNUjXmQGjmQrQLvJHs9SNkvDJEsRVFPkfSQUwGz",
+  "repo": "https://github.com/magicblock-labs/solana-vrf",
+  "commit": "4de8b0f23981adb3f0f044bf4673f3c7f4229d09",
+  "args": [],
+  "runner": "macos-15",
+  "expect": "106e4c1fc778c14945c65d6dee02e0d653112285d3b644418cb4931d1a88cf37",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-19T09:17:33.000Z"
+ },
+ {
+  "program": "HShWcYbT6wGrndgauQxNrcNJuJQ1BX9CVZqFSn9Q7rNs",
+  "repo": "https://github.com/Worqen-Labs/Worqen-Solana",
+  "commit": "f01437c70ed91ded690a68bc9367ba5a27eabf93",
+  "args": [],
+  "runner": "macos-15",
+  "expect": "21367343ee5f61c5831967e9123944585085591748db1d36a170c0f4488e04a3",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-24T16:03:38.000Z"
+ },
+ {
+  "program": "HShWcYbT6wGrndgauQxNrcNJuJQ1BX9CVZqFSn9Q7rNs",
+  "repo": "https://github.com/Worqen-Labs/Worqen-Solana",
+  "commit": "7bd2c8f338642e6f204484a68c035c953719d275",
+  "args": [],
+  "runner": "macos-15",
+  "expect": "21367343ee5f61c5831967e9123944585085591748db1d36a170c0f4488e04a3",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-24T16:03:38.000Z"
+ },
+ {
+  "program": "HShWcYbT6wGrndgauQxNrcNJuJQ1BX9CVZqFSn9Q7rNs",
+  "repo": "https://github.com/Worqen-Labs/Worqen-Solana",
+  "commit": "d8f52c19b9e4b9b3f2e84cd3543b601e830fcfb0",
+  "args": [],
+  "runner": "macos-15",
+  "expect": "21367343ee5f61c5831967e9123944585085591748db1d36a170c0f4488e04a3",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-24T16:03:38.000Z"
+ },
+ {
+  "program": "AgTv5w1UvUb6zeqkThwMrztGu9hpepBu8YLghuR4dpSx",
+  "repo": "https://github.com/wuwei-labs/antegen",
+  "commit": "5cbcfe2ac2af8f44b3ca87383fd2fe301212bb08",
+  "args": [
+   "--mount-path",
+   "programs/thread",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "fa7847a6952e3cfd0ef505d0b72e58949a8b46a2ce3053b5bd100787bd80d4ae",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-28T19:53:48.000Z"
+ },
+ {
+  "program": "AgTv5w1UvUb6zeqkThwMrztGu9hpepBu8YLghuR4dpSx",
+  "repo": "https://github.com/wuwei-labs/antegen",
+  "commit": "46c1288bf291db49c559a68068fa57d86b68e07c",
+  "args": [
+   "--mount-path",
+   "programs/thread",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "fa7847a6952e3cfd0ef505d0b72e58949a8b46a2ce3053b5bd100787bd80d4ae",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-28T19:53:48.000Z"
+ },
+ {
+  "program": "AgTv5w1UvUb6zeqkThwMrztGu9hpepBu8YLghuR4dpSx",
+  "repo": "https://github.com/wuwei-labs/antegen",
+  "commit": "475157b55189abd22e27552de9e1c6549d818d1b",
+  "args": [
+   "--mount-path",
+   "programs/thread",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "fa7847a6952e3cfd0ef505d0b72e58949a8b46a2ce3053b5bd100787bd80d4ae",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-28T19:53:48.000Z"
+ },
+ {
+  "program": "1azyuavdMyvsivtNxPoz6SucD18eDHeXzFCUPq5XU7w",
+  "repo": "https://github.com/helium/helium-program-library",
+  "commit": "e69fd71c0b0ec02eefc49014140fb5b9cea87fb6",
+  "args": [
+   "--mount-path",
+   "programs/lazy-distributor",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "e26cdc9123df1db47452103a1bcca75c5977383e58ff13f2c1a28b1259b46530",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-20T19:38:04.000Z"
+ },
+ {
+  "program": "1azyuavdMyvsivtNxPoz6SucD18eDHeXzFCUPq5XU7w",
+  "repo": "https://github.com/helium/helium-program-library",
+  "commit": "74910dcea4a8991b64479fa6c8f8181064b525c5",
+  "args": [
+   "--mount-path",
+   "programs/lazy-distributor",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "e26cdc9123df1db47452103a1bcca75c5977383e58ff13f2c1a28b1259b46530",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-20T19:38:04.000Z"
+ },
+ {
+  "program": "1azyuavdMyvsivtNxPoz6SucD18eDHeXzFCUPq5XU7w",
+  "repo": "https://github.com/helium/helium-program-library",
+  "commit": "d9b66eede68b29e57841152a9634f7c1029e02bb",
+  "args": [
+   "--mount-path",
+   "programs/lazy-distributor",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "e26cdc9123df1db47452103a1bcca75c5977383e58ff13f2c1a28b1259b46530",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-20T19:38:04.000Z"
+ },
+ {
+  "program": "45TYikBDuxngJzkxqiMpuzudnA5VaW47renkjE5XFCge",
+  "repo": "https://github.com/devibeee/smart-distribution-program",
+  "commit": "a641e2acfc22809565e75c977480d3dd3a3e314d",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "a28e9b53b8eff13f4d24a052c50c91853b8e3f382d9c2ea37319c580a499f985",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-06T14:34:45.000Z"
+ },
+ {
+  "program": "45TYikBDuxngJzkxqiMpuzudnA5VaW47renkjE5XFCge",
+  "repo": "https://github.com/devibeee/smart-distribution-program",
+  "commit": "5261ca00aae987cd9890346751896ac38aaa6046",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "a28e9b53b8eff13f4d24a052c50c91853b8e3f382d9c2ea37319c580a499f985",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-06T14:34:45.000Z"
+ },
+ {
+  "program": "J848DmT72wYTEdDSXBkKKxdUY18raoCQnoqzH3te1Lgo",
+  "repo": "https://github.com/raydium-io/raydium-cpi",
+  "commit": "115df2779d53bacc7db9d0be2773a4b48a6d372b",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "8d4f04801f0ed0fdd4d1051ed518534e54a9ac85aabc0258c35f988f2d58f14c",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-09T06:04:20.000Z"
+ },
+ {
+  "program": "J848DmT72wYTEdDSXBkKKxdUY18raoCQnoqzH3te1Lgo",
+  "repo": "https://github.com/raydium-io/raydium-cpi",
+  "commit": "510191437b02195640a4b4213148d9215397a9cc",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "8d4f04801f0ed0fdd4d1051ed518534e54a9ac85aabc0258c35f988f2d58f14c",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-09T06:04:20.000Z"
+ },
+ {
+  "program": "J848DmT72wYTEdDSXBkKKxdUY18raoCQnoqzH3te1Lgo",
+  "repo": "https://github.com/raydium-io/raydium-cpi",
+  "commit": "60bdc21a7da905cfc9a39b62dbc408d6c8770e92",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "8d4f04801f0ed0fdd4d1051ed518534e54a9ac85aabc0258c35f988f2d58f14c",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-09T06:04:20.000Z"
+ },
+ {
+  "program": "2vMRKW921MjQuUTAc2MdheBCHhSXHHGcKw2SLKtMyz8S",
+  "repo": "https://github.com/Bonasa-Tech/manifest",
+  "commit": "87cef45e4182fa37566134eadcca338df8614870",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "e975a9a5437a30fc84d5ea6da275f3c6747badb32f54669d1d3a06d7f940a39a",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-15T04:06:49.000Z"
+ },
+ {
+  "program": "2vMRKW921MjQuUTAc2MdheBCHhSXHHGcKw2SLKtMyz8S",
+  "repo": "https://github.com/Bonasa-Tech/manifest",
+  "commit": "ebf92a05b39160379dd10b1e18065423716409a0",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "e975a9a5437a30fc84d5ea6da275f3c6747badb32f54669d1d3a06d7f940a39a",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-15T04:06:49.000Z"
+ },
+ {
+  "program": "2vMRKW921MjQuUTAc2MdheBCHhSXHHGcKw2SLKtMyz8S",
+  "repo": "https://github.com/Bonasa-Tech/manifest",
+  "commit": "c58baee562660301b694e567879c0f1b92502eb9",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "e975a9a5437a30fc84d5ea6da275f3c6747badb32f54669d1d3a06d7f940a39a",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-15T04:06:49.000Z"
+ },
+ {
+  "program": "AgFv5afjW9DmSPkiEvJ1er5bAAmRUqaBeTB6Cr8e1hKx",
+  "repo": "https://github.com/wuwei-labs/antegen",
+  "commit": "5cbcfe2ac2af8f44b3ca87383fd2fe301212bb08",
+  "args": [
+   "--mount-path",
+   "programs/fiber",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "bc4bdb328ccaa261aa6313ca4e272256324e45c0654aa3737158328b7a1f6188",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-28T19:54:08.000Z"
+ },
+ {
+  "program": "AgFv5afjW9DmSPkiEvJ1er5bAAmRUqaBeTB6Cr8e1hKx",
+  "repo": "https://github.com/wuwei-labs/antegen",
+  "commit": "46c1288bf291db49c559a68068fa57d86b68e07c",
+  "args": [
+   "--mount-path",
+   "programs/fiber",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "bc4bdb328ccaa261aa6313ca4e272256324e45c0654aa3737158328b7a1f6188",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-28T19:54:08.000Z"
+ },
+ {
+  "program": "AgFv5afjW9DmSPkiEvJ1er5bAAmRUqaBeTB6Cr8e1hKx",
+  "repo": "https://github.com/wuwei-labs/antegen",
+  "commit": "5f2b897fbbd8a879917262c1874e9f97d7538729",
+  "args": [
+   "--mount-path",
+   "programs/fiber",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "bc4bdb328ccaa261aa6313ca4e272256324e45c0654aa3737158328b7a1f6188",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-28T19:54:08.000Z"
+ },
+ {
+  "program": "RAkd1EJg45QQHeuXy7JEWBhdNvsd64Z5PbZJWQT96iB",
+  "repo": "https://github.com/rakurai-io/rakurai_programs",
+  "commit": "666f7939c246a1dd93f5954f1ade460bba4aa9a7",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "069abba39a09bc6e2e570b8e8268ec7a3ad74ed4ddc52e464f3a378d879f9e62",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-15T11:48:56.000Z"
+ },
+ {
+  "program": "RAkd1EJg45QQHeuXy7JEWBhdNvsd64Z5PbZJWQT96iB",
+  "repo": "https://github.com/rakurai-io/rakurai_programs",
+  "commit": "3db57a1b59205a7f616c304fcd4ec4418b9de379",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "069abba39a09bc6e2e570b8e8268ec7a3ad74ed4ddc52e464f3a378d879f9e62",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-15T11:48:56.000Z"
+ },
+ {
+  "program": "RAkd1EJg45QQHeuXy7JEWBhdNvsd64Z5PbZJWQT96iB",
+  "repo": "https://github.com/rakurai-io/rakurai_programs",
+  "commit": "424e49a5ec2a6a97dc05128f483b61486eec9615",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "069abba39a09bc6e2e570b8e8268ec7a3ad74ed4ddc52e464f3a378d879f9e62",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-15T11:48:56.000Z"
+ },
+ {
+  "program": "regVYJW7tcT8zipN5YiBvHsvR5jXW1uLFxaHSbugABg",
+  "repo": "https://github.com/solana-program/token-2022",
+  "commit": "b5b7511e5d4f19a6a118b858d83a7fe3b0017b1e",
+  "args": [
+   "--mount-path",
+   "confidential/elgamal-registry",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "1420ebd133e5016c2331ad48b2aca5bc8889bb1bbaebc0f48fcfdcfd51a3c055",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-15T00:11:45.000Z"
+ },
+ {
+  "program": "regVYJW7tcT8zipN5YiBvHsvR5jXW1uLFxaHSbugABg",
+  "repo": "https://github.com/solana-program/token-2022",
+  "commit": "de84743a446fbe57c196432d757e15ece4e9be04",
+  "args": [
+   "--mount-path",
+   "confidential/elgamal-registry",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "1420ebd133e5016c2331ad48b2aca5bc8889bb1bbaebc0f48fcfdcfd51a3c055",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-15T00:11:45.000Z"
+ },
+ {
+  "program": "regVYJW7tcT8zipN5YiBvHsvR5jXW1uLFxaHSbugABg",
+  "repo": "https://github.com/solana-program/token-2022",
+  "commit": "c820596f065a16bce4c3059117ba3a7a1e75358c",
+  "args": [
+   "--mount-path",
+   "confidential/elgamal-registry",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "1420ebd133e5016c2331ad48b2aca5bc8889bb1bbaebc0f48fcfdcfd51a3c055",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-15T00:11:45.000Z"
+ },
+ {
+  "program": "45iBNkaENereLKMjLm2LHkF3hpDapf6mnvrM5HWFg9cY",
+  "repo": "https://github.com/byreal-git/byreal-clmm",
+  "commit": "6863b33fd0f7874f722e58fe8191009b6061de5d",
+  "args": [],
+  "runner": "macos-15",
+  "expect": "7bc4c6a4bee31074e4c942039601ab4bc80cf84e379192c94f349c690e5d1985",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-11T03:40:42.000Z"
+ },
+ {
+  "program": "45iBNkaENereLKMjLm2LHkF3hpDapf6mnvrM5HWFg9cY",
+  "repo": "https://github.com/byreal-git/byreal-clmm",
+  "commit": "0a66f64f73de5f923b05efaebabfd944727be389",
+  "args": [],
+  "runner": "macos-15",
+  "expect": "7bc4c6a4bee31074e4c942039601ab4bc80cf84e379192c94f349c690e5d1985",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-11T03:40:42.000Z"
+ },
+ {
+  "program": "45iBNkaENereLKMjLm2LHkF3hpDapf6mnvrM5HWFg9cY",
+  "repo": "https://github.com/byreal-git/byreal-clmm",
+  "commit": "2badd50e51904bf292bc55055406b0acaea4a43f",
+  "args": [],
+  "runner": "macos-15",
+  "expect": "7bc4c6a4bee31074e4c942039601ab4bc80cf84e379192c94f349c690e5d1985",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-11T03:40:42.000Z"
+ },
+ {
+  "program": "SMPLbiNbsa19gf9jz8x9uHSvSn9VLFJB38dGy46kqJ7",
+  "repo": "https://github.com/squads-protocol/squads-mpl",
+  "commit": "9910d70a21621b4ebacba6a06f1e45acfec30de6",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "420d3bcdd03406052b2d8492c7f01e1d29ffc7af44d40aceff226930965fd36e",
+  "how": "last commit before deploy",
+  "deployedAt": "2022-11-21T16:16:21.000Z"
+ },
+ {
+  "program": "SMPLbiNbsa19gf9jz8x9uHSvSn9VLFJB38dGy46kqJ7",
+  "repo": "https://github.com/squads-protocol/squads-mpl",
+  "commit": "294dff1241f7a764463b33adc2f70e215ba82661",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "420d3bcdd03406052b2d8492c7f01e1d29ffc7af44d40aceff226930965fd36e",
+  "how": "last commit before deploy",
+  "deployedAt": "2022-11-21T16:16:21.000Z"
+ },
+ {
+  "program": "SMPLbiNbsa19gf9jz8x9uHSvSn9VLFJB38dGy46kqJ7",
+  "repo": "https://github.com/squads-protocol/squads-mpl",
+  "commit": "b166c31b2502b9b3da5ea985d69101d89fa4d5f9",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "420d3bcdd03406052b2d8492c7f01e1d29ffc7af44d40aceff226930965fd36e",
+  "how": "last commit before deploy",
+  "deployedAt": "2022-11-21T16:16:21.000Z"
+ },
+ {
+  "program": "4vZzXsTirYkUyQKU6ojZroi285R8yWPLjckEMC5T3hzu",
+  "repo": "https://github.com/solana-labs/solana-program-library",
+  "commit": "3a9902e119a9509f7c7bebd20451ad86d200a7ce",
+  "args": [
+   "--mount-path",
+   "account-compression",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "macos-15",
+  "expect": "44a5621c9717db1f22036ace5c37de02e2530441b865b7a1175162fc39d3dfbc",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-07-28T20:55:26.000Z"
+ },
+ {
+  "program": "4vZzXsTirYkUyQKU6ojZroi285R8yWPLjckEMC5T3hzu",
+  "repo": "https://github.com/solana-labs/solana-program-library",
+  "commit": "3bb86e33abfae165cf996769081c6d8cde435a7e",
+  "args": [
+   "--mount-path",
+   "account-compression",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "macos-15",
+  "expect": "44a5621c9717db1f22036ace5c37de02e2530441b865b7a1175162fc39d3dfbc",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-07-28T20:55:26.000Z"
+ },
+ {
+  "program": "4vZzXsTirYkUyQKU6ojZroi285R8yWPLjckEMC5T3hzu",
+  "repo": "https://github.com/solana-labs/solana-program-library",
+  "commit": "28350e3227aa666acb7f8115786c1a0d44e1bb2f",
+  "args": [
+   "--mount-path",
+   "account-compression",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "macos-15",
+  "expect": "44a5621c9717db1f22036ace5c37de02e2530441b865b7a1175162fc39d3dfbc",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-07-28T20:55:26.000Z"
+ },
+ {
+  "program": "AAuXLgmQDUHKTDovmKStkG9yciYjoe1YcRmgmYLkPy3R",
+  "repo": "https://github.com/jito-foundation/jito-programs",
+  "commit": "ce1dfb6b3f6c423bf206ec1f24df911d292aa409",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "4419f389c3625314f84dfb7ef9b9100f87b6e726afad198866061109a200e1c5",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-27T18:13:31.000Z"
+ },
+ {
+  "program": "AAuXLgmQDUHKTDovmKStkG9yciYjoe1YcRmgmYLkPy3R",
+  "repo": "https://github.com/jito-foundation/jito-programs",
+  "commit": "90d0d44454be38774e2a1f4f070a5a7b7e7435d6",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "4419f389c3625314f84dfb7ef9b9100f87b6e726afad198866061109a200e1c5",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-27T18:13:31.000Z"
+ },
+ {
+  "program": "AAuXLgmQDUHKTDovmKStkG9yciYjoe1YcRmgmYLkPy3R",
+  "repo": "https://github.com/jito-foundation/jito-programs",
+  "commit": "31d51dccc32787eb4ba6a500695ccbf319cf900a",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "4419f389c3625314f84dfb7ef9b9100f87b6e726afad198866061109a200e1c5",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-09-27T18:13:31.000Z"
+ },
+ {
+  "program": "DiS3nNjFVMieMgmiQFm6wgJL7nevk4NrhXKLbtEH1Z2R",
+  "repo": "https://github.com/jup-ag/distributor",
+  "commit": "f5c44e2cb729234617bab7ac945bf332ba2e8db9",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "b4884b5a0134570deefbb4ee6f9262558810785b8fd7645f6213a64aa7bb633a",
+  "how": "last commit before deploy",
+  "deployedAt": "2025-01-20T06:52:54.000Z"
+ },
+ {
+  "program": "DiS3nNjFVMieMgmiQFm6wgJL7nevk4NrhXKLbtEH1Z2R",
+  "repo": "https://github.com/jup-ag/distributor",
+  "commit": "ba9441b34ace40e41edf33d0a167d8f73e821985",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "b4884b5a0134570deefbb4ee6f9262558810785b8fd7645f6213a64aa7bb633a",
+  "how": "last commit before deploy",
+  "deployedAt": "2025-01-20T06:52:54.000Z"
+ },
+ {
+  "program": "DiS3nNjFVMieMgmiQFm6wgJL7nevk4NrhXKLbtEH1Z2R",
+  "repo": "https://github.com/jup-ag/distributor",
+  "commit": "8eca929a36bf52f7a5f7b98b8e1a344f427fa82d",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "b4884b5a0134570deefbb4ee6f9262558810785b8fd7645f6213a64aa7bb633a",
+  "how": "last commit before deploy",
+  "deployedAt": "2025-01-20T06:52:54.000Z"
+ },
+ {
+  "program": "4yx1NJ4Vqf2zT1oVLk4SySBhhDJXmXFt88ncm4gPxtL7",
+  "repo": "https://github.com/Dual-Finance/staking-options",
+  "commit": "0b21ab5b4c85a437d4d3cedbd24d9e6dab60ec08",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "a507af6d520ca8eb1482902753902c5828d1a3eb1ec53b271e5fb8dace188394",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-07-14T15:01:00.000Z"
+ },
+ {
+  "program": "4yx1NJ4Vqf2zT1oVLk4SySBhhDJXmXFt88ncm4gPxtL7",
+  "repo": "https://github.com/Dual-Finance/staking-options",
+  "commit": "96cc480ebd55d272fdcc9ba4af77959ebd7a0961",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "a507af6d520ca8eb1482902753902c5828d1a3eb1ec53b271e5fb8dace188394",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-07-14T15:01:00.000Z"
+ },
+ {
+  "program": "4yx1NJ4Vqf2zT1oVLk4SySBhhDJXmXFt88ncm4gPxtL7",
+  "repo": "https://github.com/Dual-Finance/staking-options",
+  "commit": "3c1aeca92fd51f2bf8cd0163d26c68224a476f40",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "a507af6d520ca8eb1482902753902c5828d1a3eb1ec53b271e5fb8dace188394",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-07-14T15:01:00.000Z"
+ },
+ {
+  "program": "rAKACC6Qw8HYa87ntGPRbfYEMnK2D9JVLsmZaKPpMmi",
+  "repo": "https://github.com/rakurai-io/rakurai_programs",
+  "commit": "666f7939c246a1dd93f5954f1ade460bba4aa9a7",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "8c3730fb37681fe0e92a9637bf42e3d00ae0c923178f771406b1c949ac6bea66",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-01T16:02:32.000Z"
+ },
+ {
+  "program": "rAKACC6Qw8HYa87ntGPRbfYEMnK2D9JVLsmZaKPpMmi",
+  "repo": "https://github.com/rakurai-io/rakurai_programs",
+  "commit": "3db57a1b59205a7f616c304fcd4ec4418b9de379",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "8c3730fb37681fe0e92a9637bf42e3d00ae0c923178f771406b1c949ac6bea66",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-01T16:02:32.000Z"
+ },
+ {
+  "program": "rAKACC6Qw8HYa87ntGPRbfYEMnK2D9JVLsmZaKPpMmi",
+  "repo": "https://github.com/rakurai-io/rakurai_programs",
+  "commit": "424e49a5ec2a6a97dc05128f483b61486eec9615",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "8c3730fb37681fe0e92a9637bf42e3d00ae0c923178f771406b1c949ac6bea66",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-01T16:02:32.000Z"
+ },
+ {
+  "program": "G2QiayuZz7aPEVeYSKvSY1aaCr6RgLZpY3xQxwg8A5KJ",
+  "repo": "https://github.com/regolith-labs/entropy",
+  "commit": "f26ae03cccab6188effb0a170b8123cf4bb54c94",
+  "args": [],
+  "runner": "macos-15",
+  "expect": "aaf4f72371a4920f95d03c64139e0b84ece823d1ecd2cdd60d9ce3598d270573",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-03T17:15:08.000Z"
+ },
+ {
+  "program": "G2QiayuZz7aPEVeYSKvSY1aaCr6RgLZpY3xQxwg8A5KJ",
+  "repo": "https://github.com/regolith-labs/entropy",
+  "commit": "98939a039f770c6ee540c582336432f1a010ddbc",
+  "args": [],
+  "runner": "macos-15",
+  "expect": "aaf4f72371a4920f95d03c64139e0b84ece823d1ecd2cdd60d9ce3598d270573",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-03T17:15:08.000Z"
+ },
+ {
+  "program": "G2QiayuZz7aPEVeYSKvSY1aaCr6RgLZpY3xQxwg8A5KJ",
+  "repo": "https://github.com/regolith-labs/entropy",
+  "commit": "6bf22e677be604057dfb9a823b2271f2cf309e6a",
+  "args": [],
+  "runner": "macos-15",
+  "expect": "aaf4f72371a4920f95d03c64139e0b84ece823d1ecd2cdd60d9ce3598d270573",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-03T17:15:08.000Z"
+ },
+ {
+  "program": "T1pyyaTNZsKv2WcRAB8oVnk93mLJw2XzjtVYqCsaHqt",
+  "repo": "https://github.com/jito-foundation/jito-programs",
+  "commit": "9456e5e96b84ae85219e7802711de9b7b8df6e41",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "803f38393b6bcf072a6b5ff7a79b90ee2cf318e8216864d5b30957e0cf425ad3",
+  "how": "last commit before deploy",
+  "deployedAt": "2025-05-02T23:31:47.000Z"
+ },
+ {
+  "program": "T1pyyaTNZsKv2WcRAB8oVnk93mLJw2XzjtVYqCsaHqt",
+  "repo": "https://github.com/jito-foundation/jito-programs",
+  "commit": "987a4421e70a49ca8ab227218381b836f201f833",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "803f38393b6bcf072a6b5ff7a79b90ee2cf318e8216864d5b30957e0cf425ad3",
+  "how": "last commit before deploy",
+  "deployedAt": "2025-05-02T23:31:47.000Z"
+ },
+ {
+  "program": "T1pyyaTNZsKv2WcRAB8oVnk93mLJw2XzjtVYqCsaHqt",
+  "repo": "https://github.com/jito-foundation/jito-programs",
+  "commit": "5046a3caf563a6e805f6ce8ec0ab3062c97be01b",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "803f38393b6bcf072a6b5ff7a79b90ee2cf318e8216864d5b30957e0cf425ad3",
+  "how": "last commit before deploy",
+  "deployedAt": "2025-05-02T23:31:47.000Z"
+ },
+ {
+  "program": "Dis2TfkFnXFkrtvAktEkw37sdb7qwJgY6H7YZJwk51wK",
+  "repo": "https://github.com/jup-ag/distributor",
+  "commit": "5df4dd130ef9def17c14ce51b3da9627486d4e53",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "487fa5484bd62e0988854b72c9702063d5fe654d46be2a008ca547faa408fcd1",
+  "how": "last commit before deploy",
+  "deployedAt": "2024-07-08T06:40:41.000Z"
+ },
+ {
+  "program": "Dis2TfkFnXFkrtvAktEkw37sdb7qwJgY6H7YZJwk51wK",
+  "repo": "https://github.com/jup-ag/distributor",
+  "commit": "4e262af0d6e19f8877934f885ae03597a7ddb01b",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "487fa5484bd62e0988854b72c9702063d5fe654d46be2a008ca547faa408fcd1",
+  "how": "last commit before deploy",
+  "deployedAt": "2024-07-08T06:40:41.000Z"
+ },
+ {
+  "program": "Dis2TfkFnXFkrtvAktEkw37sdb7qwJgY6H7YZJwk51wK",
+  "repo": "https://github.com/jup-ag/distributor",
+  "commit": "7d4f8ff95f3c58a912c4b1866ef0f2fd68bd5d7e",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "487fa5484bd62e0988854b72c9702063d5fe654d46be2a008ca547faa408fcd1",
+  "how": "last commit before deploy",
+  "deployedAt": "2024-07-08T06:40:41.000Z"
+ },
+ {
+  "program": "RestkWeAVL8fRGgzhfeoqFhsqKRchg6aa1XrcH96z4Q",
+  "repo": "https://github.com/jito-foundation/restaking",
+  "commit": "c736bca8edc96efa603d580472b7d26c0d7224c7",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "75da0a2fc5aee6cf6645922363c417c0f6bfce4acb5c3624b5eb9392d3f0a29b",
+  "how": "last commit before deploy",
+  "deployedAt": "2025-01-27T16:30:55.000Z"
+ },
+ {
+  "program": "RestkWeAVL8fRGgzhfeoqFhsqKRchg6aa1XrcH96z4Q",
+  "repo": "https://github.com/jito-foundation/restaking",
+  "commit": "3fdcd8876ea158737550e6b2017fa28b5d2783f8",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "75da0a2fc5aee6cf6645922363c417c0f6bfce4acb5c3624b5eb9392d3f0a29b",
+  "how": "last commit before deploy",
+  "deployedAt": "2025-01-27T16:30:55.000Z"
+ },
+ {
+  "program": "RestkWeAVL8fRGgzhfeoqFhsqKRchg6aa1XrcH96z4Q",
+  "repo": "https://github.com/jito-foundation/restaking",
+  "commit": "e66e86df906fa64e960663ec470f05ba677ce369",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "75da0a2fc5aee6cf6645922363c417c0f6bfce4acb5c3624b5eb9392d3f0a29b",
+  "how": "last commit before deploy",
+  "deployedAt": "2025-01-27T16:30:55.000Z"
+ },
+ {
+  "program": "SPoo1Ku8WFXoNDMHPsrGSTSG1Y47rzgn41SLUNakuHy",
+  "repo": "https://github.com/solana-program/stake-pool",
+  "commit": "9c58700580c2d10fb392fd42644fd1238f9b91d8",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "8df58bc9f9428c02bf34fa845ae2961274156e7ff07a8dc1be0018dd765baeff",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-06-30T12:53:10.000Z"
+ },
+ {
+  "program": "SPoo1Ku8WFXoNDMHPsrGSTSG1Y47rzgn41SLUNakuHy",
+  "repo": "https://github.com/solana-program/stake-pool",
+  "commit": "c1f6858e94f61c3258eede8acf64a405e436fc28",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "8df58bc9f9428c02bf34fa845ae2961274156e7ff07a8dc1be0018dd765baeff",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-06-30T12:53:10.000Z"
+ },
+ {
+  "program": "SPoo1Ku8WFXoNDMHPsrGSTSG1Y47rzgn41SLUNakuHy",
+  "repo": "https://github.com/solana-program/stake-pool",
+  "commit": "ff44361c93984316f01b185510f6f95715c69957",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "8df58bc9f9428c02bf34fa845ae2961274156e7ff07a8dc1be0018dd765baeff",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-06-30T12:53:10.000Z"
+ },
+ {
+  "program": "circAbx64bbsscPbQzZAUvuXpHqrCe6fLMzc2uKXz9g",
+  "repo": "https://github.com/helium/helium-program-library",
+  "commit": "77848bf3b5bdd1436cdc1b47e1affc3aeac2db92",
+  "args": [
+   "--mount-path",
+   "programs/circuit-breaker",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "f2636525df63c9c2a4be330f7d59d3cb7c2dff9f08ec2784be5a3e4ca9ae90a8",
+  "how": "last commit before deploy",
+  "deployedAt": "2025-05-14T01:35:22.000Z"
+ },
+ {
+  "program": "circAbx64bbsscPbQzZAUvuXpHqrCe6fLMzc2uKXz9g",
+  "repo": "https://github.com/helium/helium-program-library",
+  "commit": "2cb1a76fb0b7b506f0331d9f67e7e197a3aae2a3",
+  "args": [
+   "--mount-path",
+   "programs/circuit-breaker",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "f2636525df63c9c2a4be330f7d59d3cb7c2dff9f08ec2784be5a3e4ca9ae90a8",
+  "how": "last commit before deploy",
+  "deployedAt": "2025-05-14T01:35:22.000Z"
+ },
+ {
+  "program": "circAbx64bbsscPbQzZAUvuXpHqrCe6fLMzc2uKXz9g",
+  "repo": "https://github.com/helium/helium-program-library",
+  "commit": "dd7450cc96c567bfc5d8b953df87f562a3f3c0da",
+  "args": [
+   "--mount-path",
+   "programs/circuit-breaker",
+   "--workspace-path",
+   "."
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "f2636525df63c9c2a4be330f7d59d3cb7c2dff9f08ec2784be5a3e4ca9ae90a8",
+  "how": "last commit before deploy",
+  "deployedAt": "2025-05-14T01:35:22.000Z"
+ },
+ {
+  "program": "6KMdXC3Fxovp3pnUsdQuUbderPzZtTA4t6R1jacYJWQr",
+  "repo": "https://github.com/BordrlessDex/bordrless-programs",
+  "commit": "c1ff671a7ce85d2d30a525012ed9fa20156a5a45",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "af392c58cca7f3fb16c336523f7c5d1b712b3ee0a2f64936d0388b35e7e806b2",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-13T01:05:27.000Z"
+ },
+ {
+  "program": "6KMdXC3Fxovp3pnUsdQuUbderPzZtTA4t6R1jacYJWQr",
+  "repo": "https://github.com/BordrlessDex/bordrless-programs",
+  "commit": "22932e53a37486dc6032ed0a4e041cfdb5602bdb",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "af392c58cca7f3fb16c336523f7c5d1b712b3ee0a2f64936d0388b35e7e806b2",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-13T01:05:27.000Z"
+ },
+ {
+  "program": "6KMdXC3Fxovp3pnUsdQuUbderPzZtTA4t6R1jacYJWQr",
+  "repo": "https://github.com/BordrlessDex/bordrless-programs",
+  "commit": "a71b167e10e92c61a2e892a0c0677c07bf9a4b3d",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "af392c58cca7f3fb16c336523f7c5d1b712b3ee0a2f64936d0388b35e7e806b2",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-13T01:05:27.000Z"
+ },
+ {
+  "program": "9mRXU9gpWY3B13AyuCCtNjHnKt1pUFBQ6vJDLTwgakhm",
+  "repo": "https://github.com/BordrlessDex/bordrless-programs",
+  "commit": "71f87cb753a10715da045e99950cbdbbc79499ee",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "ffdbc50c0c57f38e865dc87f605c0533c231b9d8087942f5e14af92bdbe6d5ed",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-15T03:27:25.000Z"
+ },
+ {
+  "program": "9mRXU9gpWY3B13AyuCCtNjHnKt1pUFBQ6vJDLTwgakhm",
+  "repo": "https://github.com/BordrlessDex/bordrless-programs",
+  "commit": "1aaf8f823c22be5bec9cc753fa1049f4cced1e7c",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "ffdbc50c0c57f38e865dc87f605c0533c231b9d8087942f5e14af92bdbe6d5ed",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-15T03:27:25.000Z"
+ },
+ {
+  "program": "9mRXU9gpWY3B13AyuCCtNjHnKt1pUFBQ6vJDLTwgakhm",
+  "repo": "https://github.com/BordrlessDex/bordrless-programs",
+  "commit": "99b5ed61804d3dd783ce124f6c7580941c411bd8",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "ffdbc50c0c57f38e865dc87f605c0533c231b9d8087942f5e14af92bdbe6d5ed",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-15T03:27:25.000Z"
+ },
+ {
+  "program": "REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2",
+  "repo": "https://github.com/byreal-git/byreal-clmm",
+  "commit": "6863b33fd0f7874f722e58fe8191009b6061de5d",
+  "args": [],
+  "runner": "macos-15",
+  "expect": "bd0270a92fd7439d19134cc80418a05a0ca41dcaf624ca1e9ed6487aa4513ba5",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-12T07:16:44.000Z"
+ },
+ {
+  "program": "REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2",
+  "repo": "https://github.com/byreal-git/byreal-clmm",
+  "commit": "0a66f64f73de5f923b05efaebabfd944727be389",
+  "args": [],
+  "runner": "macos-15",
+  "expect": "bd0270a92fd7439d19134cc80418a05a0ca41dcaf624ca1e9ed6487aa4513ba5",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-12T07:16:44.000Z"
+ },
+ {
+  "program": "REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2",
+  "repo": "https://github.com/byreal-git/byreal-clmm",
+  "commit": "2badd50e51904bf292bc55055406b0acaea4a43f",
+  "args": [],
+  "runner": "macos-15",
+  "expect": "bd0270a92fd7439d19134cc80418a05a0ca41dcaf624ca1e9ed6487aa4513ba5",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-08-12T07:16:44.000Z"
+ },
+ {
+  "program": "AfDhsethmkoimbyoSWnRfLtjFXZteRNtbFMioR9qWMjD",
+  "repo": "https://github.com/BordrlessDex/bordrless-programs",
+  "commit": "212f6ba296d34fea3d52d546853dddd636438837",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "d0057fe532b38b260523ca85f456690f26479ca05b85c5f30f302123fde2abd4",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-13T01:36:29.000Z"
+ },
+ {
+  "program": "AfDhsethmkoimbyoSWnRfLtjFXZteRNtbFMioR9qWMjD",
+  "repo": "https://github.com/BordrlessDex/bordrless-programs",
+  "commit": "c1ff671a7ce85d2d30a525012ed9fa20156a5a45",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "d0057fe532b38b260523ca85f456690f26479ca05b85c5f30f302123fde2abd4",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-13T01:36:29.000Z"
+ },
+ {
+  "program": "AfDhsethmkoimbyoSWnRfLtjFXZteRNtbFMioR9qWMjD",
+  "repo": "https://github.com/BordrlessDex/bordrless-programs",
+  "commit": "22932e53a37486dc6032ed0a4e041cfdb5602bdb",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "d0057fe532b38b260523ca85f456690f26479ca05b85c5f30f302123fde2abd4",
+  "how": "last commit before deploy",
+  "deployedAt": "2026-10-13T01:36:29.000Z"
+ }
+]

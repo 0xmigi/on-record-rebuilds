@@ -23,7 +23,7 @@ jobs:
 
   build:
     needs: plan
-    name: ${{ matrix.program }} · ${{ matrix.runner }}
+    name: ${{ matrix.program }} · ${{ matrix.runner }} · ${{ matrix.commit }}
     runs-on: ${{ matrix.runner }}
     timeout-minutes: 40
     strategy:
@@ -101,7 +101,7 @@ jobs:
           import json, os
           plan = dict(l.strip().split("=", 1) for l in open("plan.txt") if "=" in l) if os.path.exists("plan.txt") else {}
           stage = open("status").read().strip().split("=", 1)[1] if os.path.exists("status") else "fetch"
-          json.dump({"program": os.environ["PROGRAM"], "runner": "${{ matrix.runner }}", "result": stage, **plan},
+          json.dump({"program": os.environ["PROGRAM"], "runner": "${{ matrix.runner }}", "commit": "${{ matrix.commit }}", "result": stage, **plan},
                     open("result.json", "w"))
           print(stage)
           EOF
@@ -109,7 +109,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: result-${{ matrix.program }}-${{ matrix.runner }}
+          name: result-${{ matrix.program }}-${{ matrix.runner }}-${{ matrix.commit }}
           path: |
             result.json
             src/**/target/deploy/*.so
