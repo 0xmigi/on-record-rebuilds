@@ -1,0 +1,112 @@
+# Rebuild programs straight from their on-chain verification recipe (the
+# otter-verify PDA: repo, commit, build args) on the machine type their
+# deployed bytes point to, and compare with the deployed hash. The Solana
+# version is worked out from the recipe and the source (scripts/plan.py).
+name: recipes
+
+on:
+  workflow_dispatch:
+    inputs:
+      batch:
+        description: "JSON list under batches/ (max 256 entries)"
+        required: true
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.m.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: m
+        run: echo "matrix=$(jq -c . "${{ inputs.batch }}")" >> "$GITHUB_OUTPUT"
+
+  build:
+    needs: plan
+    name: ${{ matrix.program }} · ${{ matrix.runner }}
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        include: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    env:
+      PROGRAM: ${{ matrix.program }}
+      EXPECT: ${{ matrix.expect }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: tools
+
+      - name: Fetch source ${{ matrix.repo }}@${{ matrix.commit }}
+        id: src
+        run: |
+          echo "stage=fetch" > status
+          git clone -q "${{ matrix.repo }}" src
+          git -C src checkout -q "${{ matrix.commit }}"
+          git -C src log -1 --format='%H %s'
+
+      - name: Plan
+        id: plan
+        env:
+          ARGS: ${{ toJSON(matrix.args) }}
+        run: |
+          echo "stage=plan" > status
+          python3 tools/scripts/plan.py "$ARGS" src | tee -a "$GITHUB_OUTPUT" plan.txt
+          if grep -q '^skip=' plan.txt; then echo "stage=skip" > status; exit 1; fi
+
+      - name: Install Solana ${{ steps.plan.outputs.agave_tag }}
+        run: |
+          echo "stage=install" > status
+          case "$RUNNER_OS-$RUNNER_ARCH" in
+            macOS-ARM64) T=aarch64-apple-darwin ;;
+            macOS-X64)   T=x86_64-apple-darwin ;;
+            Linux-X64)   T=x86_64-unknown-linux-gnu ;;
+          esac
+          curl -sSfL "https://github.com/${{ steps.plan.outputs.agave_repo }}/releases/download/${{ steps.plan.outputs.agave_tag }}/solana-release-$T.tar.bz2" | tar -xj -C "$RUNNER_TEMP"
+          echo "$RUNNER_TEMP/solana-release/bin" >> "$GITHUB_PATH"
+
+      - name: Build
+        run: |
+          echo "stage=build" > status
+          cd "src/${{ steps.plan.outputs.mount }}"
+          cargo-build-sbf --version
+          LIB="${{ steps.plan.outputs.lib }}"
+          if [ -n "$LIB" ]; then
+            M=$(python3 "$GITHUB_WORKSPACE/tools/scripts/find-manifest.py" "$LIB")
+            echo "manifest: $M"
+            ( cd "$(dirname "$M")" && eval cargo-build-sbf ${{ steps.plan.outputs.sbf_args }} -- --locked --manifest-path "$PWD/$(basename "$M")" ${{ steps.plan.outputs.cargo_args }} )
+          else
+            eval cargo-build-sbf ${{ steps.plan.outputs.sbf_args }} -- --locked ${{ steps.plan.outputs.cargo_args }}
+          fi
+
+      - name: Compare with the deployed hash
+        run: |
+          echo "stage=compare" > status
+          found=""
+          for so in $(find src -path "*/target/deploy/*.so"); do
+            h=$(python3 tools/scripts/exe-hash.py "$so")
+            echo "$h  $so"
+            [ "$h" = "$EXPECT" ] && found="$so"
+          done
+          echo "deployed: $EXPECT"
+          [ -n "$found" ] && echo "stage=match" > status || { echo "stage=differs" > status; exit 1; }
+
+      - name: Record result
+        if: always()
+        run: |
+          python3 - <<'EOF'
+          import json, os
+          plan = dict(l.strip().split("=", 1) for l in open("plan.txt") if "=" in l) if os.path.exists("plan.txt") else {}
+          stage = open("status").read().strip().split("=", 1)[1] if os.path.exists("status") else "fetch"
+          json.dump({"program": os.environ["PROGRAM"], "runner": "${{ matrix.runner }}", "result": stage, **plan},
+                    open("result.json", "w"))
+          print(stage)
+          EOF
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: result-${{ matrix.program }}-${{ matrix.runner }}
+          path: result.json
