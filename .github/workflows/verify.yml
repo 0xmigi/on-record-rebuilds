@@ -1,0 +1,68 @@
+# Rebuild ONE program from its public source and compare it with mainnet,
+# byte for byte. No Docker image: a fresh GitHub machine of the program's own
+# type, the Solana version from its source, and the deployed bytes fetched
+# straight from mainnet at the end. The run summary shows both fingerprints.
+name: verify
+run-name: "Rebuild ${{ inputs.label }} from ${{ inputs.repo }} @ ${{ inputs.commit }}"
+
+on:
+  workflow_dispatch:
+    inputs:
+      label: { description: "Program name, for the title", required: true }
+      program: { description: "Program address", required: true }
+      repo: { description: "owner/name on GitHub", required: true }
+      commit: { description: "Commit to build", required: true }
+      machine: { description: "Runner", default: "ubuntu-latest", type: choice, options: [ubuntu-latest, macos-15, macos-15-intel] }
+      args: { description: "Recipe args as a JSON list", default: "[]" }
+
+jobs:
+  rebuild:
+    name: "${{ inputs.label }} · ${{ inputs.machine }}"
+    runs-on: ${{ inputs.machine }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: tools
+
+      - name: Fetch the public source
+        run: |
+          git clone -q "https://github.com/${{ inputs.repo }}" src
+          git -C src checkout -q "${{ inputs.commit }}" 2>/dev/null || { git -C src fetch -q origin "${{ inputs.commit }}" && git -C src checkout -q FETCH_HEAD; }
+          git -C src log -1 --format='%H %s'
+
+      - name: Work out the Solana version
+        id: plan
+        run: python3 tools/scripts/plan.py '${{ inputs.args }}' src | tee -a "$GITHUB_OUTPUT"
+
+      - name: Install Solana ${{ steps.plan.outputs.agave_tag }}
+        run: |
+          case "$RUNNER_OS-$RUNNER_ARCH" in
+            macOS-ARM64) T=aarch64-apple-darwin ;; macOS-X64) T=x86_64-apple-darwin ;; Linux-X64) T=x86_64-unknown-linux-gnu ;;
+          esac
+          curl -sSfL "https://github.com/${{ steps.plan.outputs.agave_repo }}/releases/download/${{ steps.plan.outputs.agave_tag }}/solana-release-$T.tar.bz2" | tar -xj -C "$RUNNER_TEMP"
+          echo "$RUNNER_TEMP/solana-release/bin" >> "$GITHUB_PATH"
+
+      - name: Build
+        run: |
+          cd "src/${{ steps.plan.outputs.mount }}"
+          cargo-build-sbf --version
+          cargo-build-sbf ${{ steps.plan.outputs.sbf_args }} -- --locked ${{ steps.plan.outputs.cargo_args }}
+
+      - name: Download the deployed program from mainnet
+        run: solana program dump -u https://api.mainnet-beta.solana.com "${{ inputs.program }}" deployed.so
+
+      - name: Compare byte for byte
+        run: |
+          for so in $(find src -path "*/target/deploy/*.so"); do
+            if python3 tools/scripts/compare.py "$so" deployed.so "${{ inputs.label }}" > /tmp/r.txt; then cat /tmp/r.txt; cp "$so" rebuilt.so; exit 0; fi
+          done
+          cat /tmp/r.txt; exit 1
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: rebuilt-and-deployed
+          path: |
+            rebuilt.so
+            deployed.so
+          if-no-files-found: ignore
