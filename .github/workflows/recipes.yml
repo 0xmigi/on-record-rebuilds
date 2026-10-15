@@ -77,9 +77,9 @@ jobs:
           if [ -n "$LIB" ]; then
             M=$(python3 "$GITHUB_WORKSPACE/tools/scripts/find-manifest.py" "$LIB")
             echo "manifest: $M"
-            ( cd "$(dirname "$M")" && eval cargo-build-sbf ${{ steps.plan.outputs.sbf_args }} -- --locked --manifest-path "$PWD/$(basename "$M")" ${{ steps.plan.outputs.cargo_args }} )
+            ( cd "$(dirname "$M")" && cargo-build-sbf ${{ steps.plan.outputs.sbf_args }} -- --locked --manifest-path "$PWD/$(basename "$M")" ${{ steps.plan.outputs.cargo_args }} )
           else
-            eval cargo-build-sbf ${{ steps.plan.outputs.sbf_args }} -- --locked ${{ steps.plan.outputs.cargo_args }}
+            cargo-build-sbf ${{ steps.plan.outputs.sbf_args }} -- --locked ${{ steps.plan.outputs.cargo_args }}
           fi
 
       - name: Compare with the deployed hash
