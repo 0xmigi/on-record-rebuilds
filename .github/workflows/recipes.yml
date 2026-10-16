@@ -59,6 +59,8 @@ jobs:
 
       - name: Install Solana ${{ steps.plan.outputs.agave_tag }}
         run: |
+          # older cargo-build-sbf shells out to wget, which GitHub's Mac machines lack
+          if [ "$RUNNER_OS" = macOS ] && ! command -v wget >/dev/null; then brew install wget >/dev/null 2>&1 || true; fi
           echo "stage=install" > status
           case "$RUNNER_OS-$RUNNER_ARCH" in
             macOS-ARM64) T=aarch64-apple-darwin ;;
