@@ -1,0 +1,47 @@
+# Build the compiler-version lookup table: for every platform-tools release,
+# download its Linux package, pull the prebuilt compiler_builtins library for
+# each Solana target, and record the normalized machine code of every function
+# in it. That code is copied verbatim into deployed programs, so matching it
+# names the compiler that built a program. Output: one JSON per release.
+name: fingerprints
+
+on:
+  workflow_dispatch:
+
+jobs:
+  extract:
+    name: ${{ matrix.tag }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        tag: ["v1.0","v1.1","v1.2","v1.3","v1.4","v1.5","v1.6","v1.7","v1.8","v1.9","v1.10","v1.11","v1.12","v1.13","v1.14","v1.15","v1.16","v1.17","v1.18","v1.19","v1.20","v1.21","v1.22","v1.23","v1.24","v1.25","v1.26","v1.27","v1.28","v1.29","v1.30","v1.31","v1.32","v1.34","v1.35","v1.36","v1.37","v1.38","v1.39","v1.40","v1.41","v1.42","v1.42.1","v1.43","v1.44","v1.45","v1.46","v1.46.1","v1.47","v1.48","v1.49","v1.50","v1.51","v1.51.1","v1.52","v1.53","v1.54","v1.55","v1.56","v1.57","v1.58"]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download the Linux package
+        run: |
+          for a in platform-tools-linux-x86_64.tar.bz2 solana-sbf-tools-linux.tar.bz2 solana-bpf-tools-linux.tar.bz2; do
+            if curl -sSfL -o pt.tar.bz2 "https://github.com/anza-xyz/platform-tools/releases/download/${{ matrix.tag }}/$a"; then echo "asset: $a"; break; fi
+          done
+          mkdir pt && tar -xjf pt.tar.bz2 -C pt
+      - name: Extract helper-function code per target
+        env:
+          TAG: ${{ matrix.tag }}
+        run: |
+          python3 - <<'EOF'
+          import glob, json, os, sys
+          sys.path.insert(0, "scripts")
+          from fingerprint import extract
+          out = {}
+          for rlib in glob.glob("pt/**/rustlib/*/lib/libcompiler_builtins-*.rlib", recursive=True):
+              target = rlib.split("/rustlib/")[1].split("/")[0]
+              if any(h in target for h in ("linux", "darwin", "windows")): continue
+              out[target] = extract(rlib)
+              print(target, len(out[target]))
+          json.dump({os.environ["TAG"]: out}, open("fp.json", "w"))
+          EOF
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fp-${{ matrix.tag }}
+          path: fp.json
