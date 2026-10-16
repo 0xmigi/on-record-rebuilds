@@ -1,0 +1,1212 @@
+[
+{
+"program": "GAMMA7meSFWaBXF25oSUgmGRwaW6sCMFLmBNiMSdbHVT",
+"repo": "https://github.com/GooseFX1/gamma-swap",
+"commit": "2d27290129f1b62dc7c3d023e3d82d5b30592817",
+"args": [
+"--library-name",
+"gamma",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.43"
+],
+"runner": "macos-15",
+"expect": "6e14cc3f807ea3589ae53d5101849d4a5f45413005e90658d12828de517be6fb",
+"how": "B v1.43"
+},
+{
+"program": "GAMMA7meSFWaBXF25oSUgmGRwaW6sCMFLmBNiMSdbHVT",
+"repo": "https://github.com/GooseFX1/gamma-swap",
+"commit": "2d27290129f1b62dc7c3d023e3d82d5b30592817",
+"args": [
+"--library-name",
+"gamma",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.0.25",
+"--cargo-build-sbf-args=--tools-version v1.42"
+],
+"runner": "macos-15",
+"expect": "6e14cc3f807ea3589ae53d5101849d4a5f45413005e90658d12828de517be6fb",
+"how": "B v1.42"
+},
+{
+"program": "GAMMA7meSFWaBXF25oSUgmGRwaW6sCMFLmBNiMSdbHVT",
+"repo": "https://github.com/GooseFX1/gamma-swap",
+"commit": "37430252acda2a63ec9f24c6c709919d922a2b5a",
+"args": [
+"--library-name",
+"gamma",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.43"
+],
+"runner": "macos-15",
+"expect": "6e14cc3f807ea3589ae53d5101849d4a5f45413005e90658d12828de517be6fb",
+"how": "B v1.43"
+},
+{
+"program": "GAMMA7meSFWaBXF25oSUgmGRwaW6sCMFLmBNiMSdbHVT",
+"repo": "https://github.com/GooseFX1/gamma-swap",
+"commit": "37430252acda2a63ec9f24c6c709919d922a2b5a",
+"args": [
+"--library-name",
+"gamma",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.0.25",
+"--cargo-build-sbf-args=--tools-version v1.42"
+],
+"runner": "macos-15",
+"expect": "6e14cc3f807ea3589ae53d5101849d4a5f45413005e90658d12828de517be6fb",
+"how": "B v1.42"
+},
+{
+"program": "GAMMA7meSFWaBXF25oSUgmGRwaW6sCMFLmBNiMSdbHVT",
+"repo": "https://github.com/GooseFX1/gamma-swap",
+"commit": "4054cb50ea0c9448e20e4e76a79d2aa5bc10cac0",
+"args": [
+"--library-name",
+"gamma",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.43"
+],
+"runner": "macos-15",
+"expect": "6e14cc3f807ea3589ae53d5101849d4a5f45413005e90658d12828de517be6fb",
+"how": "B v1.43"
+},
+{
+"program": "GAMMA7meSFWaBXF25oSUgmGRwaW6sCMFLmBNiMSdbHVT",
+"repo": "https://github.com/GooseFX1/gamma-swap",
+"commit": "4054cb50ea0c9448e20e4e76a79d2aa5bc10cac0",
+"args": [
+"--library-name",
+"gamma",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.0.25",
+"--cargo-build-sbf-args=--tools-version v1.42"
+],
+"runner": "macos-15",
+"expect": "6e14cc3f807ea3589ae53d5101849d4a5f45413005e90658d12828de517be6fb",
+"how": "B v1.42"
+},
+{
+"program": "GAMMA7meSFWaBXF25oSUgmGRwaW6sCMFLmBNiMSdbHVT",
+"repo": "https://github.com/GooseFX1/gamma-swap",
+"commit": "cacecb04c22899d045ba1403f951c2ffeeb1cd83",
+"args": [
+"--library-name",
+"gamma",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.43"
+],
+"runner": "macos-15",
+"expect": "6e14cc3f807ea3589ae53d5101849d4a5f45413005e90658d12828de517be6fb",
+"how": "B v1.43"
+},
+{
+"program": "GAMMA7meSFWaBXF25oSUgmGRwaW6sCMFLmBNiMSdbHVT",
+"repo": "https://github.com/GooseFX1/gamma-swap",
+"commit": "cacecb04c22899d045ba1403f951c2ffeeb1cd83",
+"args": [
+"--library-name",
+"gamma",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.0.25",
+"--cargo-build-sbf-args=--tools-version v1.42"
+],
+"runner": "macos-15",
+"expect": "6e14cc3f807ea3589ae53d5101849d4a5f45413005e90658d12828de517be6fb",
+"how": "B v1.42"
+},
+{
+"program": "GAMMA7meSFWaBXF25oSUgmGRwaW6sCMFLmBNiMSdbHVT",
+"repo": "https://github.com/GooseFX1/gamma-swap",
+"commit": "21f49791824da51ca46222f3842d43ababf44a85",
+"args": [
+"--library-name",
+"gamma",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.43"
+],
+"runner": "macos-15",
+"expect": "6e14cc3f807ea3589ae53d5101849d4a5f45413005e90658d12828de517be6fb",
+"how": "B v1.43"
+},
+{
+"program": "GAMMA7meSFWaBXF25oSUgmGRwaW6sCMFLmBNiMSdbHVT",
+"repo": "https://github.com/GooseFX1/gamma-swap",
+"commit": "21f49791824da51ca46222f3842d43ababf44a85",
+"args": [
+"--library-name",
+"gamma",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.0.25",
+"--cargo-build-sbf-args=--tools-version v1.42"
+],
+"runner": "macos-15",
+"expect": "6e14cc3f807ea3589ae53d5101849d4a5f45413005e90658d12828de517be6fb",
+"how": "B v1.42"
+},
+{
+"program": "CFC8uNdiCuHk1MnSUDBqDLy2dWqt6mgHZUWrxPmVwYej",
+"repo": "https://github.com/Clutch-L4bs/k9-solana-programs.git",
+"commit": "dd393fbc68c0be83e34d5108846e4c944b41f727",
+"args": [
+"--library-name",
+"k9_staking",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.52"
+],
+"runner": "macos-15",
+"expect": "bbfa585f7d90235f018aa1398e99a52d07996d9d63ad6ba36c0505c502cb6c89",
+"how": "B v1.52"
+},
+{
+"program": "CFC8uNdiCuHk1MnSUDBqDLy2dWqt6mgHZUWrxPmVwYej",
+"repo": "https://github.com/Clutch-L4bs/k9-solana-programs.git",
+"commit": "dd393fbc68c0be83e34d5108846e4c944b41f727",
+"args": [
+"--library-name",
+"k9_staking",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.53"
+],
+"runner": "macos-15",
+"expect": "bbfa585f7d90235f018aa1398e99a52d07996d9d63ad6ba36c0505c502cb6c89",
+"how": "B v1.53"
+},
+{
+"program": "CrVg1sMxq4bmrgK2zoXMef7nJcjbGzw5h3B5Q1h8oSuT",
+"repo": "https://github.com/stevelohwc/bwc-onchain-verify",
+"commit": "83804ebb21ec29311f75c33639276fbb86385abb",
+"args": [
+"--library-name",
+"governance",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.52"
+],
+"runner": "macos-15",
+"expect": "bf629be3ce66227b03993c31a11bb02a494df09c4689109ef6268026238e95ec",
+"how": "B v1.52"
+},
+{
+"program": "CrVg1sMxq4bmrgK2zoXMef7nJcjbGzw5h3B5Q1h8oSuT",
+"repo": "https://github.com/stevelohwc/bwc-onchain-verify",
+"commit": "83804ebb21ec29311f75c33639276fbb86385abb",
+"args": [
+"--library-name",
+"governance",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.53"
+],
+"runner": "macos-15",
+"expect": "bf629be3ce66227b03993c31a11bb02a494df09c4689109ef6268026238e95ec",
+"how": "B v1.53"
+},
+{
+"program": "CrVg1sMxq4bmrgK2zoXMef7nJcjbGzw5h3B5Q1h8oSuT",
+"repo": "https://github.com/stevelohwc/bwc-onchain-verify",
+"commit": "83804eb",
+"args": [
+"--library-name",
+"governance",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.52"
+],
+"runner": "macos-15",
+"expect": "bf629be3ce66227b03993c31a11bb02a494df09c4689109ef6268026238e95ec",
+"how": "B v1.52"
+},
+{
+"program": "CrVg1sMxq4bmrgK2zoXMef7nJcjbGzw5h3B5Q1h8oSuT",
+"repo": "https://github.com/stevelohwc/bwc-onchain-verify",
+"commit": "83804eb",
+"args": [
+"--library-name",
+"governance",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.53"
+],
+"runner": "macos-15",
+"expect": "bf629be3ce66227b03993c31a11bb02a494df09c4689109ef6268026238e95ec",
+"how": "B v1.53"
+},
+{
+"program": "5UAJmyxQ29NXeDgeQFsusduXNE2yFhz7zMpLdHGMxDB4",
+"repo": "https://github.com/stevelohwc/bwc-onchain-verify",
+"commit": "83804ebb21ec29311f75c33639276fbb86385abb",
+"args": [
+"--library-name",
+"trading",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.52"
+],
+"runner": "macos-15",
+"expect": "801e2eceef49da860e706e97c154a1709e9d161ce33a4af19412cbb2514ee5d6",
+"how": "B v1.52"
+},
+{
+"program": "5UAJmyxQ29NXeDgeQFsusduXNE2yFhz7zMpLdHGMxDB4",
+"repo": "https://github.com/stevelohwc/bwc-onchain-verify",
+"commit": "83804ebb21ec29311f75c33639276fbb86385abb",
+"args": [
+"--library-name",
+"trading",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.53"
+],
+"runner": "macos-15",
+"expect": "801e2eceef49da860e706e97c154a1709e9d161ce33a4af19412cbb2514ee5d6",
+"how": "B v1.53"
+},
+{
+"program": "5UAJmyxQ29NXeDgeQFsusduXNE2yFhz7zMpLdHGMxDB4",
+"repo": "https://github.com/stevelohwc/bwc-onchain-verify",
+"commit": "83804eb",
+"args": [
+"--library-name",
+"trading",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.52"
+],
+"runner": "macos-15",
+"expect": "801e2eceef49da860e706e97c154a1709e9d161ce33a4af19412cbb2514ee5d6",
+"how": "B v1.52"
+},
+{
+"program": "5UAJmyxQ29NXeDgeQFsusduXNE2yFhz7zMpLdHGMxDB4",
+"repo": "https://github.com/stevelohwc/bwc-onchain-verify",
+"commit": "83804eb",
+"args": [
+"--library-name",
+"trading",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.53"
+],
+"runner": "macos-15",
+"expect": "801e2eceef49da860e706e97c154a1709e9d161ce33a4af19412cbb2514ee5d6",
+"how": "B v1.53"
+},
+{
+"program": "9apA5U8YywgTHXQqpbvUMHJej7yorHcN56cewKfkX7ad",
+"repo": "https://github.com/louisstein94/zkrune",
+"commit": "9cef875304df6f285bab75da81ea0b4f4fa7a24e",
+"args": [
+"--mount-path",
+"solana-groth16-verifier",
+"--library-name",
+"solana_groth16_verifier",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.53"
+],
+"runner": "macos-15",
+"expect": "12b8232658883d93d5a4b15ea615d6ee09134d4b3a71881cd13a8dac5f63ef72",
+"how": "B v1.53"
+},
+{
+"program": "9apA5U8YywgTHXQqpbvUMHJej7yorHcN56cewKfkX7ad",
+"repo": "https://github.com/louisstein94/zkrune",
+"commit": "9cef875304df6f285bab75da81ea0b4f4fa7a24e",
+"args": [
+"--mount-path",
+"solana-groth16-verifier",
+"--library-name",
+"solana_groth16_verifier",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.52"
+],
+"runner": "macos-15",
+"expect": "12b8232658883d93d5a4b15ea615d6ee09134d4b3a71881cd13a8dac5f63ef72",
+"how": "B v1.52"
+},
+{
+"program": "9apA5U8YywgTHXQqpbvUMHJej7yorHcN56cewKfkX7ad",
+"repo": "https://github.com/louisstein94/zkrune",
+"commit": "201627984b14215494cd6b5f4b933536fd5e08a7",
+"args": [
+"--mount-path",
+"solana-groth16-verifier",
+"--library-name",
+"solana_groth16_verifier",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.53"
+],
+"runner": "macos-15",
+"expect": "12b8232658883d93d5a4b15ea615d6ee09134d4b3a71881cd13a8dac5f63ef72",
+"how": "B v1.53"
+},
+{
+"program": "9apA5U8YywgTHXQqpbvUMHJej7yorHcN56cewKfkX7ad",
+"repo": "https://github.com/louisstein94/zkrune",
+"commit": "201627984b14215494cd6b5f4b933536fd5e08a7",
+"args": [
+"--mount-path",
+"solana-groth16-verifier",
+"--library-name",
+"solana_groth16_verifier",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.52"
+],
+"runner": "macos-15",
+"expect": "12b8232658883d93d5a4b15ea615d6ee09134d4b3a71881cd13a8dac5f63ef72",
+"how": "B v1.52"
+},
+{
+"program": "9apA5U8YywgTHXQqpbvUMHJej7yorHcN56cewKfkX7ad",
+"repo": "https://github.com/louisstein94/zkrune",
+"commit": "0cb5cf64c0ad534b82e1319b241724ad9bf5d4c1",
+"args": [
+"--mount-path",
+"solana-groth16-verifier",
+"--library-name",
+"solana_groth16_verifier",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.53"
+],
+"runner": "macos-15",
+"expect": "12b8232658883d93d5a4b15ea615d6ee09134d4b3a71881cd13a8dac5f63ef72",
+"how": "B v1.53"
+},
+{
+"program": "9apA5U8YywgTHXQqpbvUMHJej7yorHcN56cewKfkX7ad",
+"repo": "https://github.com/louisstein94/zkrune",
+"commit": "0cb5cf64c0ad534b82e1319b241724ad9bf5d4c1",
+"args": [
+"--mount-path",
+"solana-groth16-verifier",
+"--library-name",
+"solana_groth16_verifier",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.52"
+],
+"runner": "macos-15",
+"expect": "12b8232658883d93d5a4b15ea615d6ee09134d4b3a71881cd13a8dac5f63ef72",
+"how": "B v1.52"
+},
+{
+"program": "9apA5U8YywgTHXQqpbvUMHJej7yorHcN56cewKfkX7ad",
+"repo": "https://github.com/louisstein94/zkrune",
+"commit": "53c00e59c0bc693825a6672162620ce6738e71fb",
+"args": [
+"--mount-path",
+"solana-groth16-verifier",
+"--library-name",
+"solana_groth16_verifier",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.53"
+],
+"runner": "macos-15",
+"expect": "12b8232658883d93d5a4b15ea615d6ee09134d4b3a71881cd13a8dac5f63ef72",
+"how": "B v1.53"
+},
+{
+"program": "9apA5U8YywgTHXQqpbvUMHJej7yorHcN56cewKfkX7ad",
+"repo": "https://github.com/louisstein94/zkrune",
+"commit": "53c00e59c0bc693825a6672162620ce6738e71fb",
+"args": [
+"--mount-path",
+"solana-groth16-verifier",
+"--library-name",
+"solana_groth16_verifier",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.52"
+],
+"runner": "macos-15",
+"expect": "12b8232658883d93d5a4b15ea615d6ee09134d4b3a71881cd13a8dac5f63ef72",
+"how": "B v1.52"
+},
+{
+"program": "9apA5U8YywgTHXQqpbvUMHJej7yorHcN56cewKfkX7ad",
+"repo": "https://github.com/louisstein94/zkrune",
+"commit": "8643bd6aac1ab4972babf1ad8496dca4d6f1af1e",
+"args": [
+"--mount-path",
+"solana-groth16-verifier",
+"--library-name",
+"solana_groth16_verifier",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.53"
+],
+"runner": "macos-15",
+"expect": "12b8232658883d93d5a4b15ea615d6ee09134d4b3a71881cd13a8dac5f63ef72",
+"how": "B v1.53"
+},
+{
+"program": "9apA5U8YywgTHXQqpbvUMHJej7yorHcN56cewKfkX7ad",
+"repo": "https://github.com/louisstein94/zkrune",
+"commit": "8643bd6aac1ab4972babf1ad8496dca4d6f1af1e",
+"args": [
+"--mount-path",
+"solana-groth16-verifier",
+"--library-name",
+"solana_groth16_verifier",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.52"
+],
+"runner": "macos-15",
+"expect": "12b8232658883d93d5a4b15ea615d6ee09134d4b3a71881cd13a8dac5f63ef72",
+"how": "B v1.52"
+},
+{
+"program": "9apA5U8YywgTHXQqpbvUMHJej7yorHcN56cewKfkX7ad",
+"repo": "https://github.com/louisstein94/zkrune",
+"commit": "55a475fe297ff61ab5420caab98ee1da40b974ad",
+"args": [
+"--mount-path",
+"solana-groth16-verifier",
+"--library-name",
+"solana_groth16_verifier",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.53"
+],
+"runner": "macos-15",
+"expect": "12b8232658883d93d5a4b15ea615d6ee09134d4b3a71881cd13a8dac5f63ef72",
+"how": "B v1.53"
+},
+{
+"program": "9apA5U8YywgTHXQqpbvUMHJej7yorHcN56cewKfkX7ad",
+"repo": "https://github.com/louisstein94/zkrune",
+"commit": "55a475fe297ff61ab5420caab98ee1da40b974ad",
+"args": [
+"--mount-path",
+"solana-groth16-verifier",
+"--library-name",
+"solana_groth16_verifier",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.52"
+],
+"runner": "macos-15",
+"expect": "12b8232658883d93d5a4b15ea615d6ee09134d4b3a71881cd13a8dac5f63ef72",
+"how": "B v1.52"
+},
+{
+"program": "9apA5U8YywgTHXQqpbvUMHJej7yorHcN56cewKfkX7ad",
+"repo": "https://github.com/louisstein94/zkrune",
+"commit": "ea47a4d3e6a170cba348576f0919247500a13b80",
+"args": [
+"--mount-path",
+"solana-groth16-verifier",
+"--library-name",
+"solana_groth16_verifier",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.53"
+],
+"runner": "macos-15",
+"expect": "12b8232658883d93d5a4b15ea615d6ee09134d4b3a71881cd13a8dac5f63ef72",
+"how": "B v1.53"
+},
+{
+"program": "9apA5U8YywgTHXQqpbvUMHJej7yorHcN56cewKfkX7ad",
+"repo": "https://github.com/louisstein94/zkrune",
+"commit": "ea47a4d3e6a170cba348576f0919247500a13b80",
+"args": [
+"--mount-path",
+"solana-groth16-verifier",
+"--library-name",
+"solana_groth16_verifier",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.52"
+],
+"runner": "macos-15",
+"expect": "12b8232658883d93d5a4b15ea615d6ee09134d4b3a71881cd13a8dac5f63ef72",
+"how": "B v1.52"
+},
+{
+"program": "9apA5U8YywgTHXQqpbvUMHJej7yorHcN56cewKfkX7ad",
+"repo": "https://github.com/louisstein94/zkrune",
+"commit": "6917c5511a10f858243dd32dff9b0387ede8a179",
+"args": [
+"--mount-path",
+"solana-groth16-verifier",
+"--library-name",
+"solana_groth16_verifier",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.53"
+],
+"runner": "macos-15",
+"expect": "12b8232658883d93d5a4b15ea615d6ee09134d4b3a71881cd13a8dac5f63ef72",
+"how": "B v1.53"
+},
+{
+"program": "9apA5U8YywgTHXQqpbvUMHJej7yorHcN56cewKfkX7ad",
+"repo": "https://github.com/louisstein94/zkrune",
+"commit": "6917c5511a10f858243dd32dff9b0387ede8a179",
+"args": [
+"--mount-path",
+"solana-groth16-verifier",
+"--library-name",
+"solana_groth16_verifier",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.52"
+],
+"runner": "macos-15",
+"expect": "12b8232658883d93d5a4b15ea615d6ee09134d4b3a71881cd13a8dac5f63ef72",
+"how": "B v1.52"
+},
+{
+"program": "9apA5U8YywgTHXQqpbvUMHJej7yorHcN56cewKfkX7ad",
+"repo": "https://github.com/louisstein94/zkrune",
+"commit": "5b75f22de563798d3f0d2d1097104b6515f645cd",
+"args": [
+"--mount-path",
+"solana-groth16-verifier",
+"--library-name",
+"solana_groth16_verifier",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.53"
+],
+"runner": "macos-15",
+"expect": "12b8232658883d93d5a4b15ea615d6ee09134d4b3a71881cd13a8dac5f63ef72",
+"how": "B v1.53"
+},
+{
+"program": "9apA5U8YywgTHXQqpbvUMHJej7yorHcN56cewKfkX7ad",
+"repo": "https://github.com/louisstein94/zkrune",
+"commit": "5b75f22de563798d3f0d2d1097104b6515f645cd",
+"args": [
+"--mount-path",
+"solana-groth16-verifier",
+"--library-name",
+"solana_groth16_verifier",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.52"
+],
+"runner": "macos-15",
+"expect": "12b8232658883d93d5a4b15ea615d6ee09134d4b3a71881cd13a8dac5f63ef72",
+"how": "B v1.52"
+},
+{
+"program": "5iejgxCq2vnpiwWpf4qwziVhbX2irmgMEghBrD9tmk5p",
+"repo": "https://github.com/predicatelabs/sol-contracts",
+"commit": "d93f396f2523f1d4c9fd021472c3fc4d6711bf9b",
+"args": [
+"--library-name",
+"demo_customer_stub",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.47"
+],
+"runner": "macos-15",
+"expect": "c9e0d20cd3ad77a89ffc97d4652f87ecbd3cc7f52464c025cb6ab07829abf364",
+"how": "B v1.47"
+},
+{
+"program": "5iejgxCq2vnpiwWpf4qwziVhbX2irmgMEghBrD9tmk5p",
+"repo": "https://github.com/predicatelabs/sol-contracts",
+"commit": "d93f396f2523f1d4c9fd021472c3fc4d6711bf9b",
+"args": [
+"--library-name",
+"demo_customer_stub",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.3.13",
+"--cargo-build-sbf-args=--tools-version v1.48"
+],
+"runner": "macos-15",
+"expect": "c9e0d20cd3ad77a89ffc97d4652f87ecbd3cc7f52464c025cb6ab07829abf364",
+"how": "B v1.48"
+},
+{
+"program": "5iejgxCq2vnpiwWpf4qwziVhbX2irmgMEghBrD9tmk5p",
+"repo": "https://github.com/predicatelabs/sol-contracts",
+"commit": "5d4de8119085286fd463ce5d8e0833be4c448702",
+"args": [
+"--library-name",
+"demo_customer_stub",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.47"
+],
+"runner": "macos-15",
+"expect": "c9e0d20cd3ad77a89ffc97d4652f87ecbd3cc7f52464c025cb6ab07829abf364",
+"how": "B v1.47"
+},
+{
+"program": "5iejgxCq2vnpiwWpf4qwziVhbX2irmgMEghBrD9tmk5p",
+"repo": "https://github.com/predicatelabs/sol-contracts",
+"commit": "5d4de8119085286fd463ce5d8e0833be4c448702",
+"args": [
+"--library-name",
+"demo_customer_stub",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.3.13",
+"--cargo-build-sbf-args=--tools-version v1.48"
+],
+"runner": "macos-15",
+"expect": "c9e0d20cd3ad77a89ffc97d4652f87ecbd3cc7f52464c025cb6ab07829abf364",
+"how": "B v1.48"
+},
+{
+"program": "5iejgxCq2vnpiwWpf4qwziVhbX2irmgMEghBrD9tmk5p",
+"repo": "https://github.com/predicatelabs/sol-contracts",
+"commit": "f336cd488587248730c947432f4f015cbea72d56",
+"args": [
+"--library-name",
+"demo_customer_stub",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.47"
+],
+"runner": "macos-15",
+"expect": "c9e0d20cd3ad77a89ffc97d4652f87ecbd3cc7f52464c025cb6ab07829abf364",
+"how": "B v1.47"
+},
+{
+"program": "5iejgxCq2vnpiwWpf4qwziVhbX2irmgMEghBrD9tmk5p",
+"repo": "https://github.com/predicatelabs/sol-contracts",
+"commit": "f336cd488587248730c947432f4f015cbea72d56",
+"args": [
+"--library-name",
+"demo_customer_stub",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.3.13",
+"--cargo-build-sbf-args=--tools-version v1.48"
+],
+"runner": "macos-15",
+"expect": "c9e0d20cd3ad77a89ffc97d4652f87ecbd3cc7f52464c025cb6ab07829abf364",
+"how": "B v1.48"
+},
+{
+"program": "5iejgxCq2vnpiwWpf4qwziVhbX2irmgMEghBrD9tmk5p",
+"repo": "https://github.com/predicatelabs/sol-contracts",
+"commit": "793b8c076efc72f12db9b88429aca949cb103a65",
+"args": [
+"--library-name",
+"demo_customer_stub",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.47"
+],
+"runner": "macos-15",
+"expect": "c9e0d20cd3ad77a89ffc97d4652f87ecbd3cc7f52464c025cb6ab07829abf364",
+"how": "B v1.47"
+},
+{
+"program": "5iejgxCq2vnpiwWpf4qwziVhbX2irmgMEghBrD9tmk5p",
+"repo": "https://github.com/predicatelabs/sol-contracts",
+"commit": "793b8c076efc72f12db9b88429aca949cb103a65",
+"args": [
+"--library-name",
+"demo_customer_stub",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.3.13",
+"--cargo-build-sbf-args=--tools-version v1.48"
+],
+"runner": "macos-15",
+"expect": "c9e0d20cd3ad77a89ffc97d4652f87ecbd3cc7f52464c025cb6ab07829abf364",
+"how": "B v1.48"
+},
+{
+"program": "5iejgxCq2vnpiwWpf4qwziVhbX2irmgMEghBrD9tmk5p",
+"repo": "https://github.com/predicatelabs/sol-contracts",
+"commit": "dacb6af2d02840953653a35a9cb5acf2500e72f1",
+"args": [
+"--library-name",
+"demo_customer_stub",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.47"
+],
+"runner": "macos-15",
+"expect": "c9e0d20cd3ad77a89ffc97d4652f87ecbd3cc7f52464c025cb6ab07829abf364",
+"how": "B v1.47"
+},
+{
+"program": "5iejgxCq2vnpiwWpf4qwziVhbX2irmgMEghBrD9tmk5p",
+"repo": "https://github.com/predicatelabs/sol-contracts",
+"commit": "dacb6af2d02840953653a35a9cb5acf2500e72f1",
+"args": [
+"--library-name",
+"demo_customer_stub",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.3.13",
+"--cargo-build-sbf-args=--tools-version v1.48"
+],
+"runner": "macos-15",
+"expect": "c9e0d20cd3ad77a89ffc97d4652f87ecbd3cc7f52464c025cb6ab07829abf364",
+"how": "B v1.48"
+},
+{
+"program": "5iejgxCq2vnpiwWpf4qwziVhbX2irmgMEghBrD9tmk5p",
+"repo": "https://github.com/predicatelabs/sol-contracts",
+"commit": "1e54397adc2b1f5b56081c7ff3cf636e8194a63d",
+"args": [
+"--library-name",
+"demo_customer_stub",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.47"
+],
+"runner": "macos-15",
+"expect": "c9e0d20cd3ad77a89ffc97d4652f87ecbd3cc7f52464c025cb6ab07829abf364",
+"how": "B v1.47"
+},
+{
+"program": "5iejgxCq2vnpiwWpf4qwziVhbX2irmgMEghBrD9tmk5p",
+"repo": "https://github.com/predicatelabs/sol-contracts",
+"commit": "1e54397adc2b1f5b56081c7ff3cf636e8194a63d",
+"args": [
+"--library-name",
+"demo_customer_stub",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.3.13",
+"--cargo-build-sbf-args=--tools-version v1.48"
+],
+"runner": "macos-15",
+"expect": "c9e0d20cd3ad77a89ffc97d4652f87ecbd3cc7f52464c025cb6ab07829abf364",
+"how": "B v1.48"
+},
+{
+"program": "5iejgxCq2vnpiwWpf4qwziVhbX2irmgMEghBrD9tmk5p",
+"repo": "https://github.com/predicatelabs/sol-contracts",
+"commit": "f87a7acdef8fb70cb47e9aec4f1d9553809edb33",
+"args": [
+"--library-name",
+"demo_customer_stub",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.47"
+],
+"runner": "macos-15",
+"expect": "c9e0d20cd3ad77a89ffc97d4652f87ecbd3cc7f52464c025cb6ab07829abf364",
+"how": "B v1.47"
+},
+{
+"program": "5iejgxCq2vnpiwWpf4qwziVhbX2irmgMEghBrD9tmk5p",
+"repo": "https://github.com/predicatelabs/sol-contracts",
+"commit": "f87a7acdef8fb70cb47e9aec4f1d9553809edb33",
+"args": [
+"--library-name",
+"demo_customer_stub",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.3.13",
+"--cargo-build-sbf-args=--tools-version v1.48"
+],
+"runner": "macos-15",
+"expect": "c9e0d20cd3ad77a89ffc97d4652f87ecbd3cc7f52464c025cb6ab07829abf364",
+"how": "B v1.48"
+},
+{
+"program": "5iejgxCq2vnpiwWpf4qwziVhbX2irmgMEghBrD9tmk5p",
+"repo": "https://github.com/predicatelabs/sol-contracts",
+"commit": "bfbeb874ca19f9cb49ff7acab4d260c81a5b0507",
+"args": [
+"--library-name",
+"demo_customer_stub",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.47"
+],
+"runner": "macos-15",
+"expect": "c9e0d20cd3ad77a89ffc97d4652f87ecbd3cc7f52464c025cb6ab07829abf364",
+"how": "B v1.47"
+},
+{
+"program": "5iejgxCq2vnpiwWpf4qwziVhbX2irmgMEghBrD9tmk5p",
+"repo": "https://github.com/predicatelabs/sol-contracts",
+"commit": "bfbeb874ca19f9cb49ff7acab4d260c81a5b0507",
+"args": [
+"--library-name",
+"demo_customer_stub",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.3.13",
+"--cargo-build-sbf-args=--tools-version v1.48"
+],
+"runner": "macos-15",
+"expect": "c9e0d20cd3ad77a89ffc97d4652f87ecbd3cc7f52464c025cb6ab07829abf364",
+"how": "B v1.48"
+},
+{
+"program": "5iejgxCq2vnpiwWpf4qwziVhbX2irmgMEghBrD9tmk5p",
+"repo": "https://github.com/predicatelabs/sol-contracts",
+"commit": "c0f73619edb402cafdc2ddcdb8332d2b0d94aeb8",
+"args": [
+"--library-name",
+"demo_customer_stub",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.47"
+],
+"runner": "macos-15",
+"expect": "c9e0d20cd3ad77a89ffc97d4652f87ecbd3cc7f52464c025cb6ab07829abf364",
+"how": "B v1.47"
+},
+{
+"program": "5iejgxCq2vnpiwWpf4qwziVhbX2irmgMEghBrD9tmk5p",
+"repo": "https://github.com/predicatelabs/sol-contracts",
+"commit": "c0f73619edb402cafdc2ddcdb8332d2b0d94aeb8",
+"args": [
+"--library-name",
+"demo_customer_stub",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.3.13",
+"--cargo-build-sbf-args=--tools-version v1.48"
+],
+"runner": "macos-15",
+"expect": "c9e0d20cd3ad77a89ffc97d4652f87ecbd3cc7f52464c025cb6ab07829abf364",
+"how": "B v1.48"
+},
+{
+"program": "Lighton6oQpVkeewmo2mcPTQQp7kYHr4fWpAgJyEmDX",
+"repo": "https://github.com/Lightprotocol/light-protocol",
+"commit": "264452932146b2041cf20547e5c3e66dc3c66952",
+"args": [
+"--library-name",
+"light-registry",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.0.14",
+"--cargo-build-sbf-args=--tools-version v1.51"
+],
+"runner": "macos-15",
+"expect": "c81c00857c83c486729994a113d3482186d45f38d8e56a43ef2caa416c3d2d4e",
+"how": "B v1.51"
+},
+{
+"program": "Lighton6oQpVkeewmo2mcPTQQp7kYHr4fWpAgJyEmDX",
+"repo": "https://github.com/Lightprotocol/light-protocol",
+"commit": "264452932146b2041cf20547e5c3e66dc3c66952",
+"args": [
+"--library-name",
+"light-registry",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.3.13",
+"--cargo-build-sbf-args=--tools-version v1.50"
+],
+"runner": "macos-15",
+"expect": "c81c00857c83c486729994a113d3482186d45f38d8e56a43ef2caa416c3d2d4e",
+"how": "B v1.50"
+},
+{
+"program": "Lighton6oQpVkeewmo2mcPTQQp7kYHr4fWpAgJyEmDX",
+"repo": "https://github.com/Lightprotocol/light-protocol",
+"commit": "8811aa3c436fd618cf713398a2fcdf317a1d966a",
+"args": [
+"--library-name",
+"light-registry",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.0.14",
+"--cargo-build-sbf-args=--tools-version v1.51"
+],
+"runner": "macos-15",
+"expect": "c81c00857c83c486729994a113d3482186d45f38d8e56a43ef2caa416c3d2d4e",
+"how": "B v1.51"
+},
+{
+"program": "Lighton6oQpVkeewmo2mcPTQQp7kYHr4fWpAgJyEmDX",
+"repo": "https://github.com/Lightprotocol/light-protocol",
+"commit": "8811aa3c436fd618cf713398a2fcdf317a1d966a",
+"args": [
+"--library-name",
+"light-registry",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.3.13",
+"--cargo-build-sbf-args=--tools-version v1.50"
+],
+"runner": "macos-15",
+"expect": "c81c00857c83c486729994a113d3482186d45f38d8e56a43ef2caa416c3d2d4e",
+"how": "B v1.50"
+},
+{
+"program": "Lighton6oQpVkeewmo2mcPTQQp7kYHr4fWpAgJyEmDX",
+"repo": "https://github.com/Lightprotocol/light-protocol",
+"commit": "f34108689073e2344e78f09d2121fcff90d564e6",
+"args": [
+"--library-name",
+"light-registry",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.0.14",
+"--cargo-build-sbf-args=--tools-version v1.51"
+],
+"runner": "macos-15",
+"expect": "c81c00857c83c486729994a113d3482186d45f38d8e56a43ef2caa416c3d2d4e",
+"how": "B v1.51"
+},
+{
+"program": "Lighton6oQpVkeewmo2mcPTQQp7kYHr4fWpAgJyEmDX",
+"repo": "https://github.com/Lightprotocol/light-protocol",
+"commit": "f34108689073e2344e78f09d2121fcff90d564e6",
+"args": [
+"--library-name",
+"light-registry",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.3.13",
+"--cargo-build-sbf-args=--tools-version v1.50"
+],
+"runner": "macos-15",
+"expect": "c81c00857c83c486729994a113d3482186d45f38d8e56a43ef2caa416c3d2d4e",
+"how": "B v1.50"
+},
+{
+"program": "Lighton6oQpVkeewmo2mcPTQQp7kYHr4fWpAgJyEmDX",
+"repo": "https://github.com/Lightprotocol/light-protocol",
+"commit": "2ac68f1f47af975ee891515a6b9a41fb9746f768",
+"args": [
+"--library-name",
+"light-registry",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.0.14",
+"--cargo-build-sbf-args=--tools-version v1.51"
+],
+"runner": "macos-15",
+"expect": "c81c00857c83c486729994a113d3482186d45f38d8e56a43ef2caa416c3d2d4e",
+"how": "B v1.51"
+},
+{
+"program": "Lighton6oQpVkeewmo2mcPTQQp7kYHr4fWpAgJyEmDX",
+"repo": "https://github.com/Lightprotocol/light-protocol",
+"commit": "2ac68f1f47af975ee891515a6b9a41fb9746f768",
+"args": [
+"--library-name",
+"light-registry",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.3.13",
+"--cargo-build-sbf-args=--tools-version v1.50"
+],
+"runner": "macos-15",
+"expect": "c81c00857c83c486729994a113d3482186d45f38d8e56a43ef2caa416c3d2d4e",
+"how": "B v1.50"
+},
+{
+"program": "Lighton6oQpVkeewmo2mcPTQQp7kYHr4fWpAgJyEmDX",
+"repo": "https://github.com/Lightprotocol/light-protocol",
+"commit": "69376e3e53d61f99c60f1db6ec022f0c44dd2767",
+"args": [
+"--library-name",
+"light-registry",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.0.14",
+"--cargo-build-sbf-args=--tools-version v1.51"
+],
+"runner": "macos-15",
+"expect": "c81c00857c83c486729994a113d3482186d45f38d8e56a43ef2caa416c3d2d4e",
+"how": "B v1.51"
+},
+{
+"program": "Lighton6oQpVkeewmo2mcPTQQp7kYHr4fWpAgJyEmDX",
+"repo": "https://github.com/Lightprotocol/light-protocol",
+"commit": "69376e3e53d61f99c60f1db6ec022f0c44dd2767",
+"args": [
+"--library-name",
+"light-registry",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.3.13",
+"--cargo-build-sbf-args=--tools-version v1.50"
+],
+"runner": "macos-15",
+"expect": "c81c00857c83c486729994a113d3482186d45f38d8e56a43ef2caa416c3d2d4e",
+"how": "B v1.50"
+},
+{
+"program": "Lighton6oQpVkeewmo2mcPTQQp7kYHr4fWpAgJyEmDX",
+"repo": "https://github.com/Lightprotocol/light-protocol",
+"commit": "e10d507c282ce208e6ccebbd9ee58d91241c6eb1",
+"args": [
+"--library-name",
+"light-registry",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.0.14",
+"--cargo-build-sbf-args=--tools-version v1.51"
+],
+"runner": "macos-15",
+"expect": "c81c00857c83c486729994a113d3482186d45f38d8e56a43ef2caa416c3d2d4e",
+"how": "B v1.51"
+},
+{
+"program": "Lighton6oQpVkeewmo2mcPTQQp7kYHr4fWpAgJyEmDX",
+"repo": "https://github.com/Lightprotocol/light-protocol",
+"commit": "e10d507c282ce208e6ccebbd9ee58d91241c6eb1",
+"args": [
+"--library-name",
+"light-registry",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.3.13",
+"--cargo-build-sbf-args=--tools-version v1.50"
+],
+"runner": "macos-15",
+"expect": "c81c00857c83c486729994a113d3482186d45f38d8e56a43ef2caa416c3d2d4e",
+"how": "B v1.50"
+},
+{
+"program": "Lighton6oQpVkeewmo2mcPTQQp7kYHr4fWpAgJyEmDX",
+"repo": "https://github.com/Lightprotocol/light-protocol",
+"commit": "1e5ff115a9143ac44027c2a05cd090338d877663",
+"args": [
+"--library-name",
+"light-registry",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.0.14",
+"--cargo-build-sbf-args=--tools-version v1.51"
+],
+"runner": "macos-15",
+"expect": "c81c00857c83c486729994a113d3482186d45f38d8e56a43ef2caa416c3d2d4e",
+"how": "B v1.51"
+},
+{
+"program": "Lighton6oQpVkeewmo2mcPTQQp7kYHr4fWpAgJyEmDX",
+"repo": "https://github.com/Lightprotocol/light-protocol",
+"commit": "1e5ff115a9143ac44027c2a05cd090338d877663",
+"args": [
+"--library-name",
+"light-registry",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.3.13",
+"--cargo-build-sbf-args=--tools-version v1.50"
+],
+"runner": "macos-15",
+"expect": "c81c00857c83c486729994a113d3482186d45f38d8e56a43ef2caa416c3d2d4e",
+"how": "B v1.50"
+},
+{
+"program": "Lighton6oQpVkeewmo2mcPTQQp7kYHr4fWpAgJyEmDX",
+"repo": "https://github.com/Lightprotocol/light-protocol",
+"commit": "8a609d6243f0aaa228f108452700a94023df100e",
+"args": [
+"--library-name",
+"light-registry",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.0.14",
+"--cargo-build-sbf-args=--tools-version v1.51"
+],
+"runner": "macos-15",
+"expect": "c81c00857c83c486729994a113d3482186d45f38d8e56a43ef2caa416c3d2d4e",
+"how": "B v1.51"
+},
+{
+"program": "Lighton6oQpVkeewmo2mcPTQQp7kYHr4fWpAgJyEmDX",
+"repo": "https://github.com/Lightprotocol/light-protocol",
+"commit": "8a609d6243f0aaa228f108452700a94023df100e",
+"args": [
+"--library-name",
+"light-registry",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.3.13",
+"--cargo-build-sbf-args=--tools-version v1.50"
+],
+"runner": "macos-15",
+"expect": "c81c00857c83c486729994a113d3482186d45f38d8e56a43ef2caa416c3d2d4e",
+"how": "B v1.50"
+},
+{
+"program": "Lighton6oQpVkeewmo2mcPTQQp7kYHr4fWpAgJyEmDX",
+"repo": "https://github.com/Lightprotocol/light-protocol",
+"commit": "1cb0f067b3d2d4e012e76507c077fc348eb88091",
+"args": [
+"--library-name",
+"light-registry",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.0.14",
+"--cargo-build-sbf-args=--tools-version v1.51"
+],
+"runner": "macos-15",
+"expect": "c81c00857c83c486729994a113d3482186d45f38d8e56a43ef2caa416c3d2d4e",
+"how": "B v1.51"
+},
+{
+"program": "Lighton6oQpVkeewmo2mcPTQQp7kYHr4fWpAgJyEmDX",
+"repo": "https://github.com/Lightprotocol/light-protocol",
+"commit": "1cb0f067b3d2d4e012e76507c077fc348eb88091",
+"args": [
+"--library-name",
+"light-registry",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.3.13",
+"--cargo-build-sbf-args=--tools-version v1.50"
+],
+"runner": "macos-15",
+"expect": "c81c00857c83c486729994a113d3482186d45f38d8e56a43ef2caa416c3d2d4e",
+"how": "B v1.50"
+},
+{
+"program": "Dmz8DZUBr6RUZsyTMqoBDB6x5TjmaFgjCmSALa1LzJML",
+"repo": "https://github.com/orithellama/ICPX",
+"commit": "35ad1f03081a5194056604163d2d1ebf2ee592c4",
+"args": [
+"--library-name",
+"icpx_payments",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.43"
+],
+"runner": "macos-15",
+"expect": "1a4f3a7cef09da095582085cd61df3df89383b6a612fcc55c1abed9d40f6dd4c",
+"how": "B v1.43"
+},
+{
+"program": "Dmz8DZUBr6RUZsyTMqoBDB6x5TjmaFgjCmSALa1LzJML",
+"repo": "https://github.com/orithellama/ICPX",
+"commit": "35ad1f03081a5194056604163d2d1ebf2ee592c4",
+"args": [
+"--library-name",
+"icpx_payments",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.0.25",
+"--cargo-build-sbf-args=--tools-version v1.42"
+],
+"runner": "macos-15",
+"expect": "1a4f3a7cef09da095582085cd61df3df89383b6a612fcc55c1abed9d40f6dd4c",
+"how": "B v1.42"
+},
+{
+"program": "Dmz8DZUBr6RUZsyTMqoBDB6x5TjmaFgjCmSALa1LzJML",
+"repo": "https://github.com/orithellama/ICPX",
+"commit": "8abd5605fe14df3e1e77ecc935ca20a40669f5c1",
+"args": [
+"--library-name",
+"icpx_payments",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.43"
+],
+"runner": "macos-15",
+"expect": "1a4f3a7cef09da095582085cd61df3df89383b6a612fcc55c1abed9d40f6dd4c",
+"how": "B v1.43"
+},
+{
+"program": "Dmz8DZUBr6RUZsyTMqoBDB6x5TjmaFgjCmSALa1LzJML",
+"repo": "https://github.com/orithellama/ICPX",
+"commit": "8abd5605fe14df3e1e77ecc935ca20a40669f5c1",
+"args": [
+"--library-name",
+"icpx_payments",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.0.25",
+"--cargo-build-sbf-args=--tools-version v1.42"
+],
+"runner": "macos-15",
+"expect": "1a4f3a7cef09da095582085cd61df3df89383b6a612fcc55c1abed9d40f6dd4c",
+"how": "B v1.42"
+}
+]

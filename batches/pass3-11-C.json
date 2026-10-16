@@ -1,0 +1,3420 @@
+[
+{
+"program": "AdXNhsvVjPNVtVQERxakkC7kPfRhFLHNsYhJyEmY69aQ",
+"repo": "https://github.com/raydium-io/raydium-clmm",
+"commit": "bf7c2413ec685d2ce9d5422d44182b770cd37598",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.47"
+],
+"runner": "ubuntu-latest",
+"expect": "86bcd24b5bfb85da5c6a67b8f5a3f68d108ec9f0022438b91b148a30ca19d5a2",
+"how": "C v1.47"
+},
+{
+"program": "AdXNhsvVjPNVtVQERxakkC7kPfRhFLHNsYhJyEmY69aQ",
+"repo": "https://github.com/raydium-io/raydium-clmm",
+"commit": "bf7c2413ec685d2ce9d5422d44182b770cd37598",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.3.13",
+"--cargo-build-sbf-args=--tools-version v1.48"
+],
+"runner": "ubuntu-latest",
+"expect": "86bcd24b5bfb85da5c6a67b8f5a3f68d108ec9f0022438b91b148a30ca19d5a2",
+"how": "C v1.48"
+},
+{
+"program": "AdXNhsvVjPNVtVQERxakkC7kPfRhFLHNsYhJyEmY69aQ",
+"repo": "https://github.com/raydium-io/raydium-clmm",
+"commit": "f68fd4286821905b5d1f8a8762f0c51a7f33c578",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.47"
+],
+"runner": "ubuntu-latest",
+"expect": "86bcd24b5bfb85da5c6a67b8f5a3f68d108ec9f0022438b91b148a30ca19d5a2",
+"how": "C v1.47"
+},
+{
+"program": "AdXNhsvVjPNVtVQERxakkC7kPfRhFLHNsYhJyEmY69aQ",
+"repo": "https://github.com/raydium-io/raydium-clmm",
+"commit": "f68fd4286821905b5d1f8a8762f0c51a7f33c578",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.3.13",
+"--cargo-build-sbf-args=--tools-version v1.48"
+],
+"runner": "ubuntu-latest",
+"expect": "86bcd24b5bfb85da5c6a67b8f5a3f68d108ec9f0022438b91b148a30ca19d5a2",
+"how": "C v1.48"
+},
+{
+"program": "AdXNhsvVjPNVtVQERxakkC7kPfRhFLHNsYhJyEmY69aQ",
+"repo": "https://github.com/raydium-io/raydium-clmm",
+"commit": "5d3e19dc7e55dae2e0ffa8edc1a915b9aae04b9b",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.47"
+],
+"runner": "ubuntu-latest",
+"expect": "86bcd24b5bfb85da5c6a67b8f5a3f68d108ec9f0022438b91b148a30ca19d5a2",
+"how": "C v1.47"
+},
+{
+"program": "AdXNhsvVjPNVtVQERxakkC7kPfRhFLHNsYhJyEmY69aQ",
+"repo": "https://github.com/raydium-io/raydium-clmm",
+"commit": "5d3e19dc7e55dae2e0ffa8edc1a915b9aae04b9b",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.3.13",
+"--cargo-build-sbf-args=--tools-version v1.48"
+],
+"runner": "ubuntu-latest",
+"expect": "86bcd24b5bfb85da5c6a67b8f5a3f68d108ec9f0022438b91b148a30ca19d5a2",
+"how": "C v1.48"
+},
+{
+"program": "AdXNhsvVjPNVtVQERxakkC7kPfRhFLHNsYhJyEmY69aQ",
+"repo": "https://github.com/raydium-io/raydium-clmm",
+"commit": "b4a362ef3bd298455fe13b7692257184d053764d",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.47"
+],
+"runner": "ubuntu-latest",
+"expect": "86bcd24b5bfb85da5c6a67b8f5a3f68d108ec9f0022438b91b148a30ca19d5a2",
+"how": "C v1.47"
+},
+{
+"program": "AdXNhsvVjPNVtVQERxakkC7kPfRhFLHNsYhJyEmY69aQ",
+"repo": "https://github.com/raydium-io/raydium-clmm",
+"commit": "b4a362ef3bd298455fe13b7692257184d053764d",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.3.13",
+"--cargo-build-sbf-args=--tools-version v1.48"
+],
+"runner": "ubuntu-latest",
+"expect": "86bcd24b5bfb85da5c6a67b8f5a3f68d108ec9f0022438b91b148a30ca19d5a2",
+"how": "C v1.48"
+},
+{
+"program": "AdXNhsvVjPNVtVQERxakkC7kPfRhFLHNsYhJyEmY69aQ",
+"repo": "https://github.com/raydium-io/raydium-clmm",
+"commit": "fcad161ef2cb486f3f8baffee98eb39517eb9948",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.47"
+],
+"runner": "ubuntu-latest",
+"expect": "86bcd24b5bfb85da5c6a67b8f5a3f68d108ec9f0022438b91b148a30ca19d5a2",
+"how": "C v1.47"
+},
+{
+"program": "AdXNhsvVjPNVtVQERxakkC7kPfRhFLHNsYhJyEmY69aQ",
+"repo": "https://github.com/raydium-io/raydium-clmm",
+"commit": "fcad161ef2cb486f3f8baffee98eb39517eb9948",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.3.13",
+"--cargo-build-sbf-args=--tools-version v1.48"
+],
+"runner": "ubuntu-latest",
+"expect": "86bcd24b5bfb85da5c6a67b8f5a3f68d108ec9f0022438b91b148a30ca19d5a2",
+"how": "C v1.48"
+},
+{
+"program": "2CdzdzR1hj6w1ZjXLgvk3o2Saq5sXd1ufQ3Toww4PPHQ",
+"repo": "https://github.com/Gliana-Labs/gliana-agent-mobile",
+"commit": "b9f1e3039b7b2b9ec314691f4e36ee46fa07ba17",
+"args": [
+"--mount-path",
+"program/arena",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.3.13",
+"--cargo-build-sbf-args=--tools-version v1.50"
+],
+"runner": "ubuntu-latest",
+"expect": "1a3e2032407d80089f4a1c789bf5739c22616f7f4a3b8fd856652ccefde05804",
+"how": "C v1.50"
+},
+{
+"program": "2CdzdzR1hj6w1ZjXLgvk3o2Saq5sXd1ufQ3Toww4PPHQ",
+"repo": "https://github.com/Gliana-Labs/gliana-agent-mobile",
+"commit": "b9f1e3039b7b2b9ec314691f4e36ee46fa07ba17",
+"args": [
+"--mount-path",
+"program/arena",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.0.14",
+"--cargo-build-sbf-args=--tools-version v1.51.1"
+],
+"runner": "ubuntu-latest",
+"expect": "1a3e2032407d80089f4a1c789bf5739c22616f7f4a3b8fd856652ccefde05804",
+"how": "C v1.51.1"
+},
+{
+"program": "2CdzdzR1hj6w1ZjXLgvk3o2Saq5sXd1ufQ3Toww4PPHQ",
+"repo": "https://github.com/Gliana-Labs/gliana-agent-mobile",
+"commit": "98b670acd8c9dc4018dfe81f3289f31685f77d00",
+"args": [
+"--mount-path",
+"program/arena",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.3.13",
+"--cargo-build-sbf-args=--tools-version v1.50"
+],
+"runner": "ubuntu-latest",
+"expect": "1a3e2032407d80089f4a1c789bf5739c22616f7f4a3b8fd856652ccefde05804",
+"how": "C v1.50"
+},
+{
+"program": "2CdzdzR1hj6w1ZjXLgvk3o2Saq5sXd1ufQ3Toww4PPHQ",
+"repo": "https://github.com/Gliana-Labs/gliana-agent-mobile",
+"commit": "98b670acd8c9dc4018dfe81f3289f31685f77d00",
+"args": [
+"--mount-path",
+"program/arena",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.0.14",
+"--cargo-build-sbf-args=--tools-version v1.51.1"
+],
+"runner": "ubuntu-latest",
+"expect": "1a3e2032407d80089f4a1c789bf5739c22616f7f4a3b8fd856652ccefde05804",
+"how": "C v1.51.1"
+},
+{
+"program": "2CdzdzR1hj6w1ZjXLgvk3o2Saq5sXd1ufQ3Toww4PPHQ",
+"repo": "https://github.com/Gliana-Labs/gliana-agent-mobile",
+"commit": "21b49a8d836a4506ef5e44b5708dcfd78061a5b6",
+"args": [
+"--mount-path",
+"program/arena",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.3.13",
+"--cargo-build-sbf-args=--tools-version v1.50"
+],
+"runner": "ubuntu-latest",
+"expect": "1a3e2032407d80089f4a1c789bf5739c22616f7f4a3b8fd856652ccefde05804",
+"how": "C v1.50"
+},
+{
+"program": "2CdzdzR1hj6w1ZjXLgvk3o2Saq5sXd1ufQ3Toww4PPHQ",
+"repo": "https://github.com/Gliana-Labs/gliana-agent-mobile",
+"commit": "21b49a8d836a4506ef5e44b5708dcfd78061a5b6",
+"args": [
+"--mount-path",
+"program/arena",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.0.14",
+"--cargo-build-sbf-args=--tools-version v1.51.1"
+],
+"runner": "ubuntu-latest",
+"expect": "1a3e2032407d80089f4a1c789bf5739c22616f7f4a3b8fd856652ccefde05804",
+"how": "C v1.51.1"
+},
+{
+"program": "2CdzdzR1hj6w1ZjXLgvk3o2Saq5sXd1ufQ3Toww4PPHQ",
+"repo": "https://github.com/Gliana-Labs/gliana-agent-mobile",
+"commit": "7ede0233927de9eb7e1ba8dbe9ddd67704b65c76",
+"args": [
+"--mount-path",
+"program/arena",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.3.13",
+"--cargo-build-sbf-args=--tools-version v1.50"
+],
+"runner": "ubuntu-latest",
+"expect": "1a3e2032407d80089f4a1c789bf5739c22616f7f4a3b8fd856652ccefde05804",
+"how": "C v1.50"
+},
+{
+"program": "2CdzdzR1hj6w1ZjXLgvk3o2Saq5sXd1ufQ3Toww4PPHQ",
+"repo": "https://github.com/Gliana-Labs/gliana-agent-mobile",
+"commit": "7ede0233927de9eb7e1ba8dbe9ddd67704b65c76",
+"args": [
+"--mount-path",
+"program/arena",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.0.14",
+"--cargo-build-sbf-args=--tools-version v1.51.1"
+],
+"runner": "ubuntu-latest",
+"expect": "1a3e2032407d80089f4a1c789bf5739c22616f7f4a3b8fd856652ccefde05804",
+"how": "C v1.51.1"
+},
+{
+"program": "2CdzdzR1hj6w1ZjXLgvk3o2Saq5sXd1ufQ3Toww4PPHQ",
+"repo": "https://github.com/Gliana-Labs/gliana-agent-mobile",
+"commit": "974d57d6ff891609d30bd95be89ba50a917bbf13",
+"args": [
+"--mount-path",
+"program/arena",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.3.13",
+"--cargo-build-sbf-args=--tools-version v1.50"
+],
+"runner": "ubuntu-latest",
+"expect": "1a3e2032407d80089f4a1c789bf5739c22616f7f4a3b8fd856652ccefde05804",
+"how": "C v1.50"
+},
+{
+"program": "2CdzdzR1hj6w1ZjXLgvk3o2Saq5sXd1ufQ3Toww4PPHQ",
+"repo": "https://github.com/Gliana-Labs/gliana-agent-mobile",
+"commit": "974d57d6ff891609d30bd95be89ba50a917bbf13",
+"args": [
+"--mount-path",
+"program/arena",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.0.14",
+"--cargo-build-sbf-args=--tools-version v1.51.1"
+],
+"runner": "ubuntu-latest",
+"expect": "1a3e2032407d80089f4a1c789bf5739c22616f7f4a3b8fd856652ccefde05804",
+"how": "C v1.51.1"
+},
+{
+"program": "2CdzdzR1hj6w1ZjXLgvk3o2Saq5sXd1ufQ3Toww4PPHQ",
+"repo": "https://github.com/Gliana-Labs/gliana-agent-mobile",
+"commit": "a38a5a3d204cfd81bdbe6ddd21e8b01d8c4ca0fd",
+"args": [
+"--mount-path",
+"program/arena",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.3.13",
+"--cargo-build-sbf-args=--tools-version v1.50"
+],
+"runner": "ubuntu-latest",
+"expect": "1a3e2032407d80089f4a1c789bf5739c22616f7f4a3b8fd856652ccefde05804",
+"how": "C v1.50"
+},
+{
+"program": "2CdzdzR1hj6w1ZjXLgvk3o2Saq5sXd1ufQ3Toww4PPHQ",
+"repo": "https://github.com/Gliana-Labs/gliana-agent-mobile",
+"commit": "a38a5a3d204cfd81bdbe6ddd21e8b01d8c4ca0fd",
+"args": [
+"--mount-path",
+"program/arena",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.0.14",
+"--cargo-build-sbf-args=--tools-version v1.51.1"
+],
+"runner": "ubuntu-latest",
+"expect": "1a3e2032407d80089f4a1c789bf5739c22616f7f4a3b8fd856652ccefde05804",
+"how": "C v1.51.1"
+},
+{
+"program": "2CdzdzR1hj6w1ZjXLgvk3o2Saq5sXd1ufQ3Toww4PPHQ",
+"repo": "https://github.com/Gliana-Labs/gliana-agent-mobile",
+"commit": "45951cb8a38d8ada23b65f7ecad385e341563ca7",
+"args": [
+"--mount-path",
+"program/arena",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.3.13",
+"--cargo-build-sbf-args=--tools-version v1.50"
+],
+"runner": "ubuntu-latest",
+"expect": "1a3e2032407d80089f4a1c789bf5739c22616f7f4a3b8fd856652ccefde05804",
+"how": "C v1.50"
+},
+{
+"program": "2CdzdzR1hj6w1ZjXLgvk3o2Saq5sXd1ufQ3Toww4PPHQ",
+"repo": "https://github.com/Gliana-Labs/gliana-agent-mobile",
+"commit": "45951cb8a38d8ada23b65f7ecad385e341563ca7",
+"args": [
+"--mount-path",
+"program/arena",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.0.14",
+"--cargo-build-sbf-args=--tools-version v1.51.1"
+],
+"runner": "ubuntu-latest",
+"expect": "1a3e2032407d80089f4a1c789bf5739c22616f7f4a3b8fd856652ccefde05804",
+"how": "C v1.51.1"
+},
+{
+"program": "tdcam4m5U74pEZQrsQ7fVAav4AUXXc6z8fkhvExfRVN",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "7d0fec10a7a979d220f0062dec202ce6372d7071",
+"args": [
+"--mount-path",
+"programs/tuktuk-dca",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.44"
+],
+"runner": "ubuntu-latest",
+"expect": "ca87588ce39303196c86155793c62f5443e02ec80c27335ae40fefd038b96ee6",
+"how": "C v1.44"
+},
+{
+"program": "tdcam4m5U74pEZQrsQ7fVAav4AUXXc6z8fkhvExfRVN",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "7d0fec10a7a979d220f0062dec202ce6372d7071",
+"args": [
+"--mount-path",
+"programs/tuktuk-dca",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.43"
+],
+"runner": "ubuntu-latest",
+"expect": "ca87588ce39303196c86155793c62f5443e02ec80c27335ae40fefd038b96ee6",
+"how": "C v1.43"
+},
+{
+"program": "tdcam4m5U74pEZQrsQ7fVAav4AUXXc6z8fkhvExfRVN",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "7000cbe78ac41041e56aabae818146d8000fb48d",
+"args": [
+"--mount-path",
+"programs/tuktuk-dca",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.44"
+],
+"runner": "ubuntu-latest",
+"expect": "ca87588ce39303196c86155793c62f5443e02ec80c27335ae40fefd038b96ee6",
+"how": "C v1.44"
+},
+{
+"program": "tdcam4m5U74pEZQrsQ7fVAav4AUXXc6z8fkhvExfRVN",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "7000cbe78ac41041e56aabae818146d8000fb48d",
+"args": [
+"--mount-path",
+"programs/tuktuk-dca",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.43"
+],
+"runner": "ubuntu-latest",
+"expect": "ca87588ce39303196c86155793c62f5443e02ec80c27335ae40fefd038b96ee6",
+"how": "C v1.43"
+},
+{
+"program": "tdcam4m5U74pEZQrsQ7fVAav4AUXXc6z8fkhvExfRVN",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "976d77aad09d70f745c64cfc426a561f47ba914e",
+"args": [
+"--mount-path",
+"programs/tuktuk-dca",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.44"
+],
+"runner": "ubuntu-latest",
+"expect": "ca87588ce39303196c86155793c62f5443e02ec80c27335ae40fefd038b96ee6",
+"how": "C v1.44"
+},
+{
+"program": "tdcam4m5U74pEZQrsQ7fVAav4AUXXc6z8fkhvExfRVN",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "976d77aad09d70f745c64cfc426a561f47ba914e",
+"args": [
+"--mount-path",
+"programs/tuktuk-dca",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.43"
+],
+"runner": "ubuntu-latest",
+"expect": "ca87588ce39303196c86155793c62f5443e02ec80c27335ae40fefd038b96ee6",
+"how": "C v1.43"
+},
+{
+"program": "tdcam4m5U74pEZQrsQ7fVAav4AUXXc6z8fkhvExfRVN",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "d5f9a167e99ee6797c31e0b91359d7993cb06305",
+"args": [
+"--mount-path",
+"programs/tuktuk-dca",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.44"
+],
+"runner": "ubuntu-latest",
+"expect": "ca87588ce39303196c86155793c62f5443e02ec80c27335ae40fefd038b96ee6",
+"how": "C v1.44"
+},
+{
+"program": "tdcam4m5U74pEZQrsQ7fVAav4AUXXc6z8fkhvExfRVN",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "d5f9a167e99ee6797c31e0b91359d7993cb06305",
+"args": [
+"--mount-path",
+"programs/tuktuk-dca",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.43"
+],
+"runner": "ubuntu-latest",
+"expect": "ca87588ce39303196c86155793c62f5443e02ec80c27335ae40fefd038b96ee6",
+"how": "C v1.43"
+},
+{
+"program": "tdcam4m5U74pEZQrsQ7fVAav4AUXXc6z8fkhvExfRVN",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "41dce909e5dee97f02ae9f94c81612cbb79250cc",
+"args": [
+"--mount-path",
+"programs/tuktuk-dca",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.44"
+],
+"runner": "ubuntu-latest",
+"expect": "ca87588ce39303196c86155793c62f5443e02ec80c27335ae40fefd038b96ee6",
+"how": "C v1.44"
+},
+{
+"program": "tdcam4m5U74pEZQrsQ7fVAav4AUXXc6z8fkhvExfRVN",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "41dce909e5dee97f02ae9f94c81612cbb79250cc",
+"args": [
+"--mount-path",
+"programs/tuktuk-dca",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.43"
+],
+"runner": "ubuntu-latest",
+"expect": "ca87588ce39303196c86155793c62f5443e02ec80c27335ae40fefd038b96ee6",
+"how": "C v1.43"
+},
+{
+"program": "tdcam4m5U74pEZQrsQ7fVAav4AUXXc6z8fkhvExfRVN",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "02e0531a8aab694beb31659040c9643e6c3750f0",
+"args": [
+"--mount-path",
+"programs/tuktuk-dca",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.44"
+],
+"runner": "ubuntu-latest",
+"expect": "ca87588ce39303196c86155793c62f5443e02ec80c27335ae40fefd038b96ee6",
+"how": "C v1.44"
+},
+{
+"program": "tdcam4m5U74pEZQrsQ7fVAav4AUXXc6z8fkhvExfRVN",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "02e0531a8aab694beb31659040c9643e6c3750f0",
+"args": [
+"--mount-path",
+"programs/tuktuk-dca",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.43"
+],
+"runner": "ubuntu-latest",
+"expect": "ca87588ce39303196c86155793c62f5443e02ec80c27335ae40fefd038b96ee6",
+"how": "C v1.43"
+},
+{
+"program": "tdcam4m5U74pEZQrsQ7fVAav4AUXXc6z8fkhvExfRVN",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "4bafa5ac5fcd1b2ae1b15dd1d1abafbba156f69a",
+"args": [
+"--mount-path",
+"programs/tuktuk-dca",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.44"
+],
+"runner": "ubuntu-latest",
+"expect": "ca87588ce39303196c86155793c62f5443e02ec80c27335ae40fefd038b96ee6",
+"how": "C v1.44"
+},
+{
+"program": "tdcam4m5U74pEZQrsQ7fVAav4AUXXc6z8fkhvExfRVN",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "4bafa5ac5fcd1b2ae1b15dd1d1abafbba156f69a",
+"args": [
+"--mount-path",
+"programs/tuktuk-dca",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.43"
+],
+"runner": "ubuntu-latest",
+"expect": "ca87588ce39303196c86155793c62f5443e02ec80c27335ae40fefd038b96ee6",
+"how": "C v1.43"
+},
+{
+"program": "9mRXU9gpWY3B13AyuCCtNjHnKt1pUFBQ6vJDLTwgakhm",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "621dfd4739596afd3df758b801ec16286b3d0ddf",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "ffdbc50c0c57f38e865dc87f605c0533c231b9d8087942f5e14af92bdbe6d5ed",
+"how": "C v1.57"
+},
+{
+"program": "9mRXU9gpWY3B13AyuCCtNjHnKt1pUFBQ6vJDLTwgakhm",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "621dfd4739596afd3df758b801ec16286b3d0ddf",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "ffdbc50c0c57f38e865dc87f605c0533c231b9d8087942f5e14af92bdbe6d5ed",
+"how": "C v1.54"
+},
+{
+"program": "9mRXU9gpWY3B13AyuCCtNjHnKt1pUFBQ6vJDLTwgakhm",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "ff8be7cdd4f7c803a2fac2aa33f8ce696e5f9188",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "ffdbc50c0c57f38e865dc87f605c0533c231b9d8087942f5e14af92bdbe6d5ed",
+"how": "C v1.57"
+},
+{
+"program": "9mRXU9gpWY3B13AyuCCtNjHnKt1pUFBQ6vJDLTwgakhm",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "ff8be7cdd4f7c803a2fac2aa33f8ce696e5f9188",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "ffdbc50c0c57f38e865dc87f605c0533c231b9d8087942f5e14af92bdbe6d5ed",
+"how": "C v1.54"
+},
+{
+"program": "9mRXU9gpWY3B13AyuCCtNjHnKt1pUFBQ6vJDLTwgakhm",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "32afecf4152be070088109a4f9747d9e6f02a265",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "ffdbc50c0c57f38e865dc87f605c0533c231b9d8087942f5e14af92bdbe6d5ed",
+"how": "C v1.57"
+},
+{
+"program": "9mRXU9gpWY3B13AyuCCtNjHnKt1pUFBQ6vJDLTwgakhm",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "32afecf4152be070088109a4f9747d9e6f02a265",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "ffdbc50c0c57f38e865dc87f605c0533c231b9d8087942f5e14af92bdbe6d5ed",
+"how": "C v1.54"
+},
+{
+"program": "9mRXU9gpWY3B13AyuCCtNjHnKt1pUFBQ6vJDLTwgakhm",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "908170ed033b7886bfd02406453e7e6064db9b6d",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "ffdbc50c0c57f38e865dc87f605c0533c231b9d8087942f5e14af92bdbe6d5ed",
+"how": "C v1.57"
+},
+{
+"program": "9mRXU9gpWY3B13AyuCCtNjHnKt1pUFBQ6vJDLTwgakhm",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "908170ed033b7886bfd02406453e7e6064db9b6d",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "ffdbc50c0c57f38e865dc87f605c0533c231b9d8087942f5e14af92bdbe6d5ed",
+"how": "C v1.54"
+},
+{
+"program": "9mRXU9gpWY3B13AyuCCtNjHnKt1pUFBQ6vJDLTwgakhm",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "d9e242486a68deee7bdd55d8ef19da9124ed74b2",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "ffdbc50c0c57f38e865dc87f605c0533c231b9d8087942f5e14af92bdbe6d5ed",
+"how": "C v1.57"
+},
+{
+"program": "9mRXU9gpWY3B13AyuCCtNjHnKt1pUFBQ6vJDLTwgakhm",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "d9e242486a68deee7bdd55d8ef19da9124ed74b2",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "ffdbc50c0c57f38e865dc87f605c0533c231b9d8087942f5e14af92bdbe6d5ed",
+"how": "C v1.54"
+},
+{
+"program": "9mRXU9gpWY3B13AyuCCtNjHnKt1pUFBQ6vJDLTwgakhm",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "afacbe15cfb27a92a47e7b2e9b0a05e74545848f",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "ffdbc50c0c57f38e865dc87f605c0533c231b9d8087942f5e14af92bdbe6d5ed",
+"how": "C v1.57"
+},
+{
+"program": "9mRXU9gpWY3B13AyuCCtNjHnKt1pUFBQ6vJDLTwgakhm",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "afacbe15cfb27a92a47e7b2e9b0a05e74545848f",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "ffdbc50c0c57f38e865dc87f605c0533c231b9d8087942f5e14af92bdbe6d5ed",
+"how": "C v1.54"
+},
+{
+"program": "9mRXU9gpWY3B13AyuCCtNjHnKt1pUFBQ6vJDLTwgakhm",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "f035d7dc33ff9a35609c2ec3d0bc92df243e19d1",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "ffdbc50c0c57f38e865dc87f605c0533c231b9d8087942f5e14af92bdbe6d5ed",
+"how": "C v1.57"
+},
+{
+"program": "9mRXU9gpWY3B13AyuCCtNjHnKt1pUFBQ6vJDLTwgakhm",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "f035d7dc33ff9a35609c2ec3d0bc92df243e19d1",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "ffdbc50c0c57f38e865dc87f605c0533c231b9d8087942f5e14af92bdbe6d5ed",
+"how": "C v1.54"
+},
+{
+"program": "AfDhsethmkoimbyoSWnRfLtjFXZteRNtbFMioR9qWMjD",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "a71b167e10e92c61a2e892a0c0677c07bf9a4b3d",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "d0057fe532b38b260523ca85f456690f26479ca05b85c5f30f302123fde2abd4",
+"how": "C v1.57"
+},
+{
+"program": "AfDhsethmkoimbyoSWnRfLtjFXZteRNtbFMioR9qWMjD",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "a71b167e10e92c61a2e892a0c0677c07bf9a4b3d",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "d0057fe532b38b260523ca85f456690f26479ca05b85c5f30f302123fde2abd4",
+"how": "C v1.54"
+},
+{
+"program": "AfDhsethmkoimbyoSWnRfLtjFXZteRNtbFMioR9qWMjD",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "f1aef0566d7627390c110c1145bc191d6d6a7a3b",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "d0057fe532b38b260523ca85f456690f26479ca05b85c5f30f302123fde2abd4",
+"how": "C v1.57"
+},
+{
+"program": "AfDhsethmkoimbyoSWnRfLtjFXZteRNtbFMioR9qWMjD",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "f1aef0566d7627390c110c1145bc191d6d6a7a3b",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "d0057fe532b38b260523ca85f456690f26479ca05b85c5f30f302123fde2abd4",
+"how": "C v1.54"
+},
+{
+"program": "AfDhsethmkoimbyoSWnRfLtjFXZteRNtbFMioR9qWMjD",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "d342d31a8bd0c01f1bc414a655277572b6b96f21",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "d0057fe532b38b260523ca85f456690f26479ca05b85c5f30f302123fde2abd4",
+"how": "C v1.57"
+},
+{
+"program": "AfDhsethmkoimbyoSWnRfLtjFXZteRNtbFMioR9qWMjD",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "d342d31a8bd0c01f1bc414a655277572b6b96f21",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "d0057fe532b38b260523ca85f456690f26479ca05b85c5f30f302123fde2abd4",
+"how": "C v1.54"
+},
+{
+"program": "AfDhsethmkoimbyoSWnRfLtjFXZteRNtbFMioR9qWMjD",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "6d0c270aeca447a2b11977017337b39aa06e7cc3",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "d0057fe532b38b260523ca85f456690f26479ca05b85c5f30f302123fde2abd4",
+"how": "C v1.57"
+},
+{
+"program": "AfDhsethmkoimbyoSWnRfLtjFXZteRNtbFMioR9qWMjD",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "6d0c270aeca447a2b11977017337b39aa06e7cc3",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "d0057fe532b38b260523ca85f456690f26479ca05b85c5f30f302123fde2abd4",
+"how": "C v1.54"
+},
+{
+"program": "AfDhsethmkoimbyoSWnRfLtjFXZteRNtbFMioR9qWMjD",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "0634f0a4a2d635cf7dd2bd9319972981ebf49be6",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "d0057fe532b38b260523ca85f456690f26479ca05b85c5f30f302123fde2abd4",
+"how": "C v1.57"
+},
+{
+"program": "AfDhsethmkoimbyoSWnRfLtjFXZteRNtbFMioR9qWMjD",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "0634f0a4a2d635cf7dd2bd9319972981ebf49be6",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "d0057fe532b38b260523ca85f456690f26479ca05b85c5f30f302123fde2abd4",
+"how": "C v1.54"
+},
+{
+"program": "AfDhsethmkoimbyoSWnRfLtjFXZteRNtbFMioR9qWMjD",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "43688f3d699c391d0803a53e8487ef7771699f6b",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "d0057fe532b38b260523ca85f456690f26479ca05b85c5f30f302123fde2abd4",
+"how": "C v1.57"
+},
+{
+"program": "AfDhsethmkoimbyoSWnRfLtjFXZteRNtbFMioR9qWMjD",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "43688f3d699c391d0803a53e8487ef7771699f6b",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "d0057fe532b38b260523ca85f456690f26479ca05b85c5f30f302123fde2abd4",
+"how": "C v1.54"
+},
+{
+"program": "AfDhsethmkoimbyoSWnRfLtjFXZteRNtbFMioR9qWMjD",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "08bf163a2343e8a88889e62e25767c7ed2c80fd9",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "d0057fe532b38b260523ca85f456690f26479ca05b85c5f30f302123fde2abd4",
+"how": "C v1.57"
+},
+{
+"program": "AfDhsethmkoimbyoSWnRfLtjFXZteRNtbFMioR9qWMjD",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "08bf163a2343e8a88889e62e25767c7ed2c80fd9",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "d0057fe532b38b260523ca85f456690f26479ca05b85c5f30f302123fde2abd4",
+"how": "C v1.54"
+},
+{
+"program": "rAKACC6Qw8HYa87ntGPRbfYEMnK2D9JVLsmZaKPpMmi",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "1fca4c633daa9d04ea711b163b337d3f05da578a",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "8c3730fb37681fe0e92a9637bf42e3d00ae0c923178f771406b1c949ac6bea66",
+"how": "C v1.54"
+},
+{
+"program": "rAKACC6Qw8HYa87ntGPRbfYEMnK2D9JVLsmZaKPpMmi",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "1fca4c633daa9d04ea711b163b337d3f05da578a",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "8c3730fb37681fe0e92a9637bf42e3d00ae0c923178f771406b1c949ac6bea66",
+"how": "C v1.57"
+},
+{
+"program": "rAKACC6Qw8HYa87ntGPRbfYEMnK2D9JVLsmZaKPpMmi",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "f54312626540ec1bd4795e17023c7d92bb955272",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "8c3730fb37681fe0e92a9637bf42e3d00ae0c923178f771406b1c949ac6bea66",
+"how": "C v1.54"
+},
+{
+"program": "rAKACC6Qw8HYa87ntGPRbfYEMnK2D9JVLsmZaKPpMmi",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "f54312626540ec1bd4795e17023c7d92bb955272",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "8c3730fb37681fe0e92a9637bf42e3d00ae0c923178f771406b1c949ac6bea66",
+"how": "C v1.57"
+},
+{
+"program": "rAKACC6Qw8HYa87ntGPRbfYEMnK2D9JVLsmZaKPpMmi",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "0517ba4aff28cd0bc809c2fb1be153ea7d2ea72a",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "8c3730fb37681fe0e92a9637bf42e3d00ae0c923178f771406b1c949ac6bea66",
+"how": "C v1.54"
+},
+{
+"program": "rAKACC6Qw8HYa87ntGPRbfYEMnK2D9JVLsmZaKPpMmi",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "0517ba4aff28cd0bc809c2fb1be153ea7d2ea72a",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "8c3730fb37681fe0e92a9637bf42e3d00ae0c923178f771406b1c949ac6bea66",
+"how": "C v1.57"
+},
+{
+"program": "rAKACC6Qw8HYa87ntGPRbfYEMnK2D9JVLsmZaKPpMmi",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "2a676d52e7019a981ada7db43d862b642ba3c804",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "8c3730fb37681fe0e92a9637bf42e3d00ae0c923178f771406b1c949ac6bea66",
+"how": "C v1.54"
+},
+{
+"program": "rAKACC6Qw8HYa87ntGPRbfYEMnK2D9JVLsmZaKPpMmi",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "2a676d52e7019a981ada7db43d862b642ba3c804",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "8c3730fb37681fe0e92a9637bf42e3d00ae0c923178f771406b1c949ac6bea66",
+"how": "C v1.57"
+},
+{
+"program": "rAKACC6Qw8HYa87ntGPRbfYEMnK2D9JVLsmZaKPpMmi",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "9057427b097da09cdc560cb1b93c6b6c17576ba9",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "8c3730fb37681fe0e92a9637bf42e3d00ae0c923178f771406b1c949ac6bea66",
+"how": "C v1.54"
+},
+{
+"program": "rAKACC6Qw8HYa87ntGPRbfYEMnK2D9JVLsmZaKPpMmi",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "9057427b097da09cdc560cb1b93c6b6c17576ba9",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "8c3730fb37681fe0e92a9637bf42e3d00ae0c923178f771406b1c949ac6bea66",
+"how": "C v1.57"
+},
+{
+"program": "rAKACC6Qw8HYa87ntGPRbfYEMnK2D9JVLsmZaKPpMmi",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "f2f1bf4cbee0c1e703a1a53fe7e0109ada32df4b",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "8c3730fb37681fe0e92a9637bf42e3d00ae0c923178f771406b1c949ac6bea66",
+"how": "C v1.54"
+},
+{
+"program": "rAKACC6Qw8HYa87ntGPRbfYEMnK2D9JVLsmZaKPpMmi",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "f2f1bf4cbee0c1e703a1a53fe7e0109ada32df4b",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "8c3730fb37681fe0e92a9637bf42e3d00ae0c923178f771406b1c949ac6bea66",
+"how": "C v1.57"
+},
+{
+"program": "rAKACC6Qw8HYa87ntGPRbfYEMnK2D9JVLsmZaKPpMmi",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "95ccb5ed3139d5ea3de5660d13fed77b3a302ffc",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "8c3730fb37681fe0e92a9637bf42e3d00ae0c923178f771406b1c949ac6bea66",
+"how": "C v1.54"
+},
+{
+"program": "rAKACC6Qw8HYa87ntGPRbfYEMnK2D9JVLsmZaKPpMmi",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "95ccb5ed3139d5ea3de5660d13fed77b3a302ffc",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "8c3730fb37681fe0e92a9637bf42e3d00ae0c923178f771406b1c949ac6bea66",
+"how": "C v1.57"
+},
+{
+"program": "4yx1NJ4Vqf2zT1oVLk4SySBhhDJXmXFt88ncm4gPxtL7",
+"repo": "https://github.com/Dual-Finance/staking-options",
+"commit": "57bb4727dc1d7a9886a5d5ac0e5795e469fe559c",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.14.29",
+"--cargo-build-sbf-args=--tools-version v1.31"
+],
+"runner": "ubuntu-latest",
+"expect": "a507af6d520ca8eb1482902753902c5828d1a3eb1ec53b271e5fb8dace188394",
+"how": "C v1.31"
+},
+{
+"program": "4yx1NJ4Vqf2zT1oVLk4SySBhhDJXmXFt88ncm4gPxtL7",
+"repo": "https://github.com/Dual-Finance/staking-options",
+"commit": "57bb4727dc1d7a9886a5d5ac0e5795e469fe559c",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.14.29",
+"--cargo-build-sbf-args=--tools-version v1.30"
+],
+"runner": "ubuntu-latest",
+"expect": "a507af6d520ca8eb1482902753902c5828d1a3eb1ec53b271e5fb8dace188394",
+"how": "C v1.30"
+},
+{
+"program": "4yx1NJ4Vqf2zT1oVLk4SySBhhDJXmXFt88ncm4gPxtL7",
+"repo": "https://github.com/Dual-Finance/staking-options",
+"commit": "4d7bb892038522eeffb336d24fd2d975ab3a616a",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.14.29",
+"--cargo-build-sbf-args=--tools-version v1.31"
+],
+"runner": "ubuntu-latest",
+"expect": "a507af6d520ca8eb1482902753902c5828d1a3eb1ec53b271e5fb8dace188394",
+"how": "C v1.31"
+},
+{
+"program": "4yx1NJ4Vqf2zT1oVLk4SySBhhDJXmXFt88ncm4gPxtL7",
+"repo": "https://github.com/Dual-Finance/staking-options",
+"commit": "4d7bb892038522eeffb336d24fd2d975ab3a616a",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.14.29",
+"--cargo-build-sbf-args=--tools-version v1.30"
+],
+"runner": "ubuntu-latest",
+"expect": "a507af6d520ca8eb1482902753902c5828d1a3eb1ec53b271e5fb8dace188394",
+"how": "C v1.30"
+},
+{
+"program": "4yx1NJ4Vqf2zT1oVLk4SySBhhDJXmXFt88ncm4gPxtL7",
+"repo": "https://github.com/Dual-Finance/staking-options",
+"commit": "5524b51042dde31389213114e6e531fc85bd0e89",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.14.29",
+"--cargo-build-sbf-args=--tools-version v1.31"
+],
+"runner": "ubuntu-latest",
+"expect": "a507af6d520ca8eb1482902753902c5828d1a3eb1ec53b271e5fb8dace188394",
+"how": "C v1.31"
+},
+{
+"program": "4yx1NJ4Vqf2zT1oVLk4SySBhhDJXmXFt88ncm4gPxtL7",
+"repo": "https://github.com/Dual-Finance/staking-options",
+"commit": "5524b51042dde31389213114e6e531fc85bd0e89",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.14.29",
+"--cargo-build-sbf-args=--tools-version v1.30"
+],
+"runner": "ubuntu-latest",
+"expect": "a507af6d520ca8eb1482902753902c5828d1a3eb1ec53b271e5fb8dace188394",
+"how": "C v1.30"
+},
+{
+"program": "4yx1NJ4Vqf2zT1oVLk4SySBhhDJXmXFt88ncm4gPxtL7",
+"repo": "https://github.com/Dual-Finance/staking-options",
+"commit": "d4a8417e73cfe68ed1a8364d47cc689d833fca86",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.14.29",
+"--cargo-build-sbf-args=--tools-version v1.31"
+],
+"runner": "ubuntu-latest",
+"expect": "a507af6d520ca8eb1482902753902c5828d1a3eb1ec53b271e5fb8dace188394",
+"how": "C v1.31"
+},
+{
+"program": "4yx1NJ4Vqf2zT1oVLk4SySBhhDJXmXFt88ncm4gPxtL7",
+"repo": "https://github.com/Dual-Finance/staking-options",
+"commit": "d4a8417e73cfe68ed1a8364d47cc689d833fca86",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.14.29",
+"--cargo-build-sbf-args=--tools-version v1.30"
+],
+"runner": "ubuntu-latest",
+"expect": "a507af6d520ca8eb1482902753902c5828d1a3eb1ec53b271e5fb8dace188394",
+"how": "C v1.30"
+},
+{
+"program": "4yx1NJ4Vqf2zT1oVLk4SySBhhDJXmXFt88ncm4gPxtL7",
+"repo": "https://github.com/Dual-Finance/staking-options",
+"commit": "1ac8e096367431edc8d20002a7d1a72391671020",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.14.29",
+"--cargo-build-sbf-args=--tools-version v1.31"
+],
+"runner": "ubuntu-latest",
+"expect": "a507af6d520ca8eb1482902753902c5828d1a3eb1ec53b271e5fb8dace188394",
+"how": "C v1.31"
+},
+{
+"program": "4yx1NJ4Vqf2zT1oVLk4SySBhhDJXmXFt88ncm4gPxtL7",
+"repo": "https://github.com/Dual-Finance/staking-options",
+"commit": "1ac8e096367431edc8d20002a7d1a72391671020",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.14.29",
+"--cargo-build-sbf-args=--tools-version v1.30"
+],
+"runner": "ubuntu-latest",
+"expect": "a507af6d520ca8eb1482902753902c5828d1a3eb1ec53b271e5fb8dace188394",
+"how": "C v1.30"
+},
+{
+"program": "4yx1NJ4Vqf2zT1oVLk4SySBhhDJXmXFt88ncm4gPxtL7",
+"repo": "https://github.com/Dual-Finance/staking-options",
+"commit": "3189d28460eb8192c13f52265c5074540040eb67",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.14.29",
+"--cargo-build-sbf-args=--tools-version v1.31"
+],
+"runner": "ubuntu-latest",
+"expect": "a507af6d520ca8eb1482902753902c5828d1a3eb1ec53b271e5fb8dace188394",
+"how": "C v1.31"
+},
+{
+"program": "4yx1NJ4Vqf2zT1oVLk4SySBhhDJXmXFt88ncm4gPxtL7",
+"repo": "https://github.com/Dual-Finance/staking-options",
+"commit": "3189d28460eb8192c13f52265c5074540040eb67",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.14.29",
+"--cargo-build-sbf-args=--tools-version v1.30"
+],
+"runner": "ubuntu-latest",
+"expect": "a507af6d520ca8eb1482902753902c5828d1a3eb1ec53b271e5fb8dace188394",
+"how": "C v1.30"
+},
+{
+"program": "4yx1NJ4Vqf2zT1oVLk4SySBhhDJXmXFt88ncm4gPxtL7",
+"repo": "https://github.com/Dual-Finance/staking-options",
+"commit": "b902c46e0ea78fdf7edf42967b1583c74b995743",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.14.29",
+"--cargo-build-sbf-args=--tools-version v1.31"
+],
+"runner": "ubuntu-latest",
+"expect": "a507af6d520ca8eb1482902753902c5828d1a3eb1ec53b271e5fb8dace188394",
+"how": "C v1.31"
+},
+{
+"program": "4yx1NJ4Vqf2zT1oVLk4SySBhhDJXmXFt88ncm4gPxtL7",
+"repo": "https://github.com/Dual-Finance/staking-options",
+"commit": "b902c46e0ea78fdf7edf42967b1583c74b995743",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.14.29",
+"--cargo-build-sbf-args=--tools-version v1.30"
+],
+"runner": "ubuntu-latest",
+"expect": "a507af6d520ca8eb1482902753902c5828d1a3eb1ec53b271e5fb8dace188394",
+"how": "C v1.30"
+},
+{
+"program": "6KMdXC3Fxovp3pnUsdQuUbderPzZtTA4t6R1jacYJWQr",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "f1aef0566d7627390c110c1145bc191d6d6a7a3b",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "af392c58cca7f3fb16c336523f7c5d1b712b3ee0a2f64936d0388b35e7e806b2",
+"how": "C v1.57"
+},
+{
+"program": "6KMdXC3Fxovp3pnUsdQuUbderPzZtTA4t6R1jacYJWQr",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "f1aef0566d7627390c110c1145bc191d6d6a7a3b",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "af392c58cca7f3fb16c336523f7c5d1b712b3ee0a2f64936d0388b35e7e806b2",
+"how": "C v1.54"
+},
+{
+"program": "6KMdXC3Fxovp3pnUsdQuUbderPzZtTA4t6R1jacYJWQr",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "d342d31a8bd0c01f1bc414a655277572b6b96f21",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "af392c58cca7f3fb16c336523f7c5d1b712b3ee0a2f64936d0388b35e7e806b2",
+"how": "C v1.57"
+},
+{
+"program": "6KMdXC3Fxovp3pnUsdQuUbderPzZtTA4t6R1jacYJWQr",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "d342d31a8bd0c01f1bc414a655277572b6b96f21",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "af392c58cca7f3fb16c336523f7c5d1b712b3ee0a2f64936d0388b35e7e806b2",
+"how": "C v1.54"
+},
+{
+"program": "6KMdXC3Fxovp3pnUsdQuUbderPzZtTA4t6R1jacYJWQr",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "6d0c270aeca447a2b11977017337b39aa06e7cc3",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "af392c58cca7f3fb16c336523f7c5d1b712b3ee0a2f64936d0388b35e7e806b2",
+"how": "C v1.57"
+},
+{
+"program": "6KMdXC3Fxovp3pnUsdQuUbderPzZtTA4t6R1jacYJWQr",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "6d0c270aeca447a2b11977017337b39aa06e7cc3",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "af392c58cca7f3fb16c336523f7c5d1b712b3ee0a2f64936d0388b35e7e806b2",
+"how": "C v1.54"
+},
+{
+"program": "6KMdXC3Fxovp3pnUsdQuUbderPzZtTA4t6R1jacYJWQr",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "0634f0a4a2d635cf7dd2bd9319972981ebf49be6",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "af392c58cca7f3fb16c336523f7c5d1b712b3ee0a2f64936d0388b35e7e806b2",
+"how": "C v1.57"
+},
+{
+"program": "6KMdXC3Fxovp3pnUsdQuUbderPzZtTA4t6R1jacYJWQr",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "0634f0a4a2d635cf7dd2bd9319972981ebf49be6",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "af392c58cca7f3fb16c336523f7c5d1b712b3ee0a2f64936d0388b35e7e806b2",
+"how": "C v1.54"
+},
+{
+"program": "6KMdXC3Fxovp3pnUsdQuUbderPzZtTA4t6R1jacYJWQr",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "43688f3d699c391d0803a53e8487ef7771699f6b",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "af392c58cca7f3fb16c336523f7c5d1b712b3ee0a2f64936d0388b35e7e806b2",
+"how": "C v1.57"
+},
+{
+"program": "6KMdXC3Fxovp3pnUsdQuUbderPzZtTA4t6R1jacYJWQr",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "43688f3d699c391d0803a53e8487ef7771699f6b",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "af392c58cca7f3fb16c336523f7c5d1b712b3ee0a2f64936d0388b35e7e806b2",
+"how": "C v1.54"
+},
+{
+"program": "6KMdXC3Fxovp3pnUsdQuUbderPzZtTA4t6R1jacYJWQr",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "08bf163a2343e8a88889e62e25767c7ed2c80fd9",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "af392c58cca7f3fb16c336523f7c5d1b712b3ee0a2f64936d0388b35e7e806b2",
+"how": "C v1.57"
+},
+{
+"program": "6KMdXC3Fxovp3pnUsdQuUbderPzZtTA4t6R1jacYJWQr",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "08bf163a2343e8a88889e62e25767c7ed2c80fd9",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "af392c58cca7f3fb16c336523f7c5d1b712b3ee0a2f64936d0388b35e7e806b2",
+"how": "C v1.54"
+},
+{
+"program": "6KMdXC3Fxovp3pnUsdQuUbderPzZtTA4t6R1jacYJWQr",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "f2deda256d506c9d0bdc45022b5601aed392b0b0",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "af392c58cca7f3fb16c336523f7c5d1b712b3ee0a2f64936d0388b35e7e806b2",
+"how": "C v1.57"
+},
+{
+"program": "6KMdXC3Fxovp3pnUsdQuUbderPzZtTA4t6R1jacYJWQr",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "f2deda256d506c9d0bdc45022b5601aed392b0b0",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "af392c58cca7f3fb16c336523f7c5d1b712b3ee0a2f64936d0388b35e7e806b2",
+"how": "C v1.54"
+},
+{
+"program": "RAkd1EJg45QQHeuXy7JEWBhdNvsd64Z5PbZJWQT96iB",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "1fca4c633daa9d04ea711b163b337d3f05da578a",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "069abba39a09bc6e2e570b8e8268ec7a3ad74ed4ddc52e464f3a378d879f9e62",
+"how": "C v1.54"
+},
+{
+"program": "RAkd1EJg45QQHeuXy7JEWBhdNvsd64Z5PbZJWQT96iB",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "1fca4c633daa9d04ea711b163b337d3f05da578a",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "069abba39a09bc6e2e570b8e8268ec7a3ad74ed4ddc52e464f3a378d879f9e62",
+"how": "C v1.57"
+},
+{
+"program": "RAkd1EJg45QQHeuXy7JEWBhdNvsd64Z5PbZJWQT96iB",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "f54312626540ec1bd4795e17023c7d92bb955272",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "069abba39a09bc6e2e570b8e8268ec7a3ad74ed4ddc52e464f3a378d879f9e62",
+"how": "C v1.54"
+},
+{
+"program": "RAkd1EJg45QQHeuXy7JEWBhdNvsd64Z5PbZJWQT96iB",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "f54312626540ec1bd4795e17023c7d92bb955272",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "069abba39a09bc6e2e570b8e8268ec7a3ad74ed4ddc52e464f3a378d879f9e62",
+"how": "C v1.57"
+},
+{
+"program": "RAkd1EJg45QQHeuXy7JEWBhdNvsd64Z5PbZJWQT96iB",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "0517ba4aff28cd0bc809c2fb1be153ea7d2ea72a",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "069abba39a09bc6e2e570b8e8268ec7a3ad74ed4ddc52e464f3a378d879f9e62",
+"how": "C v1.54"
+},
+{
+"program": "RAkd1EJg45QQHeuXy7JEWBhdNvsd64Z5PbZJWQT96iB",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "0517ba4aff28cd0bc809c2fb1be153ea7d2ea72a",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "069abba39a09bc6e2e570b8e8268ec7a3ad74ed4ddc52e464f3a378d879f9e62",
+"how": "C v1.57"
+},
+{
+"program": "RAkd1EJg45QQHeuXy7JEWBhdNvsd64Z5PbZJWQT96iB",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "2a676d52e7019a981ada7db43d862b642ba3c804",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "069abba39a09bc6e2e570b8e8268ec7a3ad74ed4ddc52e464f3a378d879f9e62",
+"how": "C v1.54"
+},
+{
+"program": "RAkd1EJg45QQHeuXy7JEWBhdNvsd64Z5PbZJWQT96iB",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "2a676d52e7019a981ada7db43d862b642ba3c804",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "069abba39a09bc6e2e570b8e8268ec7a3ad74ed4ddc52e464f3a378d879f9e62",
+"how": "C v1.57"
+},
+{
+"program": "RAkd1EJg45QQHeuXy7JEWBhdNvsd64Z5PbZJWQT96iB",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "9057427b097da09cdc560cb1b93c6b6c17576ba9",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "069abba39a09bc6e2e570b8e8268ec7a3ad74ed4ddc52e464f3a378d879f9e62",
+"how": "C v1.54"
+},
+{
+"program": "RAkd1EJg45QQHeuXy7JEWBhdNvsd64Z5PbZJWQT96iB",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "9057427b097da09cdc560cb1b93c6b6c17576ba9",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "069abba39a09bc6e2e570b8e8268ec7a3ad74ed4ddc52e464f3a378d879f9e62",
+"how": "C v1.57"
+},
+{
+"program": "RAkd1EJg45QQHeuXy7JEWBhdNvsd64Z5PbZJWQT96iB",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "f2f1bf4cbee0c1e703a1a53fe7e0109ada32df4b",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "069abba39a09bc6e2e570b8e8268ec7a3ad74ed4ddc52e464f3a378d879f9e62",
+"how": "C v1.54"
+},
+{
+"program": "RAkd1EJg45QQHeuXy7JEWBhdNvsd64Z5PbZJWQT96iB",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "f2f1bf4cbee0c1e703a1a53fe7e0109ada32df4b",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "069abba39a09bc6e2e570b8e8268ec7a3ad74ed4ddc52e464f3a378d879f9e62",
+"how": "C v1.57"
+},
+{
+"program": "RAkd1EJg45QQHeuXy7JEWBhdNvsd64Z5PbZJWQT96iB",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "95ccb5ed3139d5ea3de5660d13fed77b3a302ffc",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "069abba39a09bc6e2e570b8e8268ec7a3ad74ed4ddc52e464f3a378d879f9e62",
+"how": "C v1.54"
+},
+{
+"program": "RAkd1EJg45QQHeuXy7JEWBhdNvsd64Z5PbZJWQT96iB",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "95ccb5ed3139d5ea3de5660d13fed77b3a302ffc",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "069abba39a09bc6e2e570b8e8268ec7a3ad74ed4ddc52e464f3a378d879f9e62",
+"how": "C v1.57"
+},
+{
+"program": "circAbx64bbsscPbQzZAUvuXpHqrCe6fLMzc2uKXz9g",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "191a4657d77a207a2ed743c662fe592f8ef073d5",
+"args": [
+"--mount-path",
+"programs/circuit-breaker",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.43"
+],
+"runner": "ubuntu-latest",
+"expect": "f2636525df63c9c2a4be330f7d59d3cb7c2dff9f08ec2784be5a3e4ca9ae90a8",
+"how": "C v1.43"
+},
+{
+"program": "circAbx64bbsscPbQzZAUvuXpHqrCe6fLMzc2uKXz9g",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "191a4657d77a207a2ed743c662fe592f8ef073d5",
+"args": [
+"--mount-path",
+"programs/circuit-breaker",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.0.25",
+"--cargo-build-sbf-args=--tools-version v1.42"
+],
+"runner": "ubuntu-latest",
+"expect": "f2636525df63c9c2a4be330f7d59d3cb7c2dff9f08ec2784be5a3e4ca9ae90a8",
+"how": "C v1.42"
+},
+{
+"program": "circAbx64bbsscPbQzZAUvuXpHqrCe6fLMzc2uKXz9g",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "90d94e5ea790f621603653ce78530876b7ab8130",
+"args": [
+"--mount-path",
+"programs/circuit-breaker",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.43"
+],
+"runner": "ubuntu-latest",
+"expect": "f2636525df63c9c2a4be330f7d59d3cb7c2dff9f08ec2784be5a3e4ca9ae90a8",
+"how": "C v1.43"
+},
+{
+"program": "circAbx64bbsscPbQzZAUvuXpHqrCe6fLMzc2uKXz9g",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "90d94e5ea790f621603653ce78530876b7ab8130",
+"args": [
+"--mount-path",
+"programs/circuit-breaker",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.0.25",
+"--cargo-build-sbf-args=--tools-version v1.42"
+],
+"runner": "ubuntu-latest",
+"expect": "f2636525df63c9c2a4be330f7d59d3cb7c2dff9f08ec2784be5a3e4ca9ae90a8",
+"how": "C v1.42"
+},
+{
+"program": "circAbx64bbsscPbQzZAUvuXpHqrCe6fLMzc2uKXz9g",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "f913854bd729fd6dc3d97130a3c7f8b95ff4b3cd",
+"args": [
+"--mount-path",
+"programs/circuit-breaker",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.43"
+],
+"runner": "ubuntu-latest",
+"expect": "f2636525df63c9c2a4be330f7d59d3cb7c2dff9f08ec2784be5a3e4ca9ae90a8",
+"how": "C v1.43"
+},
+{
+"program": "circAbx64bbsscPbQzZAUvuXpHqrCe6fLMzc2uKXz9g",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "f913854bd729fd6dc3d97130a3c7f8b95ff4b3cd",
+"args": [
+"--mount-path",
+"programs/circuit-breaker",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.0.25",
+"--cargo-build-sbf-args=--tools-version v1.42"
+],
+"runner": "ubuntu-latest",
+"expect": "f2636525df63c9c2a4be330f7d59d3cb7c2dff9f08ec2784be5a3e4ca9ae90a8",
+"how": "C v1.42"
+},
+{
+"program": "circAbx64bbsscPbQzZAUvuXpHqrCe6fLMzc2uKXz9g",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "1090e0e9df74facfa5afdf2471206d77088ef1e9",
+"args": [
+"--mount-path",
+"programs/circuit-breaker",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.43"
+],
+"runner": "ubuntu-latest",
+"expect": "f2636525df63c9c2a4be330f7d59d3cb7c2dff9f08ec2784be5a3e4ca9ae90a8",
+"how": "C v1.43"
+},
+{
+"program": "circAbx64bbsscPbQzZAUvuXpHqrCe6fLMzc2uKXz9g",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "1090e0e9df74facfa5afdf2471206d77088ef1e9",
+"args": [
+"--mount-path",
+"programs/circuit-breaker",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.0.25",
+"--cargo-build-sbf-args=--tools-version v1.42"
+],
+"runner": "ubuntu-latest",
+"expect": "f2636525df63c9c2a4be330f7d59d3cb7c2dff9f08ec2784be5a3e4ca9ae90a8",
+"how": "C v1.42"
+},
+{
+"program": "circAbx64bbsscPbQzZAUvuXpHqrCe6fLMzc2uKXz9g",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "4d09a23a2c362ff45c88f794cd98fa38d847dec7",
+"args": [
+"--mount-path",
+"programs/circuit-breaker",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.43"
+],
+"runner": "ubuntu-latest",
+"expect": "f2636525df63c9c2a4be330f7d59d3cb7c2dff9f08ec2784be5a3e4ca9ae90a8",
+"how": "C v1.43"
+},
+{
+"program": "circAbx64bbsscPbQzZAUvuXpHqrCe6fLMzc2uKXz9g",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "4d09a23a2c362ff45c88f794cd98fa38d847dec7",
+"args": [
+"--mount-path",
+"programs/circuit-breaker",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.0.25",
+"--cargo-build-sbf-args=--tools-version v1.42"
+],
+"runner": "ubuntu-latest",
+"expect": "f2636525df63c9c2a4be330f7d59d3cb7c2dff9f08ec2784be5a3e4ca9ae90a8",
+"how": "C v1.42"
+},
+{
+"program": "circAbx64bbsscPbQzZAUvuXpHqrCe6fLMzc2uKXz9g",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "408beb5ce1de0a0f708951b00d68a5601d1055e7",
+"args": [
+"--mount-path",
+"programs/circuit-breaker",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.43"
+],
+"runner": "ubuntu-latest",
+"expect": "f2636525df63c9c2a4be330f7d59d3cb7c2dff9f08ec2784be5a3e4ca9ae90a8",
+"how": "C v1.43"
+},
+{
+"program": "circAbx64bbsscPbQzZAUvuXpHqrCe6fLMzc2uKXz9g",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "408beb5ce1de0a0f708951b00d68a5601d1055e7",
+"args": [
+"--mount-path",
+"programs/circuit-breaker",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.0.25",
+"--cargo-build-sbf-args=--tools-version v1.42"
+],
+"runner": "ubuntu-latest",
+"expect": "f2636525df63c9c2a4be330f7d59d3cb7c2dff9f08ec2784be5a3e4ca9ae90a8",
+"how": "C v1.42"
+},
+{
+"program": "circAbx64bbsscPbQzZAUvuXpHqrCe6fLMzc2uKXz9g",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "e138ef0f8e68970bc492f1eb1b65d423598cce7f",
+"args": [
+"--mount-path",
+"programs/circuit-breaker",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.43"
+],
+"runner": "ubuntu-latest",
+"expect": "f2636525df63c9c2a4be330f7d59d3cb7c2dff9f08ec2784be5a3e4ca9ae90a8",
+"how": "C v1.43"
+},
+{
+"program": "circAbx64bbsscPbQzZAUvuXpHqrCe6fLMzc2uKXz9g",
+"repo": "https://github.com/helium/helium-program-library",
+"commit": "e138ef0f8e68970bc492f1eb1b65d423598cce7f",
+"args": [
+"--mount-path",
+"programs/circuit-breaker",
+"--workspace-path",
+".",
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.0.25",
+"--cargo-build-sbf-args=--tools-version v1.42"
+],
+"runner": "ubuntu-latest",
+"expect": "f2636525df63c9c2a4be330f7d59d3cb7c2dff9f08ec2784be5a3e4ca9ae90a8",
+"how": "C v1.42"
+},
+{
+"program": "T1pyyaTNZsKv2WcRAB8oVnk93mLJw2XzjtVYqCsaHqt",
+"repo": "https://github.com/jito-foundation/jito-programs",
+"commit": "b230b2b5cdb911232a66cdd85f83828e6933cc1c",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.43"
+],
+"runner": "ubuntu-latest",
+"expect": "803f38393b6bcf072a6b5ff7a79b90ee2cf318e8216864d5b30957e0cf425ad3",
+"how": "C v1.43"
+},
+{
+"program": "T1pyyaTNZsKv2WcRAB8oVnk93mLJw2XzjtVYqCsaHqt",
+"repo": "https://github.com/jito-foundation/jito-programs",
+"commit": "b230b2b5cdb911232a66cdd85f83828e6933cc1c",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.0.25",
+"--cargo-build-sbf-args=--tools-version v1.42"
+],
+"runner": "ubuntu-latest",
+"expect": "803f38393b6bcf072a6b5ff7a79b90ee2cf318e8216864d5b30957e0cf425ad3",
+"how": "C v1.42"
+},
+{
+"program": "T1pyyaTNZsKv2WcRAB8oVnk93mLJw2XzjtVYqCsaHqt",
+"repo": "https://github.com/jito-foundation/jito-programs",
+"commit": "6bf84c19db9208a16e226074c666c965f5429d88",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.43"
+],
+"runner": "ubuntu-latest",
+"expect": "803f38393b6bcf072a6b5ff7a79b90ee2cf318e8216864d5b30957e0cf425ad3",
+"how": "C v1.43"
+},
+{
+"program": "T1pyyaTNZsKv2WcRAB8oVnk93mLJw2XzjtVYqCsaHqt",
+"repo": "https://github.com/jito-foundation/jito-programs",
+"commit": "6bf84c19db9208a16e226074c666c965f5429d88",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.0.25",
+"--cargo-build-sbf-args=--tools-version v1.42"
+],
+"runner": "ubuntu-latest",
+"expect": "803f38393b6bcf072a6b5ff7a79b90ee2cf318e8216864d5b30957e0cf425ad3",
+"how": "C v1.42"
+},
+{
+"program": "T1pyyaTNZsKv2WcRAB8oVnk93mLJw2XzjtVYqCsaHqt",
+"repo": "https://github.com/jito-foundation/jito-programs",
+"commit": "68789c76d7b62e828a23ae106362fc070c43458a",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.43"
+],
+"runner": "ubuntu-latest",
+"expect": "803f38393b6bcf072a6b5ff7a79b90ee2cf318e8216864d5b30957e0cf425ad3",
+"how": "C v1.43"
+},
+{
+"program": "T1pyyaTNZsKv2WcRAB8oVnk93mLJw2XzjtVYqCsaHqt",
+"repo": "https://github.com/jito-foundation/jito-programs",
+"commit": "68789c76d7b62e828a23ae106362fc070c43458a",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.0.25",
+"--cargo-build-sbf-args=--tools-version v1.42"
+],
+"runner": "ubuntu-latest",
+"expect": "803f38393b6bcf072a6b5ff7a79b90ee2cf318e8216864d5b30957e0cf425ad3",
+"how": "C v1.42"
+},
+{
+"program": "T1pyyaTNZsKv2WcRAB8oVnk93mLJw2XzjtVYqCsaHqt",
+"repo": "https://github.com/jito-foundation/jito-programs",
+"commit": "28520ea8f3830040452255906732c77a8751e627",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.43"
+],
+"runner": "ubuntu-latest",
+"expect": "803f38393b6bcf072a6b5ff7a79b90ee2cf318e8216864d5b30957e0cf425ad3",
+"how": "C v1.43"
+},
+{
+"program": "T1pyyaTNZsKv2WcRAB8oVnk93mLJw2XzjtVYqCsaHqt",
+"repo": "https://github.com/jito-foundation/jito-programs",
+"commit": "28520ea8f3830040452255906732c77a8751e627",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.0.25",
+"--cargo-build-sbf-args=--tools-version v1.42"
+],
+"runner": "ubuntu-latest",
+"expect": "803f38393b6bcf072a6b5ff7a79b90ee2cf318e8216864d5b30957e0cf425ad3",
+"how": "C v1.42"
+},
+{
+"program": "T1pyyaTNZsKv2WcRAB8oVnk93mLJw2XzjtVYqCsaHqt",
+"repo": "https://github.com/jito-foundation/jito-programs",
+"commit": "308a09e72d51c067b185cba7ad7f0bab70f53e6f",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.43"
+],
+"runner": "ubuntu-latest",
+"expect": "803f38393b6bcf072a6b5ff7a79b90ee2cf318e8216864d5b30957e0cf425ad3",
+"how": "C v1.43"
+},
+{
+"program": "T1pyyaTNZsKv2WcRAB8oVnk93mLJw2XzjtVYqCsaHqt",
+"repo": "https://github.com/jito-foundation/jito-programs",
+"commit": "308a09e72d51c067b185cba7ad7f0bab70f53e6f",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.0.25",
+"--cargo-build-sbf-args=--tools-version v1.42"
+],
+"runner": "ubuntu-latest",
+"expect": "803f38393b6bcf072a6b5ff7a79b90ee2cf318e8216864d5b30957e0cf425ad3",
+"how": "C v1.42"
+},
+{
+"program": "T1pyyaTNZsKv2WcRAB8oVnk93mLJw2XzjtVYqCsaHqt",
+"repo": "https://github.com/jito-foundation/jito-programs",
+"commit": "0a88ec55a559af35dd074a859d5f05740ab82fde",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.43"
+],
+"runner": "ubuntu-latest",
+"expect": "803f38393b6bcf072a6b5ff7a79b90ee2cf318e8216864d5b30957e0cf425ad3",
+"how": "C v1.43"
+},
+{
+"program": "T1pyyaTNZsKv2WcRAB8oVnk93mLJw2XzjtVYqCsaHqt",
+"repo": "https://github.com/jito-foundation/jito-programs",
+"commit": "0a88ec55a559af35dd074a859d5f05740ab82fde",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.0.25",
+"--cargo-build-sbf-args=--tools-version v1.42"
+],
+"runner": "ubuntu-latest",
+"expect": "803f38393b6bcf072a6b5ff7a79b90ee2cf318e8216864d5b30957e0cf425ad3",
+"how": "C v1.42"
+},
+{
+"program": "T1pyyaTNZsKv2WcRAB8oVnk93mLJw2XzjtVYqCsaHqt",
+"repo": "https://github.com/jito-foundation/jito-programs",
+"commit": "f3f5f95a5add58235f9d4154b635e3c0dc4ff2a5",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.1.21",
+"--cargo-build-sbf-args=--tools-version v1.43"
+],
+"runner": "ubuntu-latest",
+"expect": "803f38393b6bcf072a6b5ff7a79b90ee2cf318e8216864d5b30957e0cf425ad3",
+"how": "C v1.43"
+},
+{
+"program": "T1pyyaTNZsKv2WcRAB8oVnk93mLJw2XzjtVYqCsaHqt",
+"repo": "https://github.com/jito-foundation/jito-programs",
+"commit": "f3f5f95a5add58235f9d4154b635e3c0dc4ff2a5",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:2.0.25",
+"--cargo-build-sbf-args=--tools-version v1.42"
+],
+"runner": "ubuntu-latest",
+"expect": "803f38393b6bcf072a6b5ff7a79b90ee2cf318e8216864d5b30957e0cf425ad3",
+"how": "C v1.42"
+},
+{
+"program": "SPoo1Ku8WFXoNDMHPsrGSTSG1Y47rzgn41SLUNakuHy",
+"repo": "https://github.com/solana-program/stake-pool",
+"commit": "50d07b5fe6577a52c012887ed03d226f30bd5c54",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.52"
+],
+"runner": "ubuntu-latest",
+"expect": "8df58bc9f9428c02bf34fa845ae2961274156e7ff07a8dc1be0018dd765baeff",
+"how": "C v1.52"
+},
+{
+"program": "SPoo1Ku8WFXoNDMHPsrGSTSG1Y47rzgn41SLUNakuHy",
+"repo": "https://github.com/solana-program/stake-pool",
+"commit": "50d07b5fe6577a52c012887ed03d226f30bd5c54",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.53"
+],
+"runner": "ubuntu-latest",
+"expect": "8df58bc9f9428c02bf34fa845ae2961274156e7ff07a8dc1be0018dd765baeff",
+"how": "C v1.53"
+},
+{
+"program": "SPoo1Ku8WFXoNDMHPsrGSTSG1Y47rzgn41SLUNakuHy",
+"repo": "https://github.com/solana-program/stake-pool",
+"commit": "fdf106356f44d24a2029db1e9fb9f2b2c2a336e3",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.52"
+],
+"runner": "ubuntu-latest",
+"expect": "8df58bc9f9428c02bf34fa845ae2961274156e7ff07a8dc1be0018dd765baeff",
+"how": "C v1.52"
+},
+{
+"program": "SPoo1Ku8WFXoNDMHPsrGSTSG1Y47rzgn41SLUNakuHy",
+"repo": "https://github.com/solana-program/stake-pool",
+"commit": "fdf106356f44d24a2029db1e9fb9f2b2c2a336e3",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.53"
+],
+"runner": "ubuntu-latest",
+"expect": "8df58bc9f9428c02bf34fa845ae2961274156e7ff07a8dc1be0018dd765baeff",
+"how": "C v1.53"
+},
+{
+"program": "SPoo1Ku8WFXoNDMHPsrGSTSG1Y47rzgn41SLUNakuHy",
+"repo": "https://github.com/solana-program/stake-pool",
+"commit": "262e4d2fd67baf4fdbc32dca8c2beaaa5bd76693",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.52"
+],
+"runner": "ubuntu-latest",
+"expect": "8df58bc9f9428c02bf34fa845ae2961274156e7ff07a8dc1be0018dd765baeff",
+"how": "C v1.52"
+},
+{
+"program": "SPoo1Ku8WFXoNDMHPsrGSTSG1Y47rzgn41SLUNakuHy",
+"repo": "https://github.com/solana-program/stake-pool",
+"commit": "262e4d2fd67baf4fdbc32dca8c2beaaa5bd76693",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.53"
+],
+"runner": "ubuntu-latest",
+"expect": "8df58bc9f9428c02bf34fa845ae2961274156e7ff07a8dc1be0018dd765baeff",
+"how": "C v1.53"
+},
+{
+"program": "SPoo1Ku8WFXoNDMHPsrGSTSG1Y47rzgn41SLUNakuHy",
+"repo": "https://github.com/solana-program/stake-pool",
+"commit": "15d4f7b4b46220747902424e2d8ad5041f0f2fee",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.52"
+],
+"runner": "ubuntu-latest",
+"expect": "8df58bc9f9428c02bf34fa845ae2961274156e7ff07a8dc1be0018dd765baeff",
+"how": "C v1.52"
+},
+{
+"program": "SPoo1Ku8WFXoNDMHPsrGSTSG1Y47rzgn41SLUNakuHy",
+"repo": "https://github.com/solana-program/stake-pool",
+"commit": "15d4f7b4b46220747902424e2d8ad5041f0f2fee",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.53"
+],
+"runner": "ubuntu-latest",
+"expect": "8df58bc9f9428c02bf34fa845ae2961274156e7ff07a8dc1be0018dd765baeff",
+"how": "C v1.53"
+},
+{
+"program": "SPoo1Ku8WFXoNDMHPsrGSTSG1Y47rzgn41SLUNakuHy",
+"repo": "https://github.com/solana-program/stake-pool",
+"commit": "1d2bf6cd913cbcc208e7a6f9ffdd2dbd1fa347a0",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.52"
+],
+"runner": "ubuntu-latest",
+"expect": "8df58bc9f9428c02bf34fa845ae2961274156e7ff07a8dc1be0018dd765baeff",
+"how": "C v1.52"
+},
+{
+"program": "SPoo1Ku8WFXoNDMHPsrGSTSG1Y47rzgn41SLUNakuHy",
+"repo": "https://github.com/solana-program/stake-pool",
+"commit": "1d2bf6cd913cbcc208e7a6f9ffdd2dbd1fa347a0",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.53"
+],
+"runner": "ubuntu-latest",
+"expect": "8df58bc9f9428c02bf34fa845ae2961274156e7ff07a8dc1be0018dd765baeff",
+"how": "C v1.53"
+},
+{
+"program": "SPoo1Ku8WFXoNDMHPsrGSTSG1Y47rzgn41SLUNakuHy",
+"repo": "https://github.com/solana-program/stake-pool",
+"commit": "d0b5ab3750ef814ca6f362186e8e851dfcd098d3",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.52"
+],
+"runner": "ubuntu-latest",
+"expect": "8df58bc9f9428c02bf34fa845ae2961274156e7ff07a8dc1be0018dd765baeff",
+"how": "C v1.52"
+},
+{
+"program": "SPoo1Ku8WFXoNDMHPsrGSTSG1Y47rzgn41SLUNakuHy",
+"repo": "https://github.com/solana-program/stake-pool",
+"commit": "d0b5ab3750ef814ca6f362186e8e851dfcd098d3",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.53"
+],
+"runner": "ubuntu-latest",
+"expect": "8df58bc9f9428c02bf34fa845ae2961274156e7ff07a8dc1be0018dd765baeff",
+"how": "C v1.53"
+},
+{
+"program": "SPoo1Ku8WFXoNDMHPsrGSTSG1Y47rzgn41SLUNakuHy",
+"repo": "https://github.com/solana-program/stake-pool",
+"commit": "763ea8bfbadb42c1601e9169e17fbfda8448f80c",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.52"
+],
+"runner": "ubuntu-latest",
+"expect": "8df58bc9f9428c02bf34fa845ae2961274156e7ff07a8dc1be0018dd765baeff",
+"how": "C v1.52"
+},
+{
+"program": "SPoo1Ku8WFXoNDMHPsrGSTSG1Y47rzgn41SLUNakuHy",
+"repo": "https://github.com/solana-program/stake-pool",
+"commit": "763ea8bfbadb42c1601e9169e17fbfda8448f80c",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.53"
+],
+"runner": "ubuntu-latest",
+"expect": "8df58bc9f9428c02bf34fa845ae2961274156e7ff07a8dc1be0018dd765baeff",
+"how": "C v1.53"
+},
+{
+"program": "SMPLbiNbsa19gf9jz8x9uHSvSn9VLFJB38dGy46kqJ7",
+"repo": "https://github.com/squads-protocol/squads-mpl",
+"commit": "8265257d9e77f532bb890123687731bbe408344e",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.14.29",
+"--cargo-build-sbf-args=--tools-version v1.26"
+],
+"runner": "ubuntu-latest",
+"expect": "420d3bcdd03406052b2d8492c7f01e1d29ffc7af44d40aceff226930965fd36e",
+"how": "C v1.26"
+},
+{
+"program": "SMPLbiNbsa19gf9jz8x9uHSvSn9VLFJB38dGy46kqJ7",
+"repo": "https://github.com/squads-protocol/squads-mpl",
+"commit": "8265257d9e77f532bb890123687731bbe408344e",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.14.29",
+"--cargo-build-sbf-args=--tools-version v1.24"
+],
+"runner": "ubuntu-latest",
+"expect": "420d3bcdd03406052b2d8492c7f01e1d29ffc7af44d40aceff226930965fd36e",
+"how": "C v1.24"
+},
+{
+"program": "SMPLbiNbsa19gf9jz8x9uHSvSn9VLFJB38dGy46kqJ7",
+"repo": "https://github.com/squads-protocol/squads-mpl",
+"commit": "aa189e167d5b0a0b2805271874677ddf64b48c33",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.14.29",
+"--cargo-build-sbf-args=--tools-version v1.26"
+],
+"runner": "ubuntu-latest",
+"expect": "420d3bcdd03406052b2d8492c7f01e1d29ffc7af44d40aceff226930965fd36e",
+"how": "C v1.26"
+},
+{
+"program": "SMPLbiNbsa19gf9jz8x9uHSvSn9VLFJB38dGy46kqJ7",
+"repo": "https://github.com/squads-protocol/squads-mpl",
+"commit": "aa189e167d5b0a0b2805271874677ddf64b48c33",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.14.29",
+"--cargo-build-sbf-args=--tools-version v1.24"
+],
+"runner": "ubuntu-latest",
+"expect": "420d3bcdd03406052b2d8492c7f01e1d29ffc7af44d40aceff226930965fd36e",
+"how": "C v1.24"
+},
+{
+"program": "SMPLbiNbsa19gf9jz8x9uHSvSn9VLFJB38dGy46kqJ7",
+"repo": "https://github.com/squads-protocol/squads-mpl",
+"commit": "3ef6f4ad262985c8b175f18e2f1e4632b71fce5c",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.14.29",
+"--cargo-build-sbf-args=--tools-version v1.26"
+],
+"runner": "ubuntu-latest",
+"expect": "420d3bcdd03406052b2d8492c7f01e1d29ffc7af44d40aceff226930965fd36e",
+"how": "C v1.26"
+},
+{
+"program": "SMPLbiNbsa19gf9jz8x9uHSvSn9VLFJB38dGy46kqJ7",
+"repo": "https://github.com/squads-protocol/squads-mpl",
+"commit": "3ef6f4ad262985c8b175f18e2f1e4632b71fce5c",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.14.29",
+"--cargo-build-sbf-args=--tools-version v1.24"
+],
+"runner": "ubuntu-latest",
+"expect": "420d3bcdd03406052b2d8492c7f01e1d29ffc7af44d40aceff226930965fd36e",
+"how": "C v1.24"
+},
+{
+"program": "SMPLbiNbsa19gf9jz8x9uHSvSn9VLFJB38dGy46kqJ7",
+"repo": "https://github.com/squads-protocol/squads-mpl",
+"commit": "de7f4fe5c205c835408d920bf7d6c4261cb357e7",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.14.29",
+"--cargo-build-sbf-args=--tools-version v1.26"
+],
+"runner": "ubuntu-latest",
+"expect": "420d3bcdd03406052b2d8492c7f01e1d29ffc7af44d40aceff226930965fd36e",
+"how": "C v1.26"
+},
+{
+"program": "SMPLbiNbsa19gf9jz8x9uHSvSn9VLFJB38dGy46kqJ7",
+"repo": "https://github.com/squads-protocol/squads-mpl",
+"commit": "de7f4fe5c205c835408d920bf7d6c4261cb357e7",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.14.29",
+"--cargo-build-sbf-args=--tools-version v1.24"
+],
+"runner": "ubuntu-latest",
+"expect": "420d3bcdd03406052b2d8492c7f01e1d29ffc7af44d40aceff226930965fd36e",
+"how": "C v1.24"
+},
+{
+"program": "SMPLbiNbsa19gf9jz8x9uHSvSn9VLFJB38dGy46kqJ7",
+"repo": "https://github.com/squads-protocol/squads-mpl",
+"commit": "332c29ad8392ea56668a1191cc10a7dbbcf85993",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.14.29",
+"--cargo-build-sbf-args=--tools-version v1.26"
+],
+"runner": "ubuntu-latest",
+"expect": "420d3bcdd03406052b2d8492c7f01e1d29ffc7af44d40aceff226930965fd36e",
+"how": "C v1.26"
+},
+{
+"program": "SMPLbiNbsa19gf9jz8x9uHSvSn9VLFJB38dGy46kqJ7",
+"repo": "https://github.com/squads-protocol/squads-mpl",
+"commit": "332c29ad8392ea56668a1191cc10a7dbbcf85993",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.14.29",
+"--cargo-build-sbf-args=--tools-version v1.24"
+],
+"runner": "ubuntu-latest",
+"expect": "420d3bcdd03406052b2d8492c7f01e1d29ffc7af44d40aceff226930965fd36e",
+"how": "C v1.24"
+},
+{
+"program": "SMPLbiNbsa19gf9jz8x9uHSvSn9VLFJB38dGy46kqJ7",
+"repo": "https://github.com/squads-protocol/squads-mpl",
+"commit": "a07fa5b000545f8b394b5d79a5eab072c7539f21",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.14.29",
+"--cargo-build-sbf-args=--tools-version v1.26"
+],
+"runner": "ubuntu-latest",
+"expect": "420d3bcdd03406052b2d8492c7f01e1d29ffc7af44d40aceff226930965fd36e",
+"how": "C v1.26"
+},
+{
+"program": "SMPLbiNbsa19gf9jz8x9uHSvSn9VLFJB38dGy46kqJ7",
+"repo": "https://github.com/squads-protocol/squads-mpl",
+"commit": "a07fa5b000545f8b394b5d79a5eab072c7539f21",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.14.29",
+"--cargo-build-sbf-args=--tools-version v1.24"
+],
+"runner": "ubuntu-latest",
+"expect": "420d3bcdd03406052b2d8492c7f01e1d29ffc7af44d40aceff226930965fd36e",
+"how": "C v1.24"
+},
+{
+"program": "SMPLbiNbsa19gf9jz8x9uHSvSn9VLFJB38dGy46kqJ7",
+"repo": "https://github.com/squads-protocol/squads-mpl",
+"commit": "701d929ff5f7c260b047d383eef83e4c93b0f2ba",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.14.29",
+"--cargo-build-sbf-args=--tools-version v1.26"
+],
+"runner": "ubuntu-latest",
+"expect": "420d3bcdd03406052b2d8492c7f01e1d29ffc7af44d40aceff226930965fd36e",
+"how": "C v1.26"
+},
+{
+"program": "SMPLbiNbsa19gf9jz8x9uHSvSn9VLFJB38dGy46kqJ7",
+"repo": "https://github.com/squads-protocol/squads-mpl",
+"commit": "701d929ff5f7c260b047d383eef83e4c93b0f2ba",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.14.29",
+"--cargo-build-sbf-args=--tools-version v1.24"
+],
+"runner": "ubuntu-latest",
+"expect": "420d3bcdd03406052b2d8492c7f01e1d29ffc7af44d40aceff226930965fd36e",
+"how": "C v1.24"
+},
+{
+"program": "Dis2TfkFnXFkrtvAktEkw37sdb7qwJgY6H7YZJwk51wK",
+"repo": "https://github.com/jup-ag/distributor",
+"commit": "a5a46b4887469e8bb9917da112b2028e9591ef07",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.17.34",
+"--cargo-build-sbf-args=--tools-version v1.38"
+],
+"runner": "ubuntu-latest",
+"expect": "487fa5484bd62e0988854b72c9702063d5fe654d46be2a008ca547faa408fcd1",
+"how": "C v1.38"
+},
+{
+"program": "Dis2TfkFnXFkrtvAktEkw37sdb7qwJgY6H7YZJwk51wK",
+"repo": "https://github.com/jup-ag/distributor",
+"commit": "a5a46b4887469e8bb9917da112b2028e9591ef07",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.17.34",
+"--cargo-build-sbf-args=--tools-version v1.37"
+],
+"runner": "ubuntu-latest",
+"expect": "487fa5484bd62e0988854b72c9702063d5fe654d46be2a008ca547faa408fcd1",
+"how": "C v1.37"
+},
+{
+"program": "Dis2TfkFnXFkrtvAktEkw37sdb7qwJgY6H7YZJwk51wK",
+"repo": "https://github.com/jup-ag/distributor",
+"commit": "9af687029e0b4078fd88f413304ea8c009bba946",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.17.34",
+"--cargo-build-sbf-args=--tools-version v1.38"
+],
+"runner": "ubuntu-latest",
+"expect": "487fa5484bd62e0988854b72c9702063d5fe654d46be2a008ca547faa408fcd1",
+"how": "C v1.38"
+},
+{
+"program": "Dis2TfkFnXFkrtvAktEkw37sdb7qwJgY6H7YZJwk51wK",
+"repo": "https://github.com/jup-ag/distributor",
+"commit": "9af687029e0b4078fd88f413304ea8c009bba946",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.17.34",
+"--cargo-build-sbf-args=--tools-version v1.37"
+],
+"runner": "ubuntu-latest",
+"expect": "487fa5484bd62e0988854b72c9702063d5fe654d46be2a008ca547faa408fcd1",
+"how": "C v1.37"
+},
+{
+"program": "Dis2TfkFnXFkrtvAktEkw37sdb7qwJgY6H7YZJwk51wK",
+"repo": "https://github.com/jup-ag/distributor",
+"commit": "77a143bbe16c31701d9911c5b00a5c6b666db576",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.17.34",
+"--cargo-build-sbf-args=--tools-version v1.38"
+],
+"runner": "ubuntu-latest",
+"expect": "487fa5484bd62e0988854b72c9702063d5fe654d46be2a008ca547faa408fcd1",
+"how": "C v1.38"
+},
+{
+"program": "Dis2TfkFnXFkrtvAktEkw37sdb7qwJgY6H7YZJwk51wK",
+"repo": "https://github.com/jup-ag/distributor",
+"commit": "77a143bbe16c31701d9911c5b00a5c6b666db576",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.17.34",
+"--cargo-build-sbf-args=--tools-version v1.37"
+],
+"runner": "ubuntu-latest",
+"expect": "487fa5484bd62e0988854b72c9702063d5fe654d46be2a008ca547faa408fcd1",
+"how": "C v1.37"
+},
+{
+"program": "Dis2TfkFnXFkrtvAktEkw37sdb7qwJgY6H7YZJwk51wK",
+"repo": "https://github.com/jup-ag/distributor",
+"commit": "ef47aeee2600590f4fe1a857aeb14e37816e4789",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.17.34",
+"--cargo-build-sbf-args=--tools-version v1.38"
+],
+"runner": "ubuntu-latest",
+"expect": "487fa5484bd62e0988854b72c9702063d5fe654d46be2a008ca547faa408fcd1",
+"how": "C v1.38"
+},
+{
+"program": "Dis2TfkFnXFkrtvAktEkw37sdb7qwJgY6H7YZJwk51wK",
+"repo": "https://github.com/jup-ag/distributor",
+"commit": "ef47aeee2600590f4fe1a857aeb14e37816e4789",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.17.34",
+"--cargo-build-sbf-args=--tools-version v1.37"
+],
+"runner": "ubuntu-latest",
+"expect": "487fa5484bd62e0988854b72c9702063d5fe654d46be2a008ca547faa408fcd1",
+"how": "C v1.37"
+},
+{
+"program": "Dis2TfkFnXFkrtvAktEkw37sdb7qwJgY6H7YZJwk51wK",
+"repo": "https://github.com/jup-ag/distributor",
+"commit": "1822643063f933e00e3166533629e42641ca0d3b",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.17.34",
+"--cargo-build-sbf-args=--tools-version v1.38"
+],
+"runner": "ubuntu-latest",
+"expect": "487fa5484bd62e0988854b72c9702063d5fe654d46be2a008ca547faa408fcd1",
+"how": "C v1.38"
+},
+{
+"program": "Dis2TfkFnXFkrtvAktEkw37sdb7qwJgY6H7YZJwk51wK",
+"repo": "https://github.com/jup-ag/distributor",
+"commit": "1822643063f933e00e3166533629e42641ca0d3b",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.17.34",
+"--cargo-build-sbf-args=--tools-version v1.37"
+],
+"runner": "ubuntu-latest",
+"expect": "487fa5484bd62e0988854b72c9702063d5fe654d46be2a008ca547faa408fcd1",
+"how": "C v1.37"
+},
+{
+"program": "Dis2TfkFnXFkrtvAktEkw37sdb7qwJgY6H7YZJwk51wK",
+"repo": "https://github.com/jup-ag/distributor",
+"commit": "9e3f856a62cb4dac70382155e3a5069e6c92ed8f",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.17.34",
+"--cargo-build-sbf-args=--tools-version v1.38"
+],
+"runner": "ubuntu-latest",
+"expect": "487fa5484bd62e0988854b72c9702063d5fe654d46be2a008ca547faa408fcd1",
+"how": "C v1.38"
+},
+{
+"program": "Dis2TfkFnXFkrtvAktEkw37sdb7qwJgY6H7YZJwk51wK",
+"repo": "https://github.com/jup-ag/distributor",
+"commit": "9e3f856a62cb4dac70382155e3a5069e6c92ed8f",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.17.34",
+"--cargo-build-sbf-args=--tools-version v1.37"
+],
+"runner": "ubuntu-latest",
+"expect": "487fa5484bd62e0988854b72c9702063d5fe654d46be2a008ca547faa408fcd1",
+"how": "C v1.37"
+},
+{
+"program": "Dis2TfkFnXFkrtvAktEkw37sdb7qwJgY6H7YZJwk51wK",
+"repo": "https://github.com/jup-ag/distributor",
+"commit": "cdc56f83b2a852ead55225d5fb5273de0eb7832a",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.17.34",
+"--cargo-build-sbf-args=--tools-version v1.38"
+],
+"runner": "ubuntu-latest",
+"expect": "487fa5484bd62e0988854b72c9702063d5fe654d46be2a008ca547faa408fcd1",
+"how": "C v1.38"
+},
+{
+"program": "Dis2TfkFnXFkrtvAktEkw37sdb7qwJgY6H7YZJwk51wK",
+"repo": "https://github.com/jup-ag/distributor",
+"commit": "cdc56f83b2a852ead55225d5fb5273de0eb7832a",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:1.17.34",
+"--cargo-build-sbf-args=--tools-version v1.37"
+],
+"runner": "ubuntu-latest",
+"expect": "487fa5484bd62e0988854b72c9702063d5fe654d46be2a008ca547faa408fcd1",
+"how": "C v1.37"
+},
+{
+"program": "AAuXLgmQDUHKTDovmKStkG9yciYjoe1YcRmgmYLkPy3R",
+"repo": "https://github.com/jito-foundation/jito-programs",
+"commit": "7df4e03f2d3b9c41c86b4e3277e93b94c75be45e",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.53"
+],
+"runner": "ubuntu-latest",
+"expect": "4419f389c3625314f84dfb7ef9b9100f87b6e726afad198866061109a200e1c5",
+"how": "C v1.53"
+},
+{
+"program": "AAuXLgmQDUHKTDovmKStkG9yciYjoe1YcRmgmYLkPy3R",
+"repo": "https://github.com/jito-foundation/jito-programs",
+"commit": "7df4e03f2d3b9c41c86b4e3277e93b94c75be45e",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.52"
+],
+"runner": "ubuntu-latest",
+"expect": "4419f389c3625314f84dfb7ef9b9100f87b6e726afad198866061109a200e1c5",
+"how": "C v1.52"
+},
+{
+"program": "AAuXLgmQDUHKTDovmKStkG9yciYjoe1YcRmgmYLkPy3R",
+"repo": "https://github.com/jito-foundation/jito-programs",
+"commit": "4e9650d553227ef0739e9f73acedb08dfb22791c",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.53"
+],
+"runner": "ubuntu-latest",
+"expect": "4419f389c3625314f84dfb7ef9b9100f87b6e726afad198866061109a200e1c5",
+"how": "C v1.53"
+},
+{
+"program": "AAuXLgmQDUHKTDovmKStkG9yciYjoe1YcRmgmYLkPy3R",
+"repo": "https://github.com/jito-foundation/jito-programs",
+"commit": "4e9650d553227ef0739e9f73acedb08dfb22791c",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.52"
+],
+"runner": "ubuntu-latest",
+"expect": "4419f389c3625314f84dfb7ef9b9100f87b6e726afad198866061109a200e1c5",
+"how": "C v1.52"
+},
+{
+"program": "AAuXLgmQDUHKTDovmKStkG9yciYjoe1YcRmgmYLkPy3R",
+"repo": "https://github.com/jito-foundation/jito-programs",
+"commit": "787f7f8167186b0d7dd198158d9682f5660ec124",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.53"
+],
+"runner": "ubuntu-latest",
+"expect": "4419f389c3625314f84dfb7ef9b9100f87b6e726afad198866061109a200e1c5",
+"how": "C v1.53"
+},
+{
+"program": "AAuXLgmQDUHKTDovmKStkG9yciYjoe1YcRmgmYLkPy3R",
+"repo": "https://github.com/jito-foundation/jito-programs",
+"commit": "787f7f8167186b0d7dd198158d9682f5660ec124",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.52"
+],
+"runner": "ubuntu-latest",
+"expect": "4419f389c3625314f84dfb7ef9b9100f87b6e726afad198866061109a200e1c5",
+"how": "C v1.52"
+},
+{
+"program": "AAuXLgmQDUHKTDovmKStkG9yciYjoe1YcRmgmYLkPy3R",
+"repo": "https://github.com/jito-foundation/jito-programs",
+"commit": "f08fe22cbd38db441c7c26c79cc1209a82de8eb8",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.53"
+],
+"runner": "ubuntu-latest",
+"expect": "4419f389c3625314f84dfb7ef9b9100f87b6e726afad198866061109a200e1c5",
+"how": "C v1.53"
+},
+{
+"program": "AAuXLgmQDUHKTDovmKStkG9yciYjoe1YcRmgmYLkPy3R",
+"repo": "https://github.com/jito-foundation/jito-programs",
+"commit": "f08fe22cbd38db441c7c26c79cc1209a82de8eb8",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.52"
+],
+"runner": "ubuntu-latest",
+"expect": "4419f389c3625314f84dfb7ef9b9100f87b6e726afad198866061109a200e1c5",
+"how": "C v1.52"
+},
+{
+"program": "AAuXLgmQDUHKTDovmKStkG9yciYjoe1YcRmgmYLkPy3R",
+"repo": "https://github.com/jito-foundation/jito-programs",
+"commit": "9d8a57e3f7195aa394beda1c42dd7f3826147cac",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.53"
+],
+"runner": "ubuntu-latest",
+"expect": "4419f389c3625314f84dfb7ef9b9100f87b6e726afad198866061109a200e1c5",
+"how": "C v1.53"
+},
+{
+"program": "AAuXLgmQDUHKTDovmKStkG9yciYjoe1YcRmgmYLkPy3R",
+"repo": "https://github.com/jito-foundation/jito-programs",
+"commit": "9d8a57e3f7195aa394beda1c42dd7f3826147cac",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.52"
+],
+"runner": "ubuntu-latest",
+"expect": "4419f389c3625314f84dfb7ef9b9100f87b6e726afad198866061109a200e1c5",
+"how": "C v1.52"
+},
+{
+"program": "AAuXLgmQDUHKTDovmKStkG9yciYjoe1YcRmgmYLkPy3R",
+"repo": "https://github.com/jito-foundation/jito-programs",
+"commit": "c567e157801ca7cf06bcdd780425767ef587e063",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.53"
+],
+"runner": "ubuntu-latest",
+"expect": "4419f389c3625314f84dfb7ef9b9100f87b6e726afad198866061109a200e1c5",
+"how": "C v1.53"
+},
+{
+"program": "AAuXLgmQDUHKTDovmKStkG9yciYjoe1YcRmgmYLkPy3R",
+"repo": "https://github.com/jito-foundation/jito-programs",
+"commit": "c567e157801ca7cf06bcdd780425767ef587e063",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.52"
+],
+"runner": "ubuntu-latest",
+"expect": "4419f389c3625314f84dfb7ef9b9100f87b6e726afad198866061109a200e1c5",
+"how": "C v1.52"
+},
+{
+"program": "AAuXLgmQDUHKTDovmKStkG9yciYjoe1YcRmgmYLkPy3R",
+"repo": "https://github.com/jito-foundation/jito-programs",
+"commit": "b36364fd00a7049532ecfe9553348e97c51d4b19",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.53"
+],
+"runner": "ubuntu-latest",
+"expect": "4419f389c3625314f84dfb7ef9b9100f87b6e726afad198866061109a200e1c5",
+"how": "C v1.53"
+},
+{
+"program": "AAuXLgmQDUHKTDovmKStkG9yciYjoe1YcRmgmYLkPy3R",
+"repo": "https://github.com/jito-foundation/jito-programs",
+"commit": "b36364fd00a7049532ecfe9553348e97c51d4b19",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.52"
+],
+"runner": "ubuntu-latest",
+"expect": "4419f389c3625314f84dfb7ef9b9100f87b6e726afad198866061109a200e1c5",
+"how": "C v1.52"
+},
+{
+"program": "HudTiquNJ689HTGbYoa84AL1RjpEUB29RXG5GZnue4dc",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "83cbd5d489f22c34d7c4a1a4743cc0a08314d0f6",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "350d5ae652a3108e5be3543a4260bc372078e26fd71bc0a11cd7519c70a71d69",
+"how": "C v1.57"
+},
+{
+"program": "HudTiquNJ689HTGbYoa84AL1RjpEUB29RXG5GZnue4dc",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "83cbd5d489f22c34d7c4a1a4743cc0a08314d0f6",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "350d5ae652a3108e5be3543a4260bc372078e26fd71bc0a11cd7519c70a71d69",
+"how": "C v1.54"
+},
+{
+"program": "HudTiquNJ689HTGbYoa84AL1RjpEUB29RXG5GZnue4dc",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "2b3b1f23a5f5f64a7e389a5a6e927fb0f023d308",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "350d5ae652a3108e5be3543a4260bc372078e26fd71bc0a11cd7519c70a71d69",
+"how": "C v1.57"
+},
+{
+"program": "HudTiquNJ689HTGbYoa84AL1RjpEUB29RXG5GZnue4dc",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "2b3b1f23a5f5f64a7e389a5a6e927fb0f023d308",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "350d5ae652a3108e5be3543a4260bc372078e26fd71bc0a11cd7519c70a71d69",
+"how": "C v1.54"
+},
+{
+"program": "HudTiquNJ689HTGbYoa84AL1RjpEUB29RXG5GZnue4dc",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "7a176deba0f0b97e9f52dd0c8fa8030dfcac7e95",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "350d5ae652a3108e5be3543a4260bc372078e26fd71bc0a11cd7519c70a71d69",
+"how": "C v1.57"
+},
+{
+"program": "HudTiquNJ689HTGbYoa84AL1RjpEUB29RXG5GZnue4dc",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "7a176deba0f0b97e9f52dd0c8fa8030dfcac7e95",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "350d5ae652a3108e5be3543a4260bc372078e26fd71bc0a11cd7519c70a71d69",
+"how": "C v1.54"
+},
+{
+"program": "HudTiquNJ689HTGbYoa84AL1RjpEUB29RXG5GZnue4dc",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "be0f9feb5503d246f3d71d7d641cc325c8ec2e08",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "350d5ae652a3108e5be3543a4260bc372078e26fd71bc0a11cd7519c70a71d69",
+"how": "C v1.57"
+},
+{
+"program": "HudTiquNJ689HTGbYoa84AL1RjpEUB29RXG5GZnue4dc",
+"repo": "https://github.com/BordrlessDex/bordrless-programs",
+"commit": "be0f9feb5503d246f3d71d7d641cc325c8ec2e08",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "350d5ae652a3108e5be3543a4260bc372078e26fd71bc0a11cd7519c70a71d69",
+"how": "C v1.54"
+},
+{
+"program": "FcTL7Mnq1RcstcYUk39ph2DzdVPNFyWh1EnrqCocXhhh",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "1fca4c633daa9d04ea711b163b337d3f05da578a",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "841231ef06b4a6b607af15ebd01ccf5896ca02159cfb35ab60a20ada0678336d",
+"how": "C v1.54"
+},
+{
+"program": "FcTL7Mnq1RcstcYUk39ph2DzdVPNFyWh1EnrqCocXhhh",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "1fca4c633daa9d04ea711b163b337d3f05da578a",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.55"
+],
+"runner": "ubuntu-latest",
+"expect": "841231ef06b4a6b607af15ebd01ccf5896ca02159cfb35ab60a20ada0678336d",
+"how": "C v1.55"
+},
+{
+"program": "FcTL7Mnq1RcstcYUk39ph2DzdVPNFyWh1EnrqCocXhhh",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "f54312626540ec1bd4795e17023c7d92bb955272",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "841231ef06b4a6b607af15ebd01ccf5896ca02159cfb35ab60a20ada0678336d",
+"how": "C v1.54"
+},
+{
+"program": "FcTL7Mnq1RcstcYUk39ph2DzdVPNFyWh1EnrqCocXhhh",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "f54312626540ec1bd4795e17023c7d92bb955272",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.55"
+],
+"runner": "ubuntu-latest",
+"expect": "841231ef06b4a6b607af15ebd01ccf5896ca02159cfb35ab60a20ada0678336d",
+"how": "C v1.55"
+},
+{
+"program": "FcTL7Mnq1RcstcYUk39ph2DzdVPNFyWh1EnrqCocXhhh",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "0517ba4aff28cd0bc809c2fb1be153ea7d2ea72a",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "841231ef06b4a6b607af15ebd01ccf5896ca02159cfb35ab60a20ada0678336d",
+"how": "C v1.54"
+},
+{
+"program": "FcTL7Mnq1RcstcYUk39ph2DzdVPNFyWh1EnrqCocXhhh",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "0517ba4aff28cd0bc809c2fb1be153ea7d2ea72a",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.55"
+],
+"runner": "ubuntu-latest",
+"expect": "841231ef06b4a6b607af15ebd01ccf5896ca02159cfb35ab60a20ada0678336d",
+"how": "C v1.55"
+},
+{
+"program": "FcTL7Mnq1RcstcYUk39ph2DzdVPNFyWh1EnrqCocXhhh",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "2a676d52e7019a981ada7db43d862b642ba3c804",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "841231ef06b4a6b607af15ebd01ccf5896ca02159cfb35ab60a20ada0678336d",
+"how": "C v1.54"
+},
+{
+"program": "FcTL7Mnq1RcstcYUk39ph2DzdVPNFyWh1EnrqCocXhhh",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "2a676d52e7019a981ada7db43d862b642ba3c804",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.55"
+],
+"runner": "ubuntu-latest",
+"expect": "841231ef06b4a6b607af15ebd01ccf5896ca02159cfb35ab60a20ada0678336d",
+"how": "C v1.55"
+},
+{
+"program": "FcTL7Mnq1RcstcYUk39ph2DzdVPNFyWh1EnrqCocXhhh",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "9057427b097da09cdc560cb1b93c6b6c17576ba9",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "841231ef06b4a6b607af15ebd01ccf5896ca02159cfb35ab60a20ada0678336d",
+"how": "C v1.54"
+},
+{
+"program": "FcTL7Mnq1RcstcYUk39ph2DzdVPNFyWh1EnrqCocXhhh",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "9057427b097da09cdc560cb1b93c6b6c17576ba9",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.55"
+],
+"runner": "ubuntu-latest",
+"expect": "841231ef06b4a6b607af15ebd01ccf5896ca02159cfb35ab60a20ada0678336d",
+"how": "C v1.55"
+},
+{
+"program": "FcTL7Mnq1RcstcYUk39ph2DzdVPNFyWh1EnrqCocXhhh",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "f2f1bf4cbee0c1e703a1a53fe7e0109ada32df4b",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "841231ef06b4a6b607af15ebd01ccf5896ca02159cfb35ab60a20ada0678336d",
+"how": "C v1.54"
+},
+{
+"program": "FcTL7Mnq1RcstcYUk39ph2DzdVPNFyWh1EnrqCocXhhh",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "f2f1bf4cbee0c1e703a1a53fe7e0109ada32df4b",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.55"
+],
+"runner": "ubuntu-latest",
+"expect": "841231ef06b4a6b607af15ebd01ccf5896ca02159cfb35ab60a20ada0678336d",
+"how": "C v1.55"
+},
+{
+"program": "FcTL7Mnq1RcstcYUk39ph2DzdVPNFyWh1EnrqCocXhhh",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "95ccb5ed3139d5ea3de5660d13fed77b3a302ffc",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "841231ef06b4a6b607af15ebd01ccf5896ca02159cfb35ab60a20ada0678336d",
+"how": "C v1.54"
+},
+{
+"program": "FcTL7Mnq1RcstcYUk39ph2DzdVPNFyWh1EnrqCocXhhh",
+"repo": "https://github.com/rakurai-io/rakurai_programs",
+"commit": "95ccb5ed3139d5ea3de5660d13fed77b3a302ffc",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.55"
+],
+"runner": "ubuntu-latest",
+"expect": "841231ef06b4a6b607af15ebd01ccf5896ca02159cfb35ab60a20ada0678336d",
+"how": "C v1.55"
+},
+{
+"program": "RouterBmuRBkPUbgEDMtdvTZ75GBdSREZR5uGUxxxpb",
+"repo": "https://github.com/jito-foundation/jito-tip-router",
+"commit": "48a6aff28e96d5c4ebcf2799595c95bd3ad3e5b5",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.52"
+],
+"runner": "ubuntu-latest",
+"expect": "927aaf5a430ddd7d5f77a0b8c6645917695d2abb5833a4faa6ae2e04165cacd9",
+"how": "C v1.52"
+},
+{
+"program": "RouterBmuRBkPUbgEDMtdvTZ75GBdSREZR5uGUxxxpb",
+"repo": "https://github.com/jito-foundation/jito-tip-router",
+"commit": "48a6aff28e96d5c4ebcf2799595c95bd3ad3e5b5",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.53"
+],
+"runner": "ubuntu-latest",
+"expect": "927aaf5a430ddd7d5f77a0b8c6645917695d2abb5833a4faa6ae2e04165cacd9",
+"how": "C v1.53"
+},
+{
+"program": "RouterBmuRBkPUbgEDMtdvTZ75GBdSREZR5uGUxxxpb",
+"repo": "https://github.com/jito-foundation/jito-tip-router",
+"commit": "8c7417df0c2000f9f14c9dbb3a5aaf51ea06de80",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.52"
+],
+"runner": "ubuntu-latest",
+"expect": "927aaf5a430ddd7d5f77a0b8c6645917695d2abb5833a4faa6ae2e04165cacd9",
+"how": "C v1.52"
+},
+{
+"program": "RouterBmuRBkPUbgEDMtdvTZ75GBdSREZR5uGUxxxpb",
+"repo": "https://github.com/jito-foundation/jito-tip-router",
+"commit": "8c7417df0c2000f9f14c9dbb3a5aaf51ea06de80",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.53"
+],
+"runner": "ubuntu-latest",
+"expect": "927aaf5a430ddd7d5f77a0b8c6645917695d2abb5833a4faa6ae2e04165cacd9",
+"how": "C v1.53"
+},
+{
+"program": "RouterBmuRBkPUbgEDMtdvTZ75GBdSREZR5uGUxxxpb",
+"repo": "https://github.com/jito-foundation/jito-tip-router",
+"commit": "91f76e4156fea59975307173b0780d61333ea7b5",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.52"
+],
+"runner": "ubuntu-latest",
+"expect": "927aaf5a430ddd7d5f77a0b8c6645917695d2abb5833a4faa6ae2e04165cacd9",
+"how": "C v1.52"
+},
+{
+"program": "RouterBmuRBkPUbgEDMtdvTZ75GBdSREZR5uGUxxxpb",
+"repo": "https://github.com/jito-foundation/jito-tip-router",
+"commit": "91f76e4156fea59975307173b0780d61333ea7b5",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.53"
+],
+"runner": "ubuntu-latest",
+"expect": "927aaf5a430ddd7d5f77a0b8c6645917695d2abb5833a4faa6ae2e04165cacd9",
+"how": "C v1.53"
+},
+{
+"program": "RouterBmuRBkPUbgEDMtdvTZ75GBdSREZR5uGUxxxpb",
+"repo": "https://github.com/jito-foundation/jito-tip-router",
+"commit": "3ea616d985f269b744912950a551870781eaeb51",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.52"
+],
+"runner": "ubuntu-latest",
+"expect": "927aaf5a430ddd7d5f77a0b8c6645917695d2abb5833a4faa6ae2e04165cacd9",
+"how": "C v1.52"
+},
+{
+"program": "RouterBmuRBkPUbgEDMtdvTZ75GBdSREZR5uGUxxxpb",
+"repo": "https://github.com/jito-foundation/jito-tip-router",
+"commit": "3ea616d985f269b744912950a551870781eaeb51",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.53"
+],
+"runner": "ubuntu-latest",
+"expect": "927aaf5a430ddd7d5f77a0b8c6645917695d2abb5833a4faa6ae2e04165cacd9",
+"how": "C v1.53"
+},
+{
+"program": "RouterBmuRBkPUbgEDMtdvTZ75GBdSREZR5uGUxxxpb",
+"repo": "https://github.com/jito-foundation/jito-tip-router",
+"commit": "a38317d08625bd36d1f2ea7ba0636f617a94ceca",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.52"
+],
+"runner": "ubuntu-latest",
+"expect": "927aaf5a430ddd7d5f77a0b8c6645917695d2abb5833a4faa6ae2e04165cacd9",
+"how": "C v1.52"
+},
+{
+"program": "RouterBmuRBkPUbgEDMtdvTZ75GBdSREZR5uGUxxxpb",
+"repo": "https://github.com/jito-foundation/jito-tip-router",
+"commit": "a38317d08625bd36d1f2ea7ba0636f617a94ceca",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.53"
+],
+"runner": "ubuntu-latest",
+"expect": "927aaf5a430ddd7d5f77a0b8c6645917695d2abb5833a4faa6ae2e04165cacd9",
+"how": "C v1.53"
+},
+{
+"program": "RouterBmuRBkPUbgEDMtdvTZ75GBdSREZR5uGUxxxpb",
+"repo": "https://github.com/jito-foundation/jito-tip-router",
+"commit": "17c8b7c18dc3bd2d61a8ebe053b88b7f0d83333c",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.52"
+],
+"runner": "ubuntu-latest",
+"expect": "927aaf5a430ddd7d5f77a0b8c6645917695d2abb5833a4faa6ae2e04165cacd9",
+"how": "C v1.52"
+},
+{
+"program": "RouterBmuRBkPUbgEDMtdvTZ75GBdSREZR5uGUxxxpb",
+"repo": "https://github.com/jito-foundation/jito-tip-router",
+"commit": "17c8b7c18dc3bd2d61a8ebe053b88b7f0d83333c",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.53"
+],
+"runner": "ubuntu-latest",
+"expect": "927aaf5a430ddd7d5f77a0b8c6645917695d2abb5833a4faa6ae2e04165cacd9",
+"how": "C v1.53"
+},
+{
+"program": "RouterBmuRBkPUbgEDMtdvTZ75GBdSREZR5uGUxxxpb",
+"repo": "https://github.com/jito-foundation/jito-tip-router",
+"commit": "c787341658cc82cb24905b469e83ad881afefe40",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.52"
+],
+"runner": "ubuntu-latest",
+"expect": "927aaf5a430ddd7d5f77a0b8c6645917695d2abb5833a4faa6ae2e04165cacd9",
+"how": "C v1.52"
+},
+{
+"program": "RouterBmuRBkPUbgEDMtdvTZ75GBdSREZR5uGUxxxpb",
+"repo": "https://github.com/jito-foundation/jito-tip-router",
+"commit": "c787341658cc82cb24905b469e83ad881afefe40",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:3.1.14",
+"--cargo-build-sbf-args=--tools-version v1.53"
+],
+"runner": "ubuntu-latest",
+"expect": "927aaf5a430ddd7d5f77a0b8c6645917695d2abb5833a4faa6ae2e04165cacd9",
+"how": "C v1.53"
+},
+{
+"program": "GEN8HSyQehdKpUA6XVABbPWbhpaUua2fF59GP7tQxCTM",
+"repo": "https://github.com/c8ntinuum/contracts-sol",
+"commit": "f3efad6b3bc791565edae07cdf611a3638638be6",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "92935c435003916f3bf2d8ba5f5d8460745bbfa881d5316e0efbd2e883c083aa",
+"how": "C v1.57"
+},
+{
+"program": "GEN8HSyQehdKpUA6XVABbPWbhpaUua2fF59GP7tQxCTM",
+"repo": "https://github.com/c8ntinuum/contracts-sol",
+"commit": "f3efad6b3bc791565edae07cdf611a3638638be6",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "92935c435003916f3bf2d8ba5f5d8460745bbfa881d5316e0efbd2e883c083aa",
+"how": "C v1.54"
+},
+{
+"program": "GEN8HSyQehdKpUA6XVABbPWbhpaUua2fF59GP7tQxCTM",
+"repo": "https://github.com/c8ntinuum/contracts-sol",
+"commit": "fa5fb1c0880fc58fb46e4fdb38837105b89cd005",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "92935c435003916f3bf2d8ba5f5d8460745bbfa881d5316e0efbd2e883c083aa",
+"how": "C v1.57"
+},
+{
+"program": "GEN8HSyQehdKpUA6XVABbPWbhpaUua2fF59GP7tQxCTM",
+"repo": "https://github.com/c8ntinuum/contracts-sol",
+"commit": "fa5fb1c0880fc58fb46e4fdb38837105b89cd005",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "92935c435003916f3bf2d8ba5f5d8460745bbfa881d5316e0efbd2e883c083aa",
+"how": "C v1.54"
+},
+{
+"program": "GEN8HSyQehdKpUA6XVABbPWbhpaUua2fF59GP7tQxCTM",
+"repo": "https://github.com/c8ntinuum/contracts-sol",
+"commit": "7ff01bf38219d3e40817d355855e99de2b2e7232",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "92935c435003916f3bf2d8ba5f5d8460745bbfa881d5316e0efbd2e883c083aa",
+"how": "C v1.57"
+},
+{
+"program": "GEN8HSyQehdKpUA6XVABbPWbhpaUua2fF59GP7tQxCTM",
+"repo": "https://github.com/c8ntinuum/contracts-sol",
+"commit": "7ff01bf38219d3e40817d355855e99de2b2e7232",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "92935c435003916f3bf2d8ba5f5d8460745bbfa881d5316e0efbd2e883c083aa",
+"how": "C v1.54"
+},
+{
+"program": "GEN8HSyQehdKpUA6XVABbPWbhpaUua2fF59GP7tQxCTM",
+"repo": "https://github.com/c8ntinuum/contracts-sol",
+"commit": "125ab00aca37deffeba3db99b0d04a617bd8c582",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.3.2",
+"--cargo-build-sbf-args=--tools-version v1.57"
+],
+"runner": "ubuntu-latest",
+"expect": "92935c435003916f3bf2d8ba5f5d8460745bbfa881d5316e0efbd2e883c083aa",
+"how": "C v1.57"
+},
+{
+"program": "GEN8HSyQehdKpUA6XVABbPWbhpaUua2fF59GP7tQxCTM",
+"repo": "https://github.com/c8ntinuum/contracts-sol",
+"commit": "125ab00aca37deffeba3db99b0d04a617bd8c582",
+"args": [
+"--base-image",
+"solanafoundation/solana-verifiable-build:4.1.2",
+"--cargo-build-sbf-args=--tools-version v1.54"
+],
+"runner": "ubuntu-latest",
+"expect": "92935c435003916f3bf2d8ba5f5d8460745bbfa881d5316e0efbd2e883c083aa",
+"how": "C v1.54"
+}
+]
