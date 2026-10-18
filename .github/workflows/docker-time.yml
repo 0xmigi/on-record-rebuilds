@@ -1,0 +1,43 @@
+# Time the Docker path (solana-verify build) for one program, the way a team's CI
+# does it, so it can be compared with On Record's Docker-less rebuild of the same
+# commit. Two builds: the first includes pulling the image, the second reuses it.
+name: docker-time
+run-name: "Docker build ${{ inputs.label }} @ ${{ inputs.commit }}"
+
+on:
+  workflow_dispatch:
+    inputs:
+      label: { description: "Program name", required: true }
+      repo: { description: "owner/name on GitHub", required: true }
+      commit: { description: "Commit to build", required: true }
+      args: { description: "solana-verify build args", required: true }
+      so: { description: "Output .so name under target/deploy", required: true }
+      expect: { description: "Deployed hash", required: true }
+
+permissions:
+  contents: read
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Install solana-verify 0.5.2
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq pkg-config build-essential libudev-dev
+          cargo install --locked solana-verify --version 0.5.2
+      - name: Fetch source
+        run: |
+          git clone -q "https://github.com/${{ inputs.repo }}" src
+          git -C src checkout -q "${{ inputs.commit }}"
+      - name: Docker build 1 (pulls the image)
+        run: cd src && solana-verify build ${{ inputs.args }}
+      - name: Hash 1
+        run: solana-verify get-executable-hash "src/target/deploy/${{ inputs.so }}" | tee hash1.txt
+      - name: Docker build 2 (image already pulled)
+        run: cd src && sudo rm -rf target && solana-verify build ${{ inputs.args }}
+      - name: Compare
+        run: |
+          h=$(solana-verify get-executable-hash "src/target/deploy/${{ inputs.so }}")
+          echo "build 1: $(cat hash1.txt)"; echo "build 2: $h"; echo "deployed: ${{ inputs.expect }}"
+          [ "$h" = "${{ inputs.expect }}" ]

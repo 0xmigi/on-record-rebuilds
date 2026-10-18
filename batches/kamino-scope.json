@@ -1,0 +1,3 @@
+[
+  {"program": "HFn8GnPADiny6XqUoWE8uRPPxb29ikn4yTuPa9MF2fWJ", "repo": "https://github.com/Kamino-Finance/scope", "commit": "086e2145722b2e9d176b2a8963c549da6bdf8b09", "args": ["--library-name", "scope"], "runner": "ubuntu-latest", "expect": "37d5de1579d8435307e431cbf78bce2abfd19b6102e03c950b964a0a7367b920", "source": "recipe"}
+]
