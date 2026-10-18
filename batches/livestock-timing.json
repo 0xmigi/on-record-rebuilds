@@ -1,0 +1,4 @@
+[
+  {"program": "5X7RTCFFLgCpsRiskzm1gBEQmbzBEL39H6WpN9YzSizB", "repo": "https://github.com/0xmigi/livestock", "commit": "be8caf16fcad4429fbb5fd39d150291a3e1998c7", "args": ["--library-name", "livestock", "--base-image", "solanafoundation/solana-verifiable-build:4.1.0"], "runner": "macos-15", "expect": "343a0a7941e89b62a49ab2349cbac45cec68c5ed4bd5b25396bdc997a180e6bb", "source": "recipe"},
+  {"program": "5X7RTCFFLgCpsRiskzm1gBEQmbzBEL39H6WpN9YzSizB", "repo": "https://github.com/0xmigi/livestock", "commit": "be8caf16fcad4429fbb5fd39d150291a3e1998c7", "args": ["--library-name", "livestock", "--base-image", "solanafoundation/solana-verifiable-build:4.1.0"], "runner": "ubuntu-latest", "expect": "e05caacf09a87d91f939d8c07d15e125961670e88b5a934d4c9365d113a604bb", "source": "recipe"}
+]
