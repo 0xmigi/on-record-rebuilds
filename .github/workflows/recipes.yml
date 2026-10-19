@@ -10,6 +10,7 @@ on:
       batch:
         description: "JSON list under batches/ (max 256 entries)"
         required: true
+        default: batches/demo-jito-restaking.json
 
 jobs:
   plan:
