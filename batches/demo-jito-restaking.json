@@ -1,0 +1,12 @@
+[
+  {
+    "program": "RestkWeAVL8fRGgzhfeoqFhsqKRchg6aa1XrcH96z4Q",
+    "repo": "https://github.com/jito-foundation/restaking",
+    "commit": "c736bca8edc96efa603d580472b7d26c0d7224c7",
+    "args": [],
+    "runner": "ubuntu-latest",
+    "expect": "75da0a2fc5aee6cf6645922363c417c0f6bfce4acb5c3624b5eb9392d3f0a29b",
+    "how": "last commit before deploy",
+    "deployedAt": "2025-01-27T16:30:55.000Z"
+  }
+]

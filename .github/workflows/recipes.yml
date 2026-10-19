@@ -90,10 +90,11 @@ jobs:
           found=""
           for so in $(find src -path "*/target/deploy/*.so"); do
             h=$(python3 tools/scripts/exe-hash.py "$so")
-            echo "$h  $so"
+            echo "rebuilt:  $h  $(basename "$so")"
             [ "$h" = "$EXPECT" ] && found="$so"
           done
-          echo "deployed: $EXPECT"
+          echo "deployed: $EXPECT  (on chain)"
+          [ -n "$found" ] && echo "MATCH: $(basename "$found") has the same hash as the deployed program"
           [ -n "$found" ] && echo "stage=match" > status || { echo "stage=differs" > status; exit 1; }
 
       - name: Record result
