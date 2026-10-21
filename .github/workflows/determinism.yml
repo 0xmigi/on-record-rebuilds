@@ -8,6 +8,11 @@
 #   home    — build under the same absolute path on both machines (/tmp/b)
 #   libs    — replace this machine's prebuilt rlibs with the Linux download's
 #   meta    — pin cargo's metadata seed (__CARGO_DEFAULT_LIB_METADATA)
+#   fakehost — report the Linux host triple to cargo (a RUSTC_WRAPPER rewrites the
+#              `host:` line of `rustc -vV`). Cargo hashes the host into every
+#              proc-macro and build-script unit's metadata (compute_metadata ->
+#              hash_rustc_version), and that hash flows into every crate that
+#              depends on one. The Mac still compiles; only the reported host changes.
 name: determinism
 run-name: "Mac vs Linux: ${{ inputs.case }} (${{ inputs.variant }})"
 
@@ -62,6 +67,13 @@ jobs:
             echo "SRC=$GITHUB_WORKSPACE/src" >> "$GITHUB_ENV"
           fi
           if [[ ",$V," == *",meta,"* ]]; then echo "__CARGO_DEFAULT_LIB_METADATA=onrecord" >> "$GITHUB_ENV"; fi
+          if [[ ",$V," == *",fakehost,"* ]]; then
+            # same wrapper on both machines; on Linux it changes nothing
+            printf '%s\n' '#!/bin/bash' \
+              'for a in "$@"; do if [ "$a" = "-vV" ]; then "$@" | sed "s/^host: .*/host: x86_64-unknown-linux-gnu/"; exit ${PIPESTATUS[0]}; fi; done' \
+              'exec "$@"' > "$RUNNER_TEMP/fakehost" && chmod +x "$RUNNER_TEMP/fakehost"
+            echo "RUSTC_WRAPPER=$RUNNER_TEMP/fakehost" >> "$GITHUB_ENV"
+          fi
 
       - name: Install Solana ${{ env.AGAVE }}
         run: |
