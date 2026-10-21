@@ -108,7 +108,9 @@ jobs:
           mkdir lin && tar -xjf lin.tar.bz2 -C lin
           for d in "$PT"/rust/lib/rustlib/*-solana-solana; do
             t=$(basename "$d"); [ -d "lin/rust/lib/rustlib/$t/lib" ] || continue
-            cp -f lin/rust/lib/rustlib/$t/lib/*.rlib "$d/lib/"
+            # replace the whole folder: the two downloads name their rlibs with
+            # different crate hashes, so copying alongside leaves duplicates
+            rm -rf "$d/lib" && cp -R "lin/rust/lib/rustlib/$t/lib" "$d/lib"
             echo "swapped $t: $(ls lin/rust/lib/rustlib/$t/lib/*.rlib | wc -l) rlibs"
           done
 
