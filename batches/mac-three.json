@@ -1,0 +1,98 @@
+[
+ {
+  "program": "E588QtVUvresuXq2KoNEwAmoifCzYGpRBdHByN9KQMbi",
+  "repo": "https://github.com/hyperlane-xyz/hyperlane-monorepo.git",
+  "commit": "b8f4ed3bfa07909d73f82042da0b8f78bba1a584",
+  "args": [
+   "--mount-path",
+   "rust",
+   "--library-name",
+   "hyperlane_sealevel_mailbox",
+   "--",
+   "-p",
+   "hyperlane-sealevel-mailbox",
+   "--features",
+   "no-spl-noop"
+  ],
+  "runner": "macos-15",
+  "expect": "2f5ec8d965a3afea4e15759469bc546f2895da3fafdc0aea71be7aa57e780de2",
+  "clue": "mac"
+ },
+ {
+  "program": "E588QtVUvresuXq2KoNEwAmoifCzYGpRBdHByN9KQMbi",
+  "repo": "https://github.com/hyperlane-xyz/hyperlane-monorepo.git",
+  "commit": "b8f4ed3bfa07909d73f82042da0b8f78bba1a584",
+  "args": [
+   "--mount-path",
+   "rust",
+   "--library-name",
+   "hyperlane_sealevel_mailbox",
+   "--",
+   "-p",
+   "hyperlane-sealevel-mailbox",
+   "--features",
+   "no-spl-noop"
+  ],
+  "runner": "macos-15-intel",
+  "expect": "2f5ec8d965a3afea4e15759469bc546f2895da3fafdc0aea71be7aa57e780de2",
+  "clue": "mac"
+ },
+ {
+  "program": "1pxkkP66ntXRtBDt4yb92SAZofqi7ZD68VesDGSWGC3",
+  "repo": "https://github.com/LayerZero-Labs/devtools",
+  "commit": "35dac38c05e82ff523b07a3dff843d2fa19db146",
+  "args": [
+   "--mount-path",
+   "examples/oft-solana",
+   "--library-name",
+   "oft",
+   "--",
+   "--config",
+   "env.OFT_ID='1pxkkP66ntXRtBDt4yb92SAZofqi7ZD68VesDGSWGC3'"
+  ],
+  "runner": "macos-15",
+  "expect": "a6069754261b2707fc49ffc88db0e72fe8d2c338c9cd9a5f35e2cacce4c46ac6",
+  "clue": "mac"
+ },
+ {
+  "program": "1pxkkP66ntXRtBDt4yb92SAZofqi7ZD68VesDGSWGC3",
+  "repo": "https://github.com/LayerZero-Labs/devtools",
+  "commit": "35dac38c05e82ff523b07a3dff843d2fa19db146",
+  "args": [
+   "--mount-path",
+   "examples/oft-solana",
+   "--library-name",
+   "oft",
+   "--",
+   "--config",
+   "env.OFT_ID='1pxkkP66ntXRtBDt4yb92SAZofqi7ZD68VesDGSWGC3'"
+  ],
+  "runner": "macos-15-intel",
+  "expect": "a6069754261b2707fc49ffc88db0e72fe8d2c338c9cd9a5f35e2cacce4c46ac6",
+  "clue": "mac"
+ },
+ {
+  "program": "reedm8Fd33kVxUUN9zHckwCxMvUPmNhY4A7BJWrCZ5A",
+  "repo": "https://github.com/metaDAOproject/programs",
+  "commit": "9d2b2ddb4ee1c672cca0a24455c53a3f0f0b3f7c",
+  "args": [
+   "--library-name",
+   "redeem"
+  ],
+  "runner": "macos-15",
+  "expect": "1094f279234bdd7b57e35ff891758906f059a3a4a6164e9c6dd104398fafaa31",
+  "clue": "mac"
+ },
+ {
+  "program": "reedm8Fd33kVxUUN9zHckwCxMvUPmNhY4A7BJWrCZ5A",
+  "repo": "https://github.com/metaDAOproject/programs",
+  "commit": "9d2b2ddb4ee1c672cca0a24455c53a3f0f0b3f7c",
+  "args": [
+   "--library-name",
+   "redeem"
+  ],
+  "runner": "macos-15-intel",
+  "expect": "1094f279234bdd7b57e35ff891758906f059a3a4a6164e9c6dd104398fafaa31",
+  "clue": "mac"
+ }
+]
