@@ -24,9 +24,13 @@ on:
         required: true
         default: livestock
       variant:
-        description: "comma list of: baseline, home, libs, meta"
+        description: "comma list of: baseline, home, libs, meta, fakehost, seed-<x>"
         required: true
         default: baseline
+      runners:
+        description: "JSON list of runners"
+        required: true
+        default: '["ubuntu-latest", "macos-15"]'
 
 permissions:
   contents: read
@@ -39,7 +43,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        runner: [ubuntu-latest, macos-15]
+        runner: ${{ fromJSON(inputs.runners) }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -66,6 +70,9 @@ jobs:
           else
             echo "SRC=$GITHUB_WORKSPACE/src" >> "$GITHUB_ENV"
           fi
+          # seed-<x>: hash seed only, nothing else changes — shows whether the
+          # metadata hashes alone move the output bytes
+          for t in ${V//,/ }; do case "$t" in seed-*) echo "__CARGO_DEFAULT_LIB_METADATA=${t#seed-}" >> "$GITHUB_ENV";; esac; done
           if [[ ",$V," == *",meta,"* ]]; then echo "__CARGO_DEFAULT_LIB_METADATA=onrecord" >> "$GITHUB_ENV"; fi
           if [[ ",$V," == *",fakehost,"* ]]; then
             # same wrapper on both machines; on Linux it changes nothing
@@ -137,5 +144,5 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: det-${{ inputs.case }}-${{ matrix.runner }}
+          name: det-${{ inputs.case }}-${{ inputs.variant }}-${{ matrix.runner }}
           path: out
