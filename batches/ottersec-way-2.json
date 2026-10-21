@@ -1,0 +1,113 @@
+[
+ {
+  "program": "SMPLecH534NA9acpos4G6x7uf3LWbCAwZQE9e8ZekMu",
+  "repo": "https://github.com/squads-protocol/squads-mpl",
+  "commit": "c95b7673d616c377a349ca424261872dfcf8b19d",
+  "args": [
+   "--library-name",
+   "squads_mpl",
+   "--bpf"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "72da599d9ee14b2a03a23ccfa6f06d53eea4a00825ad2191929cbd78fb69205c",
+  "how": "ottersec recipe",
+  "control": false,
+  "fix": "drop dangling --program-id"
+ },
+ {
+  "program": "nosJhNRqr2bc9g1nfGDcXXTXvYUmxD4cVwy2pMWhrYM",
+  "repo": "https://github.com/nosana-ci/nosana-programs",
+  "commit": "v2.2.11",
+  "args": [
+   "--library-name",
+   "nosana_jobs",
+   "--base-image",
+   "solanafoundation/anchor:v1.0.2",
+   "--cargo-build-sbf-args=--features mainnet"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "762916cc4029a04b12f1b4bee28431b9f9fe59d02af65a3d6d35ce4e314081ee",
+  "how": "ottersec recipe",
+  "control": false,
+  "fix": "strip shell quotes"
+ },
+ {
+  "program": "nosNeZR64wiEhQc5j251bsP4WqDabT6hmz4PHyoHLGD",
+  "repo": "https://github.com/nosana-ci/nosana-programs",
+  "commit": "v2.2.6",
+  "args": [
+   "--library-name",
+   "nosana_nodes",
+   "--base-image",
+   "solanafoundation/anchor:v1.0.2",
+   "--cargo-build-sbf-args=--features mainnet"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "9a47c0f8b099050260f52c459fdea38ee90b0e5789844b4b3fca8cca61862a7d",
+  "how": "ottersec recipe",
+  "control": false,
+  "fix": "strip shell quotes"
+ },
+ {
+  "program": "nosPdZrfDzND1LAR28FLMDEATUPK53K8xbRBXAirevD",
+  "repo": "https://github.com/nosana-ci/nosana-programs",
+  "commit": "v2.2.8",
+  "args": [
+   "--library-name",
+   "nosana_pools",
+   "--base-image",
+   "solanafoundation/anchor:v1.0.2",
+   "--cargo-build-sbf-args=--features mainnet"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "c3003c8b6419b1ea686671cebfe46a5ac1ced2adf4a1c965cfc7b3f7cb0d49c6",
+  "how": "ottersec recipe",
+  "control": false,
+  "fix": "strip shell quotes"
+ },
+ {
+  "program": "nosRB8DUV67oLNrL45bo2pFLrmsWPiewe2Lk2DRNYCp",
+  "repo": "https://github.com/nosana-ci/nosana-programs",
+  "commit": "v2.2.8",
+  "args": [
+   "--library-name",
+   "nosana_rewards",
+   "--base-image",
+   "solanafoundation/anchor:v1.0.2",
+   "--cargo-build-sbf-args=--features mainnet"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "f926042651e174c4c9ad85b3d800d2fd734fa78d614db857bbf427a863ea13ee",
+  "how": "ottersec recipe",
+  "control": false,
+  "fix": "strip shell quotes"
+ },
+ {
+  "program": "nosScmHY2uR24Zh751PmGj9ww9QRNHewh9H59AfrTJE",
+  "repo": "https://github.com/nosana-ci/nosana-programs",
+  "commit": "v2.2.8",
+  "args": [
+   "--library-name",
+   "nosana_staking",
+   "--base-image",
+   "solanafoundation/anchor:v1.0.2",
+   "--cargo-build-sbf-args=--features mainnet"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "44e803b0a88189070e627b2ff4b556263efbe974bb3013265b1a9d1eaa74bc7f",
+  "how": "ottersec recipe",
+  "control": false,
+  "fix": "strip shell quotes"
+ },
+ {
+  "program": "PhoeNiXZ8ByJGLkxNfZRnkUfjvmuYqLR89jjFHGqdXY",
+  "repo": "https://github.com/Ellipsis-Labs/phoenix-v1",
+  "commit": "dac82fef2b8862be04fa6710386f3e7485a31a48",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "6877a5b732b3494b828a324ec846d526d962223959534dbaf4209e0da3b2d6a9",
+  "how": "ottersec commit, default settings",
+  "control": false,
+  "fix": "OtterSec's other upload, with a commit"
+ }
+]
