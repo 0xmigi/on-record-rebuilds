@@ -1,0 +1,127 @@
+# Why does the same program compile to different bytes on a Mac and on Linux?
+# Builds one program on both machines with identical versions and settings, then
+# keeps everything needed to compare the two: the binary, the verbose cargo log
+# (every rustc command line, including the -C metadata hashes), the compiler's
+# own `rustc -vV`, and a fingerprint of every prebuilt library it shipped with.
+#
+# Variables can be switched one at a time to find what makes the builds differ:
+#   home    — build under the same absolute path on both machines (/tmp/b)
+#   libs    — replace this machine's prebuilt rlibs with the Linux download's
+#   meta    — pin cargo's metadata seed (__CARGO_DEFAULT_LIB_METADATA)
+name: determinism
+run-name: "Mac vs Linux: ${{ inputs.case }} (${{ inputs.variant }})"
+
+on:
+  workflow_dispatch:
+    inputs:
+      case:
+        description: "livestock | loofta-vrf"
+        required: true
+        default: livestock
+      variant:
+        description: "comma list of: baseline, home, libs, meta"
+        required: true
+        default: baseline
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: ${{ inputs.case }} · ${{ matrix.runner }}
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        runner: [ubuntu-latest, macos-15]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: tools
+
+      - name: Pick the case
+        run: |
+          case "${{ inputs.case }}" in
+            livestock)  echo "REPO=https://github.com/0xmigi/livestock" >> "$GITHUB_ENV"
+                        echo "COMMIT=be8caf16fcad4429fbb5fd39d150291a3e1998c7" >> "$GITHUB_ENV"
+                        echo "LIB=livestock" >> "$GITHUB_ENV"; echo "AGAVE=v4.1.0" >> "$GITHUB_ENV"
+                        echo "TOOLS=" >> "$GITHUB_ENV" ;;
+            loofta-vrf) echo "REPO=https://github.com/loofta/loofta-vrf" >> "$GITHUB_ENV"
+                        echo "COMMIT=ccf49f0" >> "$GITHUB_ENV"
+                        echo "LIB=loofta_vrf" >> "$GITHUB_ENV"; echo "AGAVE=v4.1.0" >> "$GITHUB_ENV"
+                        echo "TOOLS=--tools-version v1.54" >> "$GITHUB_ENV" ;;
+            *) echo "unknown case"; exit 1 ;;
+          esac
+          V="${{ inputs.variant }}"
+          # `home`: the same absolute source + cargo-home path on both machines
+          if [[ ",$V," == *",home,"* ]]; then
+            echo "SRC=/tmp/b/src" >> "$GITHUB_ENV"; echo "CARGO_HOME=/tmp/b/cargo" >> "$GITHUB_ENV"
+            mkdir -p /tmp/b/cargo && cp -R "$HOME/.cargo/bin" /tmp/b/cargo/ 2>/dev/null || true
+          else
+            echo "SRC=$GITHUB_WORKSPACE/src" >> "$GITHUB_ENV"
+          fi
+          if [[ ",$V," == *",meta,"* ]]; then echo "__CARGO_DEFAULT_LIB_METADATA=onrecord" >> "$GITHUB_ENV"; fi
+
+      - name: Install Solana ${{ env.AGAVE }}
+        run: |
+          if [ "$RUNNER_OS" = macOS ] && ! command -v wget >/dev/null; then brew install wget >/dev/null 2>&1 || true; fi
+          case "$RUNNER_OS-$RUNNER_ARCH" in
+            macOS-ARM64) T=aarch64-apple-darwin ;;
+            Linux-X64)   T=x86_64-unknown-linux-gnu ;;
+          esac
+          curl -sSfL "https://github.com/anza-xyz/agave/releases/download/$AGAVE/solana-release-$T.tar.bz2" | tar -xj -C "$RUNNER_TEMP"
+          echo "$RUNNER_TEMP/solana-release/bin" >> "$GITHUB_PATH"
+
+      - name: Fetch source
+        run: |
+          git clone -q "$REPO" "$SRC"
+          git -C "$SRC" checkout -q "$COMMIT"
+          git -C "$SRC" log -1 --format='%H %s'
+
+      - name: Install platform-tools (build once, discard)
+        run: |
+          M=$(cd "$SRC" && python3 "$GITHUB_WORKSPACE/tools/scripts/find-manifest.py" "$LIB")
+          echo "MANIFEST=$SRC/$M" >> "$GITHUB_ENV"
+          cd "$(dirname "$SRC/$M")" && cargo-build-sbf $TOOLS -- --locked >/dev/null 2>&1 || true
+          PT=$(ls -d "$HOME"/.cache/solana/*/platform-tools | head -1)
+          echo "PT=$PT" >> "$GITHUB_ENV"
+          echo "platform-tools at $PT"
+
+      - name: Swap in the Linux download's prebuilt libraries
+        if: contains(inputs.variant, 'libs') && runner.os == 'macOS'
+        run: |
+          V=$(basename "$(dirname "$PT")")
+          curl -sSfL "https://github.com/anza-xyz/platform-tools/releases/download/$V/platform-tools-linux-x86_64.tar.bz2" -o lin.tar.bz2
+          mkdir lin && tar -xjf lin.tar.bz2 -C lin
+          for d in "$PT"/rust/lib/rustlib/*-solana-solana; do
+            t=$(basename "$d"); [ -d "lin/rust/lib/rustlib/$t/lib" ] || continue
+            cp -f lin/rust/lib/rustlib/$t/lib/*.rlib "$d/lib/"
+            echo "swapped $t: $(ls lin/rust/lib/rustlib/$t/lib/*.rlib | wc -l) rlibs"
+          done
+
+      - name: Build (verbose)
+        run: |
+          cd "$(dirname "$MANIFEST")"
+          cargo clean >/dev/null 2>&1 || true
+          cargo-build-sbf $TOOLS -- --locked -v 2>&1 | tee "$GITHUB_WORKSPACE/build.log"
+
+      - name: Collect
+        if: always()
+        run: |
+          mkdir -p out
+          cp build.log out/ 2>/dev/null || true
+          for so in $(find "$SRC" -path "*/target/deploy/*.so"); do
+            cp "$so" out/
+            echo "$(python3 tools/scripts/exe-hash.py "$so")  $(basename "$so")" | tee -a out/hashes.txt
+          done
+          "$PT/rust/bin/rustc" -vV > out/rustc-vV.txt 2>&1 || true
+          cargo-build-sbf --version > out/cargo-build-sbf.txt 2>&1 || true
+          ( cd "$PT/rust/lib/rustlib" && find . -name '*.rlib' -exec shasum -a 256 {} + | sort -k2 ) > out/rlibs.txt
+          grep -oE -- '-C metadata=[0-9a-f]+|--crate-name [A-Za-z0-9_]+' build.log | paste - - > out/metadata.txt 2>/dev/null || true
+          echo "variant=${{ inputs.variant }} runner=${{ matrix.runner }} src=$SRC" > out/info.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: det-${{ inputs.case }}-${{ matrix.runner }}
+          path: out
