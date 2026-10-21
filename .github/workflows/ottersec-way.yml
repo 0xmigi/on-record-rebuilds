@@ -1,0 +1,93 @@
+# Rebuild programs exactly the way OtterSec does: `solana-verify verify-from-repo`
+# (v0.5.1, the version verify.osec.io pins) inside the official Docker image, from
+# the repo, commit and args OtterSec verified. For the programs our Docker-less
+# rebuild missed, this says whether the gap is ours (Docker reproduces) or the
+# source's (Docker fails too).
+#
+# Nothing is written on chain: no keypair exists on the runner and stdin is
+# closed, so the upload prompt after the hashes can never be answered.
+name: ottersec-way
+run-name: "OtterSec's way: ${{ inputs.batch }}"
+
+on:
+  workflow_dispatch:
+    inputs:
+      batch:
+        description: "JSON list under batches/ (program, repo, commit, args, expect)"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  tool:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.m.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: m
+        run: echo "matrix=$(jq -c . "${{ inputs.batch }}")" >> "$GITHUB_OUTPUT"
+      - name: Install solana-verify 0.5.1
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq pkg-config build-essential libudev-dev
+          cargo install --locked solana-verify --version 0.5.1 --root "$RUNNER_TEMP/sv"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: solana-verify
+          path: ${{ runner.temp }}/sv/bin/solana-verify
+
+  build:
+    needs: tool
+    name: ${{ matrix.program }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        include: ${{ fromJSON(needs.tool.outputs.matrix) }}
+    env:
+      PROGRAM: ${{ matrix.program }}
+      EXPECT: ${{ matrix.expect }}
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: solana-verify
+          path: sv
+      - name: verify-from-repo
+        env:
+          REPO: ${{ matrix.repo }}
+          COMMIT: ${{ matrix.commit }}
+          ARGS: ${{ toJSON(matrix.args) }}
+        run: |
+          chmod +x sv/solana-verify
+          mapfile -t A < <(jq -r '.[]' <<<"$ARGS")
+          set +e
+          sv/solana-verify verify-from-repo -um --program-id "$PROGRAM" "$REPO" --commit-hash "$COMMIT" "${A[@]}" </dev/null 2>&1 | tee out.txt
+          set -e
+          built=$(grep -oE 'Executable Program Hash from repo: [0-9a-f]{64}' out.txt | awk '{print $NF}' | tail -1)
+          echo "built=$built" > result.txt
+          if [ -z "$built" ]; then echo "stage=build" >> result.txt
+          elif [ "$built" = "$EXPECT" ]; then echo "stage=match" >> result.txt
+          else echo "stage=differs" >> result.txt; fi
+          cat result.txt
+
+      - name: Record result
+        if: always()
+        run: |
+          python3 - <<'EOF'
+          import json, os
+          kv = dict(l.strip().split("=", 1) for l in open("result.txt")) if os.path.exists("result.txt") else {}
+          json.dump({"program": os.environ["PROGRAM"], "runner": "ubuntu-latest", "method": "solana-verify 0.5.1 docker",
+                     "commit": "${{ matrix.commit }}", "result": kv.get("stage", "build"), "built": kv.get("built", ""),
+                     "expect": os.environ["EXPECT"], "control": ${{ matrix.control && 'True' || 'False' }}},
+                    open("result.json", "w"))
+          EOF
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: result-${{ strategy.job-index }}-${{ matrix.program }}-docker
+          path: |
+            result.json
+            out.txt

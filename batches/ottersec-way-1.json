@@ -1,0 +1,686 @@
+[
+ {
+  "program": "1uteB5DZdNfns9B12rgGf5msKh1d7FbbkvciWmhsZiC",
+  "repo": "https://github.com/wormholelabs-xyz/example-ntt-svm-lut",
+  "commit": "84b1472e95e82f5028e225aba10e83d91a5ea3c6",
+  "args": [
+   "--library-name",
+   "example_ntt_svm_lut"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "c9078072a587194aa0d06dec712e923c07b6fec376578223f6e599967c5ddee6",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "2EUkJXSwCdRAuhesw2D9FXyGfbi6Kw2yZDyQUnCwc7te",
+  "repo": "https://github.com/gudtekdonkey/carpenter_solana_amm-verify",
+  "commit": "d51b4f123bf4b183deb32a99b0cf7634873c7f62",
+  "args": [
+   "--library-name",
+   "floor_holders",
+   "--base-image",
+   "ghcr.io/gudtekdonkey/floor-solana-verify@sha256:17bc956f184ea968c176d04622f34fb115ce0cac742aa87922e8492fb1829b2b",
+   "--arch",
+   "v3"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "219f94b0fbc71eb071db5b6d67630a3d802c1839eaa170be9cdf928a21a60bda",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "2kZqCjGfKgVR8dUkv4PCogFsFgN3EoSSNX41HN1cBfBA",
+  "repo": "https://github.com/juancanero03-hue/wagon-program",
+  "commit": "a398c7a4fb7d7b13411bc0390546624d8d02c17a",
+  "args": [
+   "--library-name",
+   "wagon"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "044770fd8376fdfa1fc891090a0733ad7012d6ec9fd5f1e9139978c031728c79",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "4FFs789SLFzoYK46z4eShQ1ACZJ4xuEJrKRY3Jpa5Fz7",
+  "repo": "https://github.com/supernode-lab/unipos-solana",
+  "commit": "4c29232e60f8d69e7f48f2fe61fb295ae7a6d796",
+  "args": [
+   "--library-name",
+   "unipos"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "fd24a5dd9c870eda30a2cb611bd2adbda578f5ec19dd2e34114b3789cfc33120",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "4sYJ8JMvy3j1GLbupcihpcgUdeEcus9j4fp5mWv8eWjV",
+  "repo": "https://github.com/DEDEvvv/ant-mine",
+  "commit": "6b363b37c195cee21136d5ec6766045b97d663f0",
+  "args": [
+   "--library-name",
+   "ant_mine",
+   "--base-image",
+   "solanafoundation/solana-verifiable-build:4.0.3"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "19316d51eaa6b67e07f51c879324b63a8a81f46db625d3dc5b1f315c013532bf",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "5B4bmFyPrTXE9FFynQMP5idgyJqNJ9DHdfQQgHnQ1e62",
+  "repo": "https://github.com/ElTrueque/mini-launch-solana",
+  "commit": "5413304c6580cce236b8bc7706cb14e72e2e8f62",
+  "args": [
+   "--workspace-path",
+   "program",
+   "--library-name",
+   "mini_launch_solana",
+   "--base-image",
+   "ghcr.io/eltrueque/mini-launch-solana-builder@sha256:15797eb7f86a5cae8605cd58413578c3e9f31f19db569dd44d85d6b9a7707be0",
+   "--arch",
+   "v3"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "204b37d55fe07d46c43311bfb630554bc075b135005080bcb58784f7ddfa1f36",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "61DFfeTKM7trxYcPQCM78bJ794ddZprZpAwAnLiwTpYH",
+  "repo": "https://github.com/jup-ag/rfq-webhook-toolkit",
+  "commit": "67cf7f3e6eeba5eb9c5f1dcff85cbaf3ebebeabf",
+  "args": [
+   "--library-name",
+   "order_engine",
+   "--",
+   "--features",
+   "production"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "fe9227624284c8bab52f995d914d631cf275efd7be7f92e1f3863a757f8c017e",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "6X57YpXAZt8cdQxNpgWogFH6x8xM8h97UY4Z73b5vXRh",
+  "repo": "https://github.com/eigestate/program",
+  "commit": "2d5daa03cb4b5e9d25b502f200d435461eb775b8",
+  "args": [
+   "--library-name",
+   "f_nft"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "ab3b95799778a2192dc3685a57442a3f568c086c22c855fdfd4ceeeab03ffb19",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "8R6yamgQEWRZCD6JDPLytJBQNLRBweYNiLAoAizmwuWM",
+  "repo": "https://github.com/zeus-army/tip-verify",
+  "commit": "d071d3ada52a2267381f1bf591e9211afd764629",
+  "args": [
+   "--library-name",
+   "ping_vault"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "7b6fa7e73c02f5ec72b7dfe4f6f95532f95b567d4927e7228780a9899ee428b2",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "8vfdPWfaA3b9GtJoFUwc36JKDaMfVCJ4oT9HrCrQ6Tdi",
+  "repo": "https://github.com/gudtekdonkey/carpenter_solana_amm-verify",
+  "commit": "d51b4f123bf4b183deb32a99b0cf7634873c7f62",
+  "args": [
+   "--library-name",
+   "floor_launch",
+   "--base-image",
+   "ghcr.io/gudtekdonkey/floor-solana-verify@sha256:17bc956f184ea968c176d04622f34fb115ce0cac742aa87922e8492fb1829b2b",
+   "--arch",
+   "v3"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "94741eab42f5ea9b41718e6e381648f8340ce4c35e8e6078272a37938464e5f7",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "9uXLyyZginMWdUeu22kp7XV7cpV8183xfsVqUxKi5Viy",
+  "repo": "https://github.com/gudtekdonkey/carpenter_solana_amm-verify",
+  "commit": "d51b4f123bf4b183deb32a99b0cf7634873c7f62",
+  "args": [
+   "--library-name",
+   "floor_hook",
+   "--base-image",
+   "ghcr.io/gudtekdonkey/floor-solana-verify@sha256:17bc956f184ea968c176d04622f34fb115ce0cac742aa87922e8492fb1829b2b",
+   "--arch",
+   "v3"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "933740a6942c9a9aa45f08bed55edd43cf97f1521ccc0e90d0fa2391bfccd25a",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "ALM1JSnEhc5PkNecbSZotgprBuJujL5objTbwGtpTgTd",
+  "repo": "https://github.com/keel-fi/svm-alm-controller",
+  "commit": "1f362e0ab976571814a7adf3cc1492baee94771e",
+  "args": [
+   "--library-name",
+   "svm_alm_controller",
+   "--base-image",
+   "solanafoundation/solana-verifiable-build:2.2.20"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "a103a22cccfbc5ab6d49ea1c739be372640b3872221fe8fbc12db289e6978678",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "APNv3yTr5Zd5UYrv2LpHnfoLQ1WKA8K3gZ1Sk3DZeZL5",
+  "repo": "https://github.com/DEDEvvv/ant-mine",
+  "commit": "de3b58775f243e15f8cbc636b02dbdce4ccc8bb6",
+  "args": [
+   "--library-name",
+   "ant_mine",
+   "--base-image",
+   "solanafoundation/solana-verifiable-build:4.0.3"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "51f7ad2ff1e4e5a624900f4697f44f435e3eca77d66dad101e047d60dd9e974e",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "BZfAEAbonruxE1FV7zNoWnSxkUrE71dLAh4qjrLsKGWA",
+  "repo": "https://github.com/gudtekdonkey/carpenter_solana_amm-verify",
+  "commit": "d51b4f123bf4b183deb32a99b0cf7634873c7f62",
+  "args": [
+   "--library-name",
+   "upgrade_timelock",
+   "--base-image",
+   "ghcr.io/gudtekdonkey/floor-solana-verify@sha256:17bc956f184ea968c176d04622f34fb115ce0cac742aa87922e8492fb1829b2b",
+   "--arch",
+   "v3"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "57f5647c7371f46cac78e3938a47f7323bffb9c9ca8f8141d3f59c363c6afa70",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "ChompZg47TcVy5fk2LxPEpW6SytFYBES5SHoqgrm8A4D",
+  "repo": "https://github.com/jarry-xiao/chomping-glass",
+  "commit": "None",
+  "args": [
+   ""
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "b87e907e494ef51b9cff1b186433cb7181b90b36128e1a3fa6784dfea5bfb762",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "DdeiDx4ncHo9DXGZm1GrPe7mFKv7kNU3yx95uQEV2APA",
+  "repo": "https://github.com/gudtekdonkey/carpenter_solana_amm-verify",
+  "commit": "d51b4f123bf4b183deb32a99b0cf7634873c7f62",
+  "args": [
+   "--library-name",
+   "carpenter_amm",
+   "--base-image",
+   "ghcr.io/gudtekdonkey/floor-solana-verify@sha256:17bc956f184ea968c176d04622f34fb115ce0cac742aa87922e8492fb1829b2b",
+   "--arch",
+   "v3"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "f0758da9a3dea69dce9d45b87fc9614571476e64b87445bca4737ce8b9a575c2",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "EFaNWErqAtVWufdNb7yofSHHfWFos843DFpu4JBw24at",
+  "repo": "https://github.com/wormhole-foundation/wormhole",
+  "commit": "28e2d012982e4a1b0b42fe116248383193b5f6ed",
+  "args": [
+   "--mount-path",
+   "svm/wormhole-core-shims",
+   "--library-name",
+   "wormhole_verify_vaa_shim",
+   "--",
+   "--features",
+   "solana"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "b3e5ee398c5cb4ac14f71c5311babdb2e043bff3e825160885235dafb121255e",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "EP1N2w7ijCboXHJS6mfysTWu2vQohP933ny2cHovSxfU",
+  "repo": "https://github.com/BerrieDex/bridge",
+  "commit": "4739293528df270918256efb10ec30c1431b216a",
+  "args": [
+   "--library-name",
+   "berrie_bridge",
+   "--base-image",
+   "solanafoundation/solana-verifiable-build:2.1.0"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "02cc4964f692c3466b46dfb8328814c330342066fba280158a7dc402f3d279e8",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "EtZMZM22ViKMo4r5y4Anovs3wKQ2owUmDpjygnMMcdEX",
+  "repo": "https://github.com/wormhole-foundation/wormhole",
+  "commit": "28e2d012982e4a1b0b42fe116248383193b5f6ed",
+  "args": [
+   "--mount-path",
+   "svm/wormhole-core-shims",
+   "--library-name",
+   "wormhole_post_message_shim",
+   "--",
+   "--features",
+   "solana"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "e724f0159914ff64d83ebceadc4c90c5b2df4883935b91b140d651ff207bf4f3",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "GqaTGY2s6PesfziBiQC5dVxaAagyZoFHHoFfQxe5VsRg",
+  "repo": "https://github.com/psyko-chiller/nakamoto-verifiable",
+  "commit": "82e629dbde6461c0c4686e94a94e75af0270476a",
+  "args": [
+   "--library-name",
+   "nakamoto"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "92aeb1b3982a5c2587a33fadb1567817b9942d596cc3dd66e3010ad9f8abf651",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "HHiwbXs3egRwtgEPEKx1PHpBU8gq5VSbhfrGrcCd4CSC",
+  "repo": "https://github.com/gudtekdonkey/carpenter_solana_amm-verify",
+  "commit": "d51b4f123bf4b183deb32a99b0cf7634873c7f62",
+  "args": [
+   "--library-name",
+   "floor_vesting",
+   "--base-image",
+   "ghcr.io/gudtekdonkey/floor-solana-verify@sha256:17bc956f184ea968c176d04622f34fb115ce0cac742aa87922e8492fb1829b2b",
+   "--arch",
+   "v3"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "1cef5a3ed1ec50ca94d4e9500470aef867030e6f6aeceacc732f104e43c504b4",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "JsNFnUs9e2vDk3mUR5hjVr69j6JpM4VtoDk7QiZUSPL",
+  "repo": "https://github.com/pTokenSPL/token",
+  "commit": "8bf4d49a3d7247e5f3eb0717502701a54e58a603",
+  "args": [
+   "--library-name",
+   "pinocchio_token_program"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "02f555dd2101c09e6f54f4089ec37efb8bc8447da2d6e59f670d62243778fdac",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "LFfJcgJCCXkGG9hLn8yRKeqm7yK9WHSHAvXzkbgZGmW",
+  "repo": "https://github.com/lfcoin-io/LFCoin-Smart-Contract",
+  "commit": "bddc0c61f14c1d1d8ed0c0ca0f941746adf03f68",
+  "args": [
+   "--library-name",
+   "token_biu"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "4e2f49f0da83d9348550b7f3b68ccc0a236a2cef2b18498f42334f1e094efd92",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "LazorjRFNavitUaBu5m3WaNPjU1maipvSW2rZfAFAKi",
+  "repo": "https://github.com/lazor-kit/lazorkit-protocol",
+  "commit": "6bfc67eaa543127f02500de2ada5b0a6bad12ead",
+  "args": [
+   "--library-name",
+   "lazorkit_program",
+   "--",
+   "--features",
+   "mainnet"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "8d9e4b248cc150e7eb8a2506162fda83e5825b9889005796d001afc51031ac34",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "SMPLecH534NA9acpos4G6x7uf3LWbCAwZQE9e8ZekMu",
+  "repo": "https://github.com/squads-protocol/squads-mpl",
+  "commit": "c95b7673d616c377a349ca424261872dfcf8b19d",
+  "args": [
+   "--library-name",
+   "squads_mpl",
+   "--bpf",
+   "--program-id"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "72da599d9ee14b2a03a23ccfa6f06d53eea4a00825ad2191929cbd78fb69205c",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "WALL8ucBuUyL46QYxwYJjidaFYhdvxUFrgvBxPshERx",
+  "repo": "https://github.com/metaDAOproject/programs",
+  "commit": "6f4841515b04d906018d5f71a0b6ce373335665b",
+  "args": [
+   "--library-name",
+   "bid_wall",
+   "--",
+   "--features",
+   "production"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "d03549c147bf3342e5bb24d19d1a4f11bf4f55d1693b870045cb1c6b5a542bf4",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "haio6iJNBgiAcm6DfxbqAfwNpsqhd4n2qswjPNhxuzF",
+  "repo": "https://github.com/HAiO-Official/solana-programs",
+  "commit": "860f320c8e5dd0f6d4cdac0ef16c077e6a4a952a",
+  "args": [
+   "--library-name",
+   "daily_check_in"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "1ef18048a485e610393c5b8fbbd1667700c6931e373b7ff0c42bb7e4ae909488",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "ifxmwWVVZDmXN2DUVf7wtJYCXTRY4QsL5rzmNkXzxbj",
+  "repo": "https://github.com/ifx-run/ifx",
+  "commit": "522a2f9d8640c38d8f334207b6b3b509cd075a2c",
+  "args": [
+   "--mount-path",
+   ".",
+   "--library-name",
+   "ifx",
+   "--",
+   "--features",
+   "mainnet"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "29cdd9bfe2a0e06126b6b21823370cc9275dc82416d6b23c153647980b7196e8",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "ixCPtHBGeiuHL8uGFvCr2Lr9LYijeBjeRbXJEK7qSPL",
+  "repo": "https://github.com/pTokenSPL/token",
+  "commit": "1d2eb32",
+  "args": [
+   "--library-name",
+   "pinocchio_token_program"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "3980d8c3386cd52fbb62f58c29feff39c9d2b00a384eaaabca720aeb4a540c3f",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "jg82rRko6Hu1KqZ47RR95Jrq1cfqBhaAPXStseajmfQ",
+  "repo": "https://github.com/HAiO-Official/solana-programs",
+  "commit": "3338cd508f4486e05ac14003eafaeeda53e31c8c",
+  "args": [
+   "--library-name",
+   "early_access"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "9318daa66bb63e6f5c12d1f1081986396e01f7065126d95f4c6e817ce59b9409",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "moonDJUoHteKkGATejA5bdJVwJ6V6Dg74gyqyJTx73n",
+  "repo": "https://github.com/metaDAOproject/programs",
+  "commit": "e709fb5b7fe9b8be2607bd08965111633aa97247",
+  "args": [
+   "--library-name",
+   "launchpad_v8",
+   "--",
+   "--features",
+   "production"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "ce8a4dbdc5d59900c6dd8076256ce123865cec68f538031c4f226a62bb90649e",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "moontUzsdepotRGe5xsfip7vLPTJnVuafqdUWexVnPM",
+  "repo": "https://github.com/metaDAOproject/programs",
+  "commit": "2b7abb67c867e9061e66868c691bff7ed979b6a8",
+  "args": [
+   "--library-name",
+   "launchpad_v7",
+   "--",
+   "--features",
+   "production"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "f544c3b36b62c2585e1362fa233c19bbc72053dcde83d709174cc49d2324841b",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "nex1gkSWtRBheEJuQZMqHhbMG5A45qPU76KqnCZNVHR",
+  "repo": "https://github.com/wormholelabs-xyz/example-ntt-with-executor-svm",
+  "commit": "10c51da84ee5deb9dee7b2afa69382ce90984eae",
+  "args": [
+   "--library-name",
+   "example_ntt_with_executor_svm"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "33d8e6383235ebafad9b949c574e064347beca275f937c2b33bdaaefa990bc3a",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "nosJhNRqr2bc9g1nfGDcXXTXvYUmxD4cVwy2pMWhrYM",
+  "repo": "https://github.com/nosana-ci/nosana-programs",
+  "commit": "v2.2.11",
+  "args": [
+   "--library-name",
+   "nosana_jobs",
+   "--base-image",
+   "solanafoundation/anchor:v1.0.2",
+   "--cargo-build-sbf-args=\"--features mainnet\""
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "762916cc4029a04b12f1b4bee28431b9f9fe59d02af65a3d6d35ce4e314081ee",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "nosNeZR64wiEhQc5j251bsP4WqDabT6hmz4PHyoHLGD",
+  "repo": "https://github.com/nosana-ci/nosana-programs",
+  "commit": "v2.2.6",
+  "args": [
+   "--library-name",
+   "nosana_nodes",
+   "--base-image",
+   "solanafoundation/anchor:v1.0.2",
+   "--cargo-build-sbf-args=\"--features mainnet\""
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "9a47c0f8b099050260f52c459fdea38ee90b0e5789844b4b3fca8cca61862a7d",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "nosPdZrfDzND1LAR28FLMDEATUPK53K8xbRBXAirevD",
+  "repo": "https://github.com/nosana-ci/nosana-programs",
+  "commit": "v2.2.8",
+  "args": [
+   "--library-name",
+   "nosana_pools",
+   "--base-image",
+   "solanafoundation/anchor:v1.0.2",
+   "--cargo-build-sbf-args=\"--features mainnet\""
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "c3003c8b6419b1ea686671cebfe46a5ac1ced2adf4a1c965cfc7b3f7cb0d49c6",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "nosRB8DUV67oLNrL45bo2pFLrmsWPiewe2Lk2DRNYCp",
+  "repo": "https://github.com/nosana-ci/nosana-programs",
+  "commit": "v2.2.8",
+  "args": [
+   "--library-name",
+   "nosana_rewards",
+   "--base-image",
+   "solanafoundation/anchor:v1.0.2",
+   "--cargo-build-sbf-args=\"--features mainnet\""
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "f926042651e174c4c9ad85b3d800d2fd734fa78d614db857bbf427a863ea13ee",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "nosScmHY2uR24Zh751PmGj9ww9QRNHewh9H59AfrTJE",
+  "repo": "https://github.com/nosana-ci/nosana-programs",
+  "commit": "v2.2.8",
+  "args": [
+   "--library-name",
+   "nosana_staking",
+   "--base-image",
+   "solanafoundation/anchor:v1.0.2",
+   "--cargo-build-sbf-args=\"--features mainnet\""
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "44e803b0a88189070e627b2ff4b556263efbe974bb3013265b1a9d1eaa74bc7f",
+  "how": "ottersec recipe",
+  "control": false
+ },
+ {
+  "program": "PhoeNiXZ8ByJGLkxNfZRnkUfjvmuYqLR89jjFHGqdXY",
+  "repo": "https://github.com/Ellipsis-Labs/phoenix-v1",
+  "commit": "None",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "6877a5b732b3494b828a324ec846d526d962223959534dbaf4209e0da3b2d6a9",
+  "how": "ottersec commit, default settings",
+  "control": false
+ },
+ {
+  "program": "Vrf1RNUjXmQGjmQrQLvJHs9SNkvDJEsRVFPkfSQUwGz",
+  "repo": "https://github.com/magicblock-labs/solana-vrf",
+  "commit": "4c6c97d150ba0740b7a8f12382654983081db0e0",
+  "args": [],
+  "runner": "ubuntu-latest",
+  "expect": "3a88342176ae6a5a33df77a3ed1cee0f83a519440892e92865706ba1e25370d3",
+  "how": "ottersec commit, default settings",
+  "control": false
+ },
+ {
+  "program": "21tHgbgC8Q6hoXyHx5pp3Gtp97B3HxrS2yH832ryeNSw",
+  "repo": "https://github.com/libertai/libertai-inference",
+  "commit": "460e97e3e7425c387e1692634a8bfb690399064f",
+  "args": [
+   "--mount-path",
+   "contracts/solana",
+   "--library-name",
+   "libertai_payment_processor"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "e702443b3e6ca7aad2f9c648740b36bb4e86711de9e84b73171370d755af117f",
+  "how": "ottersec recipe",
+  "control": true
+ },
+ {
+  "program": "3jSkUuYBoJzQPMEzTvkDFXCZUBksPamrVhrnHR9igu2X",
+  "repo": "https://github.com/regolith-labs/entropy",
+  "commit": "f26ae03cccab6188effb0a170b8123cf4bb54c94",
+  "args": [
+   "--library-name",
+   "entropy_program"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "b64ffdfef7bb05839fbe0d24196697cc20de6bc72081031bc0523699181b18b1",
+  "how": "ottersec recipe",
+  "control": true
+ },
+ {
+  "program": "AMMyu265tkBpRW21iGQxKGLaves3gKm2JcMUqfXNSpqD",
+  "repo": "https://github.com/metaDAOproject/futarchy",
+  "commit": "42813b42d1330e009be5aa4b7118f8490460f0bb",
+  "args": [
+   "--library-name",
+   "amm",
+   "--base-image",
+   "ellipsislabs/solana:1.17.16",
+   "--",
+   "--features",
+   "default"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "6135c1b78d1aa32fb55ef0af8fbcaa4788f5e524604aa0dc3fce154e381fa57c",
+  "how": "ottersec recipe",
+  "control": true
+ },
+ {
+  "program": "BGUMAp9Gq7iTEuizy4pqaxsTyUCBK68MDfK752saRPUY",
+  "repo": "https://github.com/metaplex-foundation/mpl-bubblegum",
+  "commit": "79e1a1954bddb7fe5dcd52a5570a66a9f7d465e4",
+  "args": [
+   "--mount-path",
+   "programs/bubblegum",
+   "--library-name",
+   "bubblegum",
+   "--base-image",
+   "solanafoundation/solana-verifiable-build@sha256:ec2e20e1f80607150a71e4c72adfe64be24347ed0b4fb741c32b34eaf7549a25",
+   "--",
+   "--package",
+   "bubblegum"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "827479134c008044d7b488f11cd1e2567e967ab8cd602fcdb28e5ec1410af947",
+  "how": "ottersec recipe",
+  "control": true
+ },
+ {
+  "program": "CMAGAKJ67e9hRZgfC5SFTbZH8MgEmtqazKXjmkaJjWTJ",
+  "repo": "https://github.com/metaplex-foundation/mpl-core-candy-machine",
+  "commit": "ea3620b7436004f62e1e7bc3d69147f4feef2ae0",
+  "args": [
+   "--mount-path",
+   ".",
+   "--library-name",
+   "mpl_core_candy_guard",
+   "--base-image",
+   "solanafoundation/solana-verifiable-build@sha256:d72ae60cb3890bcf444ab9f626e6db380235a2c0ef1e8aee1bc530fe3633c4be",
+   "--",
+   "--package",
+   "mpl-core-candy-guard"
+  ],
+  "runner": "ubuntu-latest",
+  "expect": "a5fdf0c8f7b54d3e43871eba4651ecca55ba75d64ad48d7b65ac2061ef82f794",
+  "how": "ottersec recipe",
+  "control": true
+ }
+]
