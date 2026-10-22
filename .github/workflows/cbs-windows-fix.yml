@@ -1,0 +1,74 @@
+# Before/after for a cargo-build-sbf fix on Windows: get_base_rust_version looks
+# for `rust/bin/rustc`, not `rustc.exe`, so any non-default --tools-version
+# panics ("called `Option::unwrap()` on a `None` value", toolchain.rs).
+# Builds cargo-build-sbf from anza-xyz/cargo-build-sbf at the same commit twice,
+# unchanged and with patches/cbs-windows-rustc-exe.patch, then builds one program
+# with a non-default --tools-version.
+name: cbs-windows-fix
+run-name: "cargo-build-sbf on Windows @ ${{ inputs.ref }}, --tools-version ${{ inputs.tools }}"
+
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: "anza-xyz/cargo-build-sbf commit"
+        required: true
+      tools:
+        description: "a platform-tools version that is NOT the default"
+        required: true
+        default: v1.58
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: ${{ matrix.variant }} · ${{ matrix.runner }}
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        runner: [windows-2022, windows-2025]
+        variant: [unchanged, patched]
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: tools
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build cargo-build-sbf @ ${{ inputs.ref }} (${{ matrix.variant }})
+        run: |
+          git clone -q https://github.com/anza-xyz/cargo-build-sbf cbs
+          git -C cbs checkout -q "${{ inputs.ref }}"
+          if [ "${{ matrix.variant }}" = patched ]; then
+            git -C cbs apply "$GITHUB_WORKSPACE/tools/patches/cbs-windows-rustc-exe.patch"
+          fi
+          git -C cbs --no-pager diff --stat
+          cargo install --path cbs/cargo-build-sbf --locked --root "$RUNNER_TEMP/cbs"
+          echo "$RUNNER_TEMP/cbs/bin" >> "$GITHUB_PATH"
+      - name: Build Livestock with --tools-version ${{ inputs.tools }}
+        id: build
+        continue-on-error: true
+        run: |
+          cargo-build-sbf --version
+          git clone -q https://github.com/0xmigi/livestock src
+          git -C src checkout -q be8caf16fcad4429fbb5fd39d150291a3e1998c7
+          M=$(cd src && python "$GITHUB_WORKSPACE/tools/scripts/find-manifest.py" livestock)
+          cd "$(dirname "src/$M")"
+          cargo-build-sbf --tools-version ${{ inputs.tools }} -- --locked 2>&1 | tee "$GITHUB_WORKSPACE/build.log"
+      - name: Result
+        run: |
+          so=$(find src -path '*/target/deploy/livestock.so' 2>/dev/null | head -1)
+          if [ -n "$so" ]; then r="built $(python tools/scripts/exe-hash.py "$so")"
+          elif grep -q "panicked" build.log; then r="PANIC: $(grep -m1 -A1 panicked build.log | tr '\n' ' ')"
+          else r="failed: $(tail -3 build.log | tr '\n' ' ')"; fi
+          echo "${{ matrix.variant }} · ${{ matrix.runner }}: $r" | tee result.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: result-${{ matrix.variant }}-${{ matrix.runner }}
+          path: result.txt
