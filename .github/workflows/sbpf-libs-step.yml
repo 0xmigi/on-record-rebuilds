@@ -76,7 +76,7 @@ jobs:
 
   build:
     needs: patch
-    name: livestock · ${{ matrix.runner }}
+    name: livestock · ${{ matrix.label || matrix.runner }}
     runs-on: ${{ matrix.runner }}
     timeout-minutes: 60
     strategy:
@@ -92,6 +92,9 @@ jobs:
           - { runner: macos-26,         tar: osx-aarch64,    solana: aarch64-apple-darwin }
           - { runner: windows-2022,     tar: windows-x86_64, solana: x86_64-pc-windows-msvc }
           - { runner: windows-2025,     tar: windows-x86_64, solana: x86_64-pc-windows-msvc }
+          # control: Linux with the same default-folder workaround the Windows
+          # builds need, to tell a workaround effect from a Windows effect
+          - { runner: ubuntu-24.04,     tar: linux-x86_64,   solana: x86_64-unknown-linux-gnu, trick: true, label: ubuntu-24.04-trick }
     defaults:
       run:
         shell: bash
@@ -127,7 +130,7 @@ jobs:
           # --tools-version there — get_base_rust_version looks for `rustc`, not
           # `rustc.exe`. Put the same files under its default version's folder
           # and build without --tools-version; compiler and libraries are unchanged.
-          V="${{ inputs.tools }}"; [ "$RUNNER_OS" = Windows ] && V=v1.54
+          V="${{ inputs.tools }}"; [ "$RUNNER_OS" = Windows ] || [ "${{ matrix.trick }}" = true ] && V=v1.54
           D="$HOME/.cache/solana/$V/platform-tools"
           mkdir -p "$D"
           tar -xjf "platform-tools-${{ matrix.tar }}.tar.bz2" -C "$D"
@@ -139,7 +142,7 @@ jobs:
           git -C src checkout -q be8caf16fcad4429fbb5fd39d150291a3e1998c7
           M=$(cd src && "$PY" "$GITHUB_WORKSPACE/tools/scripts/find-manifest.py" livestock)
           cd "$(dirname "src/$M")"
-          if [ "$RUNNER_OS" = Windows ]; then
+          if [ "$RUNNER_OS" = Windows ] || [ "${{ matrix.trick }}" = true ]; then
             cargo-build-sbf -- --locked
           else
             cargo-build-sbf --tools-version ${{ inputs.tools }} -- --locked
@@ -148,8 +151,11 @@ jobs:
         run: |
           PY=$(command -v python3 || command -v python)
           so=$(find src -path '*/target/deploy/livestock.so' | head -1)
-          echo "${{ matrix.runner }} (${{ matrix.tar }}): $("$PY" tools/scripts/exe-hash.py "$so")" | tee hash.txt
+          echo "${{ matrix.label || matrix.runner }} (${{ matrix.tar }}): $("$PY" tools/scripts/exe-hash.py "$so")" | tee hash.txt
+          cp "$so" livestock.so
       - uses: actions/upload-artifact@v4
         with:
-          name: hash-${{ matrix.runner }}
-          path: hash.txt
+          name: hash-${{ matrix.label || matrix.runner }}
+          path: |
+            hash.txt
+            livestock.so
