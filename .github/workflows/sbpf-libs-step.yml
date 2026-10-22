@@ -123,7 +123,12 @@ jobs:
           name: tarball-${{ matrix.tar }}
       - name: Put platform-tools ${{ inputs.tools }} in place (${{ matrix.tar }})
         run: |
-          D="$HOME/.cache/solana/${{ inputs.tools }}/platform-tools"
+          # Windows: cargo-build-sbf (<= 4.4.0) panics on any non-default
+          # --tools-version there — get_base_rust_version looks for `rustc`, not
+          # `rustc.exe`. Put the same files under its default version's folder
+          # and build without --tools-version; compiler and libraries are unchanged.
+          V="${{ inputs.tools }}"; [ "$RUNNER_OS" = Windows ] && V=v1.54
+          D="$HOME/.cache/solana/$V/platform-tools"
           mkdir -p "$D"
           tar -xjf "platform-tools-${{ matrix.tar }}.tar.bz2" -C "$D"
           ls "$D/rust/lib/rustlib"
@@ -134,7 +139,11 @@ jobs:
           git -C src checkout -q be8caf16fcad4429fbb5fd39d150291a3e1998c7
           M=$(cd src && "$PY" "$GITHUB_WORKSPACE/tools/scripts/find-manifest.py" livestock)
           cd "$(dirname "src/$M")"
-          cargo-build-sbf --tools-version ${{ inputs.tools }} -- --locked
+          if [ "$RUNNER_OS" = Windows ]; then
+            cargo-build-sbf -- --locked
+          else
+            cargo-build-sbf --tools-version ${{ inputs.tools }} -- --locked
+          fi
       - name: Hash
         run: |
           PY=$(command -v python3 || command -v python)
