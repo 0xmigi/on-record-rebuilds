@@ -1,0 +1,126 @@
+# Test the proposed platform-tools release step ("ship one set of sbpf
+# libraries in every tarball") against real release tarballs, end to end:
+#   1. patch: download the four tarballs of a release, run the step verbatim,
+#      check every tarball now carries byte-identical sbpf*-solana-solana dirs
+#   2. build: build one program natively on macOS with the patched osx tarball
+#      and on Linux with the stock linux tarball; the hashes should match
+name: sbpf-libs-step
+run-name: "One set of sbpf libs: platform-tools ${{ inputs.tools }}"
+
+on:
+  workflow_dispatch:
+    inputs:
+      tools:
+        description: "platform-tools release tag"
+        required: true
+        default: v1.58
+
+permissions:
+  contents: read
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download the release tarballs
+        run: |
+          for t in linux-x86_64 linux-aarch64 osx-aarch64 windows-x86_64; do
+            curl -sSfL -o "platform-tools-$t.tar.bz2" \
+              "https://github.com/anza-xyz/platform-tools/releases/download/${{ inputs.tools }}/platform-tools-$t.tar.bz2"
+          done
+          ls -la *.tar.bz2
+
+      # --- the proposed step, verbatim -----------------------------------------
+      - name: Ship one set of sbpf libraries in every tarball
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir ref
+          tar -xjf platform-tools-linux-x86_64.tar.bz2 -C ref --wildcards './rust/lib/rustlib/sbpf*-solana-solana'
+          for t in platform-tools-linux-aarch64 platform-tools-osx-aarch64 platform-tools-windows-x86_64; do
+            mkdir "$t"
+            tar -xjf "$t.tar.bz2" -C "$t"
+            for d in ref/rust/lib/rustlib/sbpf*-solana-solana; do
+              rm -rf "$t/rust/lib/rustlib/$(basename "$d")"
+              cp -R "$d" "$t/rust/lib/rustlib/"
+            done
+            tar -C "$t" -jcf "$t.tar.bz2" .
+            rm -rf "$t"
+          done
+          rm -rf ref
+      # --------------------------------------------------------------------------
+
+      - name: Check every tarball now has identical sbpf libraries
+        run: |
+          for t in linux-x86_64 linux-aarch64 osx-aarch64 windows-x86_64; do
+            mkdir "chk-$t"
+            tar -xjf "platform-tools-$t.tar.bz2" -C "chk-$t" --wildcards './rust/lib/rustlib/sbpf*-solana-solana'
+            sum=$(cd "chk-$t/rust/lib/rustlib" && find . -type f | sort | xargs sha256sum | sha256sum | cut -c1-16)
+            echo "$t: sbpf libs digest $sum ($(cd "chk-$t/rust/lib/rustlib" && find . -name '*.rlib' | wc -l) rlibs)"
+            echo "$sum" >> digests.txt
+          done
+          [ "$(sort -u digests.txt | wc -l)" = 1 ] && echo "ALL IDENTICAL" || { echo "DIFFER"; exit 1; }
+          # the rest of each tarball must be untouched: its own host compiler
+          tar -tjf platform-tools-osx-aarch64.tar.bz2 | grep -c 'rustlib/aarch64-apple-darwin' | xargs echo "osx tarball still has its macOS host libs:"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: patched-osx-aarch64
+          path: platform-tools-osx-aarch64.tar.bz2
+          compression-level: 0
+
+  build:
+    needs: patch
+    name: livestock · ${{ matrix.runner }}
+    runs-on: ${{ matrix.runner }}
+    strategy:
+      fail-fast: false
+      matrix:
+        runner: [ubuntu-latest, macos-15]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: tools
+      - name: Install Solana v4.1.0
+        run: |
+          case "$RUNNER_OS-$RUNNER_ARCH" in
+            macOS-ARM64) T=aarch64-apple-darwin ;;
+            Linux-X64)   T=x86_64-unknown-linux-gnu ;;
+          esac
+          curl -sSfL "https://github.com/anza-xyz/agave/releases/download/v4.1.0/solana-release-$T.tar.bz2" | tar -xj -C "$RUNNER_TEMP"
+          echo "$RUNNER_TEMP/solana-release/bin" >> "$GITHUB_PATH"
+      - name: Put platform-tools ${{ inputs.tools }} in place (patched osx on the Mac, stock on Linux)
+        run: |
+          D="$HOME/.cache/solana/${{ inputs.tools }}/platform-tools"
+          mkdir -p "$D"
+          if [ "$RUNNER_OS" = macOS ]; then
+            echo "using the PATCHED osx tarball"
+          else
+            curl -sSfL -o platform-tools-linux-x86_64.tar.bz2 \
+              "https://github.com/anza-xyz/platform-tools/releases/download/${{ inputs.tools }}/platform-tools-linux-x86_64.tar.bz2"
+          fi
+      - uses: actions/download-artifact@v4
+        if: runner.os == 'macOS'
+        with:
+          name: patched-osx-aarch64
+      - name: Unpack
+        run: |
+          D="$HOME/.cache/solana/${{ inputs.tools }}/platform-tools"
+          f=$(ls platform-tools-*.tar.bz2 | head -1)
+          tar -xjf "$f" -C "$D"
+          ls "$D/rust/lib/rustlib"
+      - name: Build Livestock
+        run: |
+          git clone -q https://github.com/0xmigi/livestock src
+          git -C src checkout -q be8caf16fcad4429fbb5fd39d150291a3e1998c7
+          M=$(cd src && python3 "$GITHUB_WORKSPACE/tools/scripts/find-manifest.py" livestock)
+          cd "$(dirname "src/$M")"
+          cargo-build-sbf --tools-version ${{ inputs.tools }} -- --locked
+      - name: Hash
+        run: |
+          so=$(find src -path '*/target/deploy/livestock.so' | head -1)
+          echo "${{ matrix.runner }}: $(python3 tools/scripts/exe-hash.py "$so")" | tee hash.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: hash-${{ matrix.runner }}
+          path: hash.txt
