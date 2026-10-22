@@ -63,63 +63,70 @@ jobs:
           # the rest of each tarball must be untouched: its own host compiler
           tar -tjf platform-tools-osx-aarch64.tar.bz2 | grep -c 'rustlib/aarch64-apple-darwin' | xargs echo "osx tarball still has its macOS host libs:"
 
+      # every tarball after the step: the three patched ones and the Linux x86
+      # reference, which the step leaves alone
       - uses: actions/upload-artifact@v4
-        with:
-          name: patched-osx-aarch64
-          path: platform-tools-osx-aarch64.tar.bz2
-          compression-level: 0
+        with: { name: tarball-linux-x86_64, path: platform-tools-linux-x86_64.tar.bz2, compression-level: 0 }
+      - uses: actions/upload-artifact@v4
+        with: { name: tarball-linux-aarch64, path: platform-tools-linux-aarch64.tar.bz2, compression-level: 0 }
+      - uses: actions/upload-artifact@v4
+        with: { name: tarball-osx-aarch64, path: platform-tools-osx-aarch64.tar.bz2, compression-level: 0 }
+      - uses: actions/upload-artifact@v4
+        with: { name: tarball-windows-x86_64, path: platform-tools-windows-x86_64.tar.bz2, compression-level: 0 }
 
   build:
     needs: patch
     name: livestock · ${{ matrix.runner }}
     runs-on: ${{ matrix.runner }}
+    timeout-minutes: 60
     strategy:
       fail-fast: false
       matrix:
-        runner: [ubuntu-latest, macos-15]
+        include:
+          - { runner: ubuntu-22.04,     tar: linux-x86_64,   solana: x86_64-unknown-linux-gnu }
+          - { runner: ubuntu-24.04,     tar: linux-x86_64,   solana: x86_64-unknown-linux-gnu }
+          - { runner: ubuntu-22.04-arm, tar: linux-aarch64,  solana: aarch64-unknown-linux-gnu }
+          - { runner: ubuntu-24.04-arm, tar: linux-aarch64,  solana: aarch64-unknown-linux-gnu }
+          - { runner: macos-14,         tar: osx-aarch64,    solana: aarch64-apple-darwin }
+          - { runner: macos-15,         tar: osx-aarch64,    solana: aarch64-apple-darwin }
+          - { runner: macos-26,         tar: osx-aarch64,    solana: aarch64-apple-darwin }
+          - { runner: windows-2022,     tar: windows-x86_64, solana: x86_64-pc-windows-msvc }
+          - { runner: windows-2025,     tar: windows-x86_64, solana: x86_64-pc-windows-msvc }
+    defaults:
+      run:
+        shell: bash
     steps:
       - uses: actions/checkout@v4
         with:
           path: tools
-      - name: Install Solana v4.1.0
+      - name: Install Solana v4.1.0 (${{ matrix.solana }})
         run: |
-          case "$RUNNER_OS-$RUNNER_ARCH" in
-            macOS-ARM64) T=aarch64-apple-darwin ;;
-            Linux-X64)   T=x86_64-unknown-linux-gnu ;;
-          esac
-          curl -sSfL "https://github.com/anza-xyz/agave/releases/download/v4.1.0/solana-release-$T.tar.bz2" | tar -xj -C "$RUNNER_TEMP"
+          curl -sSfL --retry 3 -o solana.tar.bz2 \
+            "https://github.com/anza-xyz/agave/releases/download/v4.1.0/solana-release-${{ matrix.solana }}.tar.bz2"
+          tar -xjf solana.tar.bz2 -C "$RUNNER_TEMP" && rm solana.tar.bz2
           echo "$RUNNER_TEMP/solana-release/bin" >> "$GITHUB_PATH"
-      - name: Put platform-tools ${{ inputs.tools }} in place (patched osx on the Mac, stock on Linux)
+      - uses: actions/download-artifact@v4
+        with:
+          name: tarball-${{ matrix.tar }}
+      - name: Put platform-tools ${{ inputs.tools }} in place (${{ matrix.tar }})
         run: |
           D="$HOME/.cache/solana/${{ inputs.tools }}/platform-tools"
           mkdir -p "$D"
-          if [ "$RUNNER_OS" = macOS ]; then
-            echo "using the PATCHED osx tarball"
-          else
-            curl -sSfL -o platform-tools-linux-x86_64.tar.bz2 \
-              "https://github.com/anza-xyz/platform-tools/releases/download/${{ inputs.tools }}/platform-tools-linux-x86_64.tar.bz2"
-          fi
-      - uses: actions/download-artifact@v4
-        if: runner.os == 'macOS'
-        with:
-          name: patched-osx-aarch64
-      - name: Unpack
-        run: |
-          D="$HOME/.cache/solana/${{ inputs.tools }}/platform-tools"
-          f=$(ls platform-tools-*.tar.bz2 | head -1)
-          tar -xjf "$f" -C "$D"
+          tar -xjf "platform-tools-${{ matrix.tar }}.tar.bz2" -C "$D"
           ls "$D/rust/lib/rustlib"
       - name: Build Livestock
         run: |
+          PY=$(command -v python3 || command -v python)
           git clone -q https://github.com/0xmigi/livestock src
           git -C src checkout -q be8caf16fcad4429fbb5fd39d150291a3e1998c7
-          M=$(cd src && python3 "$GITHUB_WORKSPACE/tools/scripts/find-manifest.py" livestock)
+          M=$(cd src && "$PY" "$GITHUB_WORKSPACE/tools/scripts/find-manifest.py" livestock)
           cd "$(dirname "src/$M")"
           cargo-build-sbf --tools-version ${{ inputs.tools }} -- --locked
       - name: Hash
         run: |
+          PY=$(command -v python3 || command -v python)
           so=$(find src -path '*/target/deploy/livestock.so' | head -1)
-          echo "${{ matrix.runner }}: $(python3 tools/scripts/exe-hash.py "$so")" | tee hash.txt
+          echo "${{ matrix.runner }} (${{ matrix.tar }}): $("$PY" tools/scripts/exe-hash.py "$so")" | tee hash.txt
       - uses: actions/upload-artifact@v4
         with:
           name: hash-${{ matrix.runner }}
