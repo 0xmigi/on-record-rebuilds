@@ -46,17 +46,28 @@ jobs:
 
       # --- the proposed step, verbatim -----------------------------------------
       - name: Ship one set of sbpf libraries in every tarball
+        # Each runner compiles the sbpf*-solana-solana Rust libraries and the newlib
+        # C libraries itself. The machine code comes out the same, but the files
+        # don't (crate hashes, build paths, codegen-unit grouping), so a program
+        # built with the macOS tarball never byte-matches the same program built
+        # with the Linux one. Use the Linux x86 copies everywhere; each tarball
+        # keeps its own host compiler. Windows ships no newlib, so it only gets
+        # the Rust libraries.
         shell: bash
         run: |
           set -euo pipefail
           mkdir ref
-          tar -xjf platform-tools-linux-x86_64.tar.bz2 -C ref --wildcards './rust/lib/rustlib/sbpf*-solana-solana'
+          tar -xjf platform-tools-linux-x86_64.tar.bz2 -C ref --wildcards \
+            './rust/lib/rustlib/sbpf*-solana-solana' './llvm/lib/lib[cm].a' './llvm/lib/sbpf*/lib[cm].a'
           for t in platform-tools-linux-aarch64 platform-tools-osx-aarch64 platform-tools-windows-x86_64; do
             mkdir "$t"
             tar -xjf "$t.tar.bz2" -C "$t"
             for d in ref/rust/lib/rustlib/sbpf*-solana-solana; do
               rm -rf "$t/rust/lib/rustlib/$(basename "$d")"
               cp -R "$d" "$t/rust/lib/rustlib/"
+            done
+            (cd ref/llvm/lib && find . -name 'lib[cm].a') | while read -r f; do
+              if [ -f "$t/llvm/lib/$f" ]; then cp "ref/llvm/lib/$f" "$t/llvm/lib/$f"; fi
             done
             tar -C "$t" -jcf "$t.tar.bz2" .
             rm -rf "$t"
@@ -76,6 +87,14 @@ jobs:
           [ "$(sort -u digests.txt | wc -l)" = 1 ] && echo "ALL IDENTICAL" || { echo "DIFFER"; exit 1; }
           # the rest of each tarball must be untouched: its own host compiler
           tar -tjf platform-tools-osx-aarch64.tar.bz2 | grep -c 'rustlib/aarch64-apple-darwin' | xargs echo "osx tarball still has its macOS host libs:"
+          for t in linux-x86_64 linux-aarch64 osx-aarch64; do
+            mkdir "cc-$t"
+            tar -xjf "platform-tools-$t.tar.bz2" -C "cc-$t" --wildcards './llvm/lib/lib[cm].a' './llvm/lib/sbpf*/lib[cm].a'
+            (cd "cc-$t/llvm/lib" && find . -name '*.a' | sort | xargs sha256sum) > "cc-$t.txt"
+            echo "after the step, $t: $(wc -l < "cc-$t.txt") C library files, digest $(sha256sum "cc-$t.txt" | cut -c1-16)"
+          done
+          diff -q cc-linux-x86_64.txt cc-osx-aarch64.txt && diff -q cc-linux-x86_64.txt cc-linux-aarch64.txt && echo "C LIBRARIES NOW IDENTICAL"
+          tar -tjf platform-tools-windows-x86_64.tar.bz2 | grep -c 'llvm/lib/.*lib[cm]\.a$' | xargs echo "windows tarball C libraries (should stay 0):"
 
       # every tarball after the step: the three patched ones and the Linux x86
       # reference, which the step leaves alone
