@@ -101,10 +101,10 @@ jobs:
           - { runner: ubuntu-24.04-arm, tar: linux-aarch64, cli: aarch64-unknown-linux-gnu }
           - { runner: macos-15,         tar: osx-aarch64,   cli: aarch64-apple-darwin }
         program:
-          - { name: livestock,  macros: none, repo: 0xmigi/livestock,                    commit: be8caf16fcad4429fbb5fd39d150291a3e1998c7, manifest: "",                          so: livestock }
-          - { name: p-token,    macros: none, repo: solana-program/token,                 commit: 57bd873,                                  manifest: pinocchio/program/Cargo.toml, so: pinocchio_token_program }
-          - { name: p-memo,     macros: yes,  repo: solana-program/memo,                  commit: 60728e1,                                  manifest: program/Cargo.toml,           so: pinocchio_memo_program }
-          - { name: loofta-vrf, macros: yes,  repo: loofta/loofta-vrf,                    commit: ccf49f0,                                  manifest: "",                          so: loofta_vrf }
+          - { name: livestock,  macros: none, repo: 0xmigi/livestock,                    commit: "be8caf16fcad4429fbb5fd39d150291a3e1998c7", manifest: "",                          so: livestock }
+          - { name: p-token,    macros: none, repo: solana-program/token,                 commit: "57bd873",                                  manifest: pinocchio/program/Cargo.toml, so: pinocchio_token_program }
+          - { name: p-memo,     macros: yes,  repo: solana-program/memo,                  commit: "60728e1",                                  manifest: program/Cargo.toml,           so: pinocchio_memo_program }
+          - { name: loofta-vrf, macros: yes,  repo: loofta/loofta-vrf,                    commit: "ccf49f0",                                  manifest: "",                          so: loofta_vrf }
     defaults:
       run:
         shell: bash
