@@ -1,0 +1,153 @@
+# More programs through the proposed platform-tools step: two with no
+# proc-macros or build scripts (expected to match on every machine once the
+# sbpf libraries are shared) and two with them (expected to still differ: cargo
+# hashes the host into proc-macro / build-script metadata, rust-lang/cargo#8140).
+# Also checks whether the newlib C libraries already match across downloads.
+name: sbpf-libs-programs
+run-name: "One set of sbpf libs, four programs: platform-tools ${{ inputs.tools }}"
+
+on:
+  workflow_dispatch:
+    inputs:
+      tools:
+        description: "platform-tools release tag"
+        required: true
+        default: v1.58
+
+permissions:
+  contents: read
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download the release tarballs
+        run: |
+          for t in linux-x86_64 linux-aarch64 osx-aarch64 windows-x86_64; do
+            curl -sSfL -o "platform-tools-$t.tar.bz2" \
+              "https://github.com/anza-xyz/platform-tools/releases/download/${{ inputs.tools }}/platform-tools-$t.tar.bz2"
+          done
+          ls -la *.tar.bz2
+
+      - name: Do the C libraries (newlib libc.a / libm.a) already match across downloads?
+        # build.sh compiles newlib on each machine too; Windows ships none
+        run: |
+          for t in linux-x86_64 linux-aarch64 osx-aarch64; do
+            mkdir "c-$t"
+            tar -xjf "platform-tools-$t.tar.bz2" -C "c-$t" --wildcards './llvm/lib/libc.a' './llvm/lib/libm.a' './llvm/lib/sbpf*/lib*.a'
+            (cd "c-$t/llvm/lib" && find . -name '*.a' | sort | xargs sha256sum) > "c-$t.txt"
+            echo "$t: $(wc -l < "c-$t.txt") C library files, digest $(sha256sum "c-$t.txt" | cut -c1-16)"
+          done
+          if diff -q c-linux-x86_64.txt c-osx-aarch64.txt >/dev/null && diff -q c-linux-x86_64.txt c-linux-aarch64.txt >/dev/null; then
+            echo "C LIBRARIES IDENTICAL"
+          else
+            echo "C LIBRARIES DIFFER:"; diff c-linux-x86_64.txt c-osx-aarch64.txt | head -20 || true
+          fi
+
+      # --- the proposed step, verbatim -----------------------------------------
+      - name: Ship one set of sbpf libraries in every tarball
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir ref
+          tar -xjf platform-tools-linux-x86_64.tar.bz2 -C ref --wildcards './rust/lib/rustlib/sbpf*-solana-solana'
+          for t in platform-tools-linux-aarch64 platform-tools-osx-aarch64 platform-tools-windows-x86_64; do
+            mkdir "$t"
+            tar -xjf "$t.tar.bz2" -C "$t"
+            for d in ref/rust/lib/rustlib/sbpf*-solana-solana; do
+              rm -rf "$t/rust/lib/rustlib/$(basename "$d")"
+              cp -R "$d" "$t/rust/lib/rustlib/"
+            done
+            tar -C "$t" -jcf "$t.tar.bz2" .
+            rm -rf "$t"
+          done
+          rm -rf ref
+      # --------------------------------------------------------------------------
+
+      - name: Check every tarball now has identical sbpf libraries
+        run: |
+          for t in linux-x86_64 linux-aarch64 osx-aarch64 windows-x86_64; do
+            mkdir "chk-$t"
+            tar -xjf "platform-tools-$t.tar.bz2" -C "chk-$t" --wildcards './rust/lib/rustlib/sbpf*-solana-solana'
+            sum=$(cd "chk-$t/rust/lib/rustlib" && find . -type f | sort | xargs sha256sum | sha256sum | cut -c1-16)
+            echo "$t: sbpf libs digest $sum ($(cd "chk-$t/rust/lib/rustlib" && find . -name '*.rlib' | wc -l) rlibs)"
+            echo "$sum" >> digests.txt
+          done
+          [ "$(sort -u digests.txt | wc -l)" = 1 ] && echo "ALL IDENTICAL" || { echo "DIFFER"; exit 1; }
+          # the rest of each tarball must be untouched: its own host compiler
+          tar -tjf platform-tools-osx-aarch64.tar.bz2 | grep -c 'rustlib/aarch64-apple-darwin' | xargs echo "osx tarball still has its macOS host libs:"
+
+      # every tarball after the step: the three patched ones and the Linux x86
+      # reference, which the step leaves alone
+      - uses: actions/upload-artifact@v4
+        with: { name: tarball-linux-x86_64, path: platform-tools-linux-x86_64.tar.bz2, compression-level: 0 }
+      - uses: actions/upload-artifact@v4
+        with: { name: tarball-linux-aarch64, path: platform-tools-linux-aarch64.tar.bz2, compression-level: 0 }
+      - uses: actions/upload-artifact@v4
+        with: { name: tarball-osx-aarch64, path: platform-tools-osx-aarch64.tar.bz2, compression-level: 0 }
+      - uses: actions/upload-artifact@v4
+        with: { name: tarball-windows-x86_64, path: platform-tools-windows-x86_64.tar.bz2, compression-level: 0 }
+
+  build:
+    needs: patch
+    name: ${{ matrix.program.name }} · ${{ matrix.machine.runner }}
+    runs-on: ${{ matrix.machine.runner }}
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        machine:
+          - { runner: ubuntu-24.04,     tar: linux-x86_64,  cli: x86_64-unknown-linux-gnu }
+          - { runner: ubuntu-24.04-arm, tar: linux-aarch64, cli: aarch64-unknown-linux-gnu }
+          - { runner: macos-15,         tar: osx-aarch64,   cli: aarch64-apple-darwin }
+        program:
+          - { name: livestock,  macros: none, repo: 0xmigi/livestock,                    commit: be8caf16fcad4429fbb5fd39d150291a3e1998c7, manifest: "",                          so: livestock }
+          - { name: p-token,    macros: none, repo: solana-program/token,                 commit: 57bd873,                                  manifest: pinocchio/program/Cargo.toml, so: pinocchio_token_program }
+          - { name: p-memo,     macros: yes,  repo: solana-program/memo,                  commit: 60728e1,                                  manifest: program/Cargo.toml,           so: pinocchio_memo_program }
+          - { name: loofta-vrf, macros: yes,  repo: loofta/loofta-vrf,                    commit: ccf49f0,                                  manifest: "",                          so: loofta_vrf }
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: tools
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install cargo-build-sbf 4.1.0
+        run: |
+          if [ "${{ matrix.machine.cli }}" = aarch64-unknown-linux-gnu ]; then
+            sudo apt-get update -qq && sudo apt-get install -y -qq pkg-config libssl-dev libudev-dev
+            cargo install cargo-build-sbf --version 4.1.0 --locked
+          else
+            curl -sSfL --retry 3 -o solana.tar.bz2 \
+              "https://github.com/anza-xyz/agave/releases/download/v4.1.0/solana-release-${{ matrix.machine.cli }}.tar.bz2"
+            tar -xjf solana.tar.bz2 -C "$RUNNER_TEMP" && rm solana.tar.bz2
+            echo "$RUNNER_TEMP/solana-release/bin" >> "$GITHUB_PATH"
+          fi
+      - uses: actions/download-artifact@v4
+        with:
+          name: tarball-${{ matrix.machine.tar }}
+      - name: Put platform-tools ${{ inputs.tools }} in place (${{ matrix.machine.tar }})
+        run: |
+          D="$HOME/.cache/solana/${{ inputs.tools }}/platform-tools"
+          mkdir -p "$D" && tar -xjf "platform-tools-${{ matrix.machine.tar }}.tar.bz2" -C "$D"
+      - name: Build ${{ matrix.program.name }}
+        run: |
+          git clone -q "https://github.com/${{ matrix.program.repo }}" src
+          git -C src checkout -q "${{ matrix.program.commit }}"
+          M="${{ matrix.program.manifest }}"
+          [ -z "$M" ] && M=$(cd src && python "$GITHUB_WORKSPACE/tools/scripts/find-manifest.py" "${{ matrix.program.so }}")
+          cd "$(dirname "src/$M")"
+          cargo-build-sbf --tools-version ${{ inputs.tools }} -- --locked -v 2>&1 | tee "$GITHUB_WORKSPACE/build.log"
+      - name: Hash
+        run: |
+          so=$(find src -path "*/target/deploy/${{ matrix.program.so }}.so" | head -1)
+          pm=$(grep -c -- "--crate-type proc-macro" build.log || true)
+          bs=$(grep -c -- "--crate-name build_script_build" build.log || true)
+          echo "${{ matrix.program.name }} · ${{ matrix.machine.runner }} (${{ matrix.machine.tar }}): $(python tools/scripts/exe-hash.py "$so") | proc-macro crates compiled: $pm, build scripts: $bs" | tee hash.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: hash-${{ matrix.program.name }}-${{ matrix.machine.runner }}
+          path: hash.txt
