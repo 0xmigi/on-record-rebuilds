@@ -1,0 +1,55 @@
+# Before/after for the regression test added to anza-xyz/cargo-build-sbf#102:
+# the test alone on master should FAIL on Windows (it catches the bug), and
+# the test plus the rustc.exe fix should pass. Runs only that test, with
+# cargo-build-sbf's own test harness, on the runner their CI uses.
+name: cbs-regression-test
+run-name: "cargo-build-sbf regression test @ ${{ inputs.ref }}"
+
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: "anza-xyz/cargo-build-sbf commit to apply the patches on"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: ${{ matrix.patch }} · ${{ matrix.runner }}
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        runner: [windows-latest, ubuntu-latest]
+        patch: [cbs-test-only, cbs-fix-and-test]
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: tools
+      - name: anza-xyz/cargo-build-sbf @ ${{ inputs.ref }} + ${{ matrix.patch }}
+        run: |
+          git clone -q https://github.com/anza-xyz/cargo-build-sbf cbs
+          git -C cbs checkout -q "${{ inputs.ref }}"
+          git -C cbs apply "$GITHUB_WORKSPACE/tools/patches/${{ matrix.patch }}.patch"
+          git -C cbs --no-pager diff --stat
+      - name: cargo test --test crates test_base_rust_version
+        id: t
+        continue-on-error: true
+        run: |
+          cd cbs/cargo-build-sbf
+          cargo test --test crates test_base_rust_version 2>&1 | tee "$GITHUB_WORKSPACE/test.log"
+      - name: Result
+        run: |
+          if grep -q "test result: ok. 1 passed" test.log; then r="PASSED"
+          else r="FAILED: $(grep -E "left|right|panicked" test.log | head -3 | tr '\n' ' ')"; fi
+          echo "${{ matrix.patch }} · ${{ matrix.runner }}: $r" | tee result.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: result-${{ matrix.patch }}-${{ matrix.runner }}
+          path: result.txt

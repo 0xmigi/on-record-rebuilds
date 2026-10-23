@@ -1,0 +1,45 @@
+From 6fd9d3c545888406905f7dc24ee7f01f4817a821 Mon Sep 17 00:00:00 2001
+From: Ash Compy <forretbear@gmail.com>
+Date: Fri, 23 Oct 2026 11:22:47 -0400
+Subject: [PATCH] test: get_base_rust_version finds the installed rustc
+
+Fails on Windows without the rustc.exe fix: the lookup returns "".
+---
+ cargo-build-sbf/tests/crates.rs | 15 ++++++++++++++-
+ 1 file changed, 14 insertions(+), 1 deletion(-)
+
+diff --git a/cargo-build-sbf/tests/crates.rs b/cargo-build-sbf/tests/crates.rs
+index f8cfe26..df34013 100644
+--- a/cargo-build-sbf/tests/crates.rs
++++ b/cargo-build-sbf/tests/crates.rs
+@@ -1,6 +1,8 @@
+ use {
+     assert_cmd::{assert::Assert, cargo::cargo_bin_cmd},
+-    cargo_build_sbf::toolchain::{DEFAULT_PLATFORM_TOOLS_VERSION, DEFAULT_RUST_VERSION},
++    cargo_build_sbf::toolchain::{
++        DEFAULT_PLATFORM_TOOLS_VERSION, DEFAULT_RUST_VERSION, get_base_rust_version,
++    },
+     predicates::prelude::*,
+     std::{env, fs, path::PathBuf, str::FromStr},
+ };
+@@ -330,6 +332,17 @@ fn test_workspace_metadata_tools_version() {
+     clean_target("workspace-metadata");
+ }
+ 
++#[test]
++#[serial]
++fn test_base_rust_version() {
++    // A non-default tools version names its toolchain from this. It used to
++    // look for `rustc` instead of `rustc.exe` on Windows and return "".
++    run_cargo_build("noop", &[], false);
++    clean_target("noop");
++    let version = get_base_rust_version(DEFAULT_PLATFORM_TOOLS_VERSION);
++    assert_eq!(version, format!("rustc {DEFAULT_RUST_VERSION}"));
++}
++
+ #[test]
+ #[serial]
+ #[cfg(not(windows))]
+-- 
+2.56.0
+
