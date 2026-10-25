@@ -1,0 +1,157 @@
+# cargo-build-sbf's own test suite against platform-tools tarballs patched by
+# the proposed release step (one set of sbpf + newlib libraries). The suite
+# builds a test crate for every sbpf version (v0-v4), so it exercises every
+# library folder the step swaps. Same test command as cargo-build-sbf's CI.
+name: sbpf-libs-suite
+run-name: "cargo-build-sbf test suite on patched platform-tools ${{ inputs.tools }}"
+
+on:
+  workflow_dispatch:
+    inputs:
+      tools:
+        description: "platform-tools release tag (must be cargo-build-sbf master's default)"
+        required: true
+        default: v1.58
+      cbs_ref:
+        description: "anza-xyz/cargo-build-sbf commit"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download the release tarballs
+        run: |
+          for t in linux-x86_64 linux-aarch64 osx-aarch64 windows-x86_64; do
+            curl -sSfL -o "platform-tools-$t.tar.bz2" \
+              "https://github.com/anza-xyz/platform-tools/releases/download/${{ inputs.tools }}/platform-tools-$t.tar.bz2"
+          done
+          ls -la *.tar.bz2
+
+      - name: Do the C libraries (newlib libc.a / libm.a) already match across downloads?
+        # build.sh compiles newlib on each machine too; Windows ships none
+        run: |
+          for t in linux-x86_64 linux-aarch64 osx-aarch64; do
+            mkdir "c-$t"
+            tar -xjf "platform-tools-$t.tar.bz2" -C "c-$t" --wildcards './llvm/lib/libc.a' './llvm/lib/libm.a' './llvm/lib/sbpf*/lib*.a'
+            (cd "c-$t/llvm/lib" && find . -name '*.a' | sort | xargs sha256sum) > "c-$t.txt"
+            echo "$t: $(wc -l < "c-$t.txt") C library files, digest $(sha256sum "c-$t.txt" | cut -c1-16)"
+          done
+          if diff -q c-linux-x86_64.txt c-osx-aarch64.txt >/dev/null && diff -q c-linux-x86_64.txt c-linux-aarch64.txt >/dev/null; then
+            echo "C LIBRARIES IDENTICAL"
+          else
+            echo "C LIBRARIES DIFFER:"; diff c-linux-x86_64.txt c-osx-aarch64.txt | head -20 || true
+          fi
+
+      # --- the proposed step, verbatim -----------------------------------------
+      - name: Ship one set of sbpf libraries in every tarball
+        # Each runner compiles the sbpf*-solana-solana Rust libraries and the newlib
+        # C libraries itself. The machine code comes out the same, but the files
+        # don't (crate hashes, build paths, codegen-unit grouping), so a program
+        # built with the macOS tarball never byte-matches the same program built
+        # with the Linux one. Use the Linux x86 copies everywhere; each tarball
+        # keeps its own host compiler. Windows ships no newlib, so it only gets
+        # the Rust libraries.
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir ref
+          tar -xjf platform-tools-linux-x86_64.tar.bz2 -C ref --wildcards \
+            './rust/lib/rustlib/sbpf*-solana-solana' './llvm/lib/lib[cm].a' './llvm/lib/sbpf*/lib[cm].a'
+          for t in platform-tools-linux-aarch64 platform-tools-osx-aarch64 platform-tools-windows-x86_64; do
+            mkdir "$t"
+            tar -xjf "$t.tar.bz2" -C "$t"
+            for d in ref/rust/lib/rustlib/sbpf*-solana-solana; do
+              rm -rf "$t/rust/lib/rustlib/$(basename "$d")"
+              cp -R "$d" "$t/rust/lib/rustlib/"
+            done
+            (cd ref/llvm/lib && find . -name 'lib[cm].a') | while read -r f; do
+              if [ -f "$t/llvm/lib/$f" ]; then cp "ref/llvm/lib/$f" "$t/llvm/lib/$f"; fi
+            done
+            tar -C "$t" -jcf "$t.tar.bz2" .
+            rm -rf "$t"
+          done
+          rm -rf ref
+      # --------------------------------------------------------------------------
+
+      - name: Check every tarball now has identical sbpf libraries
+        run: |
+          for t in linux-x86_64 linux-aarch64 osx-aarch64 windows-x86_64; do
+            mkdir "chk-$t"
+            tar -xjf "platform-tools-$t.tar.bz2" -C "chk-$t" --wildcards './rust/lib/rustlib/sbpf*-solana-solana'
+            sum=$(cd "chk-$t/rust/lib/rustlib" && find . -type f | sort | xargs sha256sum | sha256sum | cut -c1-16)
+            echo "$t: sbpf libs digest $sum ($(cd "chk-$t/rust/lib/rustlib" && find . -name '*.rlib' | wc -l) rlibs)"
+            echo "$sum" >> digests.txt
+          done
+          [ "$(sort -u digests.txt | wc -l)" = 1 ] && echo "ALL IDENTICAL" || { echo "DIFFER"; exit 1; }
+          # the rest of each tarball must be untouched: its own host compiler
+          tar -tjf platform-tools-osx-aarch64.tar.bz2 | grep -c 'rustlib/aarch64-apple-darwin' | xargs echo "osx tarball still has its macOS host libs:"
+          for t in linux-x86_64 linux-aarch64 osx-aarch64; do
+            mkdir "cc-$t"
+            tar -xjf "platform-tools-$t.tar.bz2" -C "cc-$t" --wildcards './llvm/lib/lib[cm].a' './llvm/lib/sbpf*/lib[cm].a'
+            (cd "cc-$t/llvm/lib" && find . -name '*.a' | sort | xargs sha256sum) > "cc-$t.txt"
+            echo "after the step, $t: $(wc -l < "cc-$t.txt") C library files, digest $(sha256sum "cc-$t.txt" | cut -c1-16)"
+          done
+          diff -q cc-linux-x86_64.txt cc-osx-aarch64.txt && diff -q cc-linux-x86_64.txt cc-linux-aarch64.txt && echo "C LIBRARIES NOW IDENTICAL"
+          tar -tjf platform-tools-windows-x86_64.tar.bz2 | grep -c 'llvm/lib/.*lib[cm]\.a$' | xargs echo "windows tarball C libraries (should stay 0):"
+
+      # every tarball after the step: the three patched ones and the Linux x86
+      # reference, which the step leaves alone
+      - uses: actions/upload-artifact@v4
+        with: { name: tarball-linux-x86_64, path: platform-tools-linux-x86_64.tar.bz2, compression-level: 0 }
+      - uses: actions/upload-artifact@v4
+        with: { name: tarball-linux-aarch64, path: platform-tools-linux-aarch64.tar.bz2, compression-level: 0 }
+      - uses: actions/upload-artifact@v4
+        with: { name: tarball-osx-aarch64, path: platform-tools-osx-aarch64.tar.bz2, compression-level: 0 }
+      - uses: actions/upload-artifact@v4
+        with: { name: tarball-windows-x86_64, path: platform-tools-windows-x86_64.tar.bz2, compression-level: 0 }
+
+  suite:
+    needs: patch
+    name: suite · ${{ matrix.runner }} (${{ matrix.tar }})
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { runner: ubuntu-24.04,     tar: linux-x86_64 }
+          - { runner: ubuntu-24.04-arm, tar: linux-aarch64 }
+          - { runner: macos-15,         tar: osx-aarch64 }
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: tarball-${{ matrix.tar }}
+      - name: Put the ${{ matrix.tar }} tarball in place as platform-tools ${{ inputs.tools }}
+        run: |
+          D="$HOME/.cache/solana/${{ inputs.tools }}/platform-tools"
+          mkdir -p "$D" && tar -xjf "platform-tools-${{ matrix.tar }}.tar.bz2" -C "$D"
+          ls "$D/rust/lib/rustlib"
+      - name: cargo-build-sbf @ ${{ inputs.cbs_ref }}
+        run: |
+          git clone -q https://github.com/anza-xyz/cargo-build-sbf cbs
+          git -C cbs checkout -q "${{ inputs.cbs_ref }}"
+          grep -n 'DEFAULT_PLATFORM_TOOLS_VERSION: &str' cbs/cargo-build-sbf/src/toolchain.rs
+      - name: cargo test (as their CI, skipping the two download tests)
+        run: |
+          [ "$RUNNER_OS" = Linux ] && sudo apt-get update -qq && sudo apt-get install -y -qq pkg-config libssl-dev libudev-dev
+          cd cbs
+          cargo test --workspace -- --skip test_alternate_download --skip test_binaries_work 2>&1 | tee "$GITHUB_WORKSPACE/test.log"
+      - name: Summary
+        if: always()
+        run: |
+          grep -E "^test result|^test .* (ok|FAILED)$" test.log | sort | uniq -c | sort -rn | head -40 > summary.txt || true
+          echo "${{ matrix.runner }} (${{ matrix.tar }}):" ; cat summary.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: suite-${{ matrix.runner }}
+          path: |
+            summary.txt
+            test.log
