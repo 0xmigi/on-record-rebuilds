@@ -123,6 +123,8 @@ jobs:
           - { name: livestock,  macros: none, repo: 0xmigi/livestock,                    commit: "be8caf16fcad4429fbb5fd39d150291a3e1998c7", manifest: "",                          so: livestock }
           - { name: p-token,    macros: none, repo: solana-program/token,                 commit: "57bd873",                                  manifest: pinocchio/program/Cargo.toml, so: pinocchio_token_program }
           - { name: p-memo,     macros: yes,  repo: solana-program/memo,                  commit: "60728e1",                                  manifest: program/Cargo.toml,           so: pinocchio_memo_program }
+          - { name: spl-token,  macros: native, repo: solana-program/token, commit: "57bd873", manifest: program/Cargo.toml, so: spl_token }
+          - { name: stake,      macros: native, repo: solana-program/stake, commit: "76fd2b9", manifest: program/Cargo.toml, so: solana_stake_program }
           - { name: loofta-vrf, macros: yes,  repo: loofta/loofta-vrf,                    commit: "ccf49f0",                                  manifest: "",                          so: loofta_vrf }
     defaults:
       run:
