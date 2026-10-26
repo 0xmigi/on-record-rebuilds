@@ -33,6 +33,10 @@ jobs:
       - name: Create a program
         run: |
           anchor init demo --no-install --no-git
+          # The default LiteSVM test include_bytes! target/deploy/demo.so, and the
+          # verifiable build always compiles it (IDL step, --no-idl is ignored), so a
+          # fresh project fails. The test is not part of the program binary.
+          rm -rf demo/programs/demo/tests
           cp -r demo demo-sv
           cat demo/programs/demo/Cargo.toml
       - name: anchor build --verifiable
