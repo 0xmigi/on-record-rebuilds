@@ -23,7 +23,9 @@ jobs:
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq pkg-config build-essential libudev-dev
           cargo install --locked --git https://github.com/otter-sec/anchor --tag "v${{ inputs.anchor }}" avm
-          echo "$HOME/.avm/bin" >> "$GITHUB_PATH"; export PATH="$HOME/.avm/bin:$PATH"
+          SOL="$HOME/.local/share/solana/install/active_release/bin"
+          echo "$HOME/.avm/bin" >> "$GITHUB_PATH"; echo "$SOL" >> "$GITHUB_PATH"
+          export PATH="$HOME/.avm/bin:$SOL:$PATH"
           avm install "${{ inputs.anchor }}" --verify
           avm use "${{ inputs.anchor }}"
           anchor --version
