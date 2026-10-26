@@ -45,6 +45,7 @@ jobs:
         run: |
           # Same dependency versions as the Anchor build (a real repo commits its Cargo.lock).
           cp demo/Cargo.lock demo-sv/Cargo.lock
+          grep -A1 '^name = "solana-program"$' demo-sv/Cargo.lock || echo "Cargo.lock has no solana-program crate"
           cd demo-sv && solana-verify build --library-name demo ${{ inputs.verify_args }}
       - name: Compare
         run: |
