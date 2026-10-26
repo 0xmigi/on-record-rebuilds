@@ -1,0 +1,107 @@
+# spl-token-arch showed x86 and ARM/Mac SPL Token builds have identical function
+# bodies; only the order of a few functions in .text differs. rustc orders the
+# items of a codegen unit by symbol name (rust-lang/rust#145358), and the names
+# carry the crate's hash (from cargo's -C metadata, which hashes the host triple
+# into proc-macro / build-script units, rust-lang/cargo#8140). The x86 hash for
+# spl_token sorts before the fixed __rustc allocator shims; the ARM and Mac
+# hashes sort after. Test: change only what cargo hashes, on one machine.
+# - seed-<x>: x86, only __CARGO_DEFAULT_LIB_METADATA changes
+# - host-<triple>: report that host triple to cargo (RUSTC_WRAPPER rewrites the
+#   `host:` line of `rustc -vV`); the compiler and machine stay the same
+name: spl-token-order
+run-name: "SPL Token function order: platform-tools ${{ inputs.tools }}"
+
+on:
+  workflow_dispatch:
+    inputs:
+      tools:
+        description: "platform-tools release tag"
+        required: true
+        default: v1.58
+      tarballs_run:
+        description: "sbpf-libs-programs run whose patched tarballs to use"
+        required: true
+        default: "40212064338"
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  build:
+    name: ${{ matrix.case.variant }} · ${{ matrix.case.runner }}
+    runs-on: ${{ matrix.case.runner }}
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        case:
+          - { runner: ubuntu-24.04,     tar: linux-x86_64,  cli: x86_64-unknown-linux-gnu,  variant: seed-a }
+          - { runner: ubuntu-24.04,     tar: linux-x86_64,  cli: x86_64-unknown-linux-gnu,  variant: seed-b }
+          - { runner: ubuntu-24.04,     tar: linux-x86_64,  cli: x86_64-unknown-linux-gnu,  variant: seed-c }
+          - { runner: ubuntu-24.04,     tar: linux-x86_64,  cli: x86_64-unknown-linux-gnu,  variant: seed-d }
+          - { runner: ubuntu-24.04,     tar: linux-x86_64,  cli: x86_64-unknown-linux-gnu,  variant: seed-e }
+          - { runner: ubuntu-24.04,     tar: linux-x86_64,  cli: x86_64-unknown-linux-gnu,  variant: seed-f }
+          - { runner: ubuntu-24.04,     tar: linux-x86_64,  cli: x86_64-unknown-linux-gnu,  variant: seed-g }
+          - { runner: ubuntu-24.04,     tar: linux-x86_64,  cli: x86_64-unknown-linux-gnu,  variant: seed-h }
+          - { runner: ubuntu-24.04,     tar: linux-x86_64,  cli: x86_64-unknown-linux-gnu,  variant: host-aarch64-unknown-linux-gnu }
+          - { runner: ubuntu-24.04-arm, tar: linux-aarch64, cli: aarch64-unknown-linux-gnu, variant: host-x86_64-unknown-linux-gnu }
+          - { runner: macos-15,         tar: osx-aarch64,   cli: aarch64-apple-darwin,      variant: host-x86_64-unknown-linux-gnu }
+          - { runner: macos-15,         tar: osx-aarch64,   cli: aarch64-apple-darwin,      variant: host-aarch64-unknown-linux-gnu }
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: tools
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install cargo-build-sbf 4.1.0
+        run: |
+          if [ "${{ matrix.case.cli }}" = aarch64-unknown-linux-gnu ]; then
+            sudo apt-get update -qq && sudo apt-get install -y -qq pkg-config libssl-dev libudev-dev
+            cargo install cargo-build-sbf --version 4.1.0 --locked
+          else
+            curl -sSfL --retry 3 -o solana.tar.bz2 \
+              "https://github.com/anza-xyz/agave/releases/download/v4.1.0/solana-release-${{ matrix.case.cli }}.tar.bz2"
+            tar -xjf solana.tar.bz2 -C "$RUNNER_TEMP" && rm solana.tar.bz2
+            echo "$RUNNER_TEMP/solana-release/bin" >> "$GITHUB_PATH"
+          fi
+      - uses: actions/download-artifact@v4
+        with:
+          name: tarball-${{ matrix.case.tar }}
+          run-id: ${{ inputs.tarballs_run }}
+          github-token: ${{ github.token }}
+      - name: Put platform-tools ${{ inputs.tools }} in place (${{ matrix.case.tar }})
+        run: |
+          D="$HOME/.cache/solana/${{ inputs.tools }}/platform-tools"
+          mkdir -p "$D" && tar -xjf "platform-tools-${{ matrix.case.tar }}.tar.bz2" -C "$D"
+          rm "platform-tools-${{ matrix.case.tar }}.tar.bz2"
+      - name: Set up ${{ matrix.case.variant }}
+        run: |
+          V="${{ matrix.case.variant }}"
+          case "$V" in
+            seed-*) echo "__CARGO_DEFAULT_LIB_METADATA=${V#seed-}" >> "$GITHUB_ENV" ;;
+            host-*)
+              printf '%s\n' '#!/usr/bin/env bash' \
+                'for a in "$@"; do if [ "$a" = "-vV" ]; then "$@" | sed "s/^host: .*/host: '"${V#host-}"'/"; exit ${PIPESTATUS[0]}; fi; done' \
+                'exec "$@"' > "$RUNNER_TEMP/fakehost" && chmod +x "$RUNNER_TEMP/fakehost"
+              echo "RUSTC_WRAPPER=$RUNNER_TEMP/fakehost" >> "$GITHUB_ENV" ;;
+          esac
+      - name: Build SPL Token
+        run: |
+          git clone -q https://github.com/solana-program/token src
+          git -C src checkout -q 57bd873
+          cd src/program
+          cargo-build-sbf --tools-version ${{ inputs.tools }} -- --locked -v 2>&1 | tee "$GITHUB_WORKSPACE/build.log"
+      - name: Hash, spl_token's crate hash, and which comes first
+        run: |
+          mkdir out && cp src/target/deploy/spl_token.so out/deploy.so
+          cp src/target/sbpf-solana-solana/release/spl_token.so out/unstripped.so && cp build.log out/
+          python tools/scripts/spl-token-order.py "${{ matrix.case.variant }} · ${{ matrix.case.runner }}" out/deploy.so out/unstripped.so | tee out/result.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: order-${{ matrix.case.variant }}-${{ matrix.case.runner }}
+          path: out
