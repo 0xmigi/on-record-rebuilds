@@ -42,7 +42,10 @@ jobs:
       - name: anchor build --verifiable
         run: cd demo && anchor build --verifiable --no-idl
       - name: solana-verify build (what anchor verify rebuilds with)
-        run: cd demo-sv && solana-verify build --library-name demo ${{ inputs.verify_args }}
+        run: |
+          # Same dependency versions as the Anchor build (a real repo commits its Cargo.lock).
+          cp demo/Cargo.lock demo-sv/Cargo.lock
+          cd demo-sv && solana-verify build --library-name demo ${{ inputs.verify_args }}
       - name: Compare
         run: |
           a=$(solana-verify get-executable-hash demo/target/verifiable/demo.so)
