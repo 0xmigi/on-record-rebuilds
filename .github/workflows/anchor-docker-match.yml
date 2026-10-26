@@ -10,6 +10,7 @@ on:
     inputs:
       anchor: { description: "Anchor version (avm install)", required: true, default: "1.2.1" }
       verify_args: { description: "Extra solana-verify build args", required: false, default: "" }
+      solana_verify: { description: "Replace avm's solana-verify with this crates.io version (blank = keep avm's)", required: false, default: "" }
 
 permissions:
   contents: read
@@ -28,6 +29,10 @@ jobs:
           export PATH="$HOME/.avm/bin:$SOL:$PATH"
           avm install "${{ inputs.anchor }}" --verify
           avm use "${{ inputs.anchor }}"
+          if [ -n "${{ inputs.solana_verify }}" ]; then
+            cargo install --locked solana-verify --version "${{ inputs.solana_verify }}" --root "$HOME/sv"
+            cp "$HOME/sv/bin/solana-verify" "$HOME/.avm/bin/solana-verify"
+          fi
           anchor --version
           solana-verify --version
       - name: Create a program
