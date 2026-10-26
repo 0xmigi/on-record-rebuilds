@@ -1,0 +1,47 @@
+# Does `anchor build --verifiable` (Anchor's own Docker image, quay.io/ottersec/anchor)
+# produce the same program as `solana-verify build` (the image `anchor verify` rebuilds
+# with)? Builds one fresh `anchor init` program both ways and compares the hashes.
+# Anchor and solana-verify are installed through avm, the way users get them.
+name: anchor-docker-match
+run-name: "anchor build --verifiable vs solana-verify build, Anchor ${{ inputs.anchor }}"
+
+on:
+  workflow_dispatch:
+    inputs:
+      anchor: { description: "Anchor version (avm install)", required: true, default: "1.2.1" }
+      verify_args: { description: "Extra solana-verify build args", required: false, default: "" }
+
+permissions:
+  contents: read
+
+jobs:
+  match:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Install avm, then Anchor ${{ inputs.anchor }} (also installs solana-verify)
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq pkg-config build-essential libudev-dev
+          cargo install --locked --git https://github.com/otter-sec/anchor --tag "v${{ inputs.anchor }}" avm
+          echo "$HOME/.avm/bin" >> "$GITHUB_PATH"; export PATH="$HOME/.avm/bin:$PATH"
+          avm install "${{ inputs.anchor }}" --verify
+          avm use "${{ inputs.anchor }}"
+          anchor --version
+          solana-verify --version
+      - name: Create a program
+        run: |
+          anchor init demo --no-install --no-git
+          cp -r demo demo-sv
+          cat demo/programs/demo/Cargo.toml
+      - name: anchor build --verifiable
+        run: cd demo && anchor build --verifiable --no-idl
+      - name: solana-verify build (what anchor verify rebuilds with)
+        run: cd demo-sv && solana-verify build --library-name demo ${{ inputs.verify_args }}
+      - name: Compare
+        run: |
+          a=$(solana-verify get-executable-hash demo/target/verifiable/demo.so)
+          b=$(solana-verify get-executable-hash demo-sv/target/deploy/demo.so)
+          echo "anchor build --verifiable: $a"
+          echo "solana-verify build:       $b"
+          sha256sum demo/target/verifiable/demo.so demo-sv/target/deploy/demo.so
+          if [ "$a" = "$b" ]; then echo "MATCH"; else echo "DIFFERENT"; exit 1; fi
