@@ -1,0 +1,146 @@
+# SPL Token is the one program in sbpf-libs-programs (run 40212064338) where the
+# shared sbpf libraries give Mac = Linux ARM but not Linux x86. This keeps the
+# binaries and the pieces in between so the difference can be located:
+# - native: each machine twice (is x86 even repeatable?), the .so files, the
+#   rlibs, build-script outputs, and a second build with -C save-temps (LLVM
+#   bitcode before/after optimisation, per codegen unit)
+# - emulated: the x86 toolchain run on an ARM machine and the ARM toolchain run
+#   on an x86 machine (qemu), to split "the compiler binary's architecture"
+#   from "the machine underneath"
+name: spl-token-arch
+run-name: "SPL Token x86 vs ARM: platform-tools ${{ inputs.tools }}"
+
+on:
+  workflow_dispatch:
+    inputs:
+      tools:
+        description: "platform-tools release tag"
+        required: true
+        default: v1.58
+      tarballs_run:
+        description: "sbpf-libs-programs run whose patched tarballs to use"
+        required: true
+        default: "40212064338"
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  native:
+    name: native · ${{ matrix.machine.runner }} · ${{ matrix.rep }}
+    runs-on: ${{ matrix.machine.runner }}
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        machine:
+          - { runner: ubuntu-24.04,     tar: linux-x86_64,  cli: x86_64-unknown-linux-gnu }
+          - { runner: ubuntu-24.04-arm, tar: linux-aarch64, cli: aarch64-unknown-linux-gnu }
+          - { runner: macos-15,         tar: osx-aarch64,   cli: aarch64-apple-darwin }
+        rep: [1, 2]
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: tools
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install cargo-build-sbf 4.1.0
+        run: |
+          if [ "${{ matrix.machine.cli }}" = aarch64-unknown-linux-gnu ]; then
+            sudo apt-get update -qq && sudo apt-get install -y -qq pkg-config libssl-dev libudev-dev
+            cargo install cargo-build-sbf --version 4.1.0 --locked
+          else
+            curl -sSfL --retry 3 -o solana.tar.bz2 \
+              "https://github.com/anza-xyz/agave/releases/download/v4.1.0/solana-release-${{ matrix.machine.cli }}.tar.bz2"
+            tar -xjf solana.tar.bz2 -C "$RUNNER_TEMP" && rm solana.tar.bz2
+            echo "$RUNNER_TEMP/solana-release/bin" >> "$GITHUB_PATH"
+          fi
+      - uses: actions/download-artifact@v4
+        with:
+          name: tarball-${{ matrix.machine.tar }}
+          run-id: ${{ inputs.tarballs_run }}
+          github-token: ${{ github.token }}
+      - name: Put platform-tools ${{ inputs.tools }} in place (${{ matrix.machine.tar }})
+        run: |
+          D="$HOME/.cache/solana/${{ inputs.tools }}/platform-tools"
+          mkdir -p "$D" && tar -xjf "platform-tools-${{ matrix.machine.tar }}.tar.bz2" -C "$D"
+          rm "platform-tools-${{ matrix.machine.tar }}.tar.bz2"
+      - name: Build SPL Token (as in sbpf-libs-programs)
+        run: |
+          git clone -q https://github.com/solana-program/token src
+          git -C src checkout -q 57bd873
+          cp -R src src2
+          cd src/program
+          cargo-build-sbf --tools-version ${{ inputs.tools }} -- --locked -v 2>&1 | tee "$GITHUB_WORKSPACE/build.log"
+      - name: Build again with -C save-temps (fresh copy)
+        run: |
+          cd src2/program
+          RUSTFLAGS="-C save-temps" cargo-build-sbf --tools-version ${{ inputs.tools }} -- --locked -v 2>&1 | tee "$GITHUB_WORKSPACE/build2.log"
+      - name: Collect
+        run: |
+          O=out; mkdir -p $O/rlibs $O/temps $O/build-out
+          cp src/target/deploy/spl_token.so $O/deploy.so
+          cp src/target/sbpf-solana-solana/release/spl_token.so $O/unstripped.so
+          cp src2/target/deploy/spl_token.so $O/deploy-savetemps.so
+          cp src/target/sbpf-solana-solana/release/deps/*.rlib $O/rlibs/
+          cp src2/target/sbpf-solana-solana/release/deps/*.{bc,o} $O/temps/ 2>/dev/null || true
+          for f in src/target/release/build/*/output; do cp "$f" "$O/build-out/$(basename "$(dirname "$f")").txt"; done
+          cp src/Cargo.lock build.log build2.log $O/
+          echo "deploy $(python tools/scripts/exe-hash.py $O/deploy.so)" | tee $O/hash.txt
+          echo "save-temps $(python tools/scripts/exe-hash.py $O/deploy-savetemps.so)" | tee -a $O/hash.txt
+          du -sh $O/*
+      - uses: actions/upload-artifact@v4
+        with:
+          name: native-${{ matrix.machine.tar }}-${{ matrix.rep }}
+          path: out
+
+  # the aarch64 cargo-build-sbf has to come from a crates.io install on the ARM runner
+  arm-cbs:
+    runs-on: ubuntu-24.04-arm
+    steps:
+      - run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq pkg-config libssl-dev libudev-dev
+          cargo install cargo-build-sbf --version 4.1.0 --locked
+          cp ~/.cargo/bin/cargo-build-sbf .
+      - uses: actions/upload-artifact@v4
+        with: { name: cbs-aarch64, path: cargo-build-sbf }
+
+  emulated:
+    name: emulated · ${{ matrix.case.tar }} toolchain on ${{ matrix.case.runner }}
+    needs: arm-cbs
+    runs-on: ${{ matrix.case.runner }}
+    timeout-minutes: 240
+    strategy:
+      fail-fast: false
+      matrix:
+        case:
+          - { runner: ubuntu-24.04-arm, platform: linux/amd64, tar: linux-x86_64,  cbs: "release:x86_64-unknown-linux-gnu" }
+          - { runner: ubuntu-24.04,     platform: linux/arm64, tar: linux-aarch64, cbs: /work/cbs/cargo-build-sbf }
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: tools
+      - uses: docker/setup-qemu-action@v3
+      - uses: actions/download-artifact@v4
+        with:
+          name: tarball-${{ matrix.case.tar }}
+          run-id: ${{ inputs.tarballs_run }}
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v4
+        with: { name: cbs-aarch64, path: cbs }
+      - name: Build SPL Token inside a ${{ matrix.case.platform }} container
+        run: |
+          mkdir out
+          echo "host: $(uname -m)"
+          docker run --rm --platform ${{ matrix.case.platform }} -v "$PWD:/work" ubuntu:24.04 \
+            bash /work/tools/scripts/emulated-build.sh ${{ inputs.tools }} \
+              /work/platform-tools-${{ matrix.case.tar }}.tar.bz2 "${{ matrix.case.cbs }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: emulated-${{ matrix.case.tar }}-on-${{ matrix.case.runner }}
+          path: out
